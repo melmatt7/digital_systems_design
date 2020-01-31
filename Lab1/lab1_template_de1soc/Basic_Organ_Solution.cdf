@@ -6,7 +6,7 @@ JedecChain;
 	P ActionCode(Ign)
 		Device PartName(SOCVHPS) MfrSpec(OpMask(0));
 	P ActionCode(Cfg)
-		Device PartName(5CSEMA5F31) Path("C:/UBC/w2019-2020t2/CPEN311/lab1_template_de1soc/") File("Basic_Organ_Solution.sof") MfrSpec(OpMask(1));
+		Device PartName(5CSEMA5F31) Path("M:/UBC/CPEN311/digital_systems_design/Lab1/lab1_template_de1soc/") File("Basic_Organ_Solution.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 
