@@ -224,8 +224,23 @@ wire Sample_Clk_Signal;
 //
 //
 
+wire read_flash_start;
+wire read_flash_complete;
+Avalon_Read_Flash(
+//input
+.clk(CLK_50M),
+.start(read_flash_start),
+.read(flash_mem_read),
+.waitRequest(flash_mem_waitrequest),
+.dataValid(flash_mem_readdatavalid),
+//output
+.complete(read_flash_complete));
 
+Flash_Address_Control(
+//input
 
+//output
+);
 
 wire            flash_mem_read;
 wire            flash_mem_waitrequest;
