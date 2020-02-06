@@ -1,13 +1,17 @@
-module Divided_Clk(inclk,outclk,div_clk_count,Reset);
+`default_nettype none
+module Divided_Clk(//input
+						 inclk, div_clk_count, reset
+						 //output 
+						 outclk);
     input inclk;
-	 input Reset;
-    output outclk;
+	 input reset;
 	 input[31:0] div_clk_count;
+	 output outclk;
 	 
 	 reg[31:0] curr_count = 32'd0;
 	 
 	 always @(posedge inclk) begin
-		if (Reset) begin
+		if (reset) begin
 			outclk = 0;
 			curr_count = 0;
 		end

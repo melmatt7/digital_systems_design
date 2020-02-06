@@ -226,7 +226,8 @@ wire Sample_Clk_Signal;
 
 wire read_flash_start;
 wire read_flash_complete;
-Avalon_Read_Flash(
+Avalon_Read_Flash
+Read_Flash(
 //input
 .clk(CLK_50M),
 .start(read_flash_start),
@@ -236,11 +237,36 @@ Avalon_Read_Flash(
 //output
 .complete(read_flash_complete));
 
+wire CLK_22K
+Divided_Clk
+Divided_Clk_22K(
+//input
+.clk(CLK_50M),
+.div_clk_count(32'd1136), //22Khz
+.reset(res),
+//output
+.outclk(CLK_22K));
+
+wire sync_CLK_22K
+Synchronizer
+Flash_Read_Synchronizer(
+//input
+.async_sig(CLK_22K),
+.inclk(CLK_50M),
+//output
+.out_sync_sig(sync_CLK_22K));
+
 Flash_Address_Control(
 //input
 
 //output
 );
+
+
+Light_Control
+Led_Control(
+.inclk(Clock_1Hz),
+.led(LED));
 
 wire            flash_mem_read;
 wire            flash_mem_waitrequest;
