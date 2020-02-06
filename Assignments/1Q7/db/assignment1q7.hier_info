@@ -1,0 +1,34 @@
+|assignment1q7
+async_sig => async_sig.IN1
+outclk => outclk.IN3
+out_sync_sig <= out_sync_sig.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|assignment1q7|Flipflop:fdc1
+clk => q~reg0.CLK
+clr => q~reg0.ACLR
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+d => q~reg0.DATAIN
+
+
+|assignment1q7|Flipflop:fdc2
+clk => q~reg0.CLK
+clr => q~reg0.ACLR
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+d => q~reg0.DATAIN
+
+
+|assignment1q7|Flipflop:fdc3
+clk => q~reg0.CLK
+clr => q~reg0.ACLR
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+d => q~reg0.DATAIN
+
+
+|assignment1q7|Flipflop:fdc4
+clk => q~reg0.CLK
+clr => q~reg0.ACLR
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+d => q~reg0.DATAIN
+
+

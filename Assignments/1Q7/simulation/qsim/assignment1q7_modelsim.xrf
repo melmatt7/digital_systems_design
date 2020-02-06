@@ -1,0 +1,13 @@
+vendor_name = ModelSim
+source_file = 1, C:/UBC/w2019-2020t2/CPEN311/Assignments/assignment1q7.v
+source_file = 1, C:/UBC/w2019-2020t2/CPEN311/Assignments/Flipflop.v
+source_file = 1, C:/UBC/w2019-2020t2/CPEN311/Assignments/assignment1q7.vwf
+source_file = 1, C:/UBC/w2019-2020t2/CPEN311/Assignments/db/assignment1q7.cbx.xml
+design_name = assignment1q7
+instance = comp, \out_sync_sig~output , out_sync_sig~output, assignment1q7, 1
+instance = comp, \outclk~input , outclk~input, assignment1q7, 1
+instance = comp, \async_sig~input , async_sig~input, assignment1q7, 1
+instance = comp, \fdc1|q , fdc1|q, assignment1q7, 1
+instance = comp, \fdc2|q , fdc2|q, assignment1q7, 1
+instance = comp, \fdc3|q , fdc3|q, assignment1q7, 1
+instance = comp, \fdc4|q , fdc4|q, assignment1q7, 1

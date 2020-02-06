@@ -1,0 +1,45 @@
+module question7 (async_sig, outclk, out_sync_sig)
+	input async_sig;
+	input outclk;
+	output out_sync_sig;
+	
+	wire vcc = 1;
+	wire gnd = 0;
+	
+	wire q1;
+	wire q2;
+	wire q3;
+	
+	flipfop
+	fdc1(
+	.clk(outclk),
+	.clr(gnd),
+	.d(out_sync_sig),
+	.q(q1)
+	)
+	
+	flipflop
+	fdc2(
+	.clk(async_sig),
+	.clr(q1),
+	.d(vcc),
+	.q(q2)
+	)
+	
+	flipflop
+	fdc3(
+	.clk(outclk),
+	.clr(gnd),
+	.d(q2),
+	.q(q3)
+	)
+	
+	flipflop
+	fdc4(
+	.clk(outclk),
+	.clr(gnd),
+	.d(q3),
+	.q(out_sync_sig)
+	)
+	
+	

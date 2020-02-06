@@ -1,0 +1,90 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/UBC/w2019-2020t2/CPEN311/Assignments/simulation/qsim
+vassignment1q7
+!s110 1579860811
+!i10b 1
+!s100 ^Lz@Yi21dC:3LMNI@KSe>3
+I0AO6KIzn0:;W518Go6`VD3
+Z1 V`JN@9S9cnhjKRR_L]QIcM3
+R0
+w1579860810
+8assignment1q7.vo
+Fassignment1q7.vo
+L0 32
+Z2 OV;L;10.3c;59
+r1
+!s85 0
+31
+!s108 1579860811.924000
+!s107 assignment1q7.vo|
+!s90 -work|work|assignment1q7.vo|
+!i113 1
+Z3 o-work work
+vassignment1q7_vlg_check_tst
+Z4 !s110 1579860812
+!i10b 1
+!s100 TfOcWTXYT0=`db2^5=kIU1
+Ilf3W5z<>[F]kJcYN6kNOV2
+R1
+R0
+Z5 w1579860808
+Z6 8assignment1q7.vwf.vt
+Z7 Fassignment1q7.vwf.vt
+L0 60
+R2
+r1
+!s85 0
+31
+Z8 !s108 1579860812.038000
+Z9 !s107 assignment1q7.vwf.vt|
+Z10 !s90 -work|work|assignment1q7.vwf.vt|
+!i113 1
+R3
+vassignment1q7_vlg_sample_tst
+R4
+!i10b 1
+!s100 @;FVdE`X=Pc^SN81>izUa2
+IK<LHIz^<I=J8HCF`e4[VI0
+R1
+R0
+R5
+R6
+R7
+L0 30
+R2
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R3
+vassignment1q7_vlg_vec_tst
+R4
+!i10b 1
+!s100 ;jjhWOg2bn60>A0IiaDEE1
+I8Bf3QBad0=9P;I7@<n2`O3
+R1
+R0
+R5
+R6
+R7
+L0 155
+R2
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R3
