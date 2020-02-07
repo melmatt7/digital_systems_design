@@ -8,12 +8,12 @@ module Avalon_Read_Flash (//input
 	output logic complete;
 	
 	reg[4:0] state;
-						         //321_10
-	parameter idle       = 5'b000_00;
-	parameter check_read = 5'b001_00;
-	parameter slave_init = 5'b010_00;
-	parameter wait_read  = 5'b011_00;
-	parameter finished   = 5'b100_01;
+						         //321_0
+	parameter idle       = 5'b000_0;
+	parameter check_read = 5'b001_0;
+	parameter slave_init = 5'b010_0;
+	parameter wait_read  = 5'b011_0;
+	parameter finished   = 5'b100_1;
 							
 	assign complete = state[0]		
 	assign state = idle;

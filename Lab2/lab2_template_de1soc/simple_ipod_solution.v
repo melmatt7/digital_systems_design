@@ -258,8 +258,9 @@ Flash_Read_Synchronizer(
 
 Flash_Address_Control(
 //input
-
+.
 //output
+.start_read_flash(read_flash_start),
 );
 
 
