@@ -1,6 +1,6 @@
 `default_nettype none
 module Divided_Clk(//input
-						 inclk, div_clk_count, reset
+						 inclk, div_clk_count, reset,
 						 //output 
 						 outclk);
     input inclk;

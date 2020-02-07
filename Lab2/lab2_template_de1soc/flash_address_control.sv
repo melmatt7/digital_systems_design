@@ -1,15 +1,16 @@
 `default_nettype none
 module Flash_Address_Control (//input
-										clk, sync_clk, start, readComplete, direction, restart, songs 
+										clk, sync_clk, start, readComplete, direction, restart, songs, 
 										//output 
-										start_read_flash, read, addr, out_data, complete);
-	input clk, sync_clk, start, readComplete, direction, restart
+										start_read_flash, read, addr, outData, complete);
+										
+	input clk, sync_clk, start, readComplete, direction, restart;
 	input [31:0] songs;
 	output start_read_flash, read, complete;
 	output [22:0] addr;
-	output[7:0] out_data;
+	output[7:0] outData;
 	
-	reg[5:0] state;						
+	reg[5:0] state = 5'b0000_00;						
 								        //4321_10
 	parameter idle       	  = 5'b0000_00;
 	parameter read_flash      = 5'b0001_10;
@@ -39,16 +40,16 @@ module Flash_Address_Control (//input
 				if (sync_clk) state <= out_data_1;
 			end 
 			out_data_1: begin
-				if (direction) out_data <= songs[31:24];
-            else out_data <= songs[7:0];
+				if (direction) outData <= songs[31:24];
+            else outData <= songs[7:0];
 				state <= wait_data_2;
 			end
 			wait_data_2: begin
 				if (sync_clk) state <= out_data_2;
 				end
 			out_data_2: begin
-			if (direction) out_data <= songs[7:0];
-            else out_data <= songs[31:24];
+			if (direction) outData <= songs[7:0];
+            else outData <= songs[31:24];
 				state <= check_direction;
 			end
 			check_direction: begin 
@@ -56,15 +57,15 @@ module Flash_Address_Control (//input
 				else state <= inc_addr;
 			end 
 			dec_addr: begin
-				address <= addrsss - 23'd1;
-				if (address <= 0)
-					address = 23'h1FFFF;
+				addr <= addr - 23'd1;
+				if (addr <= 0)
+					addr <= 23'h1FFFF;
 				state <= finished;
 			end
 			inc_addr: begin 
-				address <= addrsss + 23'd1;
-				if (address > 23'h1FFFF)
-					address = 0;
+				addr <= addr + 23'd1;
+				if (addr > 23'h1FFFF)
+					addr <= 0;
 				state <= finished;
 			end 
 			finished: begin

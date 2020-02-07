@@ -237,31 +237,46 @@ Read_Flash(
 //output
 .complete(read_flash_complete));
 
-wire CLK_22K
+wire CLK_22K;
 Divided_Clk
 Divided_Clk_22K(
 //input
-.clk(CLK_50M),
+.inclk(CLK_50M),
 .div_clk_count(32'd1136), //22Khz
 .reset(res),
 //output
 .outclk(CLK_22K));
 
-wire sync_CLK_22K
+wire sync_CLK_22K;
 Synchronizer
 Flash_Read_Synchronizer(
 //input
 .async_sig(CLK_22K),
-.inclk(CLK_50M),
+.outclk(CLK_50M),
 //output
 .out_sync_sig(sync_CLK_22K));
 
-Flash_Address_Control(
+wire read_sig;
+wire dir;
+wire res;
+wire audio;
+wire address_control_complete;
+Flash_Address_Control
+Address_Control(
 //input
-.
+.clk(CLK_50M),
+.sync_clk(sync_CLK_22K),
+.start(read_sig),
+.readComplete(read_flash_complete),
+.direction(dir),
+.restart(res),
+.songs(flash_mem_readdata),
 //output
 .start_read_flash(read_flash_start),
-);
+.read(flash_mem_read),
+.addr(flash_mem_address),
+.outData(audio),
+.complete(address_control_complete));
 
 
 Light_Control
@@ -296,7 +311,7 @@ assign Sample_Clk_Signal = Clock_1KHz;
 
 //Audio Generation Signal
 //Note that the audio needs signed data - so convert 1 bit to 8 bits signed
-wire [7:0] audio_data = {~Sample_Clk_Signal,{7{Sample_Clk_Signal}}}; //generate signed sample audio signal
+wire [7:0] audio_data = {~audio,{7{audio}}}; //generate signed sample audio signal
 
 
 
