@@ -224,6 +224,27 @@ wire Sample_Clk_Signal;
 //
 //
 
+wire            flash_mem_read;
+wire            flash_mem_waitrequest;
+wire    [22:0]  flash_mem_address;
+wire    [31:0]  flash_mem_readdata;
+wire            flash_mem_readdatavalid;
+wire    [3:0]   flash_mem_byteenable;
+
+flash flash_inst (
+    .clk_clk                 (CLK_50M),
+    .reset_reset_n           (1'b1),
+    .flash_mem_write         (1'b0),
+    .flash_mem_burstcount    (6'b000001),
+    .flash_mem_waitrequest   (flash_mem_waitrequest),
+    .flash_mem_read          (flash_mem_read),
+    .flash_mem_address       (flash_mem_address),
+    .flash_mem_writedata     (32'b0),
+    .flash_mem_readdata      (flash_mem_readdata),
+    .flash_mem_readdatavalid (flash_mem_readdatavalid),
+    .flash_mem_byteenable    (flash_mem_byteenable)
+);
+
 wire read_flash_start;
 wire read_flash_complete;
 Avalon_Read_Flash
@@ -237,13 +258,25 @@ Read_Flash(
 //output
 .complete(read_flash_complete));
 
+wire [31:0] speed_count_22K;
+Speed_Control
+Speed_Control_Inst(
+//input
+.clk(CLK_50M),
+.speed_up(speed_up_event),
+.speed_down(speed_down_event),
+.speed_reset(speed_reset_event),
+//output
+.div_count(speed_count_22K));
+
 wire CLK_22K;
+wire div_clk_res = 0;
 Divided_Clk
 Divided_Clk_22K(
 //input
 .inclk(CLK_50M),
-.div_clk_count(32'd1136), //22Khz
-.reset(res),
+.div_clk_count(speed_count_22K), //22Khz
+.reset(div_clk_res),
 //output
 .outclk(CLK_22K));
 
@@ -256,10 +289,10 @@ Flash_Read_Synchronizer(
 //output
 .out_sync_sig(sync_CLK_22K));
 
-wire read_sig;
-wire dir;
-wire res;
-wire audio;
+wire read_sig = 1;
+wire dir = 1;
+wire res = 1;
+wire[7:0] audio;
 wire address_control_complete;
 Flash_Address_Control
 Address_Control(
@@ -270,12 +303,13 @@ Address_Control(
 .readComplete(read_flash_complete),
 .direction(dir),
 .restart(res),
-.songs(flash_mem_readdata),
+.songData(flash_mem_readdata),
 //output
 .start_read_flash(read_flash_start),
 .read(flash_mem_read),
 .addr(flash_mem_address),
 .outData(audio),
+.byteEnable(flash_mem_byteenable),
 .complete(address_control_complete));
 
 
@@ -284,34 +318,13 @@ Led_Control(
 .inclk(Clock_1Hz),
 .led(LED));
 
-wire            flash_mem_read;
-wire            flash_mem_waitrequest;
-wire    [22:0]  flash_mem_address;
-wire    [31:0]  flash_mem_readdata;
-wire            flash_mem_readdatavalid;
-wire    [3:0]   flash_mem_byteenable;
-
-
-flash flash_inst (
-    .clk_clk                 (CLK_50M),
-    .reset_reset_n           (1'b1),
-    .flash_mem_write         (1'b0),
-    .flash_mem_burstcount    (1'b1),
-    .flash_mem_waitrequest   (flash_mem_waitrequest),
-    .flash_mem_read          (flash_mem_read),
-    .flash_mem_address       (flash_mem_address),
-    .flash_mem_writedata     (),
-    .flash_mem_readdata      (flash_mem_readdata),
-    .flash_mem_readdatavalid (flash_mem_readdatavalid),
-    .flash_mem_byteenable    (flash_mem_byteenable)
-);
             
 
 assign Sample_Clk_Signal = Clock_1KHz;
 
 //Audio Generation Signal
 //Note that the audio needs signed data - so convert 1 bit to 8 bits signed
-wire [7:0] audio_data = {~audio,{7{audio}}}; //generate signed sample audio signal
+wire [7:0] audio_data = {(~audio), {7{audio}}}; //generate signed sample audio signal
 
 
 
