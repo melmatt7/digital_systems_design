@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for simple_ipod_solution
-Fri Feb 07 00:41:33 2020
+Sat Feb 08 16:41:16 2020
 Quartus II 64-Bit Version 14.1.0 Build 186 12/03/2014 SJ Web Edition
 
 
@@ -371,16 +371,16 @@ agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 6           ;
-; Maximum allowed            ; 6           ;
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 2           ;
 ;                            ;             ;
-; Average used               ; 1.08        ;
-; Maximum used               ; 6           ;
+; Average used               ; 1.02        ;
+; Maximum used               ; 2           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-4         ;   2.8%      ;
-;     Processors 5-6         ; < 0.1%      ;
+;     Processor 2            ;   1.7%      ;
+;     Processors 3-4         ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -389,7 +389,7 @@ agreement for further details.
 +------------------------+--------+--------------------------+
 ; SDC File Path          ; Status ; Read at                  ;
 +------------------------+--------+--------------------------+
-; timing_constraints.sdc ; OK     ; Fri Feb 07 00:40:58 2020 ;
+; timing_constraints.sdc ; OK     ; Sat Feb 08 16:40:20 2020 ;
 +------------------------+--------+--------------------------+
 
 
@@ -913,8 +913,8 @@ Worst Case Available Settling Time: 24.067 ns
 ; Write_Kbd_To_Scope_LCD:Write_Kbd_To_LCD1|scope_info_reg[1][3]                                                                                                                           ; sld_signaltap:auto_signaltap_0|acq_data_in_reg[66]                                                                                                                                ; Not Calculated          ; Not Calculated       ; No                      ;
 ; Write_Kbd_To_Scope_LCD:Write_Kbd_To_LCD1|scope_info_reg[8][2]                                                                                                                           ; sld_signaltap:auto_signaltap_0|acq_data_in_reg[136]                                                                                                                               ; Not Calculated          ; Not Calculated       ; No                      ;
 ; Write_Kbd_To_Scope_LCD:Write_Kbd_To_LCD1|scope_info_reg[11][2]                                                                                                                          ; sld_signaltap:auto_signaltap_0|acq_data_in_reg[145]                                                                                                                               ; Not Calculated          ; Not Calculated       ; No                      ;
-; Write_Kbd_To_Scope_LCD:Write_Kbd_To_LCD1|scope_info_reg[2][3]                                                                                                                           ; sld_signaltap:auto_signaltap_0|acq_data_in_reg[89]                                                                                                                                ; Not Calculated          ; Not Calculated       ; No                      ;
 ; Write_Kbd_To_Scope_LCD:Write_Kbd_To_LCD1|scope_info_reg[1][0]                                                                                                                           ; sld_signaltap:auto_signaltap_0|acq_data_in_reg[78]                                                                                                                                ; Not Calculated          ; Not Calculated       ; No                      ;
+; Write_Kbd_To_Scope_LCD:Write_Kbd_To_LCD1|scope_info_reg[2][3]                                                                                                                           ; sld_signaltap:auto_signaltap_0|acq_data_in_reg[89]                                                                                                                                ; Not Calculated          ; Not Calculated       ; No                      ;
 ; Write_Kbd_To_Scope_LCD:Write_Kbd_To_LCD1|scope_info_reg[2][1]                                                                                                                           ; sld_signaltap:auto_signaltap_0|acq_data_in_reg[87]                                                                                                                                ; Not Calculated          ; Not Calculated       ; No                      ;
 ; Write_Kbd_To_Scope_LCD:Write_Kbd_To_LCD1|scope_info_reg[2][2]                                                                                                                           ; sld_signaltap:auto_signaltap_0|acq_data_in_reg[88]                                                                                                                                ; Not Calculated          ; Not Calculated       ; No                      ;
 ; Write_Kbd_To_Scope_LCD:Write_Kbd_To_LCD1|scope_info_reg[2][0]                                                                                                                           ; sld_signaltap:auto_signaltap_0|acq_data_in_reg[80]                                                                                                                                ; Not Calculated          ; Not Calculated       ; No                      ;
@@ -981,8 +981,8 @@ Worst Case Available Settling Time: 24.067 ns
 ; Write_Kbd_To_Scope_LCD:Write_Kbd_To_LCD1|scope_info_reg[13][5]                                                                                                                          ; sld_signaltap:auto_signaltap_0|acq_data_in_reg[164]                                                                                                                               ; Not Calculated          ; Not Calculated       ; No                      ;
 ; Write_Kbd_To_Scope_LCD:Write_Kbd_To_LCD1|scope_info_reg[12][2]                                                                                                                          ; sld_signaltap:auto_signaltap_0|acq_data_in_reg[168]                                                                                                                               ; Not Calculated          ; Not Calculated       ; No                      ;
 ; Write_Kbd_To_Scope_LCD:Write_Kbd_To_LCD1|scope_info_reg[9][3]                                                                                                                           ; sld_signaltap:auto_signaltap_0|acq_data_in_reg[130]                                                                                                                               ; Not Calculated          ; Not Calculated       ; No                      ;
-; Write_Kbd_To_Scope_LCD:Write_Kbd_To_LCD1|scope_info_reg[2][6]                                                                                                                           ; sld_signaltap:auto_signaltap_0|acq_data_in_reg[92]                                                                                                                                ; Not Calculated          ; Not Calculated       ; No                      ;
 ; Write_Kbd_To_Scope_LCD:Write_Kbd_To_LCD1|scope_info_reg[0][2]                                                                                                                           ; sld_signaltap:auto_signaltap_0|acq_data_in_reg[72]                                                                                                                                ; Not Calculated          ; Not Calculated       ; No                      ;
+; Write_Kbd_To_Scope_LCD:Write_Kbd_To_LCD1|scope_info_reg[2][6]                                                                                                                           ; sld_signaltap:auto_signaltap_0|acq_data_in_reg[92]                                                                                                                                ; Not Calculated          ; Not Calculated       ; No                      ;
 ;                                                                                                                                                                                         ; sld_signaltap:auto_signaltap_0|acq_data_in_reg[61]                                                                                                                                ; Not Calculated          ; Not Calculated       ; No                      ;
 ;                                                                                                                                                                                         ; sld_signaltap:auto_signaltap_0|acq_data_in_reg[196]                                                                                                                               ; Not Calculated          ; Not Calculated       ; No                      ;
 ;                                                                                                                                                                                         ; sld_signaltap:auto_signaltap_0|acq_data_in_reg[253]                                                                                                                               ; Not Calculated          ; Not Calculated       ; No                      ;
@@ -3794,48 +3794,6 @@ Synchronizer Chain #66: Worst-Case MTBF is Not Calculated
 +-------------------------+---------------------------------------------------------------+
 ; Property                ; Value                                                         ;
 +-------------------------+---------------------------------------------------------------+
-; Source Node             ; Write_Kbd_To_Scope_LCD:Write_Kbd_To_LCD1|scope_info_reg[2][3] ;
-; Synchronization Node    ; sld_signaltap:auto_signaltap_0|acq_data_in_reg[89]            ;
-; Worst-Case MTBF (years) ; Not Calculated                                                ;
-; Typical MTBF (years)    ; Not Calculated                                                ;
-; Included in Design MTBF ; No                                                            ;
-+-------------------------+---------------------------------------------------------------+
-
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Statistics                                                                                                                                                                                                                                                                                    ;
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------+--------------+------------------+--------------+
-; Property                                                                                                                                                                                                                    ; Value          ; Clock Period ; Active Edge Rate ; Output Slack ;
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------+--------------+------------------+--------------+
-; Method of Synchronizer Identification                                                                                                                                                                                       ; Automatic      ;              ;                  ;              ;
-; Worst-Case MTBF (years)                                                                                                                                                                                                     ; Not Calculated ;              ;                  ;              ;
-; Typical MTBF (years)                                                                                                                                                                                                        ; Not Calculated ;              ;                  ;              ;
-; Number of Synchronization Registers in Chain                                                                                                                                                                                ; 6              ;              ;                  ;              ;
-; Available Settling Time (ns)                                                                                                                                                                                                ; 188.339        ;              ;                  ;              ;
-; Data Toggle Rate Used in MTBF Calculation (millions of transitions / sec)                                                                                                                                                   ; 3.125          ;              ;                  ;              ;
-; Source Clock                                                                                                                                                                                                                ;                ;              ;                  ;              ;
-;  Write_Kbd_To_Scope_LCD:Write_Kbd_To_LCD1|state[4]                                                                                                                                                                          ;                ; 40.000       ; 25.0 MHz         ;              ;
-; Synchronization Clock                                                                                                                                                                                                       ;                ;              ;                  ;              ;
-;  Generate_Arbitrary_Divided_Clk32:Generate_LCD_scope_Clk|var_clk_div32:Div_Clk|tc_reg                                                                                                                                       ;                ; 40.000       ; 25.0 MHz         ;              ;
-; Asynchronous Source                                                                                                                                                                                                         ;                ;              ;                  ;              ;
-;  Write_Kbd_To_Scope_LCD:Write_Kbd_To_LCD1|scope_info_reg[2][3]                                                                                                                                                              ;                ;              ;                  ;              ;
-; Synchronization Registers                                                                                                                                                                                                   ;                ;              ;                  ;              ;
-;  sld_signaltap:auto_signaltap_0|acq_data_in_reg[89]                                                                                                                                                                         ;                ;              ;                  ; 37.738       ;
-;  sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|acq_data_in_pipe_reg[0][89]                                                                                    ;                ;              ;                  ; 37.692       ;
-;  sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|acq_data_in_pipe_reg[1][89]                                                                                    ;                ;              ;                  ; 37.814       ;
-;  sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|acq_data_in_pipe_reg[2][89]                                                                                    ;                ;              ;                  ; 37.840       ;
-;  sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|acq_data_in_pipe_reg[3][89]                                                                                    ;                ;              ;                  ; 37.255       ;
-;  sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|altsyncram:\stp_non_zero_ram_gen:stp_buffer_ram|altsyncram_88e4:auto_generated|ram_block1a80~porta_datain_reg9 ;                ;              ;                  ; n/a          ;
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------+--------------+------------------+--------------+
-
-
-
-Synchronizer Chain #67: Worst-Case MTBF is Not Calculated
-===============================================================================
-+-----------------------------------------------------------------------------------------+
-; Chain Summary                                                                           ;
-+-------------------------+---------------------------------------------------------------+
-; Property                ; Value                                                         ;
-+-------------------------+---------------------------------------------------------------+
 ; Source Node             ; Write_Kbd_To_Scope_LCD:Write_Kbd_To_LCD1|scope_info_reg[1][0] ;
 ; Synchronization Node    ; sld_signaltap:auto_signaltap_0|acq_data_in_reg[78]            ;
 ; Worst-Case MTBF (years) ; Not Calculated                                                ;
@@ -3868,6 +3826,48 @@ Synchronizer Chain #67: Worst-Case MTBF is Not Calculated
 ;  sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|acq_data_in_pipe_reg[3][78]                                                                                     ;                ;              ;                  ; 37.192       ;
 ;  sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|altsyncram:\stp_non_zero_ram_gen:stp_buffer_ram|altsyncram_88e4:auto_generated|ram_block1a40~porta_datain_reg38 ;                ;              ;                  ; n/a          ;
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------+--------------+------------------+--------------+
+
+
+
+Synchronizer Chain #67: Worst-Case MTBF is Not Calculated
+===============================================================================
++-----------------------------------------------------------------------------------------+
+; Chain Summary                                                                           ;
++-------------------------+---------------------------------------------------------------+
+; Property                ; Value                                                         ;
++-------------------------+---------------------------------------------------------------+
+; Source Node             ; Write_Kbd_To_Scope_LCD:Write_Kbd_To_LCD1|scope_info_reg[2][3] ;
+; Synchronization Node    ; sld_signaltap:auto_signaltap_0|acq_data_in_reg[89]            ;
+; Worst-Case MTBF (years) ; Not Calculated                                                ;
+; Typical MTBF (years)    ; Not Calculated                                                ;
+; Included in Design MTBF ; No                                                            ;
++-------------------------+---------------------------------------------------------------+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Statistics                                                                                                                                                                                                                                                                                    ;
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------+--------------+------------------+--------------+
+; Property                                                                                                                                                                                                                    ; Value          ; Clock Period ; Active Edge Rate ; Output Slack ;
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------+--------------+------------------+--------------+
+; Method of Synchronizer Identification                                                                                                                                                                                       ; Automatic      ;              ;                  ;              ;
+; Worst-Case MTBF (years)                                                                                                                                                                                                     ; Not Calculated ;              ;                  ;              ;
+; Typical MTBF (years)                                                                                                                                                                                                        ; Not Calculated ;              ;                  ;              ;
+; Number of Synchronization Registers in Chain                                                                                                                                                                                ; 6              ;              ;                  ;              ;
+; Available Settling Time (ns)                                                                                                                                                                                                ; 188.339        ;              ;                  ;              ;
+; Data Toggle Rate Used in MTBF Calculation (millions of transitions / sec)                                                                                                                                                   ; 3.125          ;              ;                  ;              ;
+; Source Clock                                                                                                                                                                                                                ;                ;              ;                  ;              ;
+;  Write_Kbd_To_Scope_LCD:Write_Kbd_To_LCD1|state[4]                                                                                                                                                                          ;                ; 40.000       ; 25.0 MHz         ;              ;
+; Synchronization Clock                                                                                                                                                                                                       ;                ;              ;                  ;              ;
+;  Generate_Arbitrary_Divided_Clk32:Generate_LCD_scope_Clk|var_clk_div32:Div_Clk|tc_reg                                                                                                                                       ;                ; 40.000       ; 25.0 MHz         ;              ;
+; Asynchronous Source                                                                                                                                                                                                         ;                ;              ;                  ;              ;
+;  Write_Kbd_To_Scope_LCD:Write_Kbd_To_LCD1|scope_info_reg[2][3]                                                                                                                                                              ;                ;              ;                  ;              ;
+; Synchronization Registers                                                                                                                                                                                                   ;                ;              ;                  ;              ;
+;  sld_signaltap:auto_signaltap_0|acq_data_in_reg[89]                                                                                                                                                                         ;                ;              ;                  ; 37.738       ;
+;  sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|acq_data_in_pipe_reg[0][89]                                                                                    ;                ;              ;                  ; 37.692       ;
+;  sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|acq_data_in_pipe_reg[1][89]                                                                                    ;                ;              ;                  ; 37.814       ;
+;  sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|acq_data_in_pipe_reg[2][89]                                                                                    ;                ;              ;                  ; 37.840       ;
+;  sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|acq_data_in_pipe_reg[3][89]                                                                                    ;                ;              ;                  ; 37.255       ;
+;  sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|altsyncram:\stp_non_zero_ram_gen:stp_buffer_ram|altsyncram_88e4:auto_generated|ram_block1a80~porta_datain_reg9 ;                ;              ;                  ; n/a          ;
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------+--------------+------------------+--------------+
 
 
 
@@ -6622,48 +6622,6 @@ Synchronizer Chain #134: Worst-Case MTBF is Not Calculated
 +-------------------------+---------------------------------------------------------------+
 ; Property                ; Value                                                         ;
 +-------------------------+---------------------------------------------------------------+
-; Source Node             ; Write_Kbd_To_Scope_LCD:Write_Kbd_To_LCD1|scope_info_reg[2][6] ;
-; Synchronization Node    ; sld_signaltap:auto_signaltap_0|acq_data_in_reg[92]            ;
-; Worst-Case MTBF (years) ; Not Calculated                                                ;
-; Typical MTBF (years)    ; Not Calculated                                                ;
-; Included in Design MTBF ; No                                                            ;
-+-------------------------+---------------------------------------------------------------+
-
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Statistics                                                                                                                                                                                                                                                                                     ;
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------+--------------+------------------+--------------+
-; Property                                                                                                                                                                                                                     ; Value          ; Clock Period ; Active Edge Rate ; Output Slack ;
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------+--------------+------------------+--------------+
-; Method of Synchronizer Identification                                                                                                                                                                                        ; Automatic      ;              ;                  ;              ;
-; Worst-Case MTBF (years)                                                                                                                                                                                                      ; Not Calculated ;              ;                  ;              ;
-; Typical MTBF (years)                                                                                                                                                                                                         ; Not Calculated ;              ;                  ;              ;
-; Number of Synchronization Registers in Chain                                                                                                                                                                                 ; 6              ;              ;                  ;              ;
-; Available Settling Time (ns)                                                                                                                                                                                                 ; 188.909        ;              ;                  ;              ;
-; Data Toggle Rate Used in MTBF Calculation (millions of transitions / sec)                                                                                                                                                    ; 3.125          ;              ;                  ;              ;
-; Source Clock                                                                                                                                                                                                                 ;                ;              ;                  ;              ;
-;  Write_Kbd_To_Scope_LCD:Write_Kbd_To_LCD1|state[4]                                                                                                                                                                           ;                ; 40.000       ; 25.0 MHz         ;              ;
-; Synchronization Clock                                                                                                                                                                                                        ;                ;              ;                  ;              ;
-;  Generate_Arbitrary_Divided_Clk32:Generate_LCD_scope_Clk|var_clk_div32:Div_Clk|tc_reg                                                                                                                                        ;                ; 40.000       ; 25.0 MHz         ;              ;
-; Asynchronous Source                                                                                                                                                                                                          ;                ;              ;                  ;              ;
-;  Write_Kbd_To_Scope_LCD:Write_Kbd_To_LCD1|scope_info_reg[2][6]                                                                                                                                                               ;                ;              ;                  ;              ;
-; Synchronization Registers                                                                                                                                                                                                    ;                ;              ;                  ;              ;
-;  sld_signaltap:auto_signaltap_0|acq_data_in_reg[92]                                                                                                                                                                          ;                ;              ;                  ; 37.709       ;
-;  sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|acq_data_in_pipe_reg[0][92]                                                                                     ;                ;              ;                  ; 37.742       ;
-;  sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|acq_data_in_pipe_reg[1][92]                                                                                     ;                ;              ;                  ; 37.867       ;
-;  sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|acq_data_in_pipe_reg[2][92]                                                                                     ;                ;              ;                  ; 38.132       ;
-;  sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|acq_data_in_pipe_reg[3][92]                                                                                     ;                ;              ;                  ; 37.459       ;
-;  sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|altsyncram:\stp_non_zero_ram_gen:stp_buffer_ram|altsyncram_88e4:auto_generated|ram_block1a80~porta_datain_reg12 ;                ;              ;                  ; n/a          ;
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------+--------------+------------------+--------------+
-
-
-
-Synchronizer Chain #135: Worst-Case MTBF is Not Calculated
-===============================================================================
-+-----------------------------------------------------------------------------------------+
-; Chain Summary                                                                           ;
-+-------------------------+---------------------------------------------------------------+
-; Property                ; Value                                                         ;
-+-------------------------+---------------------------------------------------------------+
 ; Source Node             ; Write_Kbd_To_Scope_LCD:Write_Kbd_To_LCD1|scope_info_reg[0][2] ;
 ; Synchronization Node    ; sld_signaltap:auto_signaltap_0|acq_data_in_reg[72]            ;
 ; Worst-Case MTBF (years) ; Not Calculated                                                ;
@@ -6695,6 +6653,48 @@ Synchronizer Chain #135: Worst-Case MTBF is Not Calculated
 ;  sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|acq_data_in_pipe_reg[2][72]                                                                                     ;                ;              ;                  ; 38.074       ;
 ;  sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|acq_data_in_pipe_reg[3][72]                                                                                     ;                ;              ;                  ; 37.413       ;
 ;  sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|altsyncram:\stp_non_zero_ram_gen:stp_buffer_ram|altsyncram_88e4:auto_generated|ram_block1a40~porta_datain_reg32 ;                ;              ;                  ; n/a          ;
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------+--------------+------------------+--------------+
+
+
+
+Synchronizer Chain #135: Worst-Case MTBF is Not Calculated
+===============================================================================
++-----------------------------------------------------------------------------------------+
+; Chain Summary                                                                           ;
++-------------------------+---------------------------------------------------------------+
+; Property                ; Value                                                         ;
++-------------------------+---------------------------------------------------------------+
+; Source Node             ; Write_Kbd_To_Scope_LCD:Write_Kbd_To_LCD1|scope_info_reg[2][6] ;
+; Synchronization Node    ; sld_signaltap:auto_signaltap_0|acq_data_in_reg[92]            ;
+; Worst-Case MTBF (years) ; Not Calculated                                                ;
+; Typical MTBF (years)    ; Not Calculated                                                ;
+; Included in Design MTBF ; No                                                            ;
++-------------------------+---------------------------------------------------------------+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Statistics                                                                                                                                                                                                                                                                                     ;
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------+--------------+------------------+--------------+
+; Property                                                                                                                                                                                                                     ; Value          ; Clock Period ; Active Edge Rate ; Output Slack ;
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------+--------------+------------------+--------------+
+; Method of Synchronizer Identification                                                                                                                                                                                        ; Automatic      ;              ;                  ;              ;
+; Worst-Case MTBF (years)                                                                                                                                                                                                      ; Not Calculated ;              ;                  ;              ;
+; Typical MTBF (years)                                                                                                                                                                                                         ; Not Calculated ;              ;                  ;              ;
+; Number of Synchronization Registers in Chain                                                                                                                                                                                 ; 6              ;              ;                  ;              ;
+; Available Settling Time (ns)                                                                                                                                                                                                 ; 188.909        ;              ;                  ;              ;
+; Data Toggle Rate Used in MTBF Calculation (millions of transitions / sec)                                                                                                                                                    ; 3.125          ;              ;                  ;              ;
+; Source Clock                                                                                                                                                                                                                 ;                ;              ;                  ;              ;
+;  Write_Kbd_To_Scope_LCD:Write_Kbd_To_LCD1|state[4]                                                                                                                                                                           ;                ; 40.000       ; 25.0 MHz         ;              ;
+; Synchronization Clock                                                                                                                                                                                                        ;                ;              ;                  ;              ;
+;  Generate_Arbitrary_Divided_Clk32:Generate_LCD_scope_Clk|var_clk_div32:Div_Clk|tc_reg                                                                                                                                        ;                ; 40.000       ; 25.0 MHz         ;              ;
+; Asynchronous Source                                                                                                                                                                                                          ;                ;              ;                  ;              ;
+;  Write_Kbd_To_Scope_LCD:Write_Kbd_To_LCD1|scope_info_reg[2][6]                                                                                                                                                               ;                ;              ;                  ;              ;
+; Synchronization Registers                                                                                                                                                                                                    ;                ;              ;                  ;              ;
+;  sld_signaltap:auto_signaltap_0|acq_data_in_reg[92]                                                                                                                                                                          ;                ;              ;                  ; 37.709       ;
+;  sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|acq_data_in_pipe_reg[0][92]                                                                                     ;                ;              ;                  ; 37.742       ;
+;  sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|acq_data_in_pipe_reg[1][92]                                                                                     ;                ;              ;                  ; 37.867       ;
+;  sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|acq_data_in_pipe_reg[2][92]                                                                                     ;                ;              ;                  ; 38.132       ;
+;  sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|acq_data_in_pipe_reg[3][92]                                                                                     ;                ;              ;                  ; 37.459       ;
+;  sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|altsyncram:\stp_non_zero_ram_gen:stp_buffer_ram|altsyncram_88e4:auto_generated|ram_block1a80~porta_datain_reg12 ;                ;              ;                  ; n/a          ;
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------+--------------+------------------+--------------+
 
 
@@ -13881,10 +13881,10 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
     Info: Version 14.1.0 Build 186 12/03/2014 SJ Web Edition
-    Info: Processing started: Fri Feb 07 00:40:55 2020
+    Info: Processing started: Sat Feb 08 16:40:14 2020
 Info: Command: quartus_sta simple_ipod_solution -c simple_ipod_solution
 Info: qsta_default_script.tcl version: #3
-Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
+Info (11104): Parallel Compilation has detected 4 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 2 of the 2 physical processors detected instead.
 Info (21077): Low junction temperature is 0 degrees C
 Info (21077): High junction temperature is 85 degrees C
 Info (332164): Evaluating HDL-embedded SDC commands
@@ -14018,9 +14018,9 @@ Info (332114): Report Metastability: Found 291 synchronizer chains.
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 5135 megabytes
-    Info: Processing ended: Fri Feb 07 00:41:33 2020
-    Info: Elapsed time: 00:00:38
-    Info: Total CPU time (on all processors): 00:00:38
+    Info: Peak virtual memory: 5142 megabytes
+    Info: Processing ended: Sat Feb 08 16:41:16 2020
+    Info: Elapsed time: 00:01:02
+    Info: Total CPU time (on all processors): 00:00:55
 
 
