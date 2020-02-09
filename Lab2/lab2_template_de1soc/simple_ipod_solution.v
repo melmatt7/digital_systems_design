@@ -289,11 +289,11 @@ Flash_Read_Synchronizer(
 //output
 .out_sync_sig(sync_CLK_22K));
 
-wire read_sig = 1;
-wire dir = 1;
-wire res = 1;
+wire read_sig;
+wire dir;
+wire res;
 wire[7:0] audio;
-wire address_control_complete;
+wire address_read_complete;
 Flash_Address_Control
 Address_Control(
 //input
@@ -310,8 +310,20 @@ Address_Control(
 .addr(flash_mem_address),
 .outData(audio),
 .byteEnable(flash_mem_byteenable),
-.complete(address_control_complete));
+.complete(address_read_complete));
 
+Keyboard_Control
+Keyboard_Control_Inst(
+//inputs
+.clk(CLK_50M),
+.kbd_data_ready(kbd_data_ready),
+.read_complete(address_read_complete),
+.key_pressed(kbd_received_ascii_code),
+//outputs
+.reset(res),
+.read_signal(read_sig),
+.direction(dir)
+);
 
 Light_Control
 Led_Control(
@@ -617,7 +629,7 @@ speed_reg_control_inst
 );
 
 logic [15:0] scope_sampling_clock_count;
-parameter [15:0] default_scope_sampling_clock_count = 12499; //2KHz
+parameter [15:0] default_scope_sampling_clock_count = 1136; //22KHz
 
 
 always @ (posedge CLK_50M) 

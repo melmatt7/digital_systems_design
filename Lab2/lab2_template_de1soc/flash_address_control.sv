@@ -11,10 +11,13 @@ module Flash_Address_Control (//input
 	output [22:0] addr;
 	output[7:0] outData;
 	
+	parameter last_addr = 23'h7FFFF;
+	parameter first_addr = 23'd0;
+	
 	assign byteEnable = 4'b1111;
 	
 	reg[5:0] state = 6'b0000_00;						
-								        //4321_10
+								        //5432_10
 	parameter idle       	  = 6'b0000_00;
 	parameter read_flash      = 6'b0001_10;
 	parameter wait_data_1     = 6'b0010_00;
@@ -85,14 +88,22 @@ module Flash_Address_Control (//input
 	begin
 		case(state)
 			dec_addr: begin
-				addr <= addr - 23'd1;
-				if (addr <= 0)
-					addr <= 23'h7FFFF;
+				if(restart)
+					addr <= last_addr;
+				else begin
+					addr <= addr - 23'd1;
+					if (addr <= first_addr)
+						addr <= last_addr;
+				end
 			end
 			inc_addr: begin 
-				addr <= addr + 23'd1;
-				if (addr > 23'h7FFFF)
-					addr <= 0;
+				if(restart)
+					addr <= first_addr;
+				else begin
+					addr <= addr + 23'd1;
+					if (addr > last_addr)
+						addr <= first_addr;
+				end
 			end 
 		endcase
 	end
