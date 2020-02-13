@@ -1,0 +1,5 @@
+`default_nettype none
+module Avalon_Read_Flash (//input
+									clk, start, read, waitRequest, dataValid
+									//output 
+									complete);

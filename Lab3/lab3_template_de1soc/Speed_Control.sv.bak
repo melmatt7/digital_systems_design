@@ -1,0 +1,12 @@
+`default_nettype none
+module Speed_Control (//input
+							 clk, button,
+							 //output
+							 div_count);
+	 input clk;
+	 input [3:0] button;
+	 output div_count;
+	 
+	 always_ff(posedge clk) begin
+	 
+	 end

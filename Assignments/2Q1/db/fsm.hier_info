@@ -1,0 +1,22 @@
+|fsm
+state[0] <= state[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+state[1] <= state[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+odd <= odd.DB_MAX_OUTPUT_PORT_TYPE
+even <= Equal2.DB_MAX_OUTPUT_PORT_TYPE
+terminal <= terminal.DB_MAX_OUTPUT_PORT_TYPE
+pause => always0.IN0
+pause => always0.IN0
+pause => state.DATAA
+pause => state.DATAA
+pause => terminal.IN0
+restart => always0.IN1
+restart => state.OUTPUTSELECT
+restart => state.OUTPUTSELECT
+restart => terminal.IN1
+restart => always0.IN1
+clk => state[0]~reg0.CLK
+clk => state[1]~reg0.CLK
+rst => state[0]~reg0.PRESET
+rst => state[1]~reg0.PRESET
+
+

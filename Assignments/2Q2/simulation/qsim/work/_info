@@ -1,0 +1,90 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/UBC/w2019-2020t2/CPEN311/digital_systems_design/Assignments/2Q2/simulation/qsim
+vfsm
+Z1 !s110 1581583842
+!i10b 1
+!s100 7Ilo5Z@bo0nO?Ha=f5mcX2
+II[:k0H>n@oNOen:EW6BHW0
+Z2 V`JN@9S9cnhjKRR_L]QIcM3
+R0
+w1581583841
+8fsm.vo
+Ffsm.vo
+L0 32
+Z3 OV;L;10.3c;59
+r1
+!s85 0
+31
+!s108 1581583842.542000
+!s107 fsm.vo|
+!s90 -work|work|fsm.vo|
+!i113 1
+Z4 o-work work
+vfsm_vlg_check_tst
+R1
+!i10b 1
+!s100 06DH3iHb?J<E_@<DYB9B92
+IL8hJLCLfIUT_ze<WfKNo91
+R2
+R0
+Z5 w1581583839
+Z6 8Flash_Address_Control.vwf.vt
+Z7 FFlash_Address_Control.vwf.vt
+L0 70
+R3
+r1
+!s85 0
+31
+Z8 !s108 1581583842.727000
+Z9 !s107 Flash_Address_Control.vwf.vt|
+Z10 !s90 -work|work|Flash_Address_Control.vwf.vt|
+!i113 1
+R4
+vfsm_vlg_sample_tst
+R1
+!i10b 1
+!s100 R5aFK9]FfiLYi:Fl0nQ8>3
+IFSfS8dcb0b:O=VjGN;BMZ3
+R2
+R0
+R5
+R6
+R7
+L0 30
+R3
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R4
+vfsm_vlg_vec_tst
+R1
+!i10b 1
+!s100 ?L65VT=PG_7oN5dIgPo`a2
+IWN[5gKV[d:dZ?lH0::L_e0
+R2
+R0
+R5
+R6
+R7
+L0 873
+R3
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R4

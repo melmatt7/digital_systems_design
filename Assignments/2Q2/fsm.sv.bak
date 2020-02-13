@@ -1,0 +1,63 @@
+module fsm (state, odd, even, terminal, pause, restart, clk, rst, goto_third, Out1, Out2);
+
+input pause, restart, clk, rst, goto_third;
+
+output odd, even, terminal;
+reg odd, even, terminal;
+
+output [2:0] Out1;
+reg [2:0] Out1;
+output [2:0] Out2;
+reg [2:0] Out2;
+
+output [2:0] state;
+reg [2:0] state;
+
+parameter FIRST = 3'b001;
+parameter SECOND = 3'b010;
+parameter THIRD = 3'b011;
+parameter FOURTH = 3'b100;
+parameter FIFTH = 3'b101;
+
+always_ff @(posedge clk or posedge rst) // sequential
+begin
+	if (rst) state <= FIRST;
+	else
+	begin
+		case(state)
+		FIRST: 	if (restart | pause) state <= FIRST;
+					else state <= SECOND;
+					
+		SECOND:  if (restart) state <= FIRST;
+				   else if (pause) state <= SECOND;
+				   else state <= THIRD;
+					
+		THIRD:   if (!restart & pause) state <= THIRD;
+				   else if (!restart & !pause) state <= FOURTH;
+				   else state <= FIRST;
+					
+		FOURTH:  if (!restart & pause) state <= FOURTH;
+					else if (!restart & !pause) state <= FIFTH;
+				   else state <= FIRST;
+					
+		FIFTH:   if (restart & !goto_third) state <= FIRST;
+					else if (!restart & !goto_third & pause) state <= FIFTH;
+					else if (goto_third) state <= THIRD;
+					else state <= FIFTH;
+					
+		default: state <= FIRST;
+		endcase
+	end
+end
+
+// output logic described using procedural assignment
+always_comb
+begin
+odd = (state == FIRST) | (state == THIRD) | (state == FIFTH);
+even = (state == SECOND) | (state == FOURTH);
+terminal = (state == FIFTH) & (restart & !goto_third);
+end
+
+endmodule
+
+
