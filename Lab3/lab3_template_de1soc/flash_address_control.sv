@@ -16,18 +16,18 @@ module Flash_Address_Control (//input
 	
 	assign byteEnable = 4'b1111;
 	
-	reg[5:0] state = 6'b0000_00;						
-								        //5432_10
-	parameter idle       	  = 6'b0000_000;
-	parameter read_flash      = 6'b0001_010;
-	parameter wait_data_1     = 6'b0010_000;
-	parameter out_data_1      = 6'b0011_100;
-	parameter wait_data_2     = 6'b0100_000;
-	parameter out_data_2      = 6'b0101_100;
-	parameter check_direction = 6'b0110_000;
-	parameter dec_addr		  = 6'b0111_000;
-	parameter inc_addr        = 6'b1000_000;
-	parameter finished        = 6'b1001_001;
+	reg[6:0] state = 7'b0000_000;						
+								        //6543_210
+	parameter idle       	  = 7'b0000_000;
+	parameter read_flash      = 7'b0001_010;
+	parameter wait_data_1     = 7'b0010_000;
+	parameter out_data_1      = 7'b0011_100;
+	parameter wait_data_2     = 7'b0100_000;
+	parameter out_data_2      = 7'b0101_100;
+	parameter check_direction = 7'b0110_000;
+	parameter dec_addr		  = 7'b0111_000;
+	parameter inc_addr        = 7'b1000_000;
+	parameter finished        = 7'b1001_001;
 	
 	assign volume = state[2];
 	assign start_read_flash = state[1];
