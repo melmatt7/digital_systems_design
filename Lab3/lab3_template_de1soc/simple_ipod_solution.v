@@ -1,4 +1,5 @@
 `default_nettype none
+
 module simple_ipod_solution(
 
     //////////// CLOCK //////////
@@ -127,11 +128,11 @@ output                      DRAM_WE_N;
 //=======================================================
 // Input and output declarations
 logic CLK_50M;
-logic  [7:0] LED;
+logic  [9:0] LED;
 logic CLK_27;
 assign CLK_50M =  CLOCK_50;
 assign CLK_27 = TD_CLK27;
-assign LEDR[7:0] = LED[7:0];
+assign LEDR[9:0] = LED[9:0];
 
 //Character definitions
 
@@ -326,7 +327,9 @@ wire read_sig;
 wire dir;
 wire res;
 wire[7:0] audio;
+
 wire address_read_complete;
+wire interrupt_sig;
 Flash_Address_Control
 Address_Control(
 //input
@@ -343,7 +346,8 @@ Address_Control(
 .addr(flash_mem_address),
 .outData(audio),
 .byteEnable(flash_mem_byteenable),
-.complete(address_read_complete));
+.complete(address_read_complete),
+.volume(interrupt_sig));
 
 Keyboard_Control
 Keyboard_Control_Inst(
@@ -357,20 +361,29 @@ Keyboard_Control_Inst(
 .read_signal(read_sig),
 .direction(dir)
 );
-
-Light_Control
-Led_Control(
-.inclk(Clock_1Hz),
-.led(LED));
-
-            
-
-assign Sample_Clk_Signal = Clock_1KHz;
-
 //Audio Generation Signal
 //Note that the audio needs signed data - so convert 1 bit to 8 bits signed
 wire [7:0] audio_data = {(~audio), {7{audio}}}; //generate signed sample audio signal
 
+//=======================================================================================================================
+//
+// Insert your code for Lab3 here!
+//
+//
+
+reg CLK_25;
+ 
+always @(posedge CLK_50M) begin
+	CLK_25 <= !CLK_25;
+end
+
+picoblaze_interface#(.clk_freq_in_hz(25000000)) 
+picoblaze_interface_inst(
+                        .led(LED[9:2]),
+								.led0(LED[0]),
+                        .clk(CLK_25),
+								.input_data(audio_data),
+								.interrupt_sig(interrupt_sig));
 
 
 //======================================================================================
