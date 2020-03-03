@@ -1,0 +1,29 @@
+module s_memory_write(
+	address,
+	clock,
+	data,
+	wren,
+	q);
+
+	reg[5:0] state = 2'b001_001;						
+								         //543_210
+	parameter idle   = 2'b0_0;
+	parameter init   = 2'b1_0;
+
+
+	input	[7:0]  address;
+	input	  clock;
+	input	[7:0]  data;
+	input	  wren;
+	output	[7:0]  q;
+	
+	s_memory
+	s_memory_insta(
+	.address(8'b0),
+	.clock(CLK_50M),
+	.data(8'b1),
+	.wren(1),
+	.q(s_mem_out)
+	);
+	
+endmodule
