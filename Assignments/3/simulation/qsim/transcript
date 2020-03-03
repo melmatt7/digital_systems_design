@@ -1,0 +1,132 @@
+# do shared_access_to_one_state_machine.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 19:36:58 on Mar 01,2020
+# vlog -work work shared_access_to_one_state_machine.vo 
+# -- Compiling module shared_access_to_one_state_machine
+# 
+# Top level modules:
+# 	shared_access_to_one_state_machine
+# End time: 19:36:58 on Mar 01,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 19:36:58 on Mar 01,2020
+# vlog -work work shared_access_to_one_state_machine.vwf.vt 
+# -- Compiling module shared_access_to_one_state_machine_vlg_sample_tst
+# -- Compiling module shared_access_to_one_state_machine_vlg_check_tst
+# -- Compiling module shared_access_to_one_state_machine_vlg_vec_tst
+# 
+# Top level modules:
+# 	shared_access_to_one_state_machine_vlg_vec_tst
+# End time: 19:36:58 on Mar 01,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -c -do "shared_access_to_one_state_machine.do" 
+# Start time: 19:36:58 on Mar 01,2020
+# Loading work.shared_access_to_one_state_machine_vlg_vec_tst
+# Loading work.shared_access_to_one_state_machine
+# Loading altera_ver.dffeas
+# Loading work.shared_access_to_one_state_machine_vlg_sample_tst
+# Loading work.shared_access_to_one_state_machine_vlg_check_tst
+# Loading altera_ver.PRIM_GDFF_LOW
+# ERROR! Vector Mismatch for output port output_arguments[0] :: @time = 10000.000 ps
+#      Expected value = 01011000010110000101100001011000
+#      Real value = 01010011010011010101111101000001
+# ERROR! Vector Mismatch for output port output_arguments[3] :: @time = 10000.000 ps
+#      Expected value = 01011000010110000101100001011000
+#      Real value = 01010011010011010101111101000001
+# ERROR! Vector Mismatch for output port output_arguments[4] :: @time = 10000.000 ps
+#      Expected value = 01011000010110000101100001011000
+#      Real value = 01010011010011010101111101000001
+# ERROR! Vector Mismatch for output port output_arguments[8] :: @time = 10000.000 ps
+#      Expected value = 01011000010110000101100001011000
+#      Real value = 01010011010011010101111101000001
+# ERROR! Vector Mismatch for output port output_arguments[9] :: @time = 10000.000 ps
+#      Expected value = 01011000010110000101100001011000
+#      Real value = 01010011010011010101111101000001
+# ERROR! Vector Mismatch for output port output_arguments[10] :: @time = 10000.000 ps
+#      Expected value = 01011000010110000101100001011000
+#      Real value = 01010011010011010101111101000001
+# ERROR! Vector Mismatch for output port output_arguments[16] :: @time = 10000.000 ps
+#      Expected value = 01011000010110000101100001011000
+#      Real value = 01010011010011010101111101000001
+# ERROR! Vector Mismatch for output port output_arguments[18] :: @time = 10000.000 ps
+#      Expected value = 01011000010110000101100001011000
+#      Real value = 01010011010011010101111101000001
+# ERROR! Vector Mismatch for output port output_arguments[20] :: @time = 10000.000 ps
+#      Expected value = 01011000010110000101100001011000
+#      Real value = 01010011010011010101111101000001
+# ERROR! Vector Mismatch for output port output_arguments[24] :: @time = 10000.000 ps
+#      Expected value = 01011000010110000101100001011000
+#      Real value = 01010011010011010101111101000001
+# ERROR! Vector Mismatch for output port output_arguments[25] :: @time = 10000.000 ps
+#      Expected value = 01011000010110000101100001011000
+#      Real value = 01010011010011010101111101000001
+# ERROR! Vector Mismatch for output port output_arguments[27] :: @time = 10000.000 ps
+#      Expected value = 01011000010110000101100001011000
+#      Real value = 01010011010011010101111101000001
+# ERROR! Vector Mismatch for output port received_data_a[3] :: @time = 10000.000 ps
+#      Expected value = 01011000
+#      Real value = 00000000
+# ERROR! Vector Mismatch for output port received_data_a[4] :: @time = 10000.000 ps
+#      Expected value = 01011000
+#      Real value = 00000000
+# ERROR! Vector Mismatch for output port received_data_a[6] :: @time = 10000.000 ps
+#      Expected value = 01011000
+#      Real value = 00000000
+# ERROR! Vector Mismatch for output port received_data_b[3] :: @time = 10000.000 ps
+#      Expected value = 01011000
+#      Real value = 00000000
+# ERROR! Vector Mismatch for output port received_data_b[4] :: @time = 10000.000 ps
+#      Expected value = 01011000
+#      Real value = 00000000
+# ERROR! Vector Mismatch for output port received_data_b[6] :: @time = 10000.000 ps
+#      Expected value = 01011000
+#      Real value = 00000000
+# ERROR! Vector Mismatch for output port output_arguments[1] :: @time = 20000.000 ps
+#      Expected value = 01011000010110000101100001011000
+#      Real value = 01010011010011010101111101000010
+# ERROR! Vector Mismatch for output port received_data_a[0] :: @time = 120000.000 ps
+#      Expected value = 01011000
+#      Real value = 00110001
+# ERROR! Vector Mismatch for output port received_data_a[5] :: @time = 120000.000 ps
+#      Expected value = 01011000
+#      Real value = 00110001
+# ERROR! Vector Mismatch for output port output_arguments[6] :: @time = 210000.000 ps
+#      Expected value = 01011000010110000101100001011000
+#      Real value = 00000000000000000000000000000000
+# ERROR! Vector Mismatch for output port output_arguments[11] :: @time = 210000.000 ps
+#      Expected value = 01011000010110000101100001011000
+#      Real value = 00000000000000000000000000000000
+# ERROR! Vector Mismatch for output port output_arguments[12] :: @time = 210000.000 ps
+#      Expected value = 01011000010110000101100001011000
+#      Real value = 00000000000000000000000000000000
+# ERROR! Vector Mismatch for output port output_arguments[14] :: @time = 210000.000 ps
+#      Expected value = 01011000010110000101100001011000
+#      Real value = 00000000000000000000000000000000
+# ERROR! Vector Mismatch for output port output_arguments[19] :: @time = 210000.000 ps
+#      Expected value = 01011000010110000101100001011000
+#      Real value = 00000000000000000000000000000000
+# ERROR! Vector Mismatch for output port output_arguments[22] :: @time = 210000.000 ps
+#      Expected value = 01011000010110000101100001011000
+#      Real value = 00000000000000000000000000000000
+# ERROR! Vector Mismatch for output port output_arguments[28] :: @time = 210000.000 ps
+#      Expected value = 01011000010110000101100001011000
+#      Real value = 00000000000000000000000000000000
+# ERROR! Vector Mismatch for output port output_arguments[30] :: @time = 210000.000 ps
+#      Expected value = 01011000010110000101100001011000
+#      Real value = 00000000000000000000000000000000
+# ERROR! Vector Mismatch for output port received_data_b[1] :: @time = 360000.000 ps
+#      Expected value = 01011000
+#      Real value = 00110010
+# ERROR! Vector Mismatch for output port received_data_b[5] :: @time = 360000.000 ps
+#      Expected value = 01011000
+#      Real value = 00110010
+# ERROR! Vector Mismatch for output port received_data_a[1] :: @time = 460000.000 ps
+#      Expected value = 01011000
+#      Real value = 00110010
+#          32 mismatched vectors : Simulation failed !
+# ** Note: $finish    : shared_access_to_one_state_machine.vwf.vt(1383)
+#    Time: 1 us  Iteration: 0  Instance: /shared_access_to_one_state_machine_vlg_vec_tst/tb_out
+# End time: 19:36:59 on Mar 01,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0

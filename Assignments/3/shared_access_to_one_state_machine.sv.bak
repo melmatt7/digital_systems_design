@@ -1,0 +1,18 @@
+module shared_access_to_one_state_machine#(parameter N = 32, parameter M = 8)
+														(	output reg [(N-1):0] output_arguments,
+															output start_target_state_machine,
+															input target_state_machine_finished,
+															input sm_clk,
+															input logic start_request_a,
+															input logic start_request_b,
+															output logic finish_a,
+															output logic finish_b,
+															output logic reset_start_request_a,
+															output logic reset_start_request_b,
+															input [(N-1):0] input_arguments_a,
+															input [(N-1):0] input_arguments_b,
+															output reg [(M-1):0] received_data_a,
+															output reg [(M-1):0] received_data_b,
+															input reset,
+															input [M-1:0] in_received_data
+														);
