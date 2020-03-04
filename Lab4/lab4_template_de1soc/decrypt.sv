@@ -1,0 +1,97 @@
+module decrypt(input logic clk,
+			   input logic decrypt_start,
+			   output logic decrypt_complete,
+			   //init
+			   output logic init_start,
+			   input logic init_complete,
+			   input logic [7:0] address_init,
+			   input logic [7:0] data_init,
+			   input logic wren_init,
+			   //shuffle
+			   output logic shuffle_start,
+			   input logic shuffle_complete,
+			   input logic [7:0] address_shuffle,
+			   input logic [7:0] data_shuffle,
+			   input logic wren_shuffle,
+			   input logic [7:0] q_shuffle,
+			   //compute
+			   output logic compute_start,
+			   input logic compute_complete,
+			   input logic [7:0] address_compute,
+			   input logic [7:0] data_compute,
+			   input logic wren_compute,
+			   input logic [7:0] q_compute,
+			   //output
+			   output logic reg [7:0] address_out,
+			   output logic reg [7:0] data_out,
+			   output logic wren_out,
+			   output logic reg [7:0] q_out);
+
+reg[6:0] state   = 7'b000_0000;	
+
+parameter idle          = 7'b000_0000;
+parameter init_begin    = 7'b001_0001;
+parameter init_end      = 7'b010_0000;
+parameter shuffle_begin = 7'b011_0010;
+parameter shuffle_end   = 7'b100_0000;
+parameter compute_begin = 7'b101_0100;
+parameter compute_end   = 7'b110_0000;
+parameter finish        = 7'b111_1000;
+
+assign init_start       = state[0];
+assign shuffle_start    = state[1];
+assign compute_start    = state[2];
+assign decrypt_complete = state[3];
+
+always_ff @(posedge clk)
+begin
+	case(state) 
+	idle: if (decrypt_start) begin 
+			address_out <= 8'b0;
+			data_out <= 8'b0;
+			wren_out <= 1;
+			q_out <= 8'b0;
+			state <= init;
+		  end
+
+	init_start: begin
+				address_out <= address_init;
+		        data_out <= data_init;
+		        wren_out <= wren_init;
+		        q_out <= 8'b0;
+		        state <= init_end; 
+				end
+
+	init_end: if (init_complete) state <= shuffle_start;
+
+	shuffle_start: begin
+				   address_out <= address_shuffle;
+		           data_out <= data_shuffle;
+		           wren_out <= wren_shuffle;
+		           q_out <= q_shuffle; 
+				   state <= shuffle_end;
+				   end	
+
+	shuffle_end: if (shuffle_complete) state <= compute_start;
+
+	compute_start: begin
+				   address_out <= address_compute;
+		           data_out <= data_compute;
+		           wren_out <= wren_compute;
+		           q_out <= q_compute; 
+				   state <= compute_end;
+				   end
+
+	compute_end: if (shuffle_complete) state <= finish;
+	
+	finish: begin
+		    address_out <= 8'b0;
+			data_out <= 8'b0;
+			wren_out <= 1;
+			q_out <= 8'b0;
+			state <= idle;
+			end
+	endcase
+end
+
+endmodule

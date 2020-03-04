@@ -48,10 +48,12 @@ output           [6:0]      HEX5;
 // Input and output declarations
 logic CLK_50M;
 logic  [9:0] LED;
+logic [9:0] SWITCH;
 logic reset_n;
 assign CLK_50M =  CLOCK_50;
-assign LEDR[9:0] = LED[9:0];
+assign LED[9:0] = LEDR[9:0];
 assign reset_n = KEY[3];
+assign SWITCH = SW[9:0];
 
 wire Clock_1Hz;
 
@@ -60,15 +62,88 @@ wire Clock_1Hz;
 // Insert your code for Lab4 here!
 //
 //
-reg[7:0] s_mem_out;
-wire init_complete;
+reg[23:0] secret_key = {13'b0, SWITCH[9:0]};
 
-s_memory_write
-s_memory_write_insta(
-.init_sig(1),
+wire init_status;
+wire shuffle_status;
+wire compute_status;
+
+reg[8:0] data_init;
+reg[8:0] address_init;
+wire wren_init;
+
+reg[8:0] data_shuffle;
+reg[8:0] address_shuffle;
+wire wren_shuffle;
+reg[8:0] q_shuffle;
+
+reg[8:0] data_compute;
+reg[8:0] address_compute;
+wire wren_compute;
+reg[8:0] q_compute;
+
+reg[8:0] data_out;
+reg[8:0] address_out;
+wire wren_out;
+
+decrypt
+decrypt_insta(
 .clk(CLK_50M),
-.complete(init_complete),
-.q(s_mem_out)
+.decrypt_status(1),
+//init
+.init_status(init_status),
+.address_init(address_init),
+.data_init(data_init),
+.wren_init(wren_init),
+//shuffle
+.shuffle_status(shuffle_status),
+.address_shuffle(address_shuffle),
+.data_shuffle(data_shuffle),
+.wren_shuffle(wren_shuffle),
+.q_shuffle(q_shuffle),
+//compute
+.compute_status(compute_status));
+.address_compute(address_compute),
+.data_compute(data_compute),
+.wren_compute(wren_compute),
+.q_compute(q_compute),
+//output
+.address_out(address_out),
+.data_out(data_out),
+.wren_out(wren_out),
+.q_out(q_out));
+
+init
+init_insta(
+.status(init_status),
+.data(data_init),
+.address(address_init),
+.wren(wren_init),
+);
+
+shuffle
+shuffle_insta(
+.key(secret_key),
+.status(shuffle_status),
+.q(q_shuffle),
+.data(data_shuffle),
+.address(address_shuffle),
+.wren(wren_shuffle));
+
+compute
+compute_insta(
+.status(compute_status),
+.data(data_compute),
+.address(address_compute),
+.wren(wren_compute));
+
+s_memory
+s_memory_insta(
+.clock(clk),
+.address(address_out),
+.data(data_out),
+.wren(wren_out),
+.q(q_out)
 );
 
 //=====================================================================================
