@@ -46,51 +46,61 @@ assign decrypt_complete = state[3];
 always_ff @(posedge clk)
 begin
 	case(state) 
-	idle: if (decrypt_start) begin 
-			address_out <= 8'b0;
-			data_out <= 8'b0;
-			wren_out <= 1;
-			q_out <= 8'b0;
-			state <= init;
-		  end
+	idle: if (decrypt_start) state <= init;
 
-	init_start: begin
-				address_out <= address_init;
-		        data_out <= data_init;
-		        wren_out <= wren_init;
-		        q_out <= 8'b0;
-		        state <= init_end; 
-				end
+	init_start: state <= init_end; 
 
 	init_end: if (init_complete) state <= shuffle_start;
 
-	shuffle_start: begin
-				   address_out <= address_shuffle;
-		           data_out <= data_shuffle;
-		           wren_out <= wren_shuffle;
-		           q_out <= q_shuffle; 
-				   state <= shuffle_end;
-				   end	
+	shuffle_start: state <= shuffle_end;	
 
 	shuffle_end: if (shuffle_complete) state <= compute_start;
 
-	compute_start: begin
-				   address_out <= address_compute;
-		           data_out <= data_compute;
-		           wren_out <= wren_compute;
-		           q_out <= q_compute; 
-				   state <= compute_end;
-				   end
+	compute_start: state <= compute_end;
 
 	compute_end: if (shuffle_complete) state <= finish;
-	
-	finish: begin
-		    address_out <= 8'b0;
-			data_out <= 8'b0;
-			wren_out <= 1;
-			q_out <= 8'b0;
-			state <= idle;
-			end
+
+	finish: state <= idle;
+	endcase
+end
+
+always_ff @(posedge clk)
+begin
+	case(state)
+	idle: if (decrypt_start) begin 
+							 address_out <= 8'b0;
+							 data_out <= 8'b0;
+							 wren_out <= 1;
+							 q_out <= 8'b0;
+							 end
+
+	init_start:              begin
+				             address_out <= address_init;
+		                     data_out <= data_init;
+		                     wren_out <= wren_init;
+		                     q_out <= 8'b0;
+				             end
+
+	shuffle_start:           begin
+				             address_out <= address_shuffle;
+		                     data_out <= data_shuffle;
+		                     wren_out <= wren_shuffle;
+		                     q_out <= q_shuffle; 
+				             end	
+
+	compute_start:           begin
+				             address_out <= address_compute;
+		                     data_out <= data_compute;
+		                     wren_out <= wren_compute;
+		                     q_out <= q_compute; 
+				             end
+
+	finish:                  begin
+		                     address_out <= 8'b0;
+			                 data_out <= 8'b0;
+			                 wren_out <= 1;
+			                 q_out <= 8'b0;
+			                 end
 	endcase
 end
 
