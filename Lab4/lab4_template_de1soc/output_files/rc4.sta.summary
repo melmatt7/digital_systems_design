@@ -3,275 +3,275 @@ TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow 1100mV 85C Model Setup 'CLOCK_50'
-Slack : 8.250
+Slack : 8.829
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Setup 'altera_reserved_tck'
-Slack : 12.410
+Slack : 12.034
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Setup 'Generate_Arbitrary_Divided_Clk32:Gen_2Hz_clk|var_clk_div32:Div_Clk|tc_reg'
-Slack : 14.486
+Slack : 14.887
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Setup 'Generate_Arbitrary_Divided_Clk32:Gen_1KHz_clk|var_clk_div32:Div_Clk|tc_reg'
-Slack : 17.013
+Slack : 16.909
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Hold 'CLOCK_50'
-Slack : 0.287
-TNS   : 0.000
-
-Type  : Slow 1100mV 85C Model Hold 'altera_reserved_tck'
-Slack : 0.517
+Slack : 0.290
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Hold 'Generate_Arbitrary_Divided_Clk32:Gen_1KHz_clk|var_clk_div32:Div_Clk|tc_reg'
-Slack : 0.659
+Slack : 0.551
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'altera_reserved_tck'
+Slack : 0.558
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Hold 'Generate_Arbitrary_Divided_Clk32:Gen_2Hz_clk|var_clk_div32:Div_Clk|tc_reg'
-Slack : 2.717
-TNS   : 0.000
-
-Type  : Slow 1100mV 85C Model Recovery 'speed_down_event_trigger'
-Slack : 4.671
+Slack : 2.697
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Recovery 'speed_up_event_trigger'
-Slack : 4.790
+Slack : 4.778
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Recovery 'speed_down_event_trigger'
+Slack : 5.074
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Recovery 'CLOCK_50'
-Slack : 6.514
+Slack : 5.386
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Recovery 'doublesync:key2_doublsync|reg2'
-Slack : 14.591
+Slack : 13.670
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Recovery 'altera_reserved_tck'
-Slack : 15.627
+Slack : 14.632
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Removal 'CLOCK_50'
-Slack : 0.553
+Slack : 0.843
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Removal 'altera_reserved_tck'
-Slack : 0.824
+Slack : 0.906
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Removal 'doublesync:key2_doublsync|reg2'
-Slack : 3.747
-TNS   : 0.000
-
-Type  : Slow 1100mV 85C Model Removal 'speed_up_event_trigger'
-Slack : 13.429
+Slack : 4.434
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Removal 'speed_down_event_trigger'
-Slack : 13.530
+Slack : 13.185
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Removal 'speed_up_event_trigger'
+Slack : 13.478
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Minimum Pulse Width 'CLOCK_50'
-Slack : 8.857
+Slack : 8.843
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Minimum Pulse Width 'altera_reserved_tck'
-Slack : 15.204
-TNS   : 0.000
-
-Type  : Slow 1100mV 85C Model Minimum Pulse Width 'doublesync:key2_doublsync|reg2'
-Slack : 19.391
-TNS   : 0.000
-
-Type  : Slow 1100mV 85C Model Minimum Pulse Width 'Generate_Arbitrary_Divided_Clk32:Gen_1KHz_clk|var_clk_div32:Div_Clk|tc_reg'
-Slack : 19.406
+Slack : 15.203
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Minimum Pulse Width 'Generate_Arbitrary_Divided_Clk32:Gen_2Hz_clk|var_clk_div32:Div_Clk|tc_reg'
-Slack : 19.406
+Slack : 19.379
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Minimum Pulse Width 'speed_down_event_trigger'
-Slack : 19.406
+Slack : 19.380
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'Generate_Arbitrary_Divided_Clk32:Gen_1KHz_clk|var_clk_div32:Div_Clk|tc_reg'
+Slack : 19.403
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'doublesync:key2_doublsync|reg2'
+Slack : 19.407
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Minimum Pulse Width 'speed_up_event_trigger'
-Slack : 19.406
+Slack : 19.407
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Setup 'CLOCK_50'
-Slack : 8.277
+Slack : 8.867
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Setup 'altera_reserved_tck'
-Slack : 12.507
+Slack : 12.027
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Setup 'Generate_Arbitrary_Divided_Clk32:Gen_2Hz_clk|var_clk_div32:Div_Clk|tc_reg'
-Slack : 14.429
+Slack : 14.795
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Setup 'Generate_Arbitrary_Divided_Clk32:Gen_1KHz_clk|var_clk_div32:Div_Clk|tc_reg'
-Slack : 16.966
+Slack : 16.897
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Hold 'CLOCK_50'
-Slack : 0.045
+Slack : 0.056
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Hold 'altera_reserved_tck'
-Slack : 0.487
+Slack : 0.517
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Hold 'Generate_Arbitrary_Divided_Clk32:Gen_1KHz_clk|var_clk_div32:Div_Clk|tc_reg'
-Slack : 0.644
+Slack : 0.564
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Hold 'Generate_Arbitrary_Divided_Clk32:Gen_2Hz_clk|var_clk_div32:Div_Clk|tc_reg'
-Slack : 2.788
-TNS   : 0.000
-
-Type  : Slow 1100mV 0C Model Recovery 'speed_down_event_trigger'
-Slack : 4.687
+Slack : 2.787
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Recovery 'speed_up_event_trigger'
-Slack : 4.799
+Slack : 4.797
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Recovery 'speed_down_event_trigger'
+Slack : 5.068
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Recovery 'CLOCK_50'
-Slack : 6.480
+Slack : 5.397
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Recovery 'doublesync:key2_doublsync|reg2'
-Slack : 14.560
+Slack : 13.674
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Recovery 'altera_reserved_tck'
-Slack : 15.673
+Slack : 14.718
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Removal 'CLOCK_50'
-Slack : 0.522
+Slack : 0.803
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Removal 'altera_reserved_tck'
-Slack : 0.785
+Slack : 0.850
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Removal 'doublesync:key2_doublsync|reg2'
-Slack : 3.747
-TNS   : 0.000
-
-Type  : Slow 1100mV 0C Model Removal 'speed_up_event_trigger'
-Slack : 13.477
+Slack : 4.409
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Removal 'speed_down_event_trigger'
-Slack : 13.564
+Slack : 13.247
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Removal 'speed_up_event_trigger'
+Slack : 13.521
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Minimum Pulse Width 'CLOCK_50'
-Slack : 8.827
+Slack : 8.834
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Minimum Pulse Width 'altera_reserved_tck'
 Slack : 15.201
 TNS   : 0.000
 
-Type  : Slow 1100mV 0C Model Minimum Pulse Width 'doublesync:key2_doublsync|reg2'
-Slack : 19.376
-TNS   : 0.000
-
 Type  : Slow 1100mV 0C Model Minimum Pulse Width 'speed_down_event_trigger'
-Slack : 19.388
+Slack : 19.362
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Minimum Pulse Width 'Generate_Arbitrary_Divided_Clk32:Gen_2Hz_clk|var_clk_div32:Div_Clk|tc_reg'
-Slack : 19.392
+Slack : 19.366
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'doublesync:key2_doublsync|reg2'
+Slack : 19.397
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Minimum Pulse Width 'speed_up_event_trigger'
-Slack : 19.393
+Slack : 19.397
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Minimum Pulse Width 'Generate_Arbitrary_Divided_Clk32:Gen_1KHz_clk|var_clk_div32:Div_Clk|tc_reg'
-Slack : 19.410
+Slack : 19.400
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Setup 'CLOCK_50'
-Slack : 8.781
+Slack : 8.790
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Setup 'altera_reserved_tck'
-Slack : 14.571
+Slack : 14.399
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Setup 'Generate_Arbitrary_Divided_Clk32:Gen_2Hz_clk|var_clk_div32:Div_Clk|tc_reg'
-Slack : 16.591
+Slack : 16.907
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Setup 'Generate_Arbitrary_Divided_Clk32:Gen_1KHz_clk|var_clk_div32:Div_Clk|tc_reg'
-Slack : 17.807
+Slack : 17.718
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Hold 'CLOCK_50'
-Slack : 0.171
-TNS   : 0.000
-
-Type  : Fast 1100mV 85C Model Hold 'altera_reserved_tck'
-Slack : 0.198
+Slack : 0.178
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Hold 'Generate_Arbitrary_Divided_Clk32:Gen_1KHz_clk|var_clk_div32:Div_Clk|tc_reg'
-Slack : 0.327
+Slack : 0.209
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'altera_reserved_tck'
+Slack : 0.251
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Hold 'Generate_Arbitrary_Divided_Clk32:Gen_2Hz_clk|var_clk_div32:Div_Clk|tc_reg'
-Slack : 1.265
-TNS   : 0.000
-
-Type  : Fast 1100mV 85C Model Recovery 'speed_down_event_trigger'
-Slack : 6.368
-TNS   : 0.000
-
-Type  : Fast 1100mV 85C Model Recovery 'speed_up_event_trigger'
-Slack : 6.477
+Slack : 1.279
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Recovery 'CLOCK_50'
-Slack : 7.208
+Slack : 6.181
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Recovery 'speed_up_event_trigger'
+Slack : 6.444
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Recovery 'speed_down_event_trigger'
+Slack : 6.738
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Recovery 'altera_reserved_tck'
-Slack : 16.456
+Slack : 15.748
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Recovery 'doublesync:key2_doublsync|reg2'
-Slack : 16.713
-TNS   : 0.000
-
-Type  : Fast 1100mV 85C Model Removal 'CLOCK_50'
-Slack : 0.303
+Slack : 16.025
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Removal 'altera_reserved_tck'
-Slack : 0.369
+Slack : 0.447
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Removal 'CLOCK_50'
+Slack : 0.465
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Removal 'doublesync:key2_doublsync|reg2'
-Slack : 1.864
-TNS   : 0.000
-
-Type  : Fast 1100mV 85C Model Removal 'speed_up_event_trigger'
-Slack : 12.185
+Slack : 2.344
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Removal 'speed_down_event_trigger'
-Slack : 12.216
+Slack : 12.014
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Removal 'speed_up_event_trigger'
+Slack : 12.196
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Minimum Pulse Width 'CLOCK_50'
@@ -279,99 +279,99 @@ Slack : 8.529
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Minimum Pulse Width 'altera_reserved_tck'
-Slack : 14.885
+Slack : 14.884
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Minimum Pulse Width 'Generate_Arbitrary_Divided_Clk32:Gen_1KHz_clk|var_clk_div32:Div_Clk|tc_reg'
-Slack : 19.618
+Slack : 19.619
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'Generate_Arbitrary_Divided_Clk32:Gen_2Hz_clk|var_clk_div32:Div_Clk|tc_reg'
+Slack : 19.627
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'speed_down_event_trigger'
+Slack : 19.628
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Minimum Pulse Width 'doublesync:key2_doublsync|reg2'
-Slack : 19.630
+Slack : 19.644
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Minimum Pulse Width 'speed_up_event_trigger'
 Slack : 19.644
 TNS   : 0.000
 
-Type  : Fast 1100mV 85C Model Minimum Pulse Width 'Generate_Arbitrary_Divided_Clk32:Gen_2Hz_clk|var_clk_div32:Div_Clk|tc_reg'
-Slack : 19.646
-TNS   : 0.000
-
-Type  : Fast 1100mV 85C Model Minimum Pulse Width 'speed_down_event_trigger'
-Slack : 19.647
-TNS   : 0.000
-
 Type  : Fast 1100mV 0C Model Setup 'CLOCK_50'
-Slack : 8.765
+Slack : 8.774
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Setup 'altera_reserved_tck'
-Slack : 14.847
+Slack : 14.663
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Setup 'Generate_Arbitrary_Divided_Clk32:Gen_2Hz_clk|var_clk_div32:Div_Clk|tc_reg'
-Slack : 16.766
+Slack : 17.034
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Setup 'Generate_Arbitrary_Divided_Clk32:Gen_1KHz_clk|var_clk_div32:Div_Clk|tc_reg'
-Slack : 17.981
+Slack : 17.913
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Hold 'CLOCK_50'
-Slack : 0.164
-TNS   : 0.000
-
-Type  : Fast 1100mV 0C Model Hold 'altera_reserved_tck'
-Slack : 0.186
+Slack : 0.159
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Hold 'Generate_Arbitrary_Divided_Clk32:Gen_1KHz_clk|var_clk_div32:Div_Clk|tc_reg'
-Slack : 0.281
+Slack : 0.167
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'altera_reserved_tck'
+Slack : 0.229
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Hold 'Generate_Arbitrary_Divided_Clk32:Gen_2Hz_clk|var_clk_div32:Div_Clk|tc_reg'
-Slack : 1.215
-TNS   : 0.000
-
-Type  : Fast 1100mV 0C Model Recovery 'speed_down_event_trigger'
-Slack : 6.464
-TNS   : 0.000
-
-Type  : Fast 1100mV 0C Model Recovery 'speed_up_event_trigger'
-Slack : 6.557
+Slack : 1.232
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Recovery 'CLOCK_50'
-Slack : 7.291
+Slack : 6.420
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Recovery 'speed_up_event_trigger'
+Slack : 6.531
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Recovery 'speed_down_event_trigger'
+Slack : 6.773
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Recovery 'altera_reserved_tck'
-Slack : 16.566
+Slack : 15.953
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Recovery 'doublesync:key2_doublsync|reg2'
-Slack : 16.874
-TNS   : 0.000
-
-Type  : Fast 1100mV 0C Model Removal 'CLOCK_50'
-Slack : 0.277
+Slack : 16.279
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Removal 'altera_reserved_tck'
-Slack : 0.325
+Slack : 0.397
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Removal 'CLOCK_50'
+Slack : 0.421
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Removal 'doublesync:key2_doublsync|reg2'
-Slack : 1.738
-TNS   : 0.000
-
-Type  : Fast 1100mV 0C Model Removal 'speed_up_event_trigger'
-Slack : 12.160
+Slack : 2.161
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Removal 'speed_down_event_trigger'
-Slack : 12.182
+Slack : 12.008
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Removal 'speed_up_event_trigger'
+Slack : 12.165
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Minimum Pulse Width 'CLOCK_50'
@@ -379,27 +379,27 @@ Slack : 8.482
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Minimum Pulse Width 'altera_reserved_tck'
-Slack : 14.855
-TNS   : 0.000
-
-Type  : Fast 1100mV 0C Model Minimum Pulse Width 'Generate_Arbitrary_Divided_Clk32:Gen_1KHz_clk|var_clk_div32:Div_Clk|tc_reg'
-Slack : 19.627
-TNS   : 0.000
-
-Type  : Fast 1100mV 0C Model Minimum Pulse Width 'doublesync:key2_doublsync|reg2'
-Slack : 19.629
+Slack : 14.854
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Minimum Pulse Width 'speed_down_event_trigger'
-Slack : 19.642
+Slack : 19.625
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'Generate_Arbitrary_Divided_Clk32:Gen_2Hz_clk|var_clk_div32:Div_Clk|tc_reg'
+Slack : 19.628
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'Generate_Arbitrary_Divided_Clk32:Gen_1KHz_clk|var_clk_div32:Div_Clk|tc_reg'
+Slack : 19.631
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'doublesync:key2_doublsync|reg2'
+Slack : 19.643
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Minimum Pulse Width 'speed_up_event_trigger'
 Slack : 19.643
-TNS   : 0.000
-
-Type  : Fast 1100mV 0C Model Minimum Pulse Width 'Generate_Arbitrary_Divided_Clk32:Gen_2Hz_clk|var_clk_div32:Div_Clk|tc_reg'
-Slack : 19.645
 TNS   : 0.000
 
 ------------------------------------------------------------

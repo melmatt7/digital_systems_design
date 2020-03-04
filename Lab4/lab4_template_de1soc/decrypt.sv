@@ -13,19 +13,16 @@ module decrypt(input logic clk,
 			   input logic [7:0] address_shuffle,
 			   input logic [7:0] data_shuffle,
 			   input logic wren_shuffle,
-			   input logic [7:0] q_shuffle,
 			   //compute
 			   output logic compute_start,
 			   input logic compute_complete,
 			   input logic [7:0] address_compute,
 			   input logic [7:0] data_compute,
 			   input logic wren_compute,
-			   input logic [7:0] q_compute,
 			   //output
 			   output reg [7:0] address_out,
 			   output reg [7:0] data_out,
-			   output logic wren_out,
-			   output reg [7:0] q_out);
+			   output logic wren_out);
 
 reg[6:0] state   = 7'b000_0000;	
 
@@ -54,13 +51,12 @@ begin
 
 	shuffle_begin: state <= shuffle_end;	
 
-	shuffle_end: if (shuffle_complete) state <= compute_begin;
+	shuffle_end: if (shuffle_complete) state <= finish;
 
 	compute_begin: state <= compute_end;
 
 	compute_end: if (shuffle_complete) state <= finish;
 
-	finish: state <= idle;
 	endcase
 end
 
@@ -71,35 +67,45 @@ begin
 							 address_out <= 8'b0;
 							 data_out <= 8'b0;
 							 wren_out <= 1;
-							 q_out <= q_out;
 							 end
 
 	init_begin:              begin
 				             address_out <= address_init;
 		                     data_out <= data_init;
 		                     wren_out <= wren_init;
-		                     q_out <= q_out;
+				             end
+   init_end:              begin
+				             address_out <= address_init;
+		                     data_out <= data_init;
+		                     wren_out <= wren_init;
 				             end
 
 	shuffle_begin:           begin
 				             address_out <= address_shuffle;
 		                     data_out <= data_shuffle;
 		                     wren_out <= wren_shuffle;
-		                     q_out <= q_shuffle; 
+				             end	
+	shuffle_end:           begin
+				             address_out <= address_shuffle;
+		                     data_out <= data_shuffle;
+		                     wren_out <= wren_shuffle;
 				             end	
 
 	compute_begin:           begin
 				             address_out <= address_compute;
 		                     data_out <= data_compute;
 		                     wren_out <= wren_compute;
-		                     q_out <= q_compute; 
+				             end
+	compute_end:           begin
+				             address_out <= address_compute;
+		                     data_out <= data_compute;
+		                     wren_out <= wren_compute;
 				             end
 
 	finish:                  begin
 		                     address_out <= 8'b0;
 			                 data_out <= 8'b0;
 			                 wren_out <= 1;
-			                 q_out <= q_out;
 			                 end
 	endcase
 end

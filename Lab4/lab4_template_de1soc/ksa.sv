@@ -80,15 +80,14 @@ wire wren_init;
 reg[8:0] data_shuffle;
 reg[8:0] address_shuffle;
 wire wren_shuffle;
-reg[8:0] q_shuffle;
 
 reg[8:0] data_compute;
 reg[8:0] address_compute;
 wire wren_compute;
-reg[8:0] q_compute;
 
 reg[8:0] data_out;
 reg[8:0] address_out;
+reg[8:0] q_out;
 wire wren_out;
 
 decrypt
@@ -108,19 +107,16 @@ decrypt_insta(
 .address_shuffle(address_shuffle),
 .data_shuffle(data_shuffle),
 .wren_shuffle(wren_shuffle),
-.q_shuffle(q_shuffle),
 //compute
 .compute_start(compute_start),
 .compute_complete(compute_complete),
 .address_compute(address_compute),
 .data_compute(data_compute),
 .wren_compute(wren_compute),
-.q_compute(q_compute),
 //output
 .address_out(address_out),
 .data_out(data_out),
-.wren_out(wren_out),
-.q_out(q_out));
+.wren_out(wren_out));
 
 init
 init_insta(
@@ -137,7 +133,7 @@ shuffle_insta(
 .clk(CLK_50M),
 .key(secret_key),
 .start(shuffle_start),
-.q(q_shuffle),
+.q(q_out),
 .data(data_shuffle),
 .address(address_shuffle),
 .wren(wren_shuffle),
