@@ -64,9 +64,15 @@ wire Clock_1Hz;
 //
 reg[23:0] secret_key = {13'b0, SWITCH[9:0]};
 
-wire init_status;
-wire shuffle_status;
-wire compute_status;
+wire decrypt_start;
+wire init_start;
+wire shuffle_start;
+wire compute_start;
+
+wire decrypt_complete;
+wire init_complete;
+wire shuffle_complete;
+wire compute_complete;
 
 reg[8:0] data_init;
 reg[8:0] address_init;
@@ -89,20 +95,24 @@ wire wren_out;
 decrypt
 decrypt_insta(
 .clk(CLK_50M),
-.decrypt_status(1),
+.decrypt_start(1),
+.decrypt_complete(decrypt_complete),
 //init
-.init_status(init_status),
+.init_start(init_start),
+.init_complete(init_complete),
 .address_init(address_init),
 .data_init(data_init),
 .wren_init(wren_init),
 //shuffle
-.shuffle_status(shuffle_status),
+.shuffle_start(shuffle_start),
+.shuffle_complete(shuffle_complete),
 .address_shuffle(address_shuffle),
 .data_shuffle(data_shuffle),
 .wren_shuffle(wren_shuffle),
 .q_shuffle(q_shuffle),
 //compute
-.compute_status(compute_status));
+.compute_start(compute_start),
+.compute_complete(compute_complete),
 .address_compute(address_compute),
 .data_compute(data_compute),
 .wren_compute(wren_compute),
@@ -115,27 +125,32 @@ decrypt_insta(
 
 init
 init_insta(
-.status(init_status),
+.start(init_start),
 .data(data_init),
 .address(address_init),
 .wren(wren_init),
+.complete(init_complete),
 );
 
 shuffle
 shuffle_insta(
 .key(secret_key),
-.status(shuffle_status),
+.start(shuffle_start),
 .q(q_shuffle),
 .data(data_shuffle),
 .address(address_shuffle),
-.wren(wren_shuffle));
+.wren(wren_shuffle)
+.complete(shuffle_complete),
+);
 
 compute
 compute_insta(
-.status(compute_status),
+.start(compute_start),
 .data(data_compute),
 .address(address_compute),
-.wren(wren_compute));
+.wren(wren_compute)
+.complete(compute_complete),
+);
 
 s_memory
 s_memory_insta(
