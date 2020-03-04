@@ -1,11 +1,11 @@
 module compute(
     //inputs
-    start,
+	 clk, start,
     //outputs
     data, address, wren, complete
 );
 
-input start;
+input clk, start;
 
 output [7:0] data;
 output [7:0] address;

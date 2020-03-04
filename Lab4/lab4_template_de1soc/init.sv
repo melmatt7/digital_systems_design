@@ -1,15 +1,16 @@
 module init(
     //inputs
+	clk,
 	start,
     //outputs
     data, address, wren, complete
 );
 
-input start;
+input clk, start;
 
-output [7:0] data;
-output [7:0] address;
-output wren;
+output reg[7:0] data;
+output reg[7:0] address;
+output reg wren;
 output complete;
                            //43_21
 parameter idle          = 5'b00_000;
@@ -22,6 +23,9 @@ reg[7:0] i = 8'b0;
 assign wren         = state[2];
 assign init_write   = state[1];
 assign complete     = state[0];
+
+assign data = i;
+assign address = i;
 
 //state machine
 always_ff @(posedge clk)
@@ -39,17 +43,17 @@ end
 //increment i
 always_ff @(posedge clk)
 begin
-    if(init_write)
+    if(state == initialize)
     begin
-        i = i + 1;
+        i <= i + 1;
     end
 end
 
 //assign data and address as i
-always_comb
-begin
-    data = i[7:0];
-    address = i[7:0];
-end
+//always_comb
+//begin
+//    data = i[7:0];
+//    address = i[7:0];
+//end
 
 endmodule

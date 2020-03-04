@@ -48,12 +48,10 @@ output           [6:0]      HEX5;
 // Input and output declarations
 logic CLK_50M;
 logic  [9:0] LED;
-logic [9:0] SWITCH;
 logic reset_n;
 assign CLK_50M =  CLOCK_50;
 assign LED[9:0] = LEDR[9:0];
 assign reset_n = KEY[3];
-assign SWITCH = SW[9:0];
 
 wire Clock_1Hz;
 
@@ -62,7 +60,8 @@ wire Clock_1Hz;
 // Insert your code for Lab4 here!
 //
 //
-reg[23:0] secret_key = {13'b0, SWITCH[9:0]};
+reg[23:0] secret_key = 24'b0;
+always_comb secret_key[9:0] = SW[9:0];
 
 wire decrypt_start;
 wire init_start;
@@ -125,6 +124,7 @@ decrypt_insta(
 
 init
 init_insta(
+.clk(CLK_50M),
 .start(init_start),
 .data(data_init),
 .address(address_init),
@@ -134,28 +134,30 @@ init_insta(
 
 shuffle
 shuffle_insta(
+.clk(CLK_50M),
 .key(secret_key),
 .start(shuffle_start),
 .q(q_shuffle),
 .data(data_shuffle),
 .address(address_shuffle),
-.wren(wren_shuffle)
+.wren(wren_shuffle),
 .complete(shuffle_complete),
 );
 
 compute
 compute_insta(
+.clk(CLK_50M),
 .start(compute_start),
 .data(data_compute),
 .address(address_compute),
-.wren(wren_compute)
+.wren(wren_compute),
 .complete(compute_complete),
 );
 
 s_memory
 s_memory_insta(
-.clock(clk),
 .address(address_out),
+.clock(CLK_50M),
 .data(data_out),
 .wren(wren_out),
 .q(q_out)
