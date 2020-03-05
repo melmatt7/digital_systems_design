@@ -73,21 +73,21 @@ wire init_complete;
 wire shuffle_complete;
 wire compute_complete;
 
-reg[8:0] data_init;
-reg[8:0] address_init;
+reg[7:0] data_init;
+reg[7:0] address_init;
 wire wren_init;
 
-reg[8:0] data_shuffle;
-reg[8:0] address_shuffle;
+reg[7:0] data_shuffle;
+reg[7:0] address_shuffle;
 wire wren_shuffle;
 
-reg[8:0] data_compute;
-reg[8:0] address_compute;
+reg[7:0] data_compute;
+reg[7:0] address_compute;
 wire wren_compute;
 
-reg[8:0] data_out;
-reg[8:0] address_out;
-reg[8:0] q_out;
+reg[7:0] data_out;
+reg[7:0] address_out;
+reg[7:0] q_out;
 wire wren_out;
 
 decrypt

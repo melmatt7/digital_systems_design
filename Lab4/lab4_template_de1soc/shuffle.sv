@@ -11,7 +11,7 @@ module shuffle(//inputs
 			  );
 			  
 	reg[7:0] state   = 8'b0000_0_0_0_0;						
-	logic [7:0] key_val = 8'b0;
+	reg[7:0] key_val = 8'b0;
 	reg[7:0] j = 8'b0;
 	reg[7:0] i = 8'b0;
 
@@ -19,14 +19,16 @@ module shuffle(//inputs
 	reg[7:0] q_sj = 8'b0;
 								 //7654_3_2_1_0	
 	parameter idle     = 8'b0000_0_0_0_0;
-	parameter read_i   = 8'b0001_0_1_0_0;
-	parameter calc_j   = 8'b0010_0_0_0_0;
-	parameter read_j   = 8'b0011_0_0_0_0;
-	parameter swap_i   = 8'b0100_0_1_1_1;
-	parameter swap_j   = 8'b0101_0_0_0_1;
-	parameter check_i  = 8'b0110_0_0_0_0;
-	parameter incr_i   = 8'b0111_0_0_0_0;
-	parameter finish   = 8'b1000_1_0_0_0;
+	parameter addr_i   = 8'b0001_0_1_0_0;
+	parameter read_i   = 8'b0010_0_1_0_0;
+	parameter calc_j   = 8'b0011_0_0_0_0;
+	parameter addr_j   = 8'b0100_0_0_0_0;
+	parameter read_j   = 8'b0101_0_0_0_0;
+	parameter swap_i   = 8'b0111_0_1_0_1;
+	parameter swap_j   = 8'b1000_0_0_1_1;
+	parameter check_i  = 8'b1001_0_0_0_0;
+	parameter incr_i   = 8'b1010_0_0_0_0;
+	parameter finish   = 8'b1011_1_0_0_0;
 	
 	assign wren = state[0];
 	assign data= state[1] ? q_si : q_sj;
@@ -38,9 +40,13 @@ module shuffle(//inputs
 		case(state) 
 			idle:
 				if(start) state <= read_i;
+			addr_i:
+				state <= read_i;
 			read_i:
 				state <= calc_j;
 			calc_j:
+				state <= read_j;
+			addr_j:
 				state <= read_j;
 			read_j:
 				state <= swap_i;
@@ -55,6 +61,8 @@ module shuffle(//inputs
 				state <= read_i;
 			finish:
 				state <= idle;
+			// default:
+			// 	state <= idle;
 		endcase
 	end
 
@@ -90,10 +98,10 @@ module shuffle(//inputs
 	
 	always_comb
 	begin
-		case(i % 3'd3)
-			3'd0: key_val = key[23:16];
-			3'd1: key_val = key[15:8];
-			3'd2: key_val = key[7:0];
+		case(i % 2'd3)
+			2'd0: key_val = key[23:16];
+			2'd1: key_val = key[15:8];
+			2'd2: key_val = key[7:0];
 			default: key_val = 8'b0;
 		endcase
 	end

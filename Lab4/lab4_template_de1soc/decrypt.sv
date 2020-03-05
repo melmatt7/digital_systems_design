@@ -55,59 +55,84 @@ begin
 
 	compute_begin: state <= compute_end;
 
-	compute_end: if (shuffle_complete) state <= finish;
+	compute_end: if (compute_complete) state <= finish;
 
 	endcase
 end
 
-always_ff @(posedge clk)
+always_comb
 begin
-	case(state)
-	idle: if (decrypt_start) begin 
-							 address_out <= 8'b0;
-							 data_out <= 8'b0;
-							 wren_out <= 1;
+	if (init_start) begin 
+							 address_out <= address_init;
+		                     data_out <= data_init;
+		                     wren_out <= wren_init;
 							 end
 
-	init_begin:              begin
-				             address_out <= address_init;
-		                     data_out <= data_init;
-		                     wren_out <= wren_init;
-				             end
-   init_end:              begin
-				             address_out <= address_init;
-		                     data_out <= data_init;
-		                     wren_out <= wren_init;
-				             end
-
-	shuffle_begin:           begin
+	else if(shuffle_start)              begin
 				             address_out <= address_shuffle;
 		                     data_out <= data_shuffle;
 		                     wren_out <= wren_shuffle;
-				             end	
-	shuffle_end:           begin
-				             address_out <= address_shuffle;
-		                     data_out <= data_shuffle;
-		                     wren_out <= wren_shuffle;
-				             end	
-
-	compute_begin:           begin
+				             end
+	else if(compute_start)              begin
 				             address_out <= address_compute;
 		                     data_out <= data_compute;
 		                     wren_out <= wren_compute;
 				             end
-	compute_end:           begin
-				             address_out <= address_compute;
-		                     data_out <= data_compute;
-		                     wren_out <= wren_compute;
-				             end
-
-	finish:                  begin
+  else                 begin
 		                     address_out <= 8'b0;
 			                 data_out <= 8'b0;
-			                 wren_out <= 1;
+			                 wren_out <= 0;
 			                 end
-	endcase
 end
+
+// always_ff @(posedge clk)
+// begin
+// 	case(state)
+// 	idle: if (decrypt_start) begin 
+// 							 address_out <= 8'b0;
+// 							 data_out <= 8'b0;
+// 							 wren_out <= 1;
+// 							 end
+
+// 	init_begin:              begin
+// 				             address_out <= address_init;
+// 		                     data_out <= data_init;
+// 		                     wren_out <= wren_init;
+// 				             end
+//    init_end:              begin
+// 				             address_out <= address_init;
+// 		                     data_out <= data_init;
+// 		                     wren_out <= wren_init;
+// 				             end
+
+// 	shuffle_begin:           begin
+// 				             address_out <= address_shuffle;
+// 		                     data_out <= data_shuffle;
+// 		                     wren_out <= wren_shuffle;
+// 				             end	
+// 	shuffle_end:           begin
+// 				             address_out <= address_shuffle;
+// 		                     data_out <= data_shuffle;
+// 		                     wren_out <= wren_shuffle;
+// 				             end	
+
+// 	compute_begin:           begin
+// 				             address_out <= address_compute;
+// 		                     data_out <= data_compute;
+// 		                     wren_out <= wren_compute;
+// 				             end
+// 	compute_end:           begin
+// 				             address_out <= address_compute;
+// 		                     data_out <= data_compute;
+// 		                     wren_out <= wren_compute;
+// 				             end
+
+// 	finish:                  begin
+// 		                     address_out <= 8'b0;
+// 			                 data_out <= 8'b0;
+// 			                 wren_out <= 1;
+// 			                 end
+// 	endcase
+// end
 
 endmodule
