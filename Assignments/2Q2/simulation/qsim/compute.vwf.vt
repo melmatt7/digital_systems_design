@@ -1,0 +1,783 @@
+// Copyright (C) 1991-2014 Altera Corporation. All rights reserved.
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, the Altera Quartus II License Agreement,
+// the Altera MegaCore Function License Agreement, or other 
+// applicable license agreement, including, without limitation, 
+// that your use is for the sole purpose of programming logic 
+// devices manufactured by Altera and sold by Altera or its 
+// authorized distributors.  Please refer to the applicable 
+// agreement for further details.
+
+// *****************************************************************************
+// This file contains a Verilog test bench with test vectors .The test vectors  
+// are exported from a vector file in the Quartus Waveform Editor and apply to  
+// the top level entity of the current Quartus project .The user can use this   
+// testbench to simulate his design using a third-party simulation tool .       
+// *****************************************************************************
+// Generated on "03/05/2020 23:37:26"
+                                                                        
+// Verilog Self-Checking Test Bench (with test vectors) for design :    fsm
+// 
+// Simulation tool : 3rd Party
+// 
+
+`timescale 1 ps/ 1 ps
+module fsm_vlg_sample_tst(
+	clk,
+	q,
+	rom_data,
+	start,
+	sampler_tx
+);
+input  clk;
+input [7:0] q;
+input [7:0] rom_data;
+input  start;
+output sampler_tx;
+
+reg sample;
+time current_time;
+always @(clk or q or rom_data or start)
+                                                                                
+begin                                                 
+ if ($realtime > 0)                                   
+ begin                                                
+	if ($realtime == 0 || $realtime != current_time)  
+	begin									          
+		if (sample === 1'bx)                          
+			sample = 0;                               
+		else                                          
+			sample = ~sample;                         
+	end										          
+	current_time = $realtime;					      
+ end                                                  
+end                                                   
+
+assign sampler_tx = sample;
+endmodule
+
+module fsm_vlg_check_tst (
+	address,
+	complete,
+	data,
+	rom_addr,
+	wren,
+	sampler_rx
+);
+input [7:0] address;
+input  complete;
+input [7:0] data;
+input [7:0] rom_addr;
+input  wren;
+input sampler_rx;
+
+reg [7:0] address_expected;
+reg  complete_expected;
+reg [7:0] data_expected;
+reg [7:0] rom_addr_expected;
+reg  wren_expected;
+
+reg [7:0] address_prev;
+reg  complete_prev;
+reg [7:0] data_prev;
+reg [7:0] rom_addr_prev;
+reg  wren_prev;
+
+reg [7:0] address_expected_prev;
+reg  complete_expected_prev;
+reg [7:0] data_expected_prev;
+reg [7:0] rom_addr_expected_prev;
+reg  wren_expected_prev;
+
+reg [7:0] last_address_exp;
+reg  last_complete_exp;
+reg [7:0] last_data_exp;
+reg [7:0] last_rom_addr_exp;
+reg  last_wren_exp;
+
+reg trigger;
+
+integer i;
+integer nummismatches;
+
+reg [1:5] on_first_change ;
+
+
+initial
+begin
+trigger = 0;
+i = 0;
+nummismatches = 0;
+on_first_change = 5'b1;
+end
+
+// update real /o prevs
+
+always @(trigger)
+begin
+	address_prev = address;
+	complete_prev = complete;
+	data_prev = data;
+	rom_addr_prev = rom_addr;
+	wren_prev = wren;
+end
+
+// update expected /o prevs
+
+always @(trigger)
+begin
+	address_expected_prev = address_expected;
+	complete_expected_prev = complete_expected;
+	data_expected_prev = data_expected;
+	rom_addr_expected_prev = rom_addr_expected;
+	wren_expected_prev = wren_expected;
+end
+
+
+
+// expected wren
+initial
+begin
+	wren_expected = 1'bX;
+end 
+// expected address[ 7 ]
+initial
+begin
+	address_expected[7] = 1'bX;
+end 
+// expected address[ 6 ]
+initial
+begin
+	address_expected[6] = 1'bX;
+end 
+// expected address[ 5 ]
+initial
+begin
+	address_expected[5] = 1'bX;
+end 
+// expected address[ 4 ]
+initial
+begin
+	address_expected[4] = 1'bX;
+end 
+// expected address[ 3 ]
+initial
+begin
+	address_expected[3] = 1'bX;
+end 
+// expected address[ 2 ]
+initial
+begin
+	address_expected[2] = 1'bX;
+end 
+// expected address[ 1 ]
+initial
+begin
+	address_expected[1] = 1'bX;
+end 
+// expected address[ 0 ]
+initial
+begin
+	address_expected[0] = 1'bX;
+end 
+
+// expected complete
+initial
+begin
+	complete_expected = 1'bX;
+end 
+// expected rom_addr[ 7 ]
+initial
+begin
+	rom_addr_expected[7] = 1'bX;
+end 
+// expected rom_addr[ 6 ]
+initial
+begin
+	rom_addr_expected[6] = 1'bX;
+end 
+// expected rom_addr[ 5 ]
+initial
+begin
+	rom_addr_expected[5] = 1'bX;
+end 
+// expected rom_addr[ 4 ]
+initial
+begin
+	rom_addr_expected[4] = 1'bX;
+end 
+// expected rom_addr[ 3 ]
+initial
+begin
+	rom_addr_expected[3] = 1'bX;
+end 
+// expected rom_addr[ 2 ]
+initial
+begin
+	rom_addr_expected[2] = 1'bX;
+end 
+// expected rom_addr[ 1 ]
+initial
+begin
+	rom_addr_expected[1] = 1'bX;
+end 
+// expected rom_addr[ 0 ]
+initial
+begin
+	rom_addr_expected[0] = 1'bX;
+end 
+// expected data[ 7 ]
+initial
+begin
+	data_expected[7] = 1'bX;
+end 
+// expected data[ 6 ]
+initial
+begin
+	data_expected[6] = 1'bX;
+end 
+// expected data[ 5 ]
+initial
+begin
+	data_expected[5] = 1'bX;
+end 
+// expected data[ 4 ]
+initial
+begin
+	data_expected[4] = 1'bX;
+end 
+// expected data[ 3 ]
+initial
+begin
+	data_expected[3] = 1'bX;
+end 
+// expected data[ 2 ]
+initial
+begin
+	data_expected[2] = 1'bX;
+end 
+// expected data[ 1 ]
+initial
+begin
+	data_expected[1] = 1'bX;
+end 
+// expected data[ 0 ]
+initial
+begin
+	data_expected[0] = 1'bX;
+end 
+// generate trigger
+always @(address_expected or address or complete_expected or complete or data_expected or data or rom_addr_expected or rom_addr or wren_expected or wren)
+begin
+	trigger <= ~trigger;
+end
+
+always @(posedge sampler_rx or negedge sampler_rx)
+begin
+`ifdef debug_tbench
+	$display("Scanning pattern %d @time = %t",i,$realtime );
+	i = i + 1;
+	$display("| expected address = %b | expected complete = %b | expected data = %b | expected rom_addr = %b | expected wren = %b | ",address_expected_prev,complete_expected_prev,data_expected_prev,rom_addr_expected_prev,wren_expected_prev);
+	$display("| real address = %b | real complete = %b | real data = %b | real rom_addr = %b | real wren = %b | ",address_prev,complete_prev,data_prev,rom_addr_prev,wren_prev);
+`endif
+	if (
+		( address_expected_prev[0] !== 1'bx ) && ( address_prev[0] !== address_expected_prev[0] )
+		&& ((address_expected_prev[0] !== last_address_exp[0]) ||
+			on_first_change[1])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port address[0] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", address_expected_prev);
+		$display ("     Real value = %b", address_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[1] = 1'b0;
+		last_address_exp[0] = address_expected_prev[0];
+	end
+	if (
+		( address_expected_prev[1] !== 1'bx ) && ( address_prev[1] !== address_expected_prev[1] )
+		&& ((address_expected_prev[1] !== last_address_exp[1]) ||
+			on_first_change[1])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port address[1] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", address_expected_prev);
+		$display ("     Real value = %b", address_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[1] = 1'b0;
+		last_address_exp[1] = address_expected_prev[1];
+	end
+	if (
+		( address_expected_prev[2] !== 1'bx ) && ( address_prev[2] !== address_expected_prev[2] )
+		&& ((address_expected_prev[2] !== last_address_exp[2]) ||
+			on_first_change[1])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port address[2] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", address_expected_prev);
+		$display ("     Real value = %b", address_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[1] = 1'b0;
+		last_address_exp[2] = address_expected_prev[2];
+	end
+	if (
+		( address_expected_prev[3] !== 1'bx ) && ( address_prev[3] !== address_expected_prev[3] )
+		&& ((address_expected_prev[3] !== last_address_exp[3]) ||
+			on_first_change[1])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port address[3] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", address_expected_prev);
+		$display ("     Real value = %b", address_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[1] = 1'b0;
+		last_address_exp[3] = address_expected_prev[3];
+	end
+	if (
+		( address_expected_prev[4] !== 1'bx ) && ( address_prev[4] !== address_expected_prev[4] )
+		&& ((address_expected_prev[4] !== last_address_exp[4]) ||
+			on_first_change[1])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port address[4] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", address_expected_prev);
+		$display ("     Real value = %b", address_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[1] = 1'b0;
+		last_address_exp[4] = address_expected_prev[4];
+	end
+	if (
+		( address_expected_prev[5] !== 1'bx ) && ( address_prev[5] !== address_expected_prev[5] )
+		&& ((address_expected_prev[5] !== last_address_exp[5]) ||
+			on_first_change[1])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port address[5] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", address_expected_prev);
+		$display ("     Real value = %b", address_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[1] = 1'b0;
+		last_address_exp[5] = address_expected_prev[5];
+	end
+	if (
+		( address_expected_prev[6] !== 1'bx ) && ( address_prev[6] !== address_expected_prev[6] )
+		&& ((address_expected_prev[6] !== last_address_exp[6]) ||
+			on_first_change[1])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port address[6] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", address_expected_prev);
+		$display ("     Real value = %b", address_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[1] = 1'b0;
+		last_address_exp[6] = address_expected_prev[6];
+	end
+	if (
+		( address_expected_prev[7] !== 1'bx ) && ( address_prev[7] !== address_expected_prev[7] )
+		&& ((address_expected_prev[7] !== last_address_exp[7]) ||
+			on_first_change[1])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port address[7] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", address_expected_prev);
+		$display ("     Real value = %b", address_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[1] = 1'b0;
+		last_address_exp[7] = address_expected_prev[7];
+	end
+	if (
+		( complete_expected_prev !== 1'bx ) && ( complete_prev !== complete_expected_prev )
+		&& ((complete_expected_prev !== last_complete_exp) ||
+			on_first_change[2])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port complete :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", complete_expected_prev);
+		$display ("     Real value = %b", complete_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[2] = 1'b0;
+		last_complete_exp = complete_expected_prev;
+	end
+	if (
+		( data_expected_prev[0] !== 1'bx ) && ( data_prev[0] !== data_expected_prev[0] )
+		&& ((data_expected_prev[0] !== last_data_exp[0]) ||
+			on_first_change[3])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port data[0] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", data_expected_prev);
+		$display ("     Real value = %b", data_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[3] = 1'b0;
+		last_data_exp[0] = data_expected_prev[0];
+	end
+	if (
+		( data_expected_prev[1] !== 1'bx ) && ( data_prev[1] !== data_expected_prev[1] )
+		&& ((data_expected_prev[1] !== last_data_exp[1]) ||
+			on_first_change[3])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port data[1] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", data_expected_prev);
+		$display ("     Real value = %b", data_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[3] = 1'b0;
+		last_data_exp[1] = data_expected_prev[1];
+	end
+	if (
+		( data_expected_prev[2] !== 1'bx ) && ( data_prev[2] !== data_expected_prev[2] )
+		&& ((data_expected_prev[2] !== last_data_exp[2]) ||
+			on_first_change[3])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port data[2] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", data_expected_prev);
+		$display ("     Real value = %b", data_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[3] = 1'b0;
+		last_data_exp[2] = data_expected_prev[2];
+	end
+	if (
+		( data_expected_prev[3] !== 1'bx ) && ( data_prev[3] !== data_expected_prev[3] )
+		&& ((data_expected_prev[3] !== last_data_exp[3]) ||
+			on_first_change[3])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port data[3] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", data_expected_prev);
+		$display ("     Real value = %b", data_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[3] = 1'b0;
+		last_data_exp[3] = data_expected_prev[3];
+	end
+	if (
+		( data_expected_prev[4] !== 1'bx ) && ( data_prev[4] !== data_expected_prev[4] )
+		&& ((data_expected_prev[4] !== last_data_exp[4]) ||
+			on_first_change[3])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port data[4] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", data_expected_prev);
+		$display ("     Real value = %b", data_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[3] = 1'b0;
+		last_data_exp[4] = data_expected_prev[4];
+	end
+	if (
+		( data_expected_prev[5] !== 1'bx ) && ( data_prev[5] !== data_expected_prev[5] )
+		&& ((data_expected_prev[5] !== last_data_exp[5]) ||
+			on_first_change[3])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port data[5] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", data_expected_prev);
+		$display ("     Real value = %b", data_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[3] = 1'b0;
+		last_data_exp[5] = data_expected_prev[5];
+	end
+	if (
+		( data_expected_prev[6] !== 1'bx ) && ( data_prev[6] !== data_expected_prev[6] )
+		&& ((data_expected_prev[6] !== last_data_exp[6]) ||
+			on_first_change[3])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port data[6] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", data_expected_prev);
+		$display ("     Real value = %b", data_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[3] = 1'b0;
+		last_data_exp[6] = data_expected_prev[6];
+	end
+	if (
+		( data_expected_prev[7] !== 1'bx ) && ( data_prev[7] !== data_expected_prev[7] )
+		&& ((data_expected_prev[7] !== last_data_exp[7]) ||
+			on_first_change[3])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port data[7] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", data_expected_prev);
+		$display ("     Real value = %b", data_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[3] = 1'b0;
+		last_data_exp[7] = data_expected_prev[7];
+	end
+	if (
+		( rom_addr_expected_prev[0] !== 1'bx ) && ( rom_addr_prev[0] !== rom_addr_expected_prev[0] )
+		&& ((rom_addr_expected_prev[0] !== last_rom_addr_exp[0]) ||
+			on_first_change[4])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port rom_addr[0] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", rom_addr_expected_prev);
+		$display ("     Real value = %b", rom_addr_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[4] = 1'b0;
+		last_rom_addr_exp[0] = rom_addr_expected_prev[0];
+	end
+	if (
+		( rom_addr_expected_prev[1] !== 1'bx ) && ( rom_addr_prev[1] !== rom_addr_expected_prev[1] )
+		&& ((rom_addr_expected_prev[1] !== last_rom_addr_exp[1]) ||
+			on_first_change[4])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port rom_addr[1] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", rom_addr_expected_prev);
+		$display ("     Real value = %b", rom_addr_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[4] = 1'b0;
+		last_rom_addr_exp[1] = rom_addr_expected_prev[1];
+	end
+	if (
+		( rom_addr_expected_prev[2] !== 1'bx ) && ( rom_addr_prev[2] !== rom_addr_expected_prev[2] )
+		&& ((rom_addr_expected_prev[2] !== last_rom_addr_exp[2]) ||
+			on_first_change[4])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port rom_addr[2] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", rom_addr_expected_prev);
+		$display ("     Real value = %b", rom_addr_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[4] = 1'b0;
+		last_rom_addr_exp[2] = rom_addr_expected_prev[2];
+	end
+	if (
+		( rom_addr_expected_prev[3] !== 1'bx ) && ( rom_addr_prev[3] !== rom_addr_expected_prev[3] )
+		&& ((rom_addr_expected_prev[3] !== last_rom_addr_exp[3]) ||
+			on_first_change[4])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port rom_addr[3] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", rom_addr_expected_prev);
+		$display ("     Real value = %b", rom_addr_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[4] = 1'b0;
+		last_rom_addr_exp[3] = rom_addr_expected_prev[3];
+	end
+	if (
+		( rom_addr_expected_prev[4] !== 1'bx ) && ( rom_addr_prev[4] !== rom_addr_expected_prev[4] )
+		&& ((rom_addr_expected_prev[4] !== last_rom_addr_exp[4]) ||
+			on_first_change[4])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port rom_addr[4] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", rom_addr_expected_prev);
+		$display ("     Real value = %b", rom_addr_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[4] = 1'b0;
+		last_rom_addr_exp[4] = rom_addr_expected_prev[4];
+	end
+	if (
+		( rom_addr_expected_prev[5] !== 1'bx ) && ( rom_addr_prev[5] !== rom_addr_expected_prev[5] )
+		&& ((rom_addr_expected_prev[5] !== last_rom_addr_exp[5]) ||
+			on_first_change[4])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port rom_addr[5] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", rom_addr_expected_prev);
+		$display ("     Real value = %b", rom_addr_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[4] = 1'b0;
+		last_rom_addr_exp[5] = rom_addr_expected_prev[5];
+	end
+	if (
+		( rom_addr_expected_prev[6] !== 1'bx ) && ( rom_addr_prev[6] !== rom_addr_expected_prev[6] )
+		&& ((rom_addr_expected_prev[6] !== last_rom_addr_exp[6]) ||
+			on_first_change[4])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port rom_addr[6] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", rom_addr_expected_prev);
+		$display ("     Real value = %b", rom_addr_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[4] = 1'b0;
+		last_rom_addr_exp[6] = rom_addr_expected_prev[6];
+	end
+	if (
+		( rom_addr_expected_prev[7] !== 1'bx ) && ( rom_addr_prev[7] !== rom_addr_expected_prev[7] )
+		&& ((rom_addr_expected_prev[7] !== last_rom_addr_exp[7]) ||
+			on_first_change[4])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port rom_addr[7] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", rom_addr_expected_prev);
+		$display ("     Real value = %b", rom_addr_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[4] = 1'b0;
+		last_rom_addr_exp[7] = rom_addr_expected_prev[7];
+	end
+	if (
+		( wren_expected_prev !== 1'bx ) && ( wren_prev !== wren_expected_prev )
+		&& ((wren_expected_prev !== last_wren_exp) ||
+			on_first_change[5])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port wren :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", wren_expected_prev);
+		$display ("     Real value = %b", wren_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[5] = 1'b0;
+		last_wren_exp = wren_expected_prev;
+	end
+
+	trigger <= ~trigger;
+end
+initial 
+
+begin 
+$timeformat(-12,3," ps",6);
+#1000000;
+if (nummismatches > 0)
+	$display ("%d mismatched vectors : Simulation failed !",nummismatches);
+else
+	$display ("Simulation passed !");
+$finish;
+end 
+endmodule
+
+module fsm_vlg_vec_tst();
+// constants                                           
+// general purpose registers
+reg clk;
+reg [7:0] q;
+reg [7:0] rom_data;
+reg start;
+// wires                                               
+wire [7:0] address;
+wire complete;
+wire [7:0] data;
+wire [7:0] rom_addr;
+wire wren;
+
+wire sampler;                             
+
+// assign statements (if any)                          
+fsm i1 (
+// port map - connection between master ports and signals/registers   
+	.address(address),
+	.clk(clk),
+	.complete(complete),
+	.data(data),
+	.q(q),
+	.rom_addr(rom_addr),
+	.rom_data(rom_data),
+	.start(start),
+	.wren(wren)
+);
+
+// clk
+always
+begin
+	clk = 1'b0;
+	clk = #10000 1'b1;
+	#10000;
+end 
+
+// start
+initial
+begin
+	start = 1'b1;
+end 
+// q[ 7 ]
+initial
+begin
+	q[7] = 1'b0;
+end 
+// q[ 6 ]
+initial
+begin
+	q[6] = 1'b0;
+end 
+// q[ 5 ]
+initial
+begin
+	q[5] = 1'b1;
+end 
+// q[ 4 ]
+initial
+begin
+	q[4] = 1'b1;
+end 
+// q[ 3 ]
+initial
+begin
+	q[3] = 1'b0;
+end 
+// q[ 2 ]
+initial
+begin
+	q[2] = 1'b0;
+end 
+// q[ 1 ]
+initial
+begin
+	q[1] = 1'b0;
+end 
+// q[ 0 ]
+initial
+begin
+	q[0] = 1'b1;
+end 
+// rom_data[ 7 ]
+initial
+begin
+	rom_data[7] = 1'b0;
+end 
+// rom_data[ 6 ]
+initial
+begin
+	rom_data[6] = 1'b0;
+end 
+// rom_data[ 5 ]
+initial
+begin
+	rom_data[5] = 1'b1;
+end 
+// rom_data[ 4 ]
+initial
+begin
+	rom_data[4] = 1'b1;
+end 
+// rom_data[ 3 ]
+initial
+begin
+	rom_data[3] = 1'b0;
+end 
+// rom_data[ 2 ]
+initial
+begin
+	rom_data[2] = 1'b0;
+end 
+// rom_data[ 1 ]
+initial
+begin
+	rom_data[1] = 1'b1;
+end 
+// rom_data[ 0 ]
+initial
+begin
+	rom_data[0] = 1'b0;
+end 
+
+fsm_vlg_sample_tst tb_sample (
+	.clk(clk),
+	.q(q),
+	.rom_data(rom_data),
+	.start(start),
+	.sampler_tx(sampler)
+);
+
+fsm_vlg_check_tst tb_out(
+	.address(address),
+	.complete(complete),
+	.data(data),
+	.rom_addr(rom_addr),
+	.wren(wren),
+	.sampler_rx(sampler)
+);
+endmodule
+
