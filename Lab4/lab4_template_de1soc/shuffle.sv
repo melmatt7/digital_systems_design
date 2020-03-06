@@ -58,7 +58,7 @@ module shuffle(//inputs
 			swap_j:
 				state <= check_i;
 			check_i:
-				if(i > 8'hFE) state <= finish;
+				if(i == 8'hFF) state <= finish;
 				else state <= incr_i;
 			incr_i:
 				state <= addr_i;

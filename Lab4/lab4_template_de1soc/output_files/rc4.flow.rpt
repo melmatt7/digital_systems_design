@@ -1,9 +1,5 @@
 Flow report for rc4
-<<<<<<< HEAD
-Thu Mar 05 16:25:10 2020
-=======
-Thu Mar 05 16:20:38 2020
->>>>>>> 48679a2f2b1ad05ce37b293fde52e8a64b6dc1af
+Thu Mar 05 16:39:37 2020
 Quartus II 64-Bit Version 14.1.0 Build 186 12/03/2014 SJ Web Edition
 
 
@@ -42,50 +38,29 @@ agreement for further details.
 
 
 
-<<<<<<< HEAD
-+--------------------------------------------------------------------------+
-; Flow Summary                                                             ;
-+-----------------------------+--------------------------------------------+
-; Flow Status                 ; Flow Failed - Thu Mar 05 16:25:10 2020     ;
-; Quartus II 64-Bit Version   ; 14.1.0 Build 186 12/03/2014 SJ Web Edition ;
-; Revision Name               ; rc4                                        ;
-; Top-level Entity Name       ; ksa                                        ;
-; Family                      ; Cyclone V                                  ;
-; Device                      ; 5CSEMA5F31C6                               ;
-; Timing Models               ; Final                                      ;
-; Logic utilization (in ALMs) ; N/A until Partition Merge                  ;
-; Total registers             ; N/A until Partition Merge                  ;
-; Total pins                  ; N/A until Partition Merge                  ;
-; Total virtual pins          ; N/A until Partition Merge                  ;
-; Total block memory bits     ; N/A until Partition Merge                  ;
-; Total PLLs                  ; N/A until Partition Merge                  ;
-; Total DLLs                  ; N/A until Partition Merge                  ;
-+-----------------------------+--------------------------------------------+
-=======
 +------------------------------------------------------------------------------+
 ; Flow Summary                                                                 ;
 +---------------------------------+--------------------------------------------+
-; Flow Status                     ; Successful - Thu Mar 05 16:20:38 2020      ;
+; Flow Status                     ; Successful - Thu Mar 05 16:39:19 2020      ;
 ; Quartus II 64-Bit Version       ; 14.1.0 Build 186 12/03/2014 SJ Web Edition ;
 ; Revision Name                   ; rc4                                        ;
 ; Top-level Entity Name           ; ksa                                        ;
 ; Family                          ; Cyclone V                                  ;
 ; Device                          ; 5CSEMA5F31C6                               ;
 ; Timing Models                   ; Final                                      ;
-; Logic utilization (in ALMs)     ; N/A                                        ;
-; Total registers                 ; 335                                        ;
-; Total pins                      ; 67                                         ;
+; Logic utilization (in ALMs)     ; 305 / 32,070 ( < 1 % )                     ;
+; Total registers                 ; 372                                        ;
+; Total pins                      ; 69 / 457 ( 15 % )                          ;
 ; Total virtual pins              ; 0                                          ;
-; Total block memory bits         ; 2,048                                      ;
-; Total DSP Blocks                ; 0                                          ;
+; Total block memory bits         ; 2,048 / 4,065,280 ( < 1 % )                ;
+; Total DSP Blocks                ; 0 / 87 ( 0 % )                             ;
 ; Total HSSI RX PCSs              ; 0                                          ;
 ; Total HSSI PMA RX Deserializers ; 0                                          ;
 ; Total HSSI TX PCSs              ; 0                                          ;
 ; Total HSSI PMA TX Serializers   ; 0                                          ;
-; Total PLLs                      ; 0                                          ;
-; Total DLLs                      ; 0                                          ;
+; Total PLLs                      ; 0 / 6 ( 0 % )                              ;
+; Total DLLs                      ; 0 / 4 ( 0 % )                              ;
 +---------------------------------+--------------------------------------------+
->>>>>>> 48679a2f2b1ad05ce37b293fde52e8a64b6dc1af
 
 
 +-----------------------------------------+
@@ -93,11 +68,7 @@ agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-<<<<<<< HEAD
-; Start date & time ; 03/05/2020 16:24:40 ;
-=======
-; Start date & time ; 03/05/2020 16:19:51 ;
->>>>>>> 48679a2f2b1ad05ce37b293fde52e8a64b6dc1af
+; Start date & time ; 03/05/2020 16:36:49 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; rc4                 ;
 +-------------------+---------------------+
@@ -111,11 +82,7 @@ agreement for further details.
 ; AUTO_RAM_RECOGNITION                              ; Off                                   ; On                 ; --          ; --         ;
 ; AUTO_ROM_RECOGNITION                              ; Off                                   ; On                 ; --          ; --         ;
 ; BLOCK_RAM_AND_MLAB_EQUIVALENT_POWER_UP_CONDITIONS ; Care                                  ; Auto               ; --          ; --         ;
-<<<<<<< HEAD
-; COMPILER_SIGNATURE_ID                             ; 198660153391158.158345428003464       ; --                 ; --          ; --         ;
-=======
-; COMPILER_SIGNATURE_ID                             ; 207273073892032.158345399103852       ; --                 ; --          ; --         ;
->>>>>>> 48679a2f2b1ad05ce37b293fde52e8a64b6dc1af
+; COMPILER_SIGNATURE_ID                             ; 198660153391158.158345500924068       ; --                 ; --          ; --         ;
 ; EXTRACT_VERILOG_STATE_MACHINES                    ; Off                                   ; On                 ; --          ; --         ;
 ; EXTRACT_VHDL_STATE_MACHINES                       ; Off                                   ; On                 ; --          ; --         ;
 ; FITTER_EFFORT                                     ; Standard Fit                          ; Auto Fit           ; --          ; --         ;
@@ -142,38 +109,38 @@ agreement for further details.
 +---------------------------------------------------+---------------------------------------+--------------------+-------------+------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------+
-; Flow Elapsed Time                                                                                                        ;
-+----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
-+----------------------+--------------+-------------------------+---------------------+------------------------------------+
-<<<<<<< HEAD
-; Analysis & Synthesis ; 00:00:33     ; 1.0                     ; 4812 MB             ; 00:00:38                           ;
-; Total                ; 00:00:33     ; --                      ; --                  ; 00:00:38                           ;
-=======
-; Analysis & Synthesis ; 00:00:46     ; 1.0                     ; 4885 MB             ; 00:01:26                           ;
-; Total                ; 00:00:46     ; --                      ; --                  ; 00:01:26                           ;
->>>>>>> 48679a2f2b1ad05ce37b293fde52e8a64b6dc1af
-+----------------------+--------------+-------------------------+---------------------+------------------------------------+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                             ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis      ; 00:00:38     ; 1.0                     ; 4904 MB             ; 00:01:11                           ;
+; Fitter                    ; 00:01:28     ; 1.2                     ; 6516 MB             ; 00:02:12                           ;
+; Assembler                 ; 00:00:16     ; 1.0                     ; 4864 MB             ; 00:00:15                           ;
+; TimeQuest Timing Analyzer ; 00:00:16     ; 1.2                     ; 5194 MB             ; 00:00:15                           ;
+; Total                     ; 00:02:38     ; --                      ; --                  ; 00:03:53                           ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
-+-----------------------------------------------------------------------------------+
-; Flow OS Summary                                                                   ;
-+----------------------+------------------+-----------+------------+----------------+
-; Module Name          ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
-+----------------------+------------------+-----------+------------+----------------+
-<<<<<<< HEAD
-; Analysis & Synthesis ; DESKTOP-M62LUTM  ; Windows 7 ; 6.2        ; x86_64         ;
-=======
-; Analysis & Synthesis ; DESKTOP-AIQJCJE  ; Windows 7 ; 6.2        ; x86_64         ;
->>>>>>> 48679a2f2b1ad05ce37b293fde52e8a64b6dc1af
-+----------------------+------------------+-----------+------------+----------------+
++----------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                        ;
++---------------------------+------------------+-----------+------------+----------------+
+; Module Name               ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
++---------------------------+------------------+-----------+------------+----------------+
+; Analysis & Synthesis      ; DESKTOP-M62LUTM  ; Windows 7 ; 6.2        ; x86_64         ;
+; Fitter                    ; DESKTOP-M62LUTM  ; Windows 7 ; 6.2        ; x86_64         ;
+; Assembler                 ; DESKTOP-M62LUTM  ; Windows 7 ; 6.2        ; x86_64         ;
+; TimeQuest Timing Analyzer ; DESKTOP-M62LUTM  ; Windows 7 ; 6.2        ; x86_64         ;
++---------------------------+------------------+-----------+------------+----------------+
 
 
 ------------
 ; Flow Log ;
 ------------
 quartus_map --read_settings_files=on --write_settings_files=off rc4 -c rc4
+quartus_fit --read_settings_files=off --write_settings_files=off rc4 -c rc4
+quartus_asm --read_settings_files=off --write_settings_files=off rc4 -c rc4
+quartus_sta rc4 -c rc4
 
 
 

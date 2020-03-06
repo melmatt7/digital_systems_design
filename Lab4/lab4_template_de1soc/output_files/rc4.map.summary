@@ -1,23 +1,10 @@
-<<<<<<< HEAD
-Analysis & Synthesis Status : Failed - Thu Mar 05 16:25:10 2020
-=======
-Analysis & Synthesis Status : Successful - Thu Mar 05 16:20:38 2020
->>>>>>> 48679a2f2b1ad05ce37b293fde52e8a64b6dc1af
+Analysis & Synthesis Status : Successful - Thu Mar 05 16:37:27 2020
 Quartus II 64-Bit Version : 14.1.0 Build 186 12/03/2014 SJ Web Edition
 Revision Name : rc4
 Top-level Entity Name : ksa
 Family : Cyclone V
-<<<<<<< HEAD
-Logic utilization (in ALMs) : N/A until Partition Merge
-Total registers : N/A until Partition Merge
-Total pins : N/A until Partition Merge
-Total virtual pins : N/A until Partition Merge
-Total block memory bits : N/A until Partition Merge
-Total PLLs : N/A until Partition Merge
-Total DLLs : N/A until Partition Merge
-=======
 Logic utilization (in ALMs) : N/A
-Total registers : 335
+Total registers : 337
 Total pins : 67
 Total virtual pins : 0
 Total block memory bits : 2,048
@@ -28,4 +15,3 @@ Total HSSI TX PCSs : 0
 Total HSSI PMA TX Serializers : 0
 Total PLLs : 0
 Total DLLs : 0
->>>>>>> 48679a2f2b1ad05ce37b293fde52e8a64b6dc1af
