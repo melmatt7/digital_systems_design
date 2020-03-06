@@ -1,5 +1,5 @@
 Analysis & Synthesis report for fsm
-Thu Feb 13 00:44:19 2020
+Thu Mar 05 23:33:03 2020
 Quartus II 64-Bit Version 14.1.0 Build 186 12/03/2014 SJ Web Edition
 
 
@@ -13,12 +13,13 @@ Quartus II 64-Bit Version 14.1.0 Build 186 12/03/2014 SJ Web Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. General Register Statistics
-  9. Multiplexer Restructuring Statistics (Restructuring Performed)
- 10. Parameter Settings for User Entity Instance: Top-level Entity: |fsm
- 11. Post-Synthesis Netlist Statistics for Top Partition
- 12. Elapsed Time Per Partition
- 13. Analysis & Synthesis Messages
+  8. Registers Removed During Synthesis
+  9. General Register Statistics
+ 10. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 11. Parameter Settings for User Entity Instance: Top-level Entity: |fsm
+ 12. Post-Synthesis Netlist Statistics for Top Partition
+ 13. Elapsed Time Per Partition
+ 14. Analysis & Synthesis Messages
 
 
 
@@ -45,14 +46,14 @@ agreement for further details.
 +------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                 ;
 +---------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Thu Feb 13 00:44:19 2020      ;
+; Analysis & Synthesis Status     ; Successful - Thu Mar 05 23:33:03 2020      ;
 ; Quartus II 64-Bit Version       ; 14.1.0 Build 186 12/03/2014 SJ Web Edition ;
 ; Revision Name                   ; fsm                                        ;
 ; Top-level Entity Name           ; fsm                                        ;
 ; Family                          ; Cyclone V                                  ;
 ; Logic utilization (in ALMs)     ; N/A                                        ;
-; Total registers                 ; 37                                         ;
-; Total pins                      ; 76                                         ;
+; Total registers                 ; 69                                         ;
+; Total pins                      ; 44                                         ;
 ; Total virtual pins              ; 0                                          ;
 ; Total block memory bits         ; 0                                          ;
 ; Total DSP Blocks                ; 0                                          ;
@@ -179,31 +180,31 @@ agreement for further details.
 +----------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------+---------+
 
 
-+--------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary            ;
-+---------------------------------------------+----------+
-; Resource                                    ; Usage    ;
-+---------------------------------------------+----------+
-; Estimate of Logic utilization (ALMs needed) ; 50       ;
-;                                             ;          ;
-; Combinational ALUT usage for logic          ; 77       ;
-;     -- 7 input functions                    ; 1        ;
-;     -- 6 input functions                    ; 22       ;
-;     -- 5 input functions                    ; 26       ;
-;     -- 4 input functions                    ; 4        ;
-;     -- <=3 input functions                  ; 24       ;
-;                                             ;          ;
-; Dedicated logic registers                   ; 37       ;
-;                                             ;          ;
-; I/O pins                                    ; 76       ;
-;                                             ;          ;
-; Total DSP Blocks                            ; 0        ;
-;                                             ;          ;
-; Maximum fan-out node                        ; Equal3~0 ;
-; Maximum fan-out                             ; 47       ;
-; Total fan-out                               ; 592      ;
-; Average fan-out                             ; 2.23     ;
-+---------------------------------------------+----------+
++---------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary             ;
++---------------------------------------------+-----------+
+; Resource                                    ; Usage     ;
++---------------------------------------------+-----------+
+; Estimate of Logic utilization (ALMs needed) ; 90        ;
+;                                             ;           ;
+; Combinational ALUT usage for logic          ; 144       ;
+;     -- 7 input functions                    ; 0         ;
+;     -- 6 input functions                    ; 33        ;
+;     -- 5 input functions                    ; 22        ;
+;     -- 4 input functions                    ; 34        ;
+;     -- <=3 input functions                  ; 55        ;
+;                                             ;           ;
+; Dedicated logic registers                   ; 69        ;
+;                                             ;           ;
+; I/O pins                                    ; 44        ;
+;                                             ;           ;
+; Total DSP Blocks                            ; 0         ;
+;                                             ;           ;
+; Maximum fan-out node                        ; clk~input ;
+; Maximum fan-out                             ; 69        ;
+; Total fan-out                               ; 878       ;
+; Average fan-out                             ; 2.92      ;
++---------------------------------------------+-----------+
 
 
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -211,9 +212,19 @@ agreement for further details.
 +----------------------------+-------------------+--------------+-------------------+------------+------+--------------+---------------------+--------------+
 ; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
 +----------------------------+-------------------+--------------+-------------------+------------+------+--------------+---------------------+--------------+
-; |fsm                       ; 77 (77)           ; 37 (37)      ; 0                 ; 0          ; 76   ; 0            ; |fsm                ; work         ;
+; |fsm                       ; 144 (144)         ; 69 (69)      ; 0                 ; 0          ; 44   ; 0            ; |fsm                ; work         ;
 +----------------------------+-------------------+--------------+-------------------+------------+------+--------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++---------------------------------------------------------------+
+; Registers Removed During Synthesis                            ;
++---------------------------------------+-----------------------+
+; Register name                         ; Reason for Removal    ;
++---------------------------------------+-----------------------+
+; state[5]                              ; Merged with state[13] ;
+; Total Number of Removed Registers = 1 ;                       ;
++---------------------------------------+-----------------------+
 
 
 +------------------------------------------------------+
@@ -221,12 +232,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 37    ;
-; Number of registers using Synchronous Clear  ; 23    ;
-; Number of registers using Synchronous Load   ; 0     ;
+; Total registers                              ; 69    ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 32    ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 31    ;
+; Number of registers using Clock Enable       ; 24    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -236,30 +247,34 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
-; 5:1                ; 8 bits    ; 24 LEs        ; 8 LEs                ; 16 LEs                 ; Yes        ; |fsm|outData[0]~reg0       ;
-; 7:1                ; 23 bits   ; 92 LEs        ; 46 LEs               ; 46 LEs                 ; Yes        ; |fsm|addr[17]~reg0         ;
-; 66:1               ; 2 bits    ; 88 LEs        ; 24 LEs               ; 64 LEs                 ; Yes        ; |fsm|state[1]              ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |fsm|Mux7                  ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |fsm|Mux15                 ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
 
 
 +---------------------------------------------------------------------+
 ; Parameter Settings for User Entity Instance: Top-level Entity: |fsm ;
-+-----------------+-------------------------+-------------------------+
-; Parameter Name  ; Value                   ; Type                    ;
-+-----------------+-------------------------+-------------------------+
-; last_addr       ; 00001111111111111111111 ; Unsigned Binary         ;
-; first_addr      ; 00000000000000000000000 ; Unsigned Binary         ;
-; idle            ; 000000                  ; Unsigned Binary         ;
-; read_flash      ; 000110                  ; Unsigned Binary         ;
-; wait_data_1     ; 001000                  ; Unsigned Binary         ;
-; out_data_1      ; 001100                  ; Unsigned Binary         ;
-; wait_data_2     ; 010000                  ; Unsigned Binary         ;
-; out_data_2      ; 010100                  ; Unsigned Binary         ;
-; check_direction ; 011000                  ; Unsigned Binary         ;
-; dec_addr        ; 011100                  ; Unsigned Binary         ;
-; inc_addr        ; 100000                  ; Unsigned Binary         ;
-; finished        ; 100101                  ; Unsigned Binary         ;
-+-----------------+-------------------------+-------------------------+
++----------------+----------------+-----------------------------------+
+; Parameter Name ; Value          ; Type                              ;
++----------------+----------------+-----------------------------------+
+; idle           ; 00000000000000 ; Unsigned Binary                   ;
+; incr_i         ; 00001000000000 ; Unsigned Binary                   ;
+; addr_si        ; 00010000000000 ; Unsigned Binary                   ;
+; read_si        ; 00011001000000 ; Unsigned Binary                   ;
+; calc_j         ; 00100000000000 ; Unsigned Binary                   ;
+; addr_sj        ; 00101000001000 ; Unsigned Binary                   ;
+; read_sj        ; 00110010000000 ; Unsigned Binary                   ;
+; swap_si        ; 00111000001001 ; Unsigned Binary                   ;
+; swap_sj        ; 01000000000011 ; Unsigned Binary                   ;
+; calc_sum       ; 01001000000000 ; Unsigned Binary                   ;
+; addr_sum       ; 01010000010000 ; Unsigned Binary                   ;
+; read_sum       ; 01011100000000 ; Unsigned Binary                   ;
+; x_or           ; 01100000000000 ; Unsigned Binary                   ;
+; write_decrypt  ; 01101000011101 ; Unsigned Binary                   ;
+; check_k        ; 01110000000000 ; Unsigned Binary                   ;
+; incr_k         ; 01111000000000 ; Unsigned Binary                   ;
+; finish         ; 10000000100000 ; Unsigned Binary                   ;
++----------------+----------------+-----------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -268,26 +283,24 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 37                          ;
-;     ENA               ; 8                           ;
-;     ENA SCLR          ; 23                          ;
-;     plain             ; 6                           ;
-; arriav_lcell_comb     ; 78                          ;
-;     arith             ; 23                          ;
-;         1 data inputs ; 1                           ;
-;         2 data inputs ; 22                          ;
-;     extend            ; 1                           ;
-;         7 data inputs ; 1                           ;
-;     normal            ; 54                          ;
-;         0 data inputs ; 1                           ;
-;         2 data inputs ; 1                           ;
-;         4 data inputs ; 4                           ;
-;         5 data inputs ; 26                          ;
-;         6 data inputs ; 22                          ;
-; boundary_port         ; 76                          ;
+; arriav_ff             ; 69                          ;
+;     ENA               ; 24                          ;
+;     SLD               ; 32                          ;
+;     plain             ; 13                          ;
+; arriav_lcell_comb     ; 144                         ;
+;     arith             ; 32                          ;
+;         1 data inputs ; 16                          ;
+;         2 data inputs ; 16                          ;
+;     normal            ; 112                         ;
+;         2 data inputs ; 7                           ;
+;         3 data inputs ; 16                          ;
+;         4 data inputs ; 34                          ;
+;         5 data inputs ; 22                          ;
+;         6 data inputs ; 33                          ;
+; boundary_port         ; 44                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 5.10                        ;
-; Average LUT depth     ; 3.08                        ;
+; Max LUT depth         ; 4.00                        ;
+; Average LUT depth     ; 2.20                        ;
 +-----------------------+-----------------------------+
 
 
@@ -306,45 +319,26 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 14.1.0 Build 186 12/03/2014 SJ Web Edition
-    Info: Processing started: Thu Feb 13 00:44:05 2020
+    Info: Processing started: Thu Mar 05 23:32:50 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off fsm -c fsm
 Info (11104): Parallel Compilation has detected 4 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 2 of the 2 physical processors detected instead.
 Info (12021): Found 1 design units, including 1 entities, in source file fsm.sv
     Info (12023): Found entity 1: fsm
+Warning (10236): Verilog HDL Implicit Net warning at fsm.sv(83): created implicit net for "read_i_en"
+Warning (10236): Verilog HDL Implicit Net warning at fsm.sv(84): created implicit net for "read_j_en"
+Warning (10236): Verilog HDL Implicit Net warning at fsm.sv(85): created implicit net for "read_sum_en"
 Info (12127): Elaborating entity "fsm" for the top level hierarchy
-Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "byteEnable[0]" is stuck at VCC
-    Warning (13410): Pin "byteEnable[1]" is stuck at VCC
-    Warning (13410): Pin "byteEnable[2]" is stuck at VCC
-    Warning (13410): Pin "byteEnable[3]" is stuck at VCC
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 16 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "songData[8]"
-    Warning (15610): No output dependent on input pin "songData[9]"
-    Warning (15610): No output dependent on input pin "songData[10]"
-    Warning (15610): No output dependent on input pin "songData[11]"
-    Warning (15610): No output dependent on input pin "songData[12]"
-    Warning (15610): No output dependent on input pin "songData[13]"
-    Warning (15610): No output dependent on input pin "songData[14]"
-    Warning (15610): No output dependent on input pin "songData[15]"
-    Warning (15610): No output dependent on input pin "songData[16]"
-    Warning (15610): No output dependent on input pin "songData[17]"
-    Warning (15610): No output dependent on input pin "songData[18]"
-    Warning (15610): No output dependent on input pin "songData[19]"
-    Warning (15610): No output dependent on input pin "songData[20]"
-    Warning (15610): No output dependent on input pin "songData[21]"
-    Warning (15610): No output dependent on input pin "songData[22]"
-    Warning (15610): No output dependent on input pin "songData[23]"
-Info (21057): Implemented 153 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 38 input pins
-    Info (21059): Implemented 38 output pins
-    Info (21061): Implemented 77 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 22 warnings
+Info (21057): Implemented 212 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 18 input pins
+    Info (21059): Implemented 26 output pins
+    Info (21061): Implemented 168 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 3 warnings
     Info: Peak virtual memory: 4828 megabytes
-    Info: Processing ended: Thu Feb 13 00:44:19 2020
-    Info: Elapsed time: 00:00:14
+    Info: Processing ended: Thu Mar 05 23:33:03 2020
+    Info: Elapsed time: 00:00:13
     Info: Total CPU time (on all processors): 00:00:29
 
 

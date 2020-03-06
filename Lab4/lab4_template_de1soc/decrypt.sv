@@ -51,7 +51,7 @@ begin
 
 	shuffle_begin: state <= shuffle_end;	
 
-	shuffle_end: if (shuffle_complete) state <= finish;
+	shuffle_end: if (shuffle_complete) state <= compute_begin;
 
 	compute_begin: state <= compute_end;
 

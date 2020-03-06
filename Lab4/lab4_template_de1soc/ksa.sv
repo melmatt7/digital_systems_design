@@ -90,6 +90,9 @@ reg[7:0] address_out;
 reg[7:0] q_out;
 wire wren_out;
 
+reg[7:0] q_rom_out;
+reg[4:0] address_rom_out;
+
 decrypt
 decrypt_insta(
 .clk(CLK_50M),
@@ -144,10 +147,20 @@ compute
 compute_insta(
 .clk(CLK_50M),
 .start(compute_start),
+.rom_data(q_rom_out),
+.q(q_out),
 .data(data_compute),
 .address(address_compute),
 .wren(wren_compute),
-.complete(compute_complete),
+.rom_addr(address_rom_out),
+.complete(compute_complete)
+);
+
+r_memory
+r_memory_insta(
+.address(address_rom_out),
+.clock(CLK_50M),
+.q(q_rom_out)
 );
 
 s_memory

@@ -1,5 +1,5 @@
 Flow report for fsm
-Thu Feb 13 00:50:41 2020
+Thu Mar 05 23:37:29 2020
 Quartus II 64-Bit Version 14.1.0 Build 186 12/03/2014 SJ Web Edition
 
 
@@ -41,7 +41,7 @@ agreement for further details.
 +------------------------------------------------------------------------------+
 ; Flow Summary                                                                 ;
 +---------------------------------+--------------------------------------------+
-; Flow Status                     ; Successful - Thu Feb 13 00:50:41 2020      ;
+; Flow Status                     ; Successful - Thu Mar 05 23:37:29 2020      ;
 ; Quartus II 64-Bit Version       ; 14.1.0 Build 186 12/03/2014 SJ Web Edition ;
 ; Revision Name                   ; fsm                                        ;
 ; Top-level Entity Name           ; fsm                                        ;
@@ -49,8 +49,8 @@ agreement for further details.
 ; Device                          ; 5CSEMA5F31C6                               ;
 ; Timing Models                   ; Final                                      ;
 ; Logic utilization (in ALMs)     ; N/A                                        ;
-; Total registers                 ; 37                                         ;
-; Total pins                      ; 76                                         ;
+; Total registers                 ; 69                                         ;
+; Total pins                      ; 44                                         ;
 ; Total virtual pins              ; 0                                          ;
 ; Total block memory bits         ; 0                                          ;
 ; Total DSP Blocks                ; 0                                          ;
@@ -68,7 +68,7 @@ agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 02/13/2020 00:44:06 ;
+; Start date & time ; 03/05/2020 23:32:50 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; fsm                 ;
 +-------------------+---------------------+
@@ -79,7 +79,7 @@ agreement for further details.
 +-------------------------------------+---------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                           ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+---------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 198660153391158.158158344513688 ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 198660153391158.158347997019996 ; --            ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Systemverilog Hdl               ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (SystemVerilog) ; <None>        ; --          ; --             ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                              ; --            ; --          ; --             ;
@@ -96,11 +96,10 @@ agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:13     ; 1.0                     ; 4826 MB             ; 00:00:29                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4744 MB             ; 00:00:01                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4744 MB             ; 00:00:01                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4748 MB             ; 00:00:01                           ;
-; Total                ; 00:00:16     ; --                      ; --                  ; 00:00:32                           ;
+; Analysis & Synthesis ; 00:00:12     ; 1.0                     ; 4828 MB             ; 00:00:29                           ;
+; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 4744 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4747 MB             ; 00:00:01                           ;
+; Total                ; 00:00:13     ; --                      ; --                  ; 00:00:31                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -112,7 +111,6 @@ agreement for further details.
 ; Analysis & Synthesis ; DESKTOP-M62LUTM  ; Windows 7 ; 6.2        ; x86_64         ;
 ; EDA Netlist Writer   ; DESKTOP-M62LUTM  ; Windows 7 ; 6.2        ; x86_64         ;
 ; EDA Netlist Writer   ; DESKTOP-M62LUTM  ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer   ; DESKTOP-M62LUTM  ; Windows 7 ; 6.2        ; x86_64         ;
 +----------------------+------------------+-----------+------------+----------------+
 
 
@@ -120,8 +118,7 @@ agreement for further details.
 ; Flow Log ;
 ------------
 quartus_map --read_settings_files=on --write_settings_files=off fsm -c fsm
-quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog --write_settings_files=off fsm -c fsm --vector_source=C:/UBC/w2019-2020t2/CPEN311/digital_systems_design/Assignments/2Q2/Flash_Address_Control.vwf --testbench_file=C:/UBC/w2019-2020t2/CPEN311/digital_systems_design/Assignments/2Q2/simulation/qsim/Flash_Address_Control.vwf.vt
-quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog --write_settings_files=off fsm -c fsm --vector_source=C:/UBC/w2019-2020t2/CPEN311/digital_systems_design/Assignments/2Q2/Flash_Address_Control.vwf --testbench_file=C:/UBC/w2019-2020t2/CPEN311/digital_systems_design/Assignments/2Q2/simulation/qsim/Flash_Address_Control.vwf.vt
+quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog --write_settings_files=off fsm -c fsm --vector_source=C:/UBC/w2019-2020t2/CPEN311/digital_systems_design/Assignments/2Q2/compute.vwf --testbench_file=C:/UBC/w2019-2020t2/CPEN311/digital_systems_design/Assignments/2Q2/simulation/qsim/compute.vwf.vt
 quartus_eda --write_settings_files=off --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=C:/UBC/w2019-2020t2/CPEN311/digital_systems_design/Assignments/2Q2/simulation/qsim/ fsm -c fsm
 
 

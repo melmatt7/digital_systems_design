@@ -2,27 +2,27 @@
 # ** Warning: (vlib-34) Library already exists at "work".
 # 
 # Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
-# Start time: 00:50:42 on Feb 13,2020
+# Start time: 23:37:31 on Mar 05,2020
 # vlog -work work fsm.vo 
 # -- Compiling module fsm
 # 
 # Top level modules:
 # 	fsm
-# End time: 00:50:42 on Feb 13,2020, Elapsed time: 0:00:00
+# End time: 23:37:32 on Mar 05,2020, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
-# Start time: 00:50:42 on Feb 13,2020
-# vlog -work work Flash_Address_Control.vwf.vt 
+# Start time: 23:37:32 on Mar 05,2020
+# vlog -work work compute.vwf.vt 
 # -- Compiling module fsm_vlg_sample_tst
 # -- Compiling module fsm_vlg_check_tst
 # -- Compiling module fsm_vlg_vec_tst
 # 
 # Top level modules:
 # 	fsm_vlg_vec_tst
-# End time: 00:50:42 on Feb 13,2020, Elapsed time: 0:00:00
+# End time: 23:37:32 on Mar 05,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vsim -c -do "fsm.do" 
-# Start time: 00:50:42 on Feb 13,2020
+# Start time: 23:37:32 on Mar 05,2020
 # Loading work.fsm_vlg_vec_tst
 # Loading work.fsm
 # Loading altera_ver.dffeas
@@ -30,7 +30,7 @@
 # Loading work.fsm_vlg_check_tst
 # Loading altera_ver.PRIM_GDFF_LOW
 # Simulation passed !
-# ** Note: $finish    : Flash_Address_Control.vwf.vt(869)
+# ** Note: $finish    : compute.vwf.vt(638)
 #    Time: 1 us  Iteration: 0  Instance: /fsm_vlg_vec_tst/tb_out
-# End time: 00:50:43 on Feb 13,2020, Elapsed time: 0:00:01
+# End time: 23:37:33 on Mar 05,2020, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
