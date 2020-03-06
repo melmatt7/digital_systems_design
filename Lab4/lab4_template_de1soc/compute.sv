@@ -10,7 +10,7 @@ input [7:0] encrypted_msg;
 
 output [7:0] data;
 output [7:0] address;
-output [7:0] decrypted_msg
+output [7:0] decrypted_msg;
 output wren;
 output complete;
 
@@ -27,17 +27,17 @@ reg[7:0] q_sj;
 reg[7:0] state = 8'b0000_0000;
 
 parameter idle = 8'b0000_0000;
-parameter incr_i;
-parameter read_si = ;
-parameter calc_j = ;
-parameter read_sj = ;
-parameter swap_si = ;
-parameter swap_sj = ;
-parameter calc_f = ;
-parameter decrypt_output = ;
-parameter incr_k = ;
-parameter check_k = ;
-parameter finish = ;
+parameter incr_i = 8'b0000_0000;
+parameter read_si = 8'b0000_0000;
+parameter calc_j = 8'b0000_0000;
+parameter read_sj = 8'b0000_0000;
+parameter swap_si = 8'b0000_0000;
+parameter swap_sj = 8'b0000_0000;
+parameter calc_f = 8'b0000_0000;
+parameter decrypt_output = 8'b0000_0000;
+parameter incr_k = 8'b0000_0000;
+parameter check_k = 8'b0000_0000;
+parameter finish = 8'b0000_0000;
 
 
 

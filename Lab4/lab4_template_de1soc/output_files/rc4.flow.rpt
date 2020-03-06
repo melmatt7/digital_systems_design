@@ -1,5 +1,9 @@
 Flow report for rc4
+<<<<<<< HEAD
 Thu Mar 05 16:25:10 2020
+=======
+Thu Mar 05 16:20:38 2020
+>>>>>>> 48679a2f2b1ad05ce37b293fde52e8a64b6dc1af
 Quartus II 64-Bit Version 14.1.0 Build 186 12/03/2014 SJ Web Edition
 
 
@@ -38,6 +42,7 @@ agreement for further details.
 
 
 
+<<<<<<< HEAD
 +--------------------------------------------------------------------------+
 ; Flow Summary                                                             ;
 +-----------------------------+--------------------------------------------+
@@ -56,6 +61,31 @@ agreement for further details.
 ; Total PLLs                  ; N/A until Partition Merge                  ;
 ; Total DLLs                  ; N/A until Partition Merge                  ;
 +-----------------------------+--------------------------------------------+
+=======
++------------------------------------------------------------------------------+
+; Flow Summary                                                                 ;
++---------------------------------+--------------------------------------------+
+; Flow Status                     ; Successful - Thu Mar 05 16:20:38 2020      ;
+; Quartus II 64-Bit Version       ; 14.1.0 Build 186 12/03/2014 SJ Web Edition ;
+; Revision Name                   ; rc4                                        ;
+; Top-level Entity Name           ; ksa                                        ;
+; Family                          ; Cyclone V                                  ;
+; Device                          ; 5CSEMA5F31C6                               ;
+; Timing Models                   ; Final                                      ;
+; Logic utilization (in ALMs)     ; N/A                                        ;
+; Total registers                 ; 335                                        ;
+; Total pins                      ; 67                                         ;
+; Total virtual pins              ; 0                                          ;
+; Total block memory bits         ; 2,048                                      ;
+; Total DSP Blocks                ; 0                                          ;
+; Total HSSI RX PCSs              ; 0                                          ;
+; Total HSSI PMA RX Deserializers ; 0                                          ;
+; Total HSSI TX PCSs              ; 0                                          ;
+; Total HSSI PMA TX Serializers   ; 0                                          ;
+; Total PLLs                      ; 0                                          ;
+; Total DLLs                      ; 0                                          ;
++---------------------------------+--------------------------------------------+
+>>>>>>> 48679a2f2b1ad05ce37b293fde52e8a64b6dc1af
 
 
 +-----------------------------------------+
@@ -63,7 +93,11 @@ agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
+<<<<<<< HEAD
 ; Start date & time ; 03/05/2020 16:24:40 ;
+=======
+; Start date & time ; 03/05/2020 16:19:51 ;
+>>>>>>> 48679a2f2b1ad05ce37b293fde52e8a64b6dc1af
 ; Main task         ; Compilation         ;
 ; Revision Name     ; rc4                 ;
 +-------------------+---------------------+
@@ -77,7 +111,11 @@ agreement for further details.
 ; AUTO_RAM_RECOGNITION                              ; Off                                   ; On                 ; --          ; --         ;
 ; AUTO_ROM_RECOGNITION                              ; Off                                   ; On                 ; --          ; --         ;
 ; BLOCK_RAM_AND_MLAB_EQUIVALENT_POWER_UP_CONDITIONS ; Care                                  ; Auto               ; --          ; --         ;
+<<<<<<< HEAD
 ; COMPILER_SIGNATURE_ID                             ; 198660153391158.158345428003464       ; --                 ; --          ; --         ;
+=======
+; COMPILER_SIGNATURE_ID                             ; 207273073892032.158345399103852       ; --                 ; --          ; --         ;
+>>>>>>> 48679a2f2b1ad05ce37b293fde52e8a64b6dc1af
 ; EXTRACT_VERILOG_STATE_MACHINES                    ; Off                                   ; On                 ; --          ; --         ;
 ; EXTRACT_VHDL_STATE_MACHINES                       ; Off                                   ; On                 ; --          ; --         ;
 ; FITTER_EFFORT                                     ; Standard Fit                          ; Auto Fit           ; --          ; --         ;
@@ -109,8 +147,13 @@ agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
+<<<<<<< HEAD
 ; Analysis & Synthesis ; 00:00:33     ; 1.0                     ; 4812 MB             ; 00:00:38                           ;
 ; Total                ; 00:00:33     ; --                      ; --                  ; 00:00:38                           ;
+=======
+; Analysis & Synthesis ; 00:00:46     ; 1.0                     ; 4885 MB             ; 00:01:26                           ;
+; Total                ; 00:00:46     ; --                      ; --                  ; 00:01:26                           ;
+>>>>>>> 48679a2f2b1ad05ce37b293fde52e8a64b6dc1af
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -119,7 +162,11 @@ agreement for further details.
 +----------------------+------------------+-----------+------------+----------------+
 ; Module Name          ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
 +----------------------+------------------+-----------+------------+----------------+
+<<<<<<< HEAD
 ; Analysis & Synthesis ; DESKTOP-M62LUTM  ; Windows 7 ; 6.2        ; x86_64         ;
+=======
+; Analysis & Synthesis ; DESKTOP-AIQJCJE  ; Windows 7 ; 6.2        ; x86_64         ;
+>>>>>>> 48679a2f2b1ad05ce37b293fde52e8a64b6dc1af
 +----------------------+------------------+-----------+------------+----------------+
 
 
