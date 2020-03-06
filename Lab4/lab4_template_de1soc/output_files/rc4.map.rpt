@@ -1,5 +1,5 @@
 Analysis & Synthesis report for rc4
-Fri Mar 06 01:31:12 2020
+Fri Mar 06 02:15:40 2020
 Quartus II 64-Bit Version 14.1.0 Build 186 12/03/2014 SJ Web Edition
 
 
@@ -26,35 +26,39 @@ Quartus II 64-Bit Version 14.1.0 Build 186 12/03/2014 SJ Web Edition
  18. Source assignments for speed_reg_control:speed_reg_control_inst
  19. Source assignments for Generate_Arbitrary_Divided_Clk32:Gen_2Hz_clk|var_clk_div32:Div_Clk
  20. Source assignments for r_memory:r_memory_insta|altsyncram:altsyncram_component|altsyncram_p7t1:auto_generated|altsyncram_osu2:altsyncram1
- 21. Source assignments for s_memory:s_memory_insta|altsyncram:altsyncram_component|altsyncram_2d32:auto_generated|altsyncram_dsp2:altsyncram1
- 22. Parameter Settings for User Entity Instance: Top-level Entity: |ksa
- 23. Parameter Settings for User Entity Instance: decrypt:decrypt_insta
- 24. Parameter Settings for User Entity Instance: init:init_insta
- 25. Parameter Settings for User Entity Instance: shuffle:shuffle_insta
- 26. Parameter Settings for User Entity Instance: compute:compute_insta
- 27. Parameter Settings for User Entity Instance: r_memory:r_memory_insta|altsyncram:altsyncram_component
- 28. Parameter Settings for User Entity Instance: s_memory:s_memory_insta|altsyncram:altsyncram_component
- 29. Parameter Settings for User Entity Instance: speed_reg_control:speed_reg_control_inst
- 30. Parameter Settings for Inferred Entity Instance: shuffle:shuffle_insta|lpm_divide:Mod0
- 31. altsyncram Parameter Settings by Entity Instance
- 32. Port Connectivity Checks: "Generate_Arbitrary_Divided_Clk32:Gen_2Hz_clk"
- 33. Port Connectivity Checks: "SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst5"
- 34. Port Connectivity Checks: "SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst4"
- 35. Port Connectivity Checks: "SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst3"
- 36. Port Connectivity Checks: "SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst2"
- 37. Port Connectivity Checks: "SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst1"
- 38. Port Connectivity Checks: "SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst0"
- 39. Port Connectivity Checks: "doublesync:key2_doublsync"
- 40. Port Connectivity Checks: "doublesync:key1_doublsync"
- 41. Port Connectivity Checks: "doublesync:key0_doublsync"
- 42. Port Connectivity Checks: "Generate_Arbitrary_Divided_Clk32:Gen_1KHz_clk"
- 43. Port Connectivity Checks: "shuffle:shuffle_insta"
- 44. Port Connectivity Checks: "decrypt:decrypt_insta"
- 45. In-System Memory Content Editor Settings
- 46. Post-Synthesis Netlist Statistics for Top Partition
- 47. Post-Synthesis Netlist Statistics for Partition sld_hub:auto_hub
- 48. Elapsed Time Per Partition
- 49. Analysis & Synthesis Messages
+ 21. Source assignments for d_memory:d_memory_insta|altsyncram:altsyncram_component|altsyncram_oa32:auto_generated|altsyncram_nop2:altsyncram1
+ 22. Source assignments for s_memory:s_memory_insta|altsyncram:altsyncram_component|altsyncram_2d32:auto_generated|altsyncram_dsp2:altsyncram1
+ 23. Parameter Settings for User Entity Instance: Top-level Entity: |ksa
+ 24. Parameter Settings for User Entity Instance: decrypt:decrypt_insta
+ 25. Parameter Settings for User Entity Instance: init:init_insta
+ 26. Parameter Settings for User Entity Instance: shuffle:shuffle_insta
+ 27. Parameter Settings for User Entity Instance: compute:compute_insta
+ 28. Parameter Settings for User Entity Instance: r_memory:r_memory_insta|altsyncram:altsyncram_component
+ 29. Parameter Settings for User Entity Instance: d_memory:d_memory_insta|altsyncram:altsyncram_component
+ 30. Parameter Settings for User Entity Instance: s_memory:s_memory_insta|altsyncram:altsyncram_component
+ 31. Parameter Settings for User Entity Instance: speed_reg_control:speed_reg_control_inst
+ 32. Parameter Settings for Inferred Entity Instance: shuffle:shuffle_insta|lpm_divide:Mod0
+ 33. altsyncram Parameter Settings by Entity Instance
+ 34. Port Connectivity Checks: "Generate_Arbitrary_Divided_Clk32:Gen_2Hz_clk"
+ 35. Port Connectivity Checks: "SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst5"
+ 36. Port Connectivity Checks: "SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst4"
+ 37. Port Connectivity Checks: "SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst3"
+ 38. Port Connectivity Checks: "SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst2"
+ 39. Port Connectivity Checks: "SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst1"
+ 40. Port Connectivity Checks: "SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst0"
+ 41. Port Connectivity Checks: "doublesync:key2_doublsync"
+ 42. Port Connectivity Checks: "doublesync:key1_doublsync"
+ 43. Port Connectivity Checks: "doublesync:key0_doublsync"
+ 44. Port Connectivity Checks: "Generate_Arbitrary_Divided_Clk32:Gen_1KHz_clk"
+ 45. Port Connectivity Checks: "d_memory:d_memory_insta"
+ 46. Port Connectivity Checks: "compute:compute_insta"
+ 47. Port Connectivity Checks: "shuffle:shuffle_insta"
+ 48. Port Connectivity Checks: "decrypt:decrypt_insta"
+ 49. In-System Memory Content Editor Settings
+ 50. Post-Synthesis Netlist Statistics for Top Partition
+ 51. Post-Synthesis Netlist Statistics for Partition sld_hub:auto_hub
+ 52. Elapsed Time Per Partition
+ 53. Analysis & Synthesis Messages
 
 
 
@@ -81,16 +85,16 @@ agreement for further details.
 +------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                 ;
 +---------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Fri Mar 06 01:31:12 2020      ;
+; Analysis & Synthesis Status     ; Successful - Fri Mar 06 02:15:39 2020      ;
 ; Quartus II 64-Bit Version       ; 14.1.0 Build 186 12/03/2014 SJ Web Edition ;
 ; Revision Name                   ; rc4                                        ;
 ; Top-level Entity Name           ; ksa                                        ;
 ; Family                          ; Cyclone V                                  ;
 ; Logic utilization (in ALMs)     ; N/A                                        ;
-; Total registers                 ; 439                                        ;
+; Total registers                 ; 482                                        ;
 ; Total pins                      ; 67                                         ;
 ; Total virtual pins              ; 0                                          ;
-; Total block memory bits         ; 2,304                                      ;
+; Total block memory bits         ; 2,560                                      ;
 ; Total DSP Blocks                ; 0                                          ;
 ; Total HSSI RX PCSs              ; 0                                          ;
 ; Total HSSI PMA RX Deserializers ; 0                                          ;
@@ -236,6 +240,7 @@ agreement for further details.
 ; decrypt.sv                                             ; yes             ; User SystemVerilog HDL File                  ; C:/UBC/w2019-2020t2/CPEN311/digital_systems_design/Lab4/lab4_template_de1soc/decrypt.sv                                             ;             ;
 ; shuffle.sv                                             ; yes             ; User SystemVerilog HDL File                  ; C:/UBC/w2019-2020t2/CPEN311/digital_systems_design/Lab4/lab4_template_de1soc/shuffle.sv                                             ;             ;
 ; r_memory.v                                             ; yes             ; User Wizard-Generated File                   ; C:/UBC/w2019-2020t2/CPEN311/digital_systems_design/Lab4/lab4_template_de1soc/r_memory.v                                             ;             ;
+; d_memory.v                                             ; yes             ; User Wizard-Generated File                   ; C:/UBC/w2019-2020t2/CPEN311/digital_systems_design/Lab4/lab4_template_de1soc/d_memory.v                                             ;             ;
 ; altsyncram.tdf                                         ; yes             ; Megafunction                                 ; c:/altera/14.1/quartus/libraries/megafunctions/altsyncram.tdf                                                                       ;             ;
 ; stratix_ram_block.inc                                  ; yes             ; Megafunction                                 ; c:/altera/14.1/quartus/libraries/megafunctions/stratix_ram_block.inc                                                                ;             ;
 ; lpm_mux.inc                                            ; yes             ; Megafunction                                 ; c:/altera/14.1/quartus/libraries/megafunctions/lpm_mux.inc                                                                          ;             ;
@@ -250,6 +255,8 @@ agreement for further details.
 ; sld_mod_ram_rom.vhd                                    ; yes             ; Encrypted Megafunction                       ; c:/altera/14.1/quartus/libraries/megafunctions/sld_mod_ram_rom.vhd                                                                  ;             ;
 ; sld_jtag_endpoint_adapter.sv                           ; yes             ; Encrypted Megafunction                       ; c:/altera/14.1/quartus/libraries/megafunctions/sld_jtag_endpoint_adapter.sv                                                         ;             ;
 ; sld_rom_sr.vhd                                         ; yes             ; Encrypted Megafunction                       ; c:/altera/14.1/quartus/libraries/megafunctions/sld_rom_sr.vhd                                                                       ;             ;
+; db/altsyncram_oa32.tdf                                 ; yes             ; Auto-Generated Megafunction                  ; C:/UBC/w2019-2020t2/CPEN311/digital_systems_design/Lab4/lab4_template_de1soc/db/altsyncram_oa32.tdf                                 ;             ;
+; db/altsyncram_nop2.tdf                                 ; yes             ; Auto-Generated Megafunction                  ; C:/UBC/w2019-2020t2/CPEN311/digital_systems_design/Lab4/lab4_template_de1soc/db/altsyncram_nop2.tdf                                 ;             ;
 ; db/altsyncram_2d32.tdf                                 ; yes             ; Auto-Generated Megafunction                  ; C:/UBC/w2019-2020t2/CPEN311/digital_systems_design/Lab4/lab4_template_de1soc/db/altsyncram_2d32.tdf                                 ;             ;
 ; db/altsyncram_dsp2.tdf                                 ; yes             ; Auto-Generated Megafunction                  ; C:/UBC/w2019-2020t2/CPEN311/digital_systems_design/Lab4/lab4_template_de1soc/db/altsyncram_dsp2.tdf                                 ;             ;
 ; sld_hub.vhd                                            ; yes             ; Encrypted Megafunction                       ; c:/altera/14.1/quartus/libraries/megafunctions/sld_hub.vhd                                                                          ; work        ;
@@ -269,33 +276,33 @@ agreement for further details.
 +--------------------------------------------------------+-----------------+----------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------+-------------+
 
 
-+--------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                  ;
-+---------------------------------------------+----------------+
-; Resource                                    ; Usage          ;
-+---------------------------------------------+----------------+
-; Estimate of Logic utilization (ALMs needed) ; 455            ;
-;                                             ;                ;
-; Combinational ALUT usage for logic          ; 730            ;
-;     -- 7 input functions                    ; 2              ;
-;     -- 6 input functions                    ; 149            ;
-;     -- 5 input functions                    ; 100            ;
-;     -- 4 input functions                    ; 113            ;
-;     -- <=3 input functions                  ; 366            ;
-;                                             ;                ;
-; Dedicated logic registers                   ; 439            ;
-;                                             ;                ;
-; I/O pins                                    ; 67             ;
-; Total MLAB memory bits                      ; 0              ;
-; Total block memory bits                     ; 2304           ;
-;                                             ;                ;
-; Total DSP Blocks                            ; 0              ;
-;                                             ;                ;
-; Maximum fan-out node                        ; CLOCK_50~input ;
-; Maximum fan-out                             ; 250            ;
-; Total fan-out                               ; 4533           ;
-; Average fan-out                             ; 3.41           ;
-+---------------------------------------------+----------------+
++------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                            ;
++---------------------------------------------+--------------------------+
+; Resource                                    ; Usage                    ;
++---------------------------------------------+--------------------------+
+; Estimate of Logic utilization (ALMs needed) ; 505                      ;
+;                                             ;                          ;
+; Combinational ALUT usage for logic          ; 810                      ;
+;     -- 7 input functions                    ; 3                        ;
+;     -- 6 input functions                    ; 161                      ;
+;     -- 5 input functions                    ; 90                       ;
+;     -- 4 input functions                    ; 154                      ;
+;     -- <=3 input functions                  ; 402                      ;
+;                                             ;                          ;
+; Dedicated logic registers                   ; 482                      ;
+;                                             ;                          ;
+; I/O pins                                    ; 67                       ;
+; Total MLAB memory bits                      ; 0                        ;
+; Total block memory bits                     ; 2560                     ;
+;                                             ;                          ;
+; Total DSP Blocks                            ; 0                        ;
+;                                             ;                          ;
+; Maximum fan-out node                        ; altera_internal_jtag~TDO ;
+; Maximum fan-out                             ; 268                      ;
+; Total fan-out                               ; 5107                     ;
+; Average fan-out                             ; 3.50                     ;
++---------------------------------------------+--------------------------+
 
 
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -303,7 +310,7 @@ agreement for further details.
 +-----------------------------------------------------------------------------------------------------+-------------------+--------------+-------------------+------------+------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                                                                          ; LC Combinationals ; LC Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                                                                                      ; Library Name ;
 +-----------------------------------------------------------------------------------------------------+-------------------+--------------+-------------------+------------+------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-; |ksa                                                                                                ; 730 (36)          ; 439 (50)     ; 2304              ; 0          ; 67   ; 0            ; |ksa                                                                                                                                                                                                                     ; work         ;
+; |ksa                                                                                                ; 810 (36)          ; 482 (50)     ; 2560              ; 0          ; 67   ; 0            ; |ksa                                                                                                                                                                                                                     ; work         ;
 ;    |Generate_Arbitrary_Divided_Clk32:Gen_1KHz_clk|                                                  ; 48 (0)            ; 39 (0)       ; 0                 ; 0          ; 0    ; 0            ; |ksa|Generate_Arbitrary_Divided_Clk32:Gen_1KHz_clk                                                                                                                                                                       ; work         ;
 ;       |var_clk_div32:Div_Clk|                                                                       ; 48 (48)           ; 39 (39)      ; 0                 ; 0          ; 0    ; 0            ; |ksa|Generate_Arbitrary_Divided_Clk32:Gen_1KHz_clk|var_clk_div32:Div_Clk                                                                                                                                                 ; work         ;
 ;    |Generate_Arbitrary_Divided_Clk32:Gen_2Hz_clk|                                                   ; 48 (0)            ; 39 (0)       ; 0                 ; 0          ; 0    ; 0            ; |ksa|Generate_Arbitrary_Divided_Clk32:Gen_2Hz_clk                                                                                                                                                                        ; work         ;
@@ -314,8 +321,14 @@ agreement for further details.
 ;    |SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst3|                                    ; 7 (7)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ksa|SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst3                                                                                                                                                         ; work         ;
 ;    |async_trap_and_reset_gen_1_pulse:make_speedown_pulse|                                           ; 3 (3)             ; 4 (4)        ; 0                 ; 0          ; 0    ; 0            ; |ksa|async_trap_and_reset_gen_1_pulse:make_speedown_pulse                                                                                                                                                                ; work         ;
 ;    |async_trap_and_reset_gen_1_pulse:make_speedup_pulse|                                            ; 3 (3)             ; 4 (4)        ; 0                 ; 0          ; 0    ; 0            ; |ksa|async_trap_and_reset_gen_1_pulse:make_speedup_pulse                                                                                                                                                                 ; work         ;
-;    |compute:compute_insta|                                                                          ; 100 (100)         ; 58 (58)      ; 0                 ; 0          ; 0    ; 0            ; |ksa|compute:compute_insta                                                                                                                                                                                               ; work         ;
-;    |decrypt:decrypt_insta|                                                                          ; 69 (69)           ; 7 (7)        ; 0                 ; 0          ; 0    ; 0            ; |ksa|decrypt:decrypt_insta                                                                                                                                                                                               ; work         ;
+;    |compute:compute_insta|                                                                          ; 111 (111)         ; 58 (58)      ; 0                 ; 0          ; 0    ; 0            ; |ksa|compute:compute_insta                                                                                                                                                                                               ; work         ;
+;    |d_memory:d_memory_insta|                                                                        ; 38 (0)            ; 31 (0)       ; 256               ; 0          ; 0    ; 0            ; |ksa|d_memory:d_memory_insta                                                                                                                                                                                             ; work         ;
+;       |altsyncram:altsyncram_component|                                                             ; 38 (0)            ; 31 (0)       ; 256               ; 0          ; 0    ; 0            ; |ksa|d_memory:d_memory_insta|altsyncram:altsyncram_component                                                                                                                                                             ; work         ;
+;          |altsyncram_oa32:auto_generated|                                                           ; 38 (0)            ; 31 (0)       ; 256               ; 0          ; 0    ; 0            ; |ksa|d_memory:d_memory_insta|altsyncram:altsyncram_component|altsyncram_oa32:auto_generated                                                                                                                              ; work         ;
+;             |altsyncram_nop2:altsyncram1|                                                           ; 0 (0)             ; 0 (0)        ; 256               ; 0          ; 0    ; 0            ; |ksa|d_memory:d_memory_insta|altsyncram:altsyncram_component|altsyncram_oa32:auto_generated|altsyncram_nop2:altsyncram1                                                                                                  ; work         ;
+;             |sld_mod_ram_rom:mgl_prim2|                                                             ; 38 (21)           ; 31 (22)      ; 0                 ; 0          ; 0    ; 0            ; |ksa|d_memory:d_memory_insta|altsyncram:altsyncram_component|altsyncram_oa32:auto_generated|sld_mod_ram_rom:mgl_prim2                                                                                                    ; work         ;
+;                |sld_rom_sr:\ram_rom_logic_gen:name_gen:info_rom_sr|                                 ; 17 (17)           ; 9 (9)        ; 0                 ; 0          ; 0    ; 0            ; |ksa|d_memory:d_memory_insta|altsyncram:altsyncram_component|altsyncram_oa32:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_rom_sr:\ram_rom_logic_gen:name_gen:info_rom_sr                                                 ; work         ;
+;    |decrypt:decrypt_insta|                                                                          ; 75 (75)           ; 7 (7)        ; 0                 ; 0          ; 0    ; 0            ; |ksa|decrypt:decrypt_insta                                                                                                                                                                                               ; work         ;
 ;    |doublesync:key0_doublsync|                                                                      ; 1 (1)             ; 2 (2)        ; 0                 ; 0          ; 0    ; 0            ; |ksa|doublesync:key0_doublsync                                                                                                                                                                                           ; work         ;
 ;    |doublesync:key1_doublsync|                                                                      ; 1 (1)             ; 2 (2)        ; 0                 ; 0          ; 0    ; 0            ; |ksa|doublesync:key1_doublsync                                                                                                                                                                                           ; work         ;
 ;    |doublesync:key2_doublsync|                                                                      ; 1 (1)             ; 2 (2)        ; 0                 ; 0          ; 0    ; 0            ; |ksa|doublesync:key2_doublsync                                                                                                                                                                                           ; work         ;
@@ -337,11 +350,11 @@ agreement for further details.
 ;          |lpm_divide_62m:auto_generated|                                                            ; 40 (0)            ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ksa|shuffle:shuffle_insta|lpm_divide:Mod0|lpm_divide_62m:auto_generated                                                                                                                                                 ; work         ;
 ;             |sign_div_unsign_9kh:divider|                                                           ; 40 (0)            ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ksa|shuffle:shuffle_insta|lpm_divide:Mod0|lpm_divide_62m:auto_generated|sign_div_unsign_9kh:divider                                                                                                                     ; work         ;
 ;                |alt_u_div_ose:divider|                                                              ; 40 (40)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ksa|shuffle:shuffle_insta|lpm_divide:Mod0|lpm_divide_62m:auto_generated|sign_div_unsign_9kh:divider|alt_u_div_ose:divider                                                                                               ; work         ;
-;    |sld_hub:auto_hub|                                                                               ; 128 (1)           ; 97 (0)       ; 0                 ; 0          ; 0    ; 0            ; |ksa|sld_hub:auto_hub                                                                                                                                                                                                    ; work         ;
-;       |alt_sld_fab:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:instrumentation_fabric| ; 127 (1)           ; 97 (6)       ; 0                 ; 0          ; 0    ; 0            ; |ksa|sld_hub:auto_hub|alt_sld_fab:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:instrumentation_fabric                                                                                                        ; alt_sld_fab  ;
-;          |alt_sld_fab_sldfabric:sldfabric|                                                          ; 126 (0)           ; 91 (0)       ; 0                 ; 0          ; 0    ; 0            ; |ksa|sld_hub:auto_hub|alt_sld_fab:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:instrumentation_fabric|alt_sld_fab_sldfabric:sldfabric                                                                        ; alt_sld_fab  ;
-;             |sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|                                          ; 126 (92)          ; 91 (63)      ; 0                 ; 0          ; 0    ; 0            ; |ksa|sld_hub:auto_hub|alt_sld_fab:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:instrumentation_fabric|alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub                           ; work         ;
-;                |sld_rom_sr:hub_info_reg|                                                            ; 15 (15)           ; 9 (9)        ; 0                 ; 0          ; 0    ; 0            ; |ksa|sld_hub:auto_hub|alt_sld_fab:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:instrumentation_fabric|alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|sld_rom_sr:hub_info_reg   ; work         ;
+;    |sld_hub:auto_hub|                                                                               ; 153 (1)           ; 109 (0)      ; 0                 ; 0          ; 0    ; 0            ; |ksa|sld_hub:auto_hub                                                                                                                                                                                                    ; work         ;
+;       |alt_sld_fab:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:instrumentation_fabric| ; 152 (1)           ; 109 (7)      ; 0                 ; 0          ; 0    ; 0            ; |ksa|sld_hub:auto_hub|alt_sld_fab:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:instrumentation_fabric                                                                                                        ; alt_sld_fab  ;
+;          |alt_sld_fab_sldfabric:sldfabric|                                                          ; 151 (0)           ; 102 (0)      ; 0                 ; 0          ; 0    ; 0            ; |ksa|sld_hub:auto_hub|alt_sld_fab:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:instrumentation_fabric|alt_sld_fab_sldfabric:sldfabric                                                                        ; alt_sld_fab  ;
+;             |sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|                                          ; 151 (113)         ; 102 (73)     ; 0                 ; 0          ; 0    ; 0            ; |ksa|sld_hub:auto_hub|alt_sld_fab:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:instrumentation_fabric|alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub                           ; work         ;
+;                |sld_rom_sr:hub_info_reg|                                                            ; 19 (19)           ; 10 (10)      ; 0                 ; 0          ; 0    ; 0            ; |ksa|sld_hub:auto_hub|alt_sld_fab:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:instrumentation_fabric|alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|sld_rom_sr:hub_info_reg   ; work         ;
 ;                |sld_shadow_jsm:shadow_jsm|                                                          ; 19 (19)           ; 19 (19)      ; 0                 ; 0          ; 0    ; 0            ; |ksa|sld_hub:auto_hub|alt_sld_fab:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:instrumentation_fabric|alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|sld_shadow_jsm:shadow_jsm ; work         ;
 ;    |speed_reg_control:speed_reg_control_inst|                                                       ; 53 (53)           ; 18 (14)      ; 0                 ; 0          ; 0    ; 0            ; |ksa|speed_reg_control:speed_reg_control_inst                                                                                                                                                                            ; work         ;
 ;       |async_trap_and_reset:make_song_restart_signal|                                               ; 0 (0)             ; 4 (4)        ; 0                 ; 0          ; 0    ; 0            ; |ksa|speed_reg_control:speed_reg_control_inst|async_trap_and_reset:make_song_restart_signal                                                                                                                              ; work         ;
@@ -354,6 +367,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-------------------------------------------------------------------------------------------------------------------------------+------------+----------------+--------------+--------------+--------------+--------------+------+-------------+
 ; Name                                                                                                                          ; Type       ; Mode           ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size ; MIF         ;
 +-------------------------------------------------------------------------------------------------------------------------------+------------+----------------+--------------+--------------+--------------+--------------+------+-------------+
+; d_memory:d_memory_insta|altsyncram:altsyncram_component|altsyncram_oa32:auto_generated|altsyncram_nop2:altsyncram1|ALTSYNCRAM ; M10K block ; True Dual Port ; 32           ; 8            ; 32           ; 8            ; 256  ; None        ;
 ; r_memory:r_memory_insta|altsyncram:altsyncram_component|altsyncram_p7t1:auto_generated|altsyncram_osu2:altsyncram1|ALTSYNCRAM ; M10K block ; True Dual Port ; 32           ; 8            ; 32           ; 8            ; 256  ; message.mif ;
 ; s_memory:s_memory_insta|altsyncram:altsyncram_component|altsyncram_2d32:auto_generated|altsyncram_dsp2:altsyncram1|ALTSYNCRAM ; M10K block ; True Dual Port ; 256          ; 8            ; 256          ; 8            ; 2048 ; None        ;
 +-------------------------------------------------------------------------------------------------------------------------------+------------+----------------+--------------+--------------+--------------+--------------+------+-------------+
@@ -368,24 +382,26 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Altera ; Signal Tap   ; N/A     ; N/A          ; Licensed     ; |ksa|sld_hub:auto_hub|alt_sld_fab:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:instrumentation_fabric|alt_sld_fab_presplit:presplit   ;                 ;
 ; Altera ; Signal Tap   ; N/A     ; N/A          ; Licensed     ; |ksa|sld_hub:auto_hub|alt_sld_fab:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:instrumentation_fabric|alt_sld_fab_sldfabric:sldfabric ;                 ;
 ; Altera ; Signal Tap   ; N/A     ; N/A          ; Licensed     ; |ksa|sld_hub:auto_hub|alt_sld_fab:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:instrumentation_fabric|alt_sld_fab_splitter:splitter   ;                 ;
+; Altera ; RAM: 1-PORT  ; 14.1    ; N/A          ; N/A          ; |ksa|d_memory:d_memory_insta                                                                                                                      ; d_memory.v      ;
 ; Altera ; ROM: 1-PORT  ; 14.1    ; N/A          ; N/A          ; |ksa|r_memory:r_memory_insta                                                                                                                      ; r_memory.v      ;
 ; Altera ; RAM: 1-PORT  ; 14.1    ; N/A          ; N/A          ; |ksa|s_memory:s_memory_insta                                                                                                                      ; s_memory.v      ;
 +--------+--------------+---------+--------------+--------------+---------------------------------------------------------------------------------------------------------------------------------------------------+-----------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                                                                                                                       ;
-+-------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------+
-; Register name                                                                                                                                   ; Reason for Removal                     ;
-+-------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------+
-; regd_actual_7seg_output[16..23]                                                                                                                 ; Stuck at GND due to stuck port data_in ;
-; init:init_insta|state[2,3]                                                                                                                      ; Merged with init:init_insta|state[1]   ;
-; init:init_insta|state[4]                                                                                                                        ; Merged with init:init_insta|state[0]   ;
-; compute:compute_insta|state[13]                                                                                                                 ; Stuck at GND due to stuck port data_in ;
-; r_memory:r_memory_insta|altsyncram:altsyncram_component|altsyncram_p7t1:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_data_shift_cntr_reg[3] ; Stuck at GND due to stuck port data_in ;
-; s_memory:s_memory_insta|altsyncram:altsyncram_component|altsyncram_2d32:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_data_shift_cntr_reg[3] ; Stuck at GND due to stuck port data_in ;
-; Total Number of Removed Registers = 14                                                                                                          ;                                        ;
-+-------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                                                                                                           ;
++-------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------+
+; Register name                                                                                                                                   ; Reason for Removal                         ;
++-------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------+
+; regd_actual_7seg_output[16..23]                                                                                                                 ; Stuck at GND due to stuck port data_in     ;
+; compute:compute_insta|state[3]                                                                                                                  ; Merged with compute:compute_insta|state[0] ;
+; init:init_insta|state[2,3]                                                                                                                      ; Merged with init:init_insta|state[1]       ;
+; init:init_insta|state[4]                                                                                                                        ; Merged with init:init_insta|state[0]       ;
+; r_memory:r_memory_insta|altsyncram:altsyncram_component|altsyncram_p7t1:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_data_shift_cntr_reg[3] ; Stuck at GND due to stuck port data_in     ;
+; d_memory:d_memory_insta|altsyncram:altsyncram_component|altsyncram_oa32:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_data_shift_cntr_reg[3] ; Stuck at GND due to stuck port data_in     ;
+; s_memory:s_memory_insta|altsyncram:altsyncram_component|altsyncram_2d32:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_data_shift_cntr_reg[3] ; Stuck at GND due to stuck port data_in     ;
+; Total Number of Removed Registers = 15                                                                                                          ;                                            ;
++-------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -393,12 +409,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 439   ;
+; Total registers                              ; 482   ;
 ; Number of registers using Synchronous Clear  ; 23    ;
-; Number of registers using Synchronous Load   ; 139   ;
-; Number of registers using Asynchronous Clear ; 171   ;
+; Number of registers using Synchronous Load   ; 143   ;
+; Number of registers using Asynchronous Clear ; 196   ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 173   ;
+; Number of registers using Clock Enable       ; 212   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -420,33 +436,40 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                                                                                                                                                             ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; 3:1                ; 8 bits    ; 16 LEs        ; 0 LEs                ; 16 LEs                 ; Yes        ; |ksa|r_memory:r_memory_insta|altsyncram:altsyncram_component|altsyncram_p7t1:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_data_reg[0]                                                                                              ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 0 LEs                ; 16 LEs                 ; Yes        ; |ksa|r_memory:r_memory_insta|altsyncram:altsyncram_component|altsyncram_p7t1:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_data_reg[4]                                                                                              ;
 ; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |ksa|r_memory:r_memory_insta|altsyncram:altsyncram_component|altsyncram_p7t1:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_data_shift_cntr_reg[2]                                                                                   ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 0 LEs                ; 16 LEs                 ; Yes        ; |ksa|s_memory:s_memory_insta|altsyncram:altsyncram_component|altsyncram_2d32:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_data_reg[1]                                                                                              ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 0 LEs                ; 16 LEs                 ; Yes        ; |ksa|d_memory:d_memory_insta|altsyncram:altsyncram_component|altsyncram_oa32:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_data_reg[5]                                                                                              ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |ksa|d_memory:d_memory_insta|altsyncram:altsyncram_component|altsyncram_oa32:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_data_shift_cntr_reg[0]                                                                                   ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 0 LEs                ; 16 LEs                 ; Yes        ; |ksa|s_memory:s_memory_insta|altsyncram:altsyncram_component|altsyncram_2d32:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_data_reg[5]                                                                                              ;
 ; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |ksa|s_memory:s_memory_insta|altsyncram:altsyncram_component|altsyncram_2d32:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_data_shift_cntr_reg[3]                                                                                   ;
-; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |ksa|r_memory:r_memory_insta|altsyncram:altsyncram_component|altsyncram_p7t1:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_addr_reg[3]                                                                                              ;
+; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |ksa|r_memory:r_memory_insta|altsyncram:altsyncram_component|altsyncram_p7t1:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_addr_reg[4]                                                                                              ;
+; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |ksa|d_memory:d_memory_insta|altsyncram:altsyncram_component|altsyncram_oa32:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_addr_reg[1]                                                                                              ;
 ; 3:1                ; 8 bits    ; 16 LEs        ; 0 LEs                ; 16 LEs                 ; Yes        ; |ksa|s_memory:s_memory_insta|altsyncram:altsyncram_component|altsyncram_2d32:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_addr_reg[0]                                                                                              ;
-; 5:1                ; 5 bits    ; 15 LEs        ; 10 LEs               ; 5 LEs                  ; Yes        ; |ksa|r_memory:r_memory_insta|altsyncram:altsyncram_component|altsyncram_p7t1:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_rom_sr:\ram_rom_logic_gen:name_gen:info_rom_sr|word_counter[0]                                               ;
-; 6:1                ; 2 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |ksa|init:init_insta|state[1]                                                                                                                                                                                                          ;
-; 5:1                ; 5 bits    ; 15 LEs        ; 10 LEs               ; 5 LEs                  ; Yes        ; |ksa|s_memory:s_memory_insta|altsyncram:altsyncram_component|altsyncram_2d32:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_rom_sr:\ram_rom_logic_gen:name_gen:info_rom_sr|word_counter[3]                                               ;
-; 24:1               ; 4 bits    ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |ksa|r_memory:r_memory_insta|altsyncram:altsyncram_component|altsyncram_p7t1:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_rom_sr:\ram_rom_logic_gen:name_gen:info_rom_sr|WORD_SR[0]                                                    ;
-; 24:1               ; 4 bits    ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |ksa|s_memory:s_memory_insta|altsyncram:altsyncram_component|altsyncram_2d32:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_rom_sr:\ram_rom_logic_gen:name_gen:info_rom_sr|WORD_SR[0]                                                    ;
-; 131:1              ; 7 bits    ; 609 LEs       ; 595 LEs              ; 14 LEs                 ; Yes        ; |ksa|decrypt:decrypt_insta|state[0]                                                                                                                                                                                                    ;
+; 5:1                ; 5 bits    ; 15 LEs        ; 10 LEs               ; 5 LEs                  ; Yes        ; |ksa|r_memory:r_memory_insta|altsyncram:altsyncram_component|altsyncram_p7t1:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_rom_sr:\ram_rom_logic_gen:name_gen:info_rom_sr|word_counter[3]                                               ;
+; 5:1                ; 5 bits    ; 15 LEs        ; 10 LEs               ; 5 LEs                  ; Yes        ; |ksa|d_memory:d_memory_insta|altsyncram:altsyncram_component|altsyncram_oa32:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_rom_sr:\ram_rom_logic_gen:name_gen:info_rom_sr|word_counter[4]                                               ;
+; 6:1                ; 2 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |ksa|init:init_insta|state[0]                                                                                                                                                                                                          ;
+; 5:1                ; 5 bits    ; 15 LEs        ; 10 LEs               ; 5 LEs                  ; Yes        ; |ksa|s_memory:s_memory_insta|altsyncram:altsyncram_component|altsyncram_2d32:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_rom_sr:\ram_rom_logic_gen:name_gen:info_rom_sr|word_counter[1]                                               ;
+; 24:1               ; 4 bits    ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |ksa|r_memory:r_memory_insta|altsyncram:altsyncram_component|altsyncram_p7t1:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_rom_sr:\ram_rom_logic_gen:name_gen:info_rom_sr|WORD_SR[2]                                                    ;
+; 24:1               ; 4 bits    ; 64 LEs        ; 28 LEs               ; 36 LEs                 ; Yes        ; |ksa|d_memory:d_memory_insta|altsyncram:altsyncram_component|altsyncram_oa32:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_rom_sr:\ram_rom_logic_gen:name_gen:info_rom_sr|WORD_SR[2]                                                    ;
+; 24:1               ; 4 bits    ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |ksa|s_memory:s_memory_insta|altsyncram:altsyncram_component|altsyncram_2d32:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_rom_sr:\ram_rom_logic_gen:name_gen:info_rom_sr|WORD_SR[1]                                                    ;
+; 131:1              ; 7 bits    ; 609 LEs       ; 595 LEs              ; 14 LEs                 ; Yes        ; |ksa|decrypt:decrypt_insta|state[4]                                                                                                                                                                                                    ;
 ; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |ksa|shuffle:shuffle_insta|Mux6                                                                                                                                                                                                        ;
-; 8:1                ; 8 bits    ; 40 LEs        ; 40 LEs               ; 0 LEs                  ; No         ; |ksa|decrypt:decrypt_insta|data_out[1]                                                                                                                                                                                                 ;
-; 8:1                ; 3 bits    ; 15 LEs        ; 15 LEs               ; 0 LEs                  ; No         ; |ksa|decrypt:decrypt_insta|address_out[7]                                                                                                                                                                                              ;
-; 8:1                ; 5 bits    ; 25 LEs        ; 25 LEs               ; 0 LEs                  ; No         ; |ksa|decrypt:decrypt_insta|address_out[4]                                                                                                                                                                                              ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |ksa|sld_hub:auto_hub|alt_sld_fab:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:instrumentation_fabric|alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|hub_minor_ver_reg[2]                    ;
+; 8:1                ; 8 bits    ; 40 LEs        ; 32 LEs               ; 8 LEs                  ; No         ; |ksa|decrypt:decrypt_insta|data_out[5]                                                                                                                                                                                                 ;
+; 8:1                ; 3 bits    ; 15 LEs        ; 15 LEs               ; 0 LEs                  ; No         ; |ksa|decrypt:decrypt_insta|address_out[5]                                                                                                                                                                                              ;
+; 8:1                ; 5 bits    ; 25 LEs        ; 25 LEs               ; 0 LEs                  ; No         ; |ksa|decrypt:decrypt_insta|address_out[3]                                                                                                                                                                                              ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |ksa|sld_hub:auto_hub|alt_sld_fab:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:instrumentation_fabric|alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|hub_minor_ver_reg[0]                    ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |ksa|sld_hub:auto_hub|alt_sld_fab:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:instrumentation_fabric|alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|hub_minor_ver_reg[3]                    ;
-; 4:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; Yes        ; |ksa|sld_hub:auto_hub|alt_sld_fab:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:instrumentation_fabric|alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[2]              ;
-; 6:1                ; 5 bits    ; 20 LEs        ; 5 LEs                ; 15 LEs                 ; Yes        ; |ksa|sld_hub:auto_hub|alt_sld_fab:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:instrumentation_fabric|alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|irf_reg[2][3]                           ;
+; 4:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; Yes        ; |ksa|sld_hub:auto_hub|alt_sld_fab:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:instrumentation_fabric|alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[0]              ;
 ; 6:1                ; 5 bits    ; 20 LEs        ; 5 LEs                ; 15 LEs                 ; Yes        ; |ksa|sld_hub:auto_hub|alt_sld_fab:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:instrumentation_fabric|alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|irf_reg[1][0]                           ;
-; 5:1                ; 5 bits    ; 15 LEs        ; 10 LEs               ; 5 LEs                  ; Yes        ; |ksa|sld_hub:auto_hub|alt_sld_fab:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:instrumentation_fabric|alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|sld_rom_sr:hub_info_reg|word_counter[1] ;
-; 7:1                ; 5 bits    ; 20 LEs        ; 5 LEs                ; 15 LEs                 ; Yes        ; |ksa|sld_hub:auto_hub|alt_sld_fab:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:instrumentation_fabric|alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|shadow_irf_reg[2][2]                    ;
-; 7:1                ; 5 bits    ; 20 LEs        ; 5 LEs                ; 15 LEs                 ; Yes        ; |ksa|sld_hub:auto_hub|alt_sld_fab:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:instrumentation_fabric|alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|shadow_irf_reg[1][3]                    ;
-; 8:1                ; 5 bits    ; 25 LEs        ; 10 LEs               ; 15 LEs                 ; Yes        ; |ksa|sld_hub:auto_hub|alt_sld_fab:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:instrumentation_fabric|alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|irsr_reg[3]                             ;
-; 34:1               ; 4 bits    ; 88 LEs        ; 60 LEs               ; 28 LEs                 ; Yes        ; |ksa|sld_hub:auto_hub|alt_sld_fab:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:instrumentation_fabric|alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|design_hash_reg[1]                      ;
-; 28:1               ; 4 bits    ; 72 LEs        ; 52 LEs               ; 20 LEs                 ; Yes        ; |ksa|sld_hub:auto_hub|alt_sld_fab:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:instrumentation_fabric|alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|sld_rom_sr:hub_info_reg|WORD_SR[0]      ;
+; 6:1                ; 5 bits    ; 20 LEs        ; 5 LEs                ; 15 LEs                 ; Yes        ; |ksa|sld_hub:auto_hub|alt_sld_fab:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:instrumentation_fabric|alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|irf_reg[2][0]                           ;
+; 6:1                ; 5 bits    ; 20 LEs        ; 5 LEs                ; 15 LEs                 ; Yes        ; |ksa|sld_hub:auto_hub|alt_sld_fab:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:instrumentation_fabric|alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|irf_reg[3][0]                           ;
+; 5:1                ; 6 bits    ; 18 LEs        ; 12 LEs               ; 6 LEs                  ; Yes        ; |ksa|sld_hub:auto_hub|alt_sld_fab:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:instrumentation_fabric|alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|sld_rom_sr:hub_info_reg|word_counter[0] ;
+; 7:1                ; 5 bits    ; 20 LEs        ; 5 LEs                ; 15 LEs                 ; Yes        ; |ksa|sld_hub:auto_hub|alt_sld_fab:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:instrumentation_fabric|alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|shadow_irf_reg[1][0]                    ;
+; 7:1                ; 5 bits    ; 20 LEs        ; 5 LEs                ; 15 LEs                 ; Yes        ; |ksa|sld_hub:auto_hub|alt_sld_fab:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:instrumentation_fabric|alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|shadow_irf_reg[2][4]                    ;
+; 7:1                ; 5 bits    ; 20 LEs        ; 5 LEs                ; 15 LEs                 ; Yes        ; |ksa|sld_hub:auto_hub|alt_sld_fab:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:instrumentation_fabric|alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|shadow_irf_reg[3][0]                    ;
+; 34:1               ; 4 bits    ; 88 LEs        ; 68 LEs               ; 20 LEs                 ; Yes        ; |ksa|sld_hub:auto_hub|alt_sld_fab:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:instrumentation_fabric|alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|design_hash_reg[1]                      ;
+; 10:1               ; 5 bits    ; 30 LEs        ; 10 LEs               ; 20 LEs                 ; Yes        ; |ksa|sld_hub:auto_hub|alt_sld_fab:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:instrumentation_fabric|alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|irsr_reg[3]                             ;
+; 36:1               ; 4 bits    ; 96 LEs        ; 32 LEs               ; 64 LEs                 ; Yes        ; |ksa|sld_hub:auto_hub|alt_sld_fab:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:instrumentation_fabric|alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|sld_rom_sr:hub_info_reg|WORD_SR[0]      ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
@@ -1080,6 +1103,15 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 
 
 +-------------------------------------------------------------------------------------------------------------------------------------------+
+; Source assignments for d_memory:d_memory_insta|altsyncram:altsyncram_component|altsyncram_oa32:auto_generated|altsyncram_nop2:altsyncram1 ;
++---------------------------------+-------+------+------------------------------------------------------------------------------------------+
+; Assignment                      ; Value ; From ; To                                                                                       ;
++---------------------------------+-------+------+------------------------------------------------------------------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; OFF   ; -    ; -                                                                                        ;
++---------------------------------+-------+------+------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------+
 ; Source assignments for s_memory:s_memory_insta|altsyncram:altsyncram_component|altsyncram_2d32:auto_generated|altsyncram_dsp2:altsyncram1 ;
 +---------------------------------+-------+------+------------------------------------------------------------------------------------------+
 ; Assignment                      ; Value ; From ; To                                                                                       ;
@@ -1156,20 +1188,20 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Parameter Name ; Value          ; Type                             ;
 +----------------+----------------+----------------------------------+
 ; idle           ; 00000000000000 ; Unsigned Binary                  ;
-; incr_i         ; 00001000000000 ; Unsigned Binary                  ;
-; addr_si        ; 00010000000000 ; Unsigned Binary                  ;
-; read_si        ; 00011001000000 ; Unsigned Binary                  ;
-; calc_j         ; 00100000000000 ; Unsigned Binary                  ;
-; addr_sj        ; 00101000001000 ; Unsigned Binary                  ;
-; read_sj        ; 00110010000000 ; Unsigned Binary                  ;
-; swap_si        ; 00111000001001 ; Unsigned Binary                  ;
-; swap_sj        ; 01000000000011 ; Unsigned Binary                  ;
-; addr_sum       ; 01010000010000 ; Unsigned Binary                  ;
-; read_sum       ; 01011100000000 ; Unsigned Binary                  ;
-; write_decrypt  ; 01100000011111 ; Unsigned Binary                  ;
-; check_k        ; 01101000000000 ; Unsigned Binary                  ;
-; incr_k         ; 01110000000000 ; Unsigned Binary                  ;
-; finish         ; 01111000100000 ; Unsigned Binary                  ;
+; incr_i         ; 00010000000000 ; Unsigned Binary                  ;
+; addr_si        ; 00100000000000 ; Unsigned Binary                  ;
+; read_si        ; 00110010000000 ; Unsigned Binary                  ;
+; calc_j         ; 01000000000000 ; Unsigned Binary                  ;
+; addr_sj        ; 01010000010000 ; Unsigned Binary                  ;
+; read_sj        ; 01100100000000 ; Unsigned Binary                  ;
+; swap_si        ; 01110000010010 ; Unsigned Binary                  ;
+; swap_sj        ; 10000000000110 ; Unsigned Binary                  ;
+; addr_sum       ; 10100000110000 ; Unsigned Binary                  ;
+; read_sum       ; 10111000000000 ; Unsigned Binary                  ;
+; write_decrypt  ; 11000000101101 ; Unsigned Binary                  ;
+; check_k        ; 11010000000000 ; Unsigned Binary                  ;
+; incr_k         ; 11100000000000 ; Unsigned Binary                  ;
+; finish         ; 11110001000000 ; Unsigned Binary                  ;
 +----------------+----------------+----------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -1231,6 +1263,67 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; WIDTH_ECCSTATUS                    ; 3                    ; Untyped                                  ;
 ; DEVICE_FAMILY                      ; Cyclone V            ; Untyped                                  ;
 ; CBXI_PARAMETER                     ; altsyncram_p7t1      ; Untyped                                  ;
++------------------------------------+----------------------+------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: d_memory:d_memory_insta|altsyncram:altsyncram_component ;
++------------------------------------+----------------------+------------------------------------------+
+; Parameter Name                     ; Value                ; Type                                     ;
++------------------------------------+----------------------+------------------------------------------+
+; BYTE_SIZE_BLOCK                    ; 8                    ; Untyped                                  ;
+; AUTO_CARRY_CHAINS                  ; ON                   ; AUTO_CARRY                               ;
+; IGNORE_CARRY_BUFFERS               ; OFF                  ; IGNORE_CARRY                             ;
+; AUTO_CASCADE_CHAINS                ; ON                   ; AUTO_CASCADE                             ;
+; IGNORE_CASCADE_BUFFERS             ; OFF                  ; IGNORE_CASCADE                           ;
+; WIDTH_BYTEENA                      ; 1                    ; Untyped                                  ;
+; OPERATION_MODE                     ; SINGLE_PORT          ; Untyped                                  ;
+; WIDTH_A                            ; 8                    ; Signed Integer                           ;
+; WIDTHAD_A                          ; 5                    ; Signed Integer                           ;
+; NUMWORDS_A                         ; 32                   ; Signed Integer                           ;
+; OUTDATA_REG_A                      ; UNREGISTERED         ; Untyped                                  ;
+; ADDRESS_ACLR_A                     ; NONE                 ; Untyped                                  ;
+; OUTDATA_ACLR_A                     ; NONE                 ; Untyped                                  ;
+; WRCONTROL_ACLR_A                   ; NONE                 ; Untyped                                  ;
+; INDATA_ACLR_A                      ; NONE                 ; Untyped                                  ;
+; BYTEENA_ACLR_A                     ; NONE                 ; Untyped                                  ;
+; WIDTH_B                            ; 1                    ; Untyped                                  ;
+; WIDTHAD_B                          ; 1                    ; Untyped                                  ;
+; NUMWORDS_B                         ; 1                    ; Untyped                                  ;
+; INDATA_REG_B                       ; CLOCK1               ; Untyped                                  ;
+; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1               ; Untyped                                  ;
+; RDCONTROL_REG_B                    ; CLOCK1               ; Untyped                                  ;
+; ADDRESS_REG_B                      ; CLOCK1               ; Untyped                                  ;
+; OUTDATA_REG_B                      ; UNREGISTERED         ; Untyped                                  ;
+; BYTEENA_REG_B                      ; CLOCK1               ; Untyped                                  ;
+; INDATA_ACLR_B                      ; NONE                 ; Untyped                                  ;
+; WRCONTROL_ACLR_B                   ; NONE                 ; Untyped                                  ;
+; ADDRESS_ACLR_B                     ; NONE                 ; Untyped                                  ;
+; OUTDATA_ACLR_B                     ; NONE                 ; Untyped                                  ;
+; RDCONTROL_ACLR_B                   ; NONE                 ; Untyped                                  ;
+; BYTEENA_ACLR_B                     ; NONE                 ; Untyped                                  ;
+; WIDTH_BYTEENA_A                    ; 1                    ; Signed Integer                           ;
+; WIDTH_BYTEENA_B                    ; 1                    ; Untyped                                  ;
+; RAM_BLOCK_TYPE                     ; M10K                 ; Untyped                                  ;
+; BYTE_SIZE                          ; 8                    ; Untyped                                  ;
+; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE            ; Untyped                                  ;
+; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ ; Untyped                                  ;
+; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ ; Untyped                                  ;
+; INIT_FILE                          ; UNUSED               ; Untyped                                  ;
+; INIT_FILE_LAYOUT                   ; PORT_A               ; Untyped                                  ;
+; MAXIMUM_DEPTH                      ; 0                    ; Untyped                                  ;
+; CLOCK_ENABLE_INPUT_A               ; BYPASS               ; Untyped                                  ;
+; CLOCK_ENABLE_INPUT_B               ; NORMAL               ; Untyped                                  ;
+; CLOCK_ENABLE_OUTPUT_A              ; BYPASS               ; Untyped                                  ;
+; CLOCK_ENABLE_OUTPUT_B              ; NORMAL               ; Untyped                                  ;
+; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN      ; Untyped                                  ;
+; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN      ; Untyped                                  ;
+; ENABLE_ECC                         ; FALSE                ; Untyped                                  ;
+; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped                                  ;
+; WIDTH_ECCSTATUS                    ; 3                    ; Untyped                                  ;
+; DEVICE_FAMILY                      ; Cyclone V            ; Untyped                                  ;
+; CBXI_PARAMETER                     ; altsyncram_oa32      ; Untyped                                  ;
 +------------------------------------+----------------------+------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -1336,9 +1429,20 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------------------------------------------+---------------------------------------------------------+
 ; Name                                      ; Value                                                   ;
 +-------------------------------------------+---------------------------------------------------------+
-; Number of entity instances                ; 2                                                       ;
+; Number of entity instances                ; 3                                                       ;
 ; Entity Instance                           ; r_memory:r_memory_insta|altsyncram:altsyncram_component ;
 ;     -- OPERATION_MODE                     ; ROM                                                     ;
+;     -- WIDTH_A                            ; 8                                                       ;
+;     -- NUMWORDS_A                         ; 32                                                      ;
+;     -- OUTDATA_REG_A                      ; UNREGISTERED                                            ;
+;     -- WIDTH_B                            ; 1                                                       ;
+;     -- NUMWORDS_B                         ; 1                                                       ;
+;     -- ADDRESS_REG_B                      ; CLOCK1                                                  ;
+;     -- OUTDATA_REG_B                      ; UNREGISTERED                                            ;
+;     -- RAM_BLOCK_TYPE                     ; M10K                                                    ;
+;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                               ;
+; Entity Instance                           ; d_memory:d_memory_insta|altsyncram:altsyncram_component ;
+;     -- OPERATION_MODE                     ; SINGLE_PORT                                             ;
 ;     -- WIDTH_A                            ; 8                                                       ;
 ;     -- NUMWORDS_A                         ; 32                                                      ;
 ;     -- OUTDATA_REG_A                      ; UNREGISTERED                                            ;
@@ -1483,6 +1587,25 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+--------+----------+-------------------------------+
 
 
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "d_memory:d_memory_insta"                                                                                                                                                            ;
++---------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port    ; Type   ; Severity ; Details                                                                                                                                                                          ;
++---------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; address ; Input  ; Warning  ; Input port expression (8 bits) is wider than the input port (5 bits) it drives.  The 3 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; q       ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                                                              ;
++---------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "compute:compute_insta"                                                                               ;
++-----------------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port                  ; Type   ; Severity ; Details                                                                             ;
++-----------------------+--------+----------+-------------------------------------------------------------------------------------+
+; address_decrypt[7..5] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-----------------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
 +---------------------------------------------------+
 ; Port Connectivity Checks: "shuffle:shuffle_insta" ;
 +-------------+-------+----------+------------------+
@@ -1509,7 +1632,8 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Instance Index ; Instance ID ; Width ; Depth ; Mode       ; Hierarchy Location                                                                     ;
 +----------------+-------------+-------+-------+------------+----------------------------------------------------------------------------------------+
 ; 0              ; R           ; 8     ; 32    ; Read/Write ; r_memory:r_memory_insta|altsyncram:altsyncram_component|altsyncram_p7t1:auto_generated ;
-; 1              ; S           ; 8     ; 256   ; Read/Write ; s_memory:s_memory_insta|altsyncram:altsyncram_component|altsyncram_2d32:auto_generated ;
+; 1              ; D           ; 8     ; 32    ; Read/Write ; d_memory:d_memory_insta|altsyncram:altsyncram_component|altsyncram_oa32:auto_generated ;
+; 2              ; S           ; 8     ; 256   ; Read/Write ; s_memory:s_memory_insta|altsyncram:altsyncram_component|altsyncram_2d32:auto_generated ;
 +----------------+-------------+-------+-------+------------+----------------------------------------------------------------------------------------+
 
 
@@ -1518,16 +1642,16 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------------------------------------------------+-------+
 ; Type                                                     ; Count ;
 +----------------------------------------------------------+-------+
-; arriav_ff                                                ; 238   ;
-;     CLR                                                  ; 10    ;
-;     ENA                                                  ; 66    ;
-;     ENA CLR                                              ; 13    ;
+; arriav_ff                                                ; 269   ;
+;     CLR                                                  ; 15    ;
+;     ENA                                                  ; 75    ;
+;     ENA CLR                                              ; 22    ;
 ;     ENA CLR SLD                                          ; 8     ;
-;     ENA SLD                                              ; 17    ;
+;     ENA SLD                                              ; 25    ;
 ;     SCLR                                                 ; 16    ;
 ;     SLD                                                  ; 32    ;
 ;     plain                                                ; 76    ;
-; arriav_lcell_comb                                        ; 451   ;
+; arriav_lcell_comb                                        ; 506   ;
 ;     arith                                                ; 102   ;
 ;         0 data inputs                                    ; 7     ;
 ;         1 data inputs                                    ; 66    ;
@@ -1536,14 +1660,14 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;         4 data inputs                                    ; 5     ;
 ;     extend                                               ; 1     ;
 ;         7 data inputs                                    ; 1     ;
-;     normal                                               ; 340   ;
+;     normal                                               ; 395   ;
 ;         0 data inputs                                    ; 2     ;
 ;         1 data inputs                                    ; 9     ;
-;         2 data inputs                                    ; 33    ;
-;         3 data inputs                                    ; 44    ;
-;         4 data inputs                                    ; 91    ;
-;         5 data inputs                                    ; 72    ;
-;         6 data inputs                                    ; 89    ;
+;         2 data inputs                                    ; 36    ;
+;         3 data inputs                                    ; 63    ;
+;         4 data inputs                                    ; 122   ;
+;         5 data inputs                                    ; 70    ;
+;         6 data inputs                                    ; 93    ;
 ;     shared                                               ; 8     ;
 ;         3 data inputs                                    ; 8     ;
 ; blackbox                                                 ; 5     ;
@@ -1552,11 +1676,11 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     async_trap_and_reset_gen_1_pulse:make_speedown_pulse ; 1     ;
 ;     async_trap_and_reset_gen_1_pulse:make_speedup_pulse  ; 1     ;
 ;     speed_reg_control:speed_reg_control_inst             ; 1     ;
-; boundary_port                                            ; 109   ;
-; stratixv_ram_block                                       ; 16    ;
+; boundary_port                                            ; 130   ;
+; stratixv_ram_block                                       ; 24    ;
 ;                                                          ;       ;
 ; Max LUT depth                                            ; 12.10 ;
-; Average LUT depth                                        ; 3.03  ;
+; Average LUT depth                                        ; 2.82  ;
 +----------------------------------------------------------+-------+
 
 
@@ -1565,28 +1689,27 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+------------------------------------------+
 ; Type                  ; Count                                    ;
 +-----------------------+------------------------------------------+
-; arriav_ff             ; 97                                       ;
-;     CLR               ; 6                                        ;
-;     ENA               ; 30                                       ;
-;     ENA CLR           ; 35                                       ;
-;     ENA CLR SLD       ; 4                                        ;
+; arriav_ff             ; 109                                      ;
+;     CLR               ; 5                                        ;
+;     ENA               ; 31                                       ;
+;     ENA CLR           ; 51                                       ;
 ;     SCLR              ; 7                                        ;
 ;     plain             ; 15                                       ;
-; arriav_lcell_comb     ; 128                                      ;
-;     extend            ; 1                                        ;
-;         7 data inputs ; 1                                        ;
-;     normal            ; 127                                      ;
+; arriav_lcell_comb     ; 153                                      ;
+;     extend            ; 2                                        ;
+;         7 data inputs ; 2                                        ;
+;     normal            ; 151                                      ;
 ;         0 data inputs ; 1                                        ;
-;         1 data inputs ; 5                                        ;
-;         2 data inputs ; 24                                       ;
-;         3 data inputs ; 37                                       ;
-;         4 data inputs ; 14                                       ;
-;         5 data inputs ; 26                                       ;
-;         6 data inputs ; 20                                       ;
-; boundary_port         ; 152                                      ;
+;         1 data inputs ; 6                                        ;
+;         2 data inputs ; 29                                       ;
+;         3 data inputs ; 45                                       ;
+;         4 data inputs ; 24                                       ;
+;         5 data inputs ; 18                                       ;
+;         6 data inputs ; 28                                       ;
+; boundary_port         ; 208                                      ;
 ;                       ;                                          ;
 ; Max LUT depth         ; 3.00                                     ;
-; Average LUT depth     ; 1.43                                     ;
+; Average LUT depth     ; 1.54                                     ;
 +-----------------------+------------------------------------------+
 
 
@@ -1595,7 +1718,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------------------+--------------+
 ; Partition Name   ; Elapsed Time ;
 +------------------+--------------+
-; Top              ; 00:00:02     ;
+; Top              ; 00:00:01     ;
 ; sld_hub:auto_hub ; 00:00:00     ;
 +------------------+--------------+
 
@@ -1606,7 +1729,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 14.1.0 Build 186 12/03/2014 SJ Web Edition
-    Info: Processing started: Fri Mar 06 01:30:28 2020
+    Info: Processing started: Fri Mar 06 02:15:06 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off rc4 -c rc4
 Info (11104): Parallel Compilation has detected 4 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 2 of the 2 physical processors detected instead.
 Info (12021): Found 1 design units, including 1 entities, in source file init.sv
@@ -1629,8 +1752,6 @@ Info (12021): Found 1 design units, including 1 entities, in source file doubles
     Info (12023): Found entity 1: doublesync
 Info (12021): Found 1 design units, including 1 entities, in source file s_memory.v
     Info (12023): Found entity 1: s_memory
-Warning (10275): Verilog HDL Module Instantiation warning at ksa.sv(132): ignored dangling comma in List of Port Connections
-Warning (10275): Verilog HDL Module Instantiation warning at ksa.sv(144): ignored dangling comma in List of Port Connections
 Warning (10238): Verilog Module Declaration warning at ksa.sv(22): ignored anonymous port(s) indicated by duplicate or dangling comma(s) in the port list for module "ksa"
 Info (12021): Found 1 design units, including 1 entities, in source file ksa.sv
     Info (12023): Found entity 1: ksa
@@ -1641,32 +1762,32 @@ Info (12021): Found 1 design units, including 1 entities, in source file shuffle
     Info (12023): Found entity 1: shuffle
 Info (12021): Found 1 design units, including 1 entities, in source file r_memory.v
     Info (12023): Found entity 1: r_memory
+Info (12021): Found 1 design units, including 1 entities, in source file d_memory.v
+    Info (12023): Found entity 1: d_memory
 Warning (10236): Verilog HDL Implicit Net warning at init.sv(24): created implicit net for "init_write"
-Warning (10236): Verilog HDL Implicit Net warning at compute.sv(80): created implicit net for "read_i_en"
-Warning (10236): Verilog HDL Implicit Net warning at compute.sv(81): created implicit net for "read_j_en"
-Warning (10236): Verilog HDL Implicit Net warning at compute.sv(82): created implicit net for "read_sum_en"
-Warning (10236): Verilog HDL Implicit Net warning at ksa.sv(188): created implicit net for "Clock_1KHz"
+Warning (10236): Verilog HDL Implicit Net warning at compute.sv(86): created implicit net for "read_i_en"
+Warning (10236): Verilog HDL Implicit Net warning at compute.sv(87): created implicit net for "read_j_en"
+Warning (10236): Verilog HDL Implicit Net warning at compute.sv(88): created implicit net for "read_sum_en"
+Warning (10236): Verilog HDL Implicit Net warning at ksa.sv(205): created implicit net for "Clock_1KHz"
 Warning (10236): Verilog HDL Implicit Net warning at shuffle.sv(38): created implicit net for "read_i_en"
 Warning (10236): Verilog HDL Implicit Net warning at shuffle.sv(39): created implicit net for "read_j_en"
 Info (12127): Elaborating entity "ksa" for the top level hierarchy
 Warning (10036): Verilog HDL or VHDL warning at ksa.sv(50): object "LED" assigned a value but never read
 Warning (10036): Verilog HDL or VHDL warning at ksa.sv(51): object "reset_n" assigned a value but never read
-Warning (10230): Verilog HDL assignment warning at ksa.sv(233): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at ksa.sv(291): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at ksa.sv(306): truncated value with size 8 to match size of target (7)
-Warning (10230): Verilog HDL assignment warning at ksa.sv(307): truncated value with size 8 to match size of target (7)
-Warning (10230): Verilog HDL assignment warning at ksa.sv(308): truncated value with size 8 to match size of target (7)
-Warning (10230): Verilog HDL assignment warning at ksa.sv(309): truncated value with size 8 to match size of target (7)
-Warning (10230): Verilog HDL assignment warning at ksa.sv(310): truncated value with size 8 to match size of target (7)
-Warning (10230): Verilog HDL assignment warning at ksa.sv(311): truncated value with size 8 to match size of target (7)
+Warning (10230): Verilog HDL assignment warning at ksa.sv(250): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at ksa.sv(308): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at ksa.sv(323): truncated value with size 8 to match size of target (7)
+Warning (10230): Verilog HDL assignment warning at ksa.sv(324): truncated value with size 8 to match size of target (7)
+Warning (10230): Verilog HDL assignment warning at ksa.sv(325): truncated value with size 8 to match size of target (7)
+Warning (10230): Verilog HDL assignment warning at ksa.sv(326): truncated value with size 8 to match size of target (7)
+Warning (10230): Verilog HDL assignment warning at ksa.sv(327): truncated value with size 8 to match size of target (7)
+Warning (10230): Verilog HDL assignment warning at ksa.sv(328): truncated value with size 8 to match size of target (7)
 Warning (10034): Output port "LEDR" at ksa.sv(28) has no driver
 Info (12128): Elaborating entity "decrypt" for hierarchy "decrypt:decrypt_insta"
 Info (12128): Elaborating entity "init" for hierarchy "init:init_insta"
 Warning (10036): Verilog HDL or VHDL warning at init.sv(24): object "init_write" assigned a value but never read
-Warning (10230): Verilog HDL assignment warning at init.sv(48): truncated value with size 32 to match size of target (8)
 Info (12128): Elaborating entity "shuffle" for hierarchy "shuffle:shuffle_insta"
 Info (12128): Elaborating entity "compute" for hierarchy "compute:compute_insta"
-Warning (10036): Verilog HDL or VHDL warning at compute.sv(19): object "encrypted_msg" assigned a value but never read
 Info (12128): Elaborating entity "r_memory" for hierarchy "r_memory:r_memory_insta"
 Info (12128): Elaborating entity "altsyncram" for hierarchy "r_memory:r_memory_insta|altsyncram:altsyncram_component"
 Info (12130): Elaborated megafunction instantiation "r_memory:r_memory_insta|altsyncram:altsyncram_component"
@@ -1705,6 +1826,42 @@ Info (12133): Instantiated megafunction "r_memory:r_memory_insta|altsyncram:alts
     Info (12134): Parameter "WIDTHAD" = "5"
 Info (12128): Elaborating entity "sld_jtag_endpoint_adapter" for hierarchy "r_memory:r_memory_insta|altsyncram:altsyncram_component|altsyncram_p7t1:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_jtag_endpoint_adapter:jtag_signal_adapter"
 Info (12128): Elaborating entity "sld_rom_sr" for hierarchy "r_memory:r_memory_insta|altsyncram:altsyncram_component|altsyncram_p7t1:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_rom_sr:\ram_rom_logic_gen:name_gen:info_rom_sr"
+Info (12128): Elaborating entity "d_memory" for hierarchy "d_memory:d_memory_insta"
+Info (12128): Elaborating entity "altsyncram" for hierarchy "d_memory:d_memory_insta|altsyncram:altsyncram_component"
+Info (12130): Elaborated megafunction instantiation "d_memory:d_memory_insta|altsyncram:altsyncram_component"
+Info (12133): Instantiated megafunction "d_memory:d_memory_insta|altsyncram:altsyncram_component" with the following parameter:
+    Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
+    Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
+    Info (12134): Parameter "intended_device_family" = "Cyclone V"
+    Info (12134): Parameter "lpm_hint" = "ENABLE_RUNTIME_MOD=YES,INSTANCE_NAME=D"
+    Info (12134): Parameter "lpm_type" = "altsyncram"
+    Info (12134): Parameter "numwords_a" = "32"
+    Info (12134): Parameter "operation_mode" = "SINGLE_PORT"
+    Info (12134): Parameter "outdata_aclr_a" = "NONE"
+    Info (12134): Parameter "outdata_reg_a" = "UNREGISTERED"
+    Info (12134): Parameter "power_up_uninitialized" = "FALSE"
+    Info (12134): Parameter "ram_block_type" = "M10K"
+    Info (12134): Parameter "read_during_write_mode_port_a" = "NEW_DATA_NO_NBE_READ"
+    Info (12134): Parameter "widthad_a" = "5"
+    Info (12134): Parameter "width_a" = "8"
+    Info (12134): Parameter "width_byteena_a" = "1"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_oa32.tdf
+    Info (12023): Found entity 1: altsyncram_oa32
+Info (12128): Elaborating entity "altsyncram_oa32" for hierarchy "d_memory:d_memory_insta|altsyncram:altsyncram_component|altsyncram_oa32:auto_generated"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_nop2.tdf
+    Info (12023): Found entity 1: altsyncram_nop2
+Info (12128): Elaborating entity "altsyncram_nop2" for hierarchy "d_memory:d_memory_insta|altsyncram:altsyncram_component|altsyncram_oa32:auto_generated|altsyncram_nop2:altsyncram1"
+Info (12128): Elaborating entity "sld_mod_ram_rom" for hierarchy "d_memory:d_memory_insta|altsyncram:altsyncram_component|altsyncram_oa32:auto_generated|sld_mod_ram_rom:mgl_prim2"
+Info (12130): Elaborated megafunction instantiation "d_memory:d_memory_insta|altsyncram:altsyncram_component|altsyncram_oa32:auto_generated|sld_mod_ram_rom:mgl_prim2"
+Info (12133): Instantiated megafunction "d_memory:d_memory_insta|altsyncram:altsyncram_component|altsyncram_oa32:auto_generated|sld_mod_ram_rom:mgl_prim2" with the following parameter:
+    Info (12134): Parameter "CVALUE" = "00000000"
+    Info (12134): Parameter "IS_DATA_IN_RAM" = "1"
+    Info (12134): Parameter "IS_READABLE" = "1"
+    Info (12134): Parameter "NODE_NAME" = "1140850688"
+    Info (12134): Parameter "NUMWORDS" = "32"
+    Info (12134): Parameter "SHIFT_COUNT_BITS" = "4"
+    Info (12134): Parameter "WIDTH_WORD" = "8"
+    Info (12134): Parameter "WIDTHAD" = "5"
 Info (12128): Elaborating entity "s_memory" for hierarchy "s_memory:s_memory_insta"
 Info (12128): Elaborating entity "altsyncram" for hierarchy "s_memory:s_memory_insta|altsyncram:altsyncram_component"
 Info (12130): Elaborated megafunction instantiation "s_memory:s_memory_insta|altsyncram:altsyncram_component"
@@ -1782,7 +1939,7 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/sign
     Info (12023): Found entity 1: sign_div_unsign_9kh
 Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_ose.tdf
     Info (12023): Found entity 1: alt_u_div_ose
-Warning (12241): 7 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Warning (12241): 8 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "LEDR[0]" is stuck at GND
     Warning (13410): Pin "LEDR[1]" is stuck at GND
@@ -1818,29 +1975,29 @@ Info (35003): Optimize away 10 nodes that do not fanout to OUTPUT or BIDIR pins
     Info (35004): Node: "Generate_Arbitrary_Divided_Clk32:Gen_2Hz_clk|var_clk_div32:Div_Clk|tc_not_reg"
     Info (35004): Node: "Generate_Arbitrary_Divided_Clk32:Gen_2Hz_clk|var_clk_div32:Div_Clk|outclk_not"
 Warning (15752): Ignored 12 Virtual Pin logic option assignments
-    Warning (15751): Ignored Virtual Pin assignment to "LCD_DATA[5]".
-    Warning (15751): Ignored Virtual Pin assignment to "LCD_ON".
-    Warning (15751): Ignored Virtual Pin assignment to "LCD_DATA[2]".
-    Warning (15751): Ignored Virtual Pin assignment to "LCD_DATA[6]".
-    Warning (15751): Ignored Virtual Pin assignment to "LCD_RW".
-    Warning (15751): Ignored Virtual Pin assignment to "LCD_DATA[7]".
+    Warning (15751): Ignored Virtual Pin assignment to "LCD_DATA[4]".
+    Warning (15751): Ignored Virtual Pin assignment to "LCD_EN".
     Warning (15751): Ignored Virtual Pin assignment to "LCD_RS".
     Warning (15751): Ignored Virtual Pin assignment to "LCD_DATA[0]".
-    Warning (15751): Ignored Virtual Pin assignment to "LCD_DATA[3]".
+    Warning (15751): Ignored Virtual Pin assignment to "LCD_DATA[5]".
+    Warning (15751): Ignored Virtual Pin assignment to "LCD_ON".
     Warning (15751): Ignored Virtual Pin assignment to "LCD_DATA[1]".
-    Warning (15751): Ignored Virtual Pin assignment to "LCD_EN".
-    Warning (15751): Ignored Virtual Pin assignment to "LCD_DATA[4]".
+    Warning (15751): Ignored Virtual Pin assignment to "LCD_DATA[2]".
+    Warning (15751): Ignored Virtual Pin assignment to "LCD_DATA[6]".
+    Warning (15751): Ignored Virtual Pin assignment to "LCD_DATA[7]".
+    Warning (15751): Ignored Virtual Pin assignment to "LCD_DATA[3]".
+    Warning (15751): Ignored Virtual Pin assignment to "LCD_RW".
 Warning (21074): Design contains 1 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "KEY[3]"
-Info (21057): Implemented 941 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 1041 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 18 input pins
     Info (21059): Implemented 53 output pins
-    Info (21061): Implemented 853 logic cells
-    Info (21064): Implemented 16 RAM segments
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 66 warnings
+    Info (21061): Implemented 945 logic cells
+    Info (21064): Implemented 24 RAM segments
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 62 warnings
     Info: Peak virtual memory: 4904 megabytes
-    Info: Processing ended: Fri Mar 06 01:31:12 2020
-    Info: Elapsed time: 00:00:44
-    Info: Total CPU time (on all processors): 00:01:21
+    Info: Processing ended: Fri Mar 06 02:15:40 2020
+    Info: Elapsed time: 00:00:34
+    Info: Total CPU time (on all processors): 00:01:03
 
 

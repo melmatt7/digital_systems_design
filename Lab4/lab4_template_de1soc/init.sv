@@ -45,7 +45,7 @@ always_ff @(posedge clk)
 begin
     if(state == initialize)
     begin
-        i <= i + 1;
+        i <= i + 1'b1;
     end
 end
 

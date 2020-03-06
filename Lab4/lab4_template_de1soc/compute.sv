@@ -2,21 +2,26 @@ module compute(
     //inputs
 	 clk, start, rom_data, q,
     //outputs
-    data, address, wren, rom_addr, complete
+    data, address, wren, rom_addr, data_decrypt, address_decrypt, wren_decrypt, complete
 );
 
 input clk, start;
 input[7:0] rom_data;
 input[7:0] q;
 
-output[7:0] data;
-output[7:0] address;
+output reg[7:0] data;
+output reg[7:0] address;
 output wren;
-output[4:0] rom_addr;
+
+output reg[4:0] rom_addr;
+
+output reg[7:0] data_decrypt;
+output reg[7:0] address_decrypt;
+output wren_decrypt;
+
 output complete;
 
 reg[7:0] decrypted_msg = 8'b0;
-reg[7:0] encrypted_msg = 8'b0;
 
 reg[7:0] j = 8'b0;
 reg[7:0] i = 8'b0;
@@ -26,34 +31,35 @@ reg[7:0] q_si = 8'b0;
 reg[7:0] q_sj = 8'b0;
 reg[7:0] f = 8'b0;
 
-reg[1:0] data_select = 2'b0;
-reg[1:0] address_select = 2'b0;
+reg[1:0] data_select;
+reg[1:0] address_select;
 
+assign address_decrypt = k;
 assign rom_addr = k;
-assign encrypted_msg = rom_data;
-assign decrypted_msg = f ^ rom_data;
-                             //DCBA9_8_7_6_5_43_21_0
-parameter idle           = 14'b00000_0_0_0_0_00_00_0;
-parameter incr_i         = 14'b00001_0_0_0_0_00_00_0;
-parameter addr_si        = 14'b00010_0_0_0_0_00_00_0;
-parameter read_si        = 14'b00011_0_0_1_0_00_00_0;
-parameter calc_j         = 14'b00100_0_0_0_0_00_00_0;
-parameter addr_sj        = 14'b00101_0_0_0_0_01_00_0;
-parameter read_sj        = 14'b00110_0_1_0_0_00_00_0;
-parameter swap_si        = 14'b00111_0_0_0_0_01_00_1;
-parameter swap_sj        = 14'b01000_0_0_0_0_00_01_1;
-parameter addr_sum       = 14'b01010_0_0_0_0_10_00_0;
-parameter read_sum       = 14'b01011_1_0_0_0_00_00_0;
-parameter write_decrypt  = 14'b01100_0_0_0_0_11_11_1;
-parameter check_k        = 14'b01101_0_0_0_0_00_00_0;
-parameter incr_k         = 14'b01110_0_0_0_0_00_00_0;
-parameter finish         = 14'b01111_0_0_0_1_00_00_0;
+assign data_decrypt = f ^ rom_data;
+                             //DCBA_9_8_7_6_54_32_10
+parameter idle           = 14'b0000_0_0_0_0_00_00_00;
+parameter incr_i         = 14'b0001_0_0_0_0_00_00_00;
+parameter addr_si        = 14'b0010_0_0_0_0_00_00_00;
+parameter read_si        = 14'b0011_0_0_1_0_00_00_00;
+parameter calc_j         = 14'b0100_0_0_0_0_00_00_00;
+parameter addr_sj        = 14'b0101_0_0_0_0_01_00_00;
+parameter read_sj        = 14'b0110_0_1_0_0_00_00_00;
+parameter swap_si        = 14'b0111_0_0_0_0_01_00_10;
+parameter swap_sj        = 14'b1000_0_0_0_0_00_01_10;
+parameter addr_sum       = 14'b1010_0_0_0_0_11_00_00;
+parameter read_sum       = 14'b1011_1_0_0_0_00_00_00;
+parameter write_decrypt  = 14'b1100_0_0_0_0_10_11_01;
+parameter check_k        = 14'b1101_0_0_0_0_00_00_00;
+parameter incr_k         = 14'b1110_0_0_0_0_00_00_00;
+parameter finish         = 14'b1111_0_0_0_1_00_00_00;
 
 reg[13:0] state           = idle;
 
-assign wren = state[0];
-assign data_select = state[2:1];
-assign address_select = state[4:3];
+assign wren_decrypt = state[0];
+assign wren = state[1];
+assign data_select = state[3:2];
+assign address_select = state[5:4];
 
 always_comb
 begin
@@ -70,16 +76,16 @@ begin
     case(address_select)
         2'b00: address = i;
         2'b01: address = j;
-        2'b10: address = q_sj + q_si;
-        2'b11: address = k;
+        2'b11: address = q_sj + q_si;
+        2'b10: address = k;
     endcase
 end
 
-assign complete = state[5];
+assign complete = state[6];
 
-assign read_i_en = state[6];
-assign read_j_en = state[7];
-assign read_sum_en = state[8];
+assign read_i_en = state[7];
+assign read_j_en = state[8];
+assign read_sum_en = state[9];
 
 always_ff @(posedge clk)
 begin

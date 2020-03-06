@@ -93,6 +93,11 @@ wire wren_out;
 reg[7:0] q_rom_out;
 reg[4:0] address_rom_out;
 
+reg[7:0] data_decrypt_out;
+reg[7:0] address_decrypt_out;
+reg[7:0] q_decrypt_out;
+wire wren_decrypt_out;
+
 decrypt
 decrypt_insta(
 .clk(CLK_50M),
@@ -128,7 +133,7 @@ init_insta(
 .data(data_init),
 .address(address_init),
 .wren(wren_init),
-.complete(init_complete),
+.complete(init_complete)
 );
 
 shuffle
@@ -140,7 +145,7 @@ shuffle_insta(
 .data(data_shuffle),
 .address(address_shuffle),
 .wren(wren_shuffle),
-.complete(shuffle_complete),
+.complete(shuffle_complete)
 );
 
 compute
@@ -153,6 +158,9 @@ compute_insta(
 .address(address_compute),
 .wren(wren_compute),
 .rom_addr(address_rom_out),
+.data_decrypt(data_decrypt_out),
+.address_decrypt(address_decrypt_out),
+.wren_decrypt(wren_decrypt_out),
 .complete(compute_complete)
 );
 
@@ -161,6 +169,15 @@ r_memory_insta(
 .address(address_rom_out),
 .clock(CLK_50M),
 .q(q_rom_out)
+);
+
+d_memory
+d_memory_insta(
+.address(address_decrypt_out),
+.clock(CLK_50M),
+.data(data_decrypt_out),
+.wren(wren_decrypt_out),
+.q(q_decrypt_out)
 );
 
 s_memory
