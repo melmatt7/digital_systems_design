@@ -1,5 +1,6 @@
 module decrypt(input logic clk,
 			   input logic decrypt_start,
+			   input logic reset,
 			   output logic decrypt_complete,
 			   //init
 			   output logic init_start,
@@ -7,18 +8,21 @@ module decrypt(input logic clk,
 			   input logic [7:0] address_init,
 			   input logic [7:0] data_init,
 			   input logic wren_init,
+			   output logic init_reset,
 			   //shuffle
 			   output logic shuffle_start,
 			   input logic shuffle_complete,
 			   input logic [7:0] address_shuffle,
 			   input logic [7:0] data_shuffle,
 			   input logic wren_shuffle,
+			   output logic shuffle_reset,
 			   //compute
 			   output logic compute_start,
 			   input logic compute_complete,
 			   input logic [7:0] address_compute,
 			   input logic [7:0] data_compute,
 			   input logic wren_compute,
+			   output logic compute_reset,
 			   //output
 			   output reg [7:0] address_out,
 			   output reg [7:0] data_out,
@@ -42,47 +46,65 @@ assign decrypt_complete = state[3];
 
 always_ff @(posedge clk)
 begin
-	case(state) 
-	idle: if (decrypt_start) state <= init_begin;
+	if(reset) state <= idle;
+	else
+	begin
+		case(state) 
+		idle: if (decrypt_start) state <= init_begin;
 
-	init_begin: state <= init_end; 
+		init_begin: state <= init_end; 
 
-	init_end: if (init_complete) state <= shuffle_begin;
+		init_end: if (init_complete) state <= shuffle_begin;
 
-	shuffle_begin: state <= shuffle_end;	
+		shuffle_begin: state <= shuffle_end;	
 
-	shuffle_end: if (shuffle_complete) state <= compute_begin;
+		shuffle_end: if (shuffle_complete) state <= compute_begin;
 
-	compute_begin: state <= compute_end;
+		compute_begin: state <= compute_end;
 
-	compute_end: if (compute_complete) state <= finish;
+		compute_end: if (compute_complete) state <= finish;
 
-	endcase
+		endcase
+	end
 end
 
 always_comb
 begin
-	if (init_start) begin 
-							 address_out <= address_init;
-		                     data_out <= data_init;
-		                     wren_out <= wren_init;
-							 end
+	if (init_start)         begin 
+							address_out = address_init;
+		                    data_out = data_init;
+		                    wren_out = wren_init;
+							init_reset = reset;
+								shuffle_reset = 0;
+								 compute_reset = 0;
+							end
 
-	else if(shuffle_start)              begin
-				             address_out <= address_shuffle;
-		                     data_out <= data_shuffle;
-		                     wren_out <= wren_shuffle;
-				             end
-	else if(compute_start)              begin
-				             address_out <= address_compute;
-		                     data_out <= data_compute;
-		                     wren_out <= wren_compute;
-				             end
-  else                 begin
-		                     address_out <= 8'b0;
-			                 data_out <= 8'b0;
-			                 wren_out <= 0;
-			                 end
+	else if(shuffle_start)  begin
+				            address_out = address_shuffle;
+		                    data_out = data_shuffle;
+		                    wren_out = wren_shuffle;
+							shuffle_reset = reset;
+							init_reset = 0;
+							compute_reset = 0;
+				            end
+
+	else if(compute_start)  begin
+				            address_out = address_compute;
+		                    data_out = data_compute;
+		                    wren_out = wren_compute;
+							compute_reset = reset;
+							init_reset = 0;
+							shuffle_reset =0;
+				            end
+
+  	else                    begin
+		                    address_out = 8'b0;
+			                data_out = 8'b0;
+			                wren_out = 0;
+								 init_reset = 0;
+								 shuffle_reset = 0;
+								 compute_reset = 0;
+			                end
 end
 
 // always_ff @(posedge clk)

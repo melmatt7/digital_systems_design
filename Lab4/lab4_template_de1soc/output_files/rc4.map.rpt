@@ -1,5 +1,5 @@
 Analysis & Synthesis report for rc4
-Fri Mar 06 16:28:19 2020
+Sat Mar 07 02:15:07 2020
 Quartus II 64-Bit Version 14.1.0 Build 186 12/03/2014 SJ Web Edition
 
 
@@ -20,45 +20,34 @@ Quartus II 64-Bit Version 14.1.0 Build 186 12/03/2014 SJ Web Edition
  12. General Register Statistics
  13. Inverted Register Statistics
  14. Multiplexer Restructuring Statistics (Restructuring Performed)
- 15. Source assignments for Generate_Arbitrary_Divided_Clk32:Gen_1KHz_clk|var_clk_div32:Div_Clk
- 16. Source assignments for async_trap_and_reset_gen_1_pulse:make_speedup_pulse
- 17. Source assignments for async_trap_and_reset_gen_1_pulse:make_speedown_pulse
- 18. Source assignments for speed_reg_control:speed_reg_control_inst
- 19. Source assignments for Generate_Arbitrary_Divided_Clk32:Gen_2Hz_clk|var_clk_div32:Div_Clk
- 20. Source assignments for r_memory:r_memory_insta|altsyncram:altsyncram_component|altsyncram_p7t1:auto_generated|altsyncram_osu2:altsyncram1
- 21. Source assignments for d_memory:d_memory_insta|altsyncram:altsyncram_component|altsyncram_oa32:auto_generated|altsyncram_nop2:altsyncram1
- 22. Source assignments for s_memory:s_memory_insta|altsyncram:altsyncram_component|altsyncram_2d32:auto_generated|altsyncram_dsp2:altsyncram1
- 23. Parameter Settings for User Entity Instance: Top-level Entity: |ksa
- 24. Parameter Settings for User Entity Instance: decrypt:decrypt_insta
- 25. Parameter Settings for User Entity Instance: init:init_insta
- 26. Parameter Settings for User Entity Instance: shuffle:shuffle_insta
- 27. Parameter Settings for User Entity Instance: compute:compute_insta
- 28. Parameter Settings for User Entity Instance: r_memory:r_memory_insta|altsyncram:altsyncram_component
- 29. Parameter Settings for User Entity Instance: d_memory:d_memory_insta|altsyncram:altsyncram_component
- 30. Parameter Settings for User Entity Instance: s_memory:s_memory_insta|altsyncram:altsyncram_component
- 31. Parameter Settings for User Entity Instance: speed_reg_control:speed_reg_control_inst
- 32. Parameter Settings for Inferred Entity Instance: shuffle:shuffle_insta|lpm_divide:Mod0
- 33. altsyncram Parameter Settings by Entity Instance
- 34. Port Connectivity Checks: "Generate_Arbitrary_Divided_Clk32:Gen_2Hz_clk"
- 35. Port Connectivity Checks: "SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst5"
- 36. Port Connectivity Checks: "SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst4"
- 37. Port Connectivity Checks: "SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst3"
- 38. Port Connectivity Checks: "SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst2"
- 39. Port Connectivity Checks: "SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst1"
- 40. Port Connectivity Checks: "SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst0"
- 41. Port Connectivity Checks: "doublesync:key2_doublsync"
- 42. Port Connectivity Checks: "doublesync:key1_doublsync"
- 43. Port Connectivity Checks: "doublesync:key0_doublsync"
- 44. Port Connectivity Checks: "Generate_Arbitrary_Divided_Clk32:Gen_1KHz_clk"
- 45. Port Connectivity Checks: "d_memory:d_memory_insta"
- 46. Port Connectivity Checks: "compute:compute_insta"
- 47. Port Connectivity Checks: "shuffle:shuffle_insta"
- 48. Port Connectivity Checks: "decrypt:decrypt_insta"
- 49. In-System Memory Content Editor Settings
- 50. Post-Synthesis Netlist Statistics for Top Partition
- 51. Post-Synthesis Netlist Statistics for Partition sld_hub:auto_hub
- 52. Elapsed Time Per Partition
- 53. Analysis & Synthesis Messages
+ 15. Source assignments for r_memory:r_memory_insta|altsyncram:altsyncram_component|altsyncram_p7t1:auto_generated|altsyncram_osu2:altsyncram1
+ 16. Source assignments for d_memory:d_memory_insta|altsyncram:altsyncram_component|altsyncram_oa32:auto_generated|altsyncram_nop2:altsyncram1
+ 17. Source assignments for s_memory:s_memory_insta|altsyncram:altsyncram_component|altsyncram_2d32:auto_generated|altsyncram_dsp2:altsyncram1
+ 18. Parameter Settings for User Entity Instance: brute_force:brute_force_insta
+ 19. Parameter Settings for User Entity Instance: decrypt:decrypt_insta
+ 20. Parameter Settings for User Entity Instance: init:init_insta
+ 21. Parameter Settings for User Entity Instance: shuffle:shuffle_insta
+ 22. Parameter Settings for User Entity Instance: compute:compute_insta
+ 23. Parameter Settings for User Entity Instance: r_memory:r_memory_insta|altsyncram:altsyncram_component
+ 24. Parameter Settings for User Entity Instance: d_memory:d_memory_insta|altsyncram:altsyncram_component
+ 25. Parameter Settings for User Entity Instance: s_memory:s_memory_insta|altsyncram:altsyncram_component
+ 26. Parameter Settings for Inferred Entity Instance: shuffle:shuffle_insta|lpm_divide:Mod0
+ 27. altsyncram Parameter Settings by Entity Instance
+ 28. Port Connectivity Checks: "SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst5"
+ 29. Port Connectivity Checks: "SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst4"
+ 30. Port Connectivity Checks: "SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst3"
+ 31. Port Connectivity Checks: "SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst2"
+ 32. Port Connectivity Checks: "SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst1"
+ 33. Port Connectivity Checks: "SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst0"
+ 34. Port Connectivity Checks: "d_memory:d_memory_insta"
+ 35. Port Connectivity Checks: "compute:compute_insta"
+ 36. Port Connectivity Checks: "decrypt:decrypt_insta"
+ 37. Port Connectivity Checks: "brute_force:brute_force_insta"
+ 38. In-System Memory Content Editor Settings
+ 39. Post-Synthesis Netlist Statistics for Top Partition
+ 40. Post-Synthesis Netlist Statistics for Partition sld_hub:auto_hub
+ 41. Elapsed Time Per Partition
+ 42. Analysis & Synthesis Messages
 
 
 
@@ -85,13 +74,13 @@ agreement for further details.
 +------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                 ;
 +---------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Fri Mar 06 16:28:19 2020      ;
+; Analysis & Synthesis Status     ; Successful - Sat Mar 07 02:15:07 2020      ;
 ; Quartus II 64-Bit Version       ; 14.1.0 Build 186 12/03/2014 SJ Web Edition ;
 ; Revision Name                   ; rc4                                        ;
 ; Top-level Entity Name           ; ksa                                        ;
 ; Family                          ; Cyclone V                                  ;
 ; Logic utilization (in ALMs)     ; N/A                                        ;
-; Total registers                 ; 482                                        ;
+; Total registers                 ; 378                                        ;
 ; Total pins                      ; 67                                         ;
 ; Total virtual pins              ; 0                                          ;
 ; Total block memory bits         ; 2,560                                      ;
@@ -220,59 +209,54 @@ agreement for further details.
 +----------------------------+-------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                                                                                                                                                  ;
-+--------------------------------------------------------+-----------------+----------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------+
-; File Name with User-Entered Path                       ; Used in Netlist ; File Type                                    ; File Name with Absolute Path                                                                                                                                                                    ; Library     ;
-+--------------------------------------------------------+-----------------+----------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------+
-; message.mif                                            ; yes             ; User Memory Initialization File              ; C:/Users/Dennis/Documents/4th Year/Term 2/CPEN 311/Labs and Homework/Solutions/All Labs/digital_systems_design/Lab4/lab4_template_de1soc/message.mif                                            ;             ;
-; init.sv                                                ; yes             ; User SystemVerilog HDL File                  ; C:/Users/Dennis/Documents/4th Year/Term 2/CPEN 311/Labs and Homework/Solutions/All Labs/digital_systems_design/Lab4/lab4_template_de1soc/init.sv                                                ;             ;
-; compute.sv                                             ; yes             ; User SystemVerilog HDL File                  ; C:/Users/Dennis/Documents/4th Year/Term 2/CPEN 311/Labs and Homework/Solutions/All Labs/digital_systems_design/Lab4/lab4_template_de1soc/compute.sv                                             ;             ;
-; var_clk_div32.qxp                                      ; yes             ; User File                                    ; C:/Users/Dennis/Documents/4th Year/Term 2/CPEN 311/Labs and Homework/Solutions/All Labs/digital_systems_design/Lab4/lab4_template_de1soc/var_clk_div32.qxp                                      ;             ;
-; speed_reg_control.qxp                                  ; yes             ; User File                                    ; C:/Users/Dennis/Documents/4th Year/Term 2/CPEN 311/Labs and Homework/Solutions/All Labs/digital_systems_design/Lab4/lab4_template_de1soc/speed_reg_control.qxp                                  ;             ;
-; async_trap_and_reset_gen_1_pulse.qxp                   ; yes             ; User File                                    ; C:/Users/Dennis/Documents/4th Year/Term 2/CPEN 311/Labs and Homework/Solutions/All Labs/digital_systems_design/Lab4/lab4_template_de1soc/async_trap_and_reset_gen_1_pulse.qxp                   ;             ;
-; SevenSegmentDisplayDecoder.v                           ; yes             ; User Verilog HDL File                        ; C:/Users/Dennis/Documents/4th Year/Term 2/CPEN 311/Labs and Homework/Solutions/All Labs/digital_systems_design/Lab4/lab4_template_de1soc/SevenSegmentDisplayDecoder.v                           ;             ;
-; Generate_Arbitrary_Divided_Clk32.v                     ; yes             ; User Verilog HDL File                        ; C:/Users/Dennis/Documents/4th Year/Term 2/CPEN 311/Labs and Homework/Solutions/All Labs/digital_systems_design/Lab4/lab4_template_de1soc/Generate_Arbitrary_Divided_Clk32.v                     ;             ;
-; doublesync.v                                           ; yes             ; User Verilog HDL File                        ; C:/Users/Dennis/Documents/4th Year/Term 2/CPEN 311/Labs and Homework/Solutions/All Labs/digital_systems_design/Lab4/lab4_template_de1soc/doublesync.v                                           ;             ;
-; s_memory.v                                             ; yes             ; User Wizard-Generated File                   ; C:/Users/Dennis/Documents/4th Year/Term 2/CPEN 311/Labs and Homework/Solutions/All Labs/digital_systems_design/Lab4/lab4_template_de1soc/s_memory.v                                             ;             ;
-; ksa.sv                                                 ; yes             ; User SystemVerilog HDL File                  ; C:/Users/Dennis/Documents/4th Year/Term 2/CPEN 311/Labs and Homework/Solutions/All Labs/digital_systems_design/Lab4/lab4_template_de1soc/ksa.sv                                                 ;             ;
-; decrypt.sv                                             ; yes             ; User SystemVerilog HDL File                  ; C:/Users/Dennis/Documents/4th Year/Term 2/CPEN 311/Labs and Homework/Solutions/All Labs/digital_systems_design/Lab4/lab4_template_de1soc/decrypt.sv                                             ;             ;
-; shuffle.sv                                             ; yes             ; User SystemVerilog HDL File                  ; C:/Users/Dennis/Documents/4th Year/Term 2/CPEN 311/Labs and Homework/Solutions/All Labs/digital_systems_design/Lab4/lab4_template_de1soc/shuffle.sv                                             ;             ;
-; r_memory.v                                             ; yes             ; User Wizard-Generated File                   ; C:/Users/Dennis/Documents/4th Year/Term 2/CPEN 311/Labs and Homework/Solutions/All Labs/digital_systems_design/Lab4/lab4_template_de1soc/r_memory.v                                             ;             ;
-; d_memory.v                                             ; yes             ; User Wizard-Generated File                   ; C:/Users/Dennis/Documents/4th Year/Term 2/CPEN 311/Labs and Homework/Solutions/All Labs/digital_systems_design/Lab4/lab4_template_de1soc/d_memory.v                                             ;             ;
-; altsyncram.tdf                                         ; yes             ; Megafunction                                 ; c:/altera/14.1/quartus/libraries/megafunctions/altsyncram.tdf                                                                                                                                   ;             ;
-; stratix_ram_block.inc                                  ; yes             ; Megafunction                                 ; c:/altera/14.1/quartus/libraries/megafunctions/stratix_ram_block.inc                                                                                                                            ;             ;
-; lpm_mux.inc                                            ; yes             ; Megafunction                                 ; c:/altera/14.1/quartus/libraries/megafunctions/lpm_mux.inc                                                                                                                                      ;             ;
-; lpm_decode.inc                                         ; yes             ; Megafunction                                 ; c:/altera/14.1/quartus/libraries/megafunctions/lpm_decode.inc                                                                                                                                   ;             ;
-; aglobal141.inc                                         ; yes             ; Megafunction                                 ; c:/altera/14.1/quartus/libraries/megafunctions/aglobal141.inc                                                                                                                                   ;             ;
-; a_rdenreg.inc                                          ; yes             ; Megafunction                                 ; c:/altera/14.1/quartus/libraries/megafunctions/a_rdenreg.inc                                                                                                                                    ;             ;
-; altrom.inc                                             ; yes             ; Megafunction                                 ; c:/altera/14.1/quartus/libraries/megafunctions/altrom.inc                                                                                                                                       ;             ;
-; altram.inc                                             ; yes             ; Megafunction                                 ; c:/altera/14.1/quartus/libraries/megafunctions/altram.inc                                                                                                                                       ;             ;
-; altdpram.inc                                           ; yes             ; Megafunction                                 ; c:/altera/14.1/quartus/libraries/megafunctions/altdpram.inc                                                                                                                                     ;             ;
-; db/altsyncram_p7t1.tdf                                 ; yes             ; Auto-Generated Megafunction                  ; C:/Users/Dennis/Documents/4th Year/Term 2/CPEN 311/Labs and Homework/Solutions/All Labs/digital_systems_design/Lab4/lab4_template_de1soc/db/altsyncram_p7t1.tdf                                 ;             ;
-; db/altsyncram_osu2.tdf                                 ; yes             ; Auto-Generated Megafunction                  ; C:/Users/Dennis/Documents/4th Year/Term 2/CPEN 311/Labs and Homework/Solutions/All Labs/digital_systems_design/Lab4/lab4_template_de1soc/db/altsyncram_osu2.tdf                                 ;             ;
-; sld_mod_ram_rom.vhd                                    ; yes             ; Encrypted Megafunction                       ; c:/altera/14.1/quartus/libraries/megafunctions/sld_mod_ram_rom.vhd                                                                                                                              ;             ;
-; sld_jtag_endpoint_adapter.sv                           ; yes             ; Encrypted Megafunction                       ; c:/altera/14.1/quartus/libraries/megafunctions/sld_jtag_endpoint_adapter.sv                                                                                                                     ;             ;
-; sld_rom_sr.vhd                                         ; yes             ; Encrypted Megafunction                       ; c:/altera/14.1/quartus/libraries/megafunctions/sld_rom_sr.vhd                                                                                                                                   ;             ;
-; db/altsyncram_oa32.tdf                                 ; yes             ; Auto-Generated Megafunction                  ; C:/Users/Dennis/Documents/4th Year/Term 2/CPEN 311/Labs and Homework/Solutions/All Labs/digital_systems_design/Lab4/lab4_template_de1soc/db/altsyncram_oa32.tdf                                 ;             ;
-; db/altsyncram_nop2.tdf                                 ; yes             ; Auto-Generated Megafunction                  ; C:/Users/Dennis/Documents/4th Year/Term 2/CPEN 311/Labs and Homework/Solutions/All Labs/digital_systems_design/Lab4/lab4_template_de1soc/db/altsyncram_nop2.tdf                                 ;             ;
-; db/altsyncram_2d32.tdf                                 ; yes             ; Auto-Generated Megafunction                  ; C:/Users/Dennis/Documents/4th Year/Term 2/CPEN 311/Labs and Homework/Solutions/All Labs/digital_systems_design/Lab4/lab4_template_de1soc/db/altsyncram_2d32.tdf                                 ;             ;
-; db/altsyncram_dsp2.tdf                                 ; yes             ; Auto-Generated Megafunction                  ; C:/Users/Dennis/Documents/4th Year/Term 2/CPEN 311/Labs and Homework/Solutions/All Labs/digital_systems_design/Lab4/lab4_template_de1soc/db/altsyncram_dsp2.tdf                                 ;             ;
-; sld_hub.vhd                                            ; yes             ; Encrypted Megafunction                       ; c:/altera/14.1/quartus/libraries/megafunctions/sld_hub.vhd                                                                                                                                      ; work        ;
-; db/ip/sld73f98f60/alt_sld_fab.v                        ; yes             ; Encrypted Auto-Found Verilog HDL File        ; C:/Users/Dennis/Documents/4th Year/Term 2/CPEN 311/Labs and Homework/Solutions/All Labs/digital_systems_design/Lab4/lab4_template_de1soc/db/ip/sld73f98f60/alt_sld_fab.v                        ; alt_sld_fab ;
-; db/ip/sld73f98f60/submodules/alt_sld_fab_ident.sv      ; yes             ; Auto-Found SystemVerilog HDL File            ; C:/Users/Dennis/Documents/4th Year/Term 2/CPEN 311/Labs and Homework/Solutions/All Labs/digital_systems_design/Lab4/lab4_template_de1soc/db/ip/sld73f98f60/submodules/alt_sld_fab_ident.sv      ; alt_sld_fab ;
-; db/ip/sld73f98f60/submodules/alt_sld_fab_presplit.sv   ; yes             ; Encrypted Auto-Found SystemVerilog HDL File  ; C:/Users/Dennis/Documents/4th Year/Term 2/CPEN 311/Labs and Homework/Solutions/All Labs/digital_systems_design/Lab4/lab4_template_de1soc/db/ip/sld73f98f60/submodules/alt_sld_fab_presplit.sv   ; alt_sld_fab ;
-; db/ip/sld73f98f60/submodules/alt_sld_fab_sldfabric.vhd ; yes             ; Encrypted Auto-Found VHDL File               ; C:/Users/Dennis/Documents/4th Year/Term 2/CPEN 311/Labs and Homework/Solutions/All Labs/digital_systems_design/Lab4/lab4_template_de1soc/db/ip/sld73f98f60/submodules/alt_sld_fab_sldfabric.vhd ; alt_sld_fab ;
-; db/ip/sld73f98f60/submodules/alt_sld_fab_splitter.sv   ; yes             ; Encrypted Auto-Found SystemVerilog HDL File  ; C:/Users/Dennis/Documents/4th Year/Term 2/CPEN 311/Labs and Homework/Solutions/All Labs/digital_systems_design/Lab4/lab4_template_de1soc/db/ip/sld73f98f60/submodules/alt_sld_fab_splitter.sv   ; alt_sld_fab ;
-; sld_jtag_hub.vhd                                       ; yes             ; Encrypted Megafunction                       ; c:/altera/14.1/quartus/libraries/megafunctions/sld_jtag_hub.vhd                                                                                                                                 ;             ;
-; lpm_divide.tdf                                         ; yes             ; Megafunction                                 ; c:/altera/14.1/quartus/libraries/megafunctions/lpm_divide.tdf                                                                                                                                   ;             ;
-; abs_divider.inc                                        ; yes             ; Megafunction                                 ; c:/altera/14.1/quartus/libraries/megafunctions/abs_divider.inc                                                                                                                                  ;             ;
-; sign_div_unsign.inc                                    ; yes             ; Megafunction                                 ; c:/altera/14.1/quartus/libraries/megafunctions/sign_div_unsign.inc                                                                                                                              ;             ;
-; db/lpm_divide_62m.tdf                                  ; yes             ; Auto-Generated Megafunction                  ; C:/Users/Dennis/Documents/4th Year/Term 2/CPEN 311/Labs and Homework/Solutions/All Labs/digital_systems_design/Lab4/lab4_template_de1soc/db/lpm_divide_62m.tdf                                  ;             ;
-; db/sign_div_unsign_9kh.tdf                             ; yes             ; Auto-Generated Megafunction                  ; C:/Users/Dennis/Documents/4th Year/Term 2/CPEN 311/Labs and Homework/Solutions/All Labs/digital_systems_design/Lab4/lab4_template_de1soc/db/sign_div_unsign_9kh.tdf                             ;             ;
-; db/alt_u_div_ose.tdf                                   ; yes             ; Auto-Generated Megafunction                  ; C:/Users/Dennis/Documents/4th Year/Term 2/CPEN 311/Labs and Homework/Solutions/All Labs/digital_systems_design/Lab4/lab4_template_de1soc/db/alt_u_div_ose.tdf                                   ;             ;
-; ALTERA_lcdscp2.hex.mif                                 ; yes             ; Auto-Found Memory Initialization File        ; ALTERA_lcdscp2.hex.mif                                                                                                                                                                          ;             ;
-+--------------------------------------------------------+-----------------+----------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                                                                      ;
++--------------------------------------------------------+-----------------+----------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------+-------------+
+; File Name with User-Entered Path                       ; Used in Netlist ; File Type                                    ; File Name with Absolute Path                                                                                                        ; Library     ;
++--------------------------------------------------------+-----------------+----------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------+-------------+
+; brute_force.sv                                         ; yes             ; User SystemVerilog HDL File                  ; C:/UBC/w2019-2020t2/CPEN311/digital_systems_design/Lab4/lab4_template_de1soc/brute_force.sv                                         ;             ;
+; message.mif                                            ; yes             ; User Memory Initialization File              ; C:/UBC/w2019-2020t2/CPEN311/digital_systems_design/Lab4/lab4_template_de1soc/message.mif                                            ;             ;
+; init.sv                                                ; yes             ; User SystemVerilog HDL File                  ; C:/UBC/w2019-2020t2/CPEN311/digital_systems_design/Lab4/lab4_template_de1soc/init.sv                                                ;             ;
+; compute.sv                                             ; yes             ; User SystemVerilog HDL File                  ; C:/UBC/w2019-2020t2/CPEN311/digital_systems_design/Lab4/lab4_template_de1soc/compute.sv                                             ;             ;
+; SevenSegmentDisplayDecoder.v                           ; yes             ; User Verilog HDL File                        ; C:/UBC/w2019-2020t2/CPEN311/digital_systems_design/Lab4/lab4_template_de1soc/SevenSegmentDisplayDecoder.v                           ;             ;
+; s_memory.v                                             ; yes             ; User Wizard-Generated File                   ; C:/UBC/w2019-2020t2/CPEN311/digital_systems_design/Lab4/lab4_template_de1soc/s_memory.v                                             ;             ;
+; ksa.sv                                                 ; yes             ; User SystemVerilog HDL File                  ; C:/UBC/w2019-2020t2/CPEN311/digital_systems_design/Lab4/lab4_template_de1soc/ksa.sv                                                 ;             ;
+; decrypt.sv                                             ; yes             ; User SystemVerilog HDL File                  ; C:/UBC/w2019-2020t2/CPEN311/digital_systems_design/Lab4/lab4_template_de1soc/decrypt.sv                                             ;             ;
+; shuffle.sv                                             ; yes             ; User SystemVerilog HDL File                  ; C:/UBC/w2019-2020t2/CPEN311/digital_systems_design/Lab4/lab4_template_de1soc/shuffle.sv                                             ;             ;
+; r_memory.v                                             ; yes             ; User Wizard-Generated File                   ; C:/UBC/w2019-2020t2/CPEN311/digital_systems_design/Lab4/lab4_template_de1soc/r_memory.v                                             ;             ;
+; d_memory.v                                             ; yes             ; User Wizard-Generated File                   ; C:/UBC/w2019-2020t2/CPEN311/digital_systems_design/Lab4/lab4_template_de1soc/d_memory.v                                             ;             ;
+; altsyncram.tdf                                         ; yes             ; Megafunction                                 ; c:/altera/14.1/quartus/libraries/megafunctions/altsyncram.tdf                                                                       ;             ;
+; stratix_ram_block.inc                                  ; yes             ; Megafunction                                 ; c:/altera/14.1/quartus/libraries/megafunctions/stratix_ram_block.inc                                                                ;             ;
+; lpm_mux.inc                                            ; yes             ; Megafunction                                 ; c:/altera/14.1/quartus/libraries/megafunctions/lpm_mux.inc                                                                          ;             ;
+; lpm_decode.inc                                         ; yes             ; Megafunction                                 ; c:/altera/14.1/quartus/libraries/megafunctions/lpm_decode.inc                                                                       ;             ;
+; aglobal141.inc                                         ; yes             ; Megafunction                                 ; c:/altera/14.1/quartus/libraries/megafunctions/aglobal141.inc                                                                       ;             ;
+; a_rdenreg.inc                                          ; yes             ; Megafunction                                 ; c:/altera/14.1/quartus/libraries/megafunctions/a_rdenreg.inc                                                                        ;             ;
+; altrom.inc                                             ; yes             ; Megafunction                                 ; c:/altera/14.1/quartus/libraries/megafunctions/altrom.inc                                                                           ;             ;
+; altram.inc                                             ; yes             ; Megafunction                                 ; c:/altera/14.1/quartus/libraries/megafunctions/altram.inc                                                                           ;             ;
+; altdpram.inc                                           ; yes             ; Megafunction                                 ; c:/altera/14.1/quartus/libraries/megafunctions/altdpram.inc                                                                         ;             ;
+; db/altsyncram_p7t1.tdf                                 ; yes             ; Auto-Generated Megafunction                  ; C:/UBC/w2019-2020t2/CPEN311/digital_systems_design/Lab4/lab4_template_de1soc/db/altsyncram_p7t1.tdf                                 ;             ;
+; db/altsyncram_osu2.tdf                                 ; yes             ; Auto-Generated Megafunction                  ; C:/UBC/w2019-2020t2/CPEN311/digital_systems_design/Lab4/lab4_template_de1soc/db/altsyncram_osu2.tdf                                 ;             ;
+; sld_mod_ram_rom.vhd                                    ; yes             ; Encrypted Megafunction                       ; c:/altera/14.1/quartus/libraries/megafunctions/sld_mod_ram_rom.vhd                                                                  ;             ;
+; sld_jtag_endpoint_adapter.sv                           ; yes             ; Encrypted Megafunction                       ; c:/altera/14.1/quartus/libraries/megafunctions/sld_jtag_endpoint_adapter.sv                                                         ;             ;
+; sld_rom_sr.vhd                                         ; yes             ; Encrypted Megafunction                       ; c:/altera/14.1/quartus/libraries/megafunctions/sld_rom_sr.vhd                                                                       ;             ;
+; db/altsyncram_oa32.tdf                                 ; yes             ; Auto-Generated Megafunction                  ; C:/UBC/w2019-2020t2/CPEN311/digital_systems_design/Lab4/lab4_template_de1soc/db/altsyncram_oa32.tdf                                 ;             ;
+; db/altsyncram_nop2.tdf                                 ; yes             ; Auto-Generated Megafunction                  ; C:/UBC/w2019-2020t2/CPEN311/digital_systems_design/Lab4/lab4_template_de1soc/db/altsyncram_nop2.tdf                                 ;             ;
+; db/altsyncram_2d32.tdf                                 ; yes             ; Auto-Generated Megafunction                  ; C:/UBC/w2019-2020t2/CPEN311/digital_systems_design/Lab4/lab4_template_de1soc/db/altsyncram_2d32.tdf                                 ;             ;
+; db/altsyncram_dsp2.tdf                                 ; yes             ; Auto-Generated Megafunction                  ; C:/UBC/w2019-2020t2/CPEN311/digital_systems_design/Lab4/lab4_template_de1soc/db/altsyncram_dsp2.tdf                                 ;             ;
+; sld_hub.vhd                                            ; yes             ; Encrypted Megafunction                       ; c:/altera/14.1/quartus/libraries/megafunctions/sld_hub.vhd                                                                          ; work        ;
+; db/ip/sld73f98f60/alt_sld_fab.v                        ; yes             ; Encrypted Auto-Found Verilog HDL File        ; C:/UBC/w2019-2020t2/CPEN311/digital_systems_design/Lab4/lab4_template_de1soc/db/ip/sld73f98f60/alt_sld_fab.v                        ; alt_sld_fab ;
+; db/ip/sld73f98f60/submodules/alt_sld_fab_ident.sv      ; yes             ; Auto-Found SystemVerilog HDL File            ; C:/UBC/w2019-2020t2/CPEN311/digital_systems_design/Lab4/lab4_template_de1soc/db/ip/sld73f98f60/submodules/alt_sld_fab_ident.sv      ; alt_sld_fab ;
+; db/ip/sld73f98f60/submodules/alt_sld_fab_presplit.sv   ; yes             ; Encrypted Auto-Found SystemVerilog HDL File  ; C:/UBC/w2019-2020t2/CPEN311/digital_systems_design/Lab4/lab4_template_de1soc/db/ip/sld73f98f60/submodules/alt_sld_fab_presplit.sv   ; alt_sld_fab ;
+; db/ip/sld73f98f60/submodules/alt_sld_fab_sldfabric.vhd ; yes             ; Encrypted Auto-Found VHDL File               ; C:/UBC/w2019-2020t2/CPEN311/digital_systems_design/Lab4/lab4_template_de1soc/db/ip/sld73f98f60/submodules/alt_sld_fab_sldfabric.vhd ; alt_sld_fab ;
+; db/ip/sld73f98f60/submodules/alt_sld_fab_splitter.sv   ; yes             ; Encrypted Auto-Found SystemVerilog HDL File  ; C:/UBC/w2019-2020t2/CPEN311/digital_systems_design/Lab4/lab4_template_de1soc/db/ip/sld73f98f60/submodules/alt_sld_fab_splitter.sv   ; alt_sld_fab ;
+; sld_jtag_hub.vhd                                       ; yes             ; Encrypted Megafunction                       ; c:/altera/14.1/quartus/libraries/megafunctions/sld_jtag_hub.vhd                                                                     ;             ;
+; lpm_divide.tdf                                         ; yes             ; Megafunction                                 ; c:/altera/14.1/quartus/libraries/megafunctions/lpm_divide.tdf                                                                       ;             ;
+; abs_divider.inc                                        ; yes             ; Megafunction                                 ; c:/altera/14.1/quartus/libraries/megafunctions/abs_divider.inc                                                                      ;             ;
+; sign_div_unsign.inc                                    ; yes             ; Megafunction                                 ; c:/altera/14.1/quartus/libraries/megafunctions/sign_div_unsign.inc                                                                  ;             ;
+; db/lpm_divide_62m.tdf                                  ; yes             ; Auto-Generated Megafunction                  ; C:/UBC/w2019-2020t2/CPEN311/digital_systems_design/Lab4/lab4_template_de1soc/db/lpm_divide_62m.tdf                                  ;             ;
+; db/sign_div_unsign_9kh.tdf                             ; yes             ; Auto-Generated Megafunction                  ; C:/UBC/w2019-2020t2/CPEN311/digital_systems_design/Lab4/lab4_template_de1soc/db/sign_div_unsign_9kh.tdf                             ;             ;
+; db/alt_u_div_ose.tdf                                   ; yes             ; Auto-Generated Megafunction                  ; C:/UBC/w2019-2020t2/CPEN311/digital_systems_design/Lab4/lab4_template_de1soc/db/alt_u_div_ose.tdf                                   ;             ;
++--------------------------------------------------------+-----------------+----------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------+-------------+
 
 
 +------------------------------------------------------------------------+
@@ -280,16 +264,16 @@ agreement for further details.
 +---------------------------------------------+--------------------------+
 ; Resource                                    ; Usage                    ;
 +---------------------------------------------+--------------------------+
-; Estimate of Logic utilization (ALMs needed) ; 498                      ;
+; Estimate of Logic utilization (ALMs needed) ; 441                      ;
 ;                                             ;                          ;
-; Combinational ALUT usage for logic          ; 809                      ;
-;     -- 7 input functions                    ; 3                        ;
-;     -- 6 input functions                    ; 147                      ;
-;     -- 5 input functions                    ; 102                      ;
-;     -- 4 input functions                    ; 163                      ;
-;     -- <=3 input functions                  ; 394                      ;
+; Combinational ALUT usage for logic          ; 704                      ;
+;     -- 7 input functions                    ; 5                        ;
+;     -- 6 input functions                    ; 138                      ;
+;     -- 5 input functions                    ; 112                      ;
+;     -- 4 input functions                    ; 159                      ;
+;     -- <=3 input functions                  ; 290                      ;
 ;                                             ;                          ;
-; Dedicated logic registers                   ; 482                      ;
+; Dedicated logic registers                   ; 378                      ;
 ;                                             ;                          ;
 ; I/O pins                                    ; 67                       ;
 ; Total MLAB memory bits                      ; 0                        ;
@@ -299,8 +283,8 @@ agreement for further details.
 ;                                             ;                          ;
 ; Maximum fan-out node                        ; altera_internal_jtag~TDO ;
 ; Maximum fan-out                             ; 268                      ;
-; Total fan-out                               ; 5094                     ;
-; Average fan-out                             ; 3.49                     ;
+; Total fan-out                               ; 4535                     ;
+; Average fan-out                             ; 3.63                     ;
 +---------------------------------------------+--------------------------+
 
 
@@ -309,29 +293,23 @@ agreement for further details.
 +-----------------------------------------------------------------------------------------------------+-------------------+--------------+-------------------+------------+------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                                                                          ; LC Combinationals ; LC Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                                                                                      ; Library Name ;
 +-----------------------------------------------------------------------------------------------------+-------------------+--------------+-------------------+------------+------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-; |ksa                                                                                                ; 809 (36)          ; 482 (50)     ; 2560              ; 0          ; 67   ; 0            ; |ksa                                                                                                                                                                                                                     ; work         ;
-;    |Generate_Arbitrary_Divided_Clk32:Gen_1KHz_clk|                                                  ; 48 (0)            ; 39 (0)       ; 0                 ; 0          ; 0    ; 0            ; |ksa|Generate_Arbitrary_Divided_Clk32:Gen_1KHz_clk                                                                                                                                                                       ; work         ;
-;       |var_clk_div32:Div_Clk|                                                                       ; 48 (48)           ; 39 (39)      ; 0                 ; 0          ; 0    ; 0            ; |ksa|Generate_Arbitrary_Divided_Clk32:Gen_1KHz_clk|var_clk_div32:Div_Clk                                                                                                                                                 ; work         ;
-;    |Generate_Arbitrary_Divided_Clk32:Gen_2Hz_clk|                                                   ; 48 (0)            ; 39 (0)       ; 0                 ; 0          ; 0    ; 0            ; |ksa|Generate_Arbitrary_Divided_Clk32:Gen_2Hz_clk                                                                                                                                                                        ; work         ;
-;       |var_clk_div32:Div_Clk|                                                                       ; 48 (48)           ; 39 (39)      ; 0                 ; 0          ; 0    ; 0            ; |ksa|Generate_Arbitrary_Divided_Clk32:Gen_2Hz_clk|var_clk_div32:Div_Clk                                                                                                                                                  ; work         ;
+; |ksa                                                                                                ; 704 (1)           ; 378 (24)     ; 2560              ; 0          ; 67   ; 0            ; |ksa                                                                                                                                                                                                                     ; work         ;
 ;    |SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst0|                                    ; 7 (7)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ksa|SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst0                                                                                                                                                         ; work         ;
 ;    |SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst1|                                    ; 7 (7)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ksa|SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst1                                                                                                                                                         ; work         ;
 ;    |SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst2|                                    ; 7 (7)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ksa|SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst2                                                                                                                                                         ; work         ;
 ;    |SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst3|                                    ; 7 (7)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ksa|SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst3                                                                                                                                                         ; work         ;
-;    |async_trap_and_reset_gen_1_pulse:make_speedown_pulse|                                           ; 3 (3)             ; 4 (4)        ; 0                 ; 0          ; 0    ; 0            ; |ksa|async_trap_and_reset_gen_1_pulse:make_speedown_pulse                                                                                                                                                                ; work         ;
-;    |async_trap_and_reset_gen_1_pulse:make_speedup_pulse|                                            ; 3 (3)             ; 4 (4)        ; 0                 ; 0          ; 0    ; 0            ; |ksa|async_trap_and_reset_gen_1_pulse:make_speedup_pulse                                                                                                                                                                 ; work         ;
-;    |compute:compute_insta|                                                                          ; 111 (111)         ; 58 (58)      ; 0                 ; 0          ; 0    ; 0            ; |ksa|compute:compute_insta                                                                                                                                                                                               ; work         ;
+;    |SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst4|                                    ; 7 (7)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ksa|SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst4                                                                                                                                                         ; work         ;
+;    |SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst5|                                    ; 7 (7)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ksa|SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst5                                                                                                                                                         ; work         ;
+;    |brute_force:brute_force_insta|                                                                  ; 56 (56)           ; 31 (31)      ; 0                 ; 0          ; 0    ; 0            ; |ksa|brute_force:brute_force_insta                                                                                                                                                                                       ; work         ;
+;    |compute:compute_insta|                                                                          ; 118 (118)         ; 58 (58)      ; 0                 ; 0          ; 0    ; 0            ; |ksa|compute:compute_insta                                                                                                                                                                                               ; work         ;
 ;    |d_memory:d_memory_insta|                                                                        ; 38 (0)            ; 31 (0)       ; 256               ; 0          ; 0    ; 0            ; |ksa|d_memory:d_memory_insta                                                                                                                                                                                             ; work         ;
 ;       |altsyncram:altsyncram_component|                                                             ; 38 (0)            ; 31 (0)       ; 256               ; 0          ; 0    ; 0            ; |ksa|d_memory:d_memory_insta|altsyncram:altsyncram_component                                                                                                                                                             ; work         ;
 ;          |altsyncram_oa32:auto_generated|                                                           ; 38 (0)            ; 31 (0)       ; 256               ; 0          ; 0    ; 0            ; |ksa|d_memory:d_memory_insta|altsyncram:altsyncram_component|altsyncram_oa32:auto_generated                                                                                                                              ; work         ;
 ;             |altsyncram_nop2:altsyncram1|                                                           ; 0 (0)             ; 0 (0)        ; 256               ; 0          ; 0    ; 0            ; |ksa|d_memory:d_memory_insta|altsyncram:altsyncram_component|altsyncram_oa32:auto_generated|altsyncram_nop2:altsyncram1                                                                                                  ; work         ;
 ;             |sld_mod_ram_rom:mgl_prim2|                                                             ; 38 (21)           ; 31 (22)      ; 0                 ; 0          ; 0    ; 0            ; |ksa|d_memory:d_memory_insta|altsyncram:altsyncram_component|altsyncram_oa32:auto_generated|sld_mod_ram_rom:mgl_prim2                                                                                                    ; work         ;
 ;                |sld_rom_sr:\ram_rom_logic_gen:name_gen:info_rom_sr|                                 ; 17 (17)           ; 9 (9)        ; 0                 ; 0          ; 0    ; 0            ; |ksa|d_memory:d_memory_insta|altsyncram:altsyncram_component|altsyncram_oa32:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_rom_sr:\ram_rom_logic_gen:name_gen:info_rom_sr                                                 ; work         ;
-;    |decrypt:decrypt_insta|                                                                          ; 74 (74)           ; 7 (7)        ; 0                 ; 0          ; 0    ; 0            ; |ksa|decrypt:decrypt_insta                                                                                                                                                                                               ; work         ;
-;    |doublesync:key0_doublsync|                                                                      ; 1 (1)             ; 2 (2)        ; 0                 ; 0          ; 0    ; 0            ; |ksa|doublesync:key0_doublsync                                                                                                                                                                                           ; work         ;
-;    |doublesync:key1_doublsync|                                                                      ; 1 (1)             ; 2 (2)        ; 0                 ; 0          ; 0    ; 0            ; |ksa|doublesync:key1_doublsync                                                                                                                                                                                           ; work         ;
-;    |doublesync:key2_doublsync|                                                                      ; 1 (1)             ; 2 (2)        ; 0                 ; 0          ; 0    ; 0            ; |ksa|doublesync:key2_doublsync                                                                                                                                                                                           ; work         ;
-;    |init:init_insta|                                                                                ; 12 (12)           ; 10 (10)      ; 0                 ; 0          ; 0    ; 0            ; |ksa|init:init_insta                                                                                                                                                                                                     ; work         ;
+;    |decrypt:decrypt_insta|                                                                          ; 66 (66)           ; 7 (7)        ; 0                 ; 0          ; 0    ; 0            ; |ksa|decrypt:decrypt_insta                                                                                                                                                                                               ; work         ;
+;    |init:init_insta|                                                                                ; 26 (26)           ; 11 (11)      ; 0                 ; 0          ; 0    ; 0            ; |ksa|init:init_insta                                                                                                                                                                                                     ; work         ;
 ;    |r_memory:r_memory_insta|                                                                        ; 39 (0)            ; 31 (0)       ; 256               ; 0          ; 0    ; 0            ; |ksa|r_memory:r_memory_insta                                                                                                                                                                                             ; work         ;
 ;       |altsyncram:altsyncram_component|                                                             ; 39 (0)            ; 31 (0)       ; 256               ; 0          ; 0    ; 0            ; |ksa|r_memory:r_memory_insta|altsyncram:altsyncram_component                                                                                                                                                             ; work         ;
 ;          |altsyncram_p7t1:auto_generated|                                                           ; 39 (0)            ; 31 (0)       ; 256               ; 0          ; 0    ; 0            ; |ksa|r_memory:r_memory_insta|altsyncram:altsyncram_component|altsyncram_p7t1:auto_generated                                                                                                                              ; work         ;
@@ -344,19 +322,17 @@ agreement for further details.
 ;             |altsyncram_dsp2:altsyncram1|                                                           ; 0 (0)             ; 0 (0)        ; 2048              ; 0          ; 0    ; 0            ; |ksa|s_memory:s_memory_insta|altsyncram:altsyncram_component|altsyncram_2d32:auto_generated|altsyncram_dsp2:altsyncram1                                                                                                  ; work         ;
 ;             |sld_mod_ram_rom:mgl_prim2|                                                             ; 40 (23)           ; 34 (25)      ; 0                 ; 0          ; 0    ; 0            ; |ksa|s_memory:s_memory_insta|altsyncram:altsyncram_component|altsyncram_2d32:auto_generated|sld_mod_ram_rom:mgl_prim2                                                                                                    ; work         ;
 ;                |sld_rom_sr:\ram_rom_logic_gen:name_gen:info_rom_sr|                                 ; 17 (17)           ; 9 (9)        ; 0                 ; 0          ; 0    ; 0            ; |ksa|s_memory:s_memory_insta|altsyncram:altsyncram_component|altsyncram_2d32:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_rom_sr:\ram_rom_logic_gen:name_gen:info_rom_sr                                                 ; work         ;
-;    |shuffle:shuffle_insta|                                                                          ; 120 (80)          ; 42 (42)      ; 0                 ; 0          ; 0    ; 0            ; |ksa|shuffle:shuffle_insta                                                                                                                                                                                               ; work         ;
-;       |lpm_divide:Mod0|                                                                             ; 40 (0)            ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ksa|shuffle:shuffle_insta|lpm_divide:Mod0                                                                                                                                                                               ; work         ;
-;          |lpm_divide_62m:auto_generated|                                                            ; 40 (0)            ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ksa|shuffle:shuffle_insta|lpm_divide:Mod0|lpm_divide_62m:auto_generated                                                                                                                                                 ; work         ;
-;             |sign_div_unsign_9kh:divider|                                                           ; 40 (0)            ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ksa|shuffle:shuffle_insta|lpm_divide:Mod0|lpm_divide_62m:auto_generated|sign_div_unsign_9kh:divider                                                                                                                     ; work         ;
-;                |alt_u_div_ose:divider|                                                              ; 40 (40)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ksa|shuffle:shuffle_insta|lpm_divide:Mod0|lpm_divide_62m:auto_generated|sign_div_unsign_9kh:divider|alt_u_div_ose:divider                                                                                               ; work         ;
+;    |shuffle:shuffle_insta|                                                                          ; 125 (87)          ; 42 (42)      ; 0                 ; 0          ; 0    ; 0            ; |ksa|shuffle:shuffle_insta                                                                                                                                                                                               ; work         ;
+;       |lpm_divide:Mod0|                                                                             ; 38 (0)            ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ksa|shuffle:shuffle_insta|lpm_divide:Mod0                                                                                                                                                                               ; work         ;
+;          |lpm_divide_62m:auto_generated|                                                            ; 38 (0)            ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ksa|shuffle:shuffle_insta|lpm_divide:Mod0|lpm_divide_62m:auto_generated                                                                                                                                                 ; work         ;
+;             |sign_div_unsign_9kh:divider|                                                           ; 38 (0)            ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ksa|shuffle:shuffle_insta|lpm_divide:Mod0|lpm_divide_62m:auto_generated|sign_div_unsign_9kh:divider                                                                                                                     ; work         ;
+;                |alt_u_div_ose:divider|                                                              ; 38 (38)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ksa|shuffle:shuffle_insta|lpm_divide:Mod0|lpm_divide_62m:auto_generated|sign_div_unsign_9kh:divider|alt_u_div_ose:divider                                                                                               ; work         ;
 ;    |sld_hub:auto_hub|                                                                               ; 153 (1)           ; 109 (0)      ; 0                 ; 0          ; 0    ; 0            ; |ksa|sld_hub:auto_hub                                                                                                                                                                                                    ; work         ;
 ;       |alt_sld_fab:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:instrumentation_fabric| ; 152 (1)           ; 109 (7)      ; 0                 ; 0          ; 0    ; 0            ; |ksa|sld_hub:auto_hub|alt_sld_fab:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:instrumentation_fabric                                                                                                        ; alt_sld_fab  ;
 ;          |alt_sld_fab_sldfabric:sldfabric|                                                          ; 151 (0)           ; 102 (0)      ; 0                 ; 0          ; 0    ; 0            ; |ksa|sld_hub:auto_hub|alt_sld_fab:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:instrumentation_fabric|alt_sld_fab_sldfabric:sldfabric                                                                        ; alt_sld_fab  ;
 ;             |sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|                                          ; 151 (113)         ; 102 (73)     ; 0                 ; 0          ; 0    ; 0            ; |ksa|sld_hub:auto_hub|alt_sld_fab:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:instrumentation_fabric|alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub                           ; work         ;
 ;                |sld_rom_sr:hub_info_reg|                                                            ; 19 (19)           ; 10 (10)      ; 0                 ; 0          ; 0    ; 0            ; |ksa|sld_hub:auto_hub|alt_sld_fab:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:instrumentation_fabric|alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|sld_rom_sr:hub_info_reg   ; work         ;
 ;                |sld_shadow_jsm:shadow_jsm|                                                          ; 19 (19)           ; 19 (19)      ; 0                 ; 0          ; 0    ; 0            ; |ksa|sld_hub:auto_hub|alt_sld_fab:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:instrumentation_fabric|alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|sld_shadow_jsm:shadow_jsm ; work         ;
-;    |speed_reg_control:speed_reg_control_inst|                                                       ; 53 (53)           ; 18 (14)      ; 0                 ; 0          ; 0    ; 0            ; |ksa|speed_reg_control:speed_reg_control_inst                                                                                                                                                                            ; work         ;
-;       |async_trap_and_reset:make_song_restart_signal|                                               ; 0 (0)             ; 4 (4)        ; 0                 ; 0          ; 0    ; 0            ; |ksa|speed_reg_control:speed_reg_control_inst|async_trap_and_reset:make_song_restart_signal                                                                                                                              ; work         ;
 +-----------------------------------------------------------------------------------------------------+-------------------+--------------+-------------------+------------+------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -387,19 +363,18 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------+--------------+---------+--------------+--------------+---------------------------------------------------------------------------------------------------------------------------------------------------+-----------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                                                                                                                       ;
-+-------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------+
-; Register name                                                                                                                                   ; Reason for Removal                     ;
-+-------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------+
-; regd_actual_7seg_output[16..23]                                                                                                                 ; Stuck at GND due to stuck port data_in ;
-; init:init_insta|state[2,3]                                                                                                                      ; Merged with init:init_insta|state[1]   ;
-; init:init_insta|state[4]                                                                                                                        ; Merged with init:init_insta|state[0]   ;
-; r_memory:r_memory_insta|altsyncram:altsyncram_component|altsyncram_p7t1:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_data_shift_cntr_reg[3] ; Stuck at GND due to stuck port data_in ;
-; d_memory:d_memory_insta|altsyncram:altsyncram_component|altsyncram_oa32:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_data_shift_cntr_reg[3] ; Stuck at GND due to stuck port data_in ;
-; s_memory:s_memory_insta|altsyncram:altsyncram_component|altsyncram_2d32:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_data_shift_cntr_reg[3] ; Stuck at GND due to stuck port data_in ;
-; Total Number of Removed Registers = 14                                                                                                          ;                                        ;
-+-------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                                                                                                                   ;
++-------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------+
+; Register name                                                                                                                                   ; Reason for Removal                                 ;
++-------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------+
+; brute_force:brute_force_insta|state[7]                                                                                                          ; Merged with brute_force:brute_force_insta|state[1] ;
+; init:init_insta|state[2]                                                                                                                        ; Merged with init:init_insta|state[1]               ;
+; r_memory:r_memory_insta|altsyncram:altsyncram_component|altsyncram_p7t1:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_data_shift_cntr_reg[3] ; Stuck at GND due to stuck port data_in             ;
+; d_memory:d_memory_insta|altsyncram:altsyncram_component|altsyncram_oa32:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_data_shift_cntr_reg[3] ; Stuck at GND due to stuck port data_in             ;
+; s_memory:s_memory_insta|altsyncram:altsyncram_component|altsyncram_2d32:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_data_shift_cntr_reg[3] ; Stuck at GND due to stuck port data_in             ;
+; Total Number of Removed Registers = 5                                                                                                           ;                                                    ;
++-------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -407,12 +382,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 482   ;
-; Number of registers using Synchronous Clear  ; 23    ;
-; Number of registers using Synchronous Load   ; 143   ;
-; Number of registers using Asynchronous Clear ; 196   ;
+; Total registers                              ; 378   ;
+; Number of registers using Synchronous Clear  ; 12    ;
+; Number of registers using Synchronous Load   ; 72    ;
+; Number of registers using Asynchronous Clear ; 101   ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 212   ;
+; Number of registers using Clock Enable       ; 231   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -434,27 +409,26 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                                                                                                                                                             ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; 3:1                ; 8 bits    ; 16 LEs        ; 0 LEs                ; 16 LEs                 ; Yes        ; |ksa|r_memory:r_memory_insta|altsyncram:altsyncram_component|altsyncram_p7t1:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_data_reg[4]                                                                                              ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 0 LEs                ; 16 LEs                 ; Yes        ; |ksa|r_memory:r_memory_insta|altsyncram:altsyncram_component|altsyncram_p7t1:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_data_reg[0]                                                                                              ;
 ; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |ksa|r_memory:r_memory_insta|altsyncram:altsyncram_component|altsyncram_p7t1:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_data_shift_cntr_reg[2]                                                                                   ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 0 LEs                ; 16 LEs                 ; Yes        ; |ksa|d_memory:d_memory_insta|altsyncram:altsyncram_component|altsyncram_oa32:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_data_reg[5]                                                                                              ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 0 LEs                ; 16 LEs                 ; Yes        ; |ksa|d_memory:d_memory_insta|altsyncram:altsyncram_component|altsyncram_oa32:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_data_reg[0]                                                                                              ;
 ; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |ksa|d_memory:d_memory_insta|altsyncram:altsyncram_component|altsyncram_oa32:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_data_shift_cntr_reg[0]                                                                                   ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 0 LEs                ; 16 LEs                 ; Yes        ; |ksa|s_memory:s_memory_insta|altsyncram:altsyncram_component|altsyncram_2d32:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_data_reg[5]                                                                                              ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |ksa|s_memory:s_memory_insta|altsyncram:altsyncram_component|altsyncram_2d32:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_data_shift_cntr_reg[3]                                                                                   ;
-; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |ksa|r_memory:r_memory_insta|altsyncram:altsyncram_component|altsyncram_p7t1:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_addr_reg[4]                                                                                              ;
-; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |ksa|d_memory:d_memory_insta|altsyncram:altsyncram_component|altsyncram_oa32:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_addr_reg[1]                                                                                              ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 0 LEs                ; 16 LEs                 ; Yes        ; |ksa|s_memory:s_memory_insta|altsyncram:altsyncram_component|altsyncram_2d32:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_addr_reg[0]                                                                                              ;
-; 5:1                ; 5 bits    ; 15 LEs        ; 10 LEs               ; 5 LEs                  ; Yes        ; |ksa|r_memory:r_memory_insta|altsyncram:altsyncram_component|altsyncram_p7t1:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_rom_sr:\ram_rom_logic_gen:name_gen:info_rom_sr|word_counter[3]                                               ;
-; 5:1                ; 5 bits    ; 15 LEs        ; 10 LEs               ; 5 LEs                  ; Yes        ; |ksa|d_memory:d_memory_insta|altsyncram:altsyncram_component|altsyncram_oa32:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_rom_sr:\ram_rom_logic_gen:name_gen:info_rom_sr|word_counter[4]                                               ;
-; 6:1                ; 2 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |ksa|init:init_insta|state[0]                                                                                                                                                                                                          ;
-; 5:1                ; 5 bits    ; 15 LEs        ; 10 LEs               ; 5 LEs                  ; Yes        ; |ksa|s_memory:s_memory_insta|altsyncram:altsyncram_component|altsyncram_2d32:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_rom_sr:\ram_rom_logic_gen:name_gen:info_rom_sr|word_counter[1]                                               ;
-; 24:1               ; 4 bits    ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |ksa|r_memory:r_memory_insta|altsyncram:altsyncram_component|altsyncram_p7t1:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_rom_sr:\ram_rom_logic_gen:name_gen:info_rom_sr|WORD_SR[2]                                                    ;
-; 24:1               ; 4 bits    ; 64 LEs        ; 28 LEs               ; 36 LEs                 ; Yes        ; |ksa|d_memory:d_memory_insta|altsyncram:altsyncram_component|altsyncram_oa32:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_rom_sr:\ram_rom_logic_gen:name_gen:info_rom_sr|WORD_SR[2]                                                    ;
-; 24:1               ; 4 bits    ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |ksa|s_memory:s_memory_insta|altsyncram:altsyncram_component|altsyncram_2d32:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_rom_sr:\ram_rom_logic_gen:name_gen:info_rom_sr|WORD_SR[1]                                                    ;
-; 131:1              ; 7 bits    ; 609 LEs       ; 595 LEs              ; 14 LEs                 ; Yes        ; |ksa|decrypt:decrypt_insta|state[4]                                                                                                                                                                                                    ;
-; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |ksa|shuffle:shuffle_insta|Mux6                                                                                                                                                                                                        ;
-; 6:1                ; 8 bits    ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |ksa|decrypt:decrypt_insta|data_out[5]                                                                                                                                                                                                 ;
-; 8:1                ; 3 bits    ; 15 LEs        ; 15 LEs               ; 0 LEs                  ; No         ; |ksa|decrypt:decrypt_insta|address_out[5]                                                                                                                                                                                              ;
-; 8:1                ; 5 bits    ; 25 LEs        ; 25 LEs               ; 0 LEs                  ; No         ; |ksa|decrypt:decrypt_insta|address_out[3]                                                                                                                                                                                              ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 0 LEs                ; 16 LEs                 ; Yes        ; |ksa|s_memory:s_memory_insta|altsyncram:altsyncram_component|altsyncram_2d32:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_data_reg[6]                                                                                              ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |ksa|s_memory:s_memory_insta|altsyncram:altsyncram_component|altsyncram_2d32:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_data_shift_cntr_reg[0]                                                                                   ;
+; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |ksa|r_memory:r_memory_insta|altsyncram:altsyncram_component|altsyncram_p7t1:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_addr_reg[0]                                                                                              ;
+; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |ksa|d_memory:d_memory_insta|altsyncram:altsyncram_component|altsyncram_oa32:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_addr_reg[4]                                                                                              ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 0 LEs                ; 16 LEs                 ; Yes        ; |ksa|s_memory:s_memory_insta|altsyncram:altsyncram_component|altsyncram_2d32:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_addr_reg[3]                                                                                              ;
+; 5:1                ; 5 bits    ; 15 LEs        ; 10 LEs               ; 5 LEs                  ; Yes        ; |ksa|r_memory:r_memory_insta|altsyncram:altsyncram_component|altsyncram_p7t1:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_rom_sr:\ram_rom_logic_gen:name_gen:info_rom_sr|word_counter[4]                                               ;
+; 5:1                ; 5 bits    ; 15 LEs        ; 10 LEs               ; 5 LEs                  ; Yes        ; |ksa|d_memory:d_memory_insta|altsyncram:altsyncram_component|altsyncram_oa32:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_rom_sr:\ram_rom_logic_gen:name_gen:info_rom_sr|word_counter[0]                                               ;
+; 5:1                ; 5 bits    ; 15 LEs        ; 10 LEs               ; 5 LEs                  ; Yes        ; |ksa|s_memory:s_memory_insta|altsyncram:altsyncram_component|altsyncram_2d32:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_rom_sr:\ram_rom_logic_gen:name_gen:info_rom_sr|word_counter[3]                                               ;
+; 11:1               ; 2 bits    ; 14 LEs        ; 8 LEs                ; 6 LEs                  ; Yes        ; |ksa|init:init_insta|state[0]                                                                                                                                                                                                          ;
+; 24:1               ; 4 bits    ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |ksa|r_memory:r_memory_insta|altsyncram:altsyncram_component|altsyncram_p7t1:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_rom_sr:\ram_rom_logic_gen:name_gen:info_rom_sr|WORD_SR[0]                                                    ;
+; 24:1               ; 4 bits    ; 64 LEs        ; 28 LEs               ; 36 LEs                 ; Yes        ; |ksa|d_memory:d_memory_insta|altsyncram:altsyncram_component|altsyncram_oa32:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_rom_sr:\ram_rom_logic_gen:name_gen:info_rom_sr|WORD_SR[1]                                                    ;
+; 24:1               ; 4 bits    ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |ksa|s_memory:s_memory_insta|altsyncram:altsyncram_component|altsyncram_2d32:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_rom_sr:\ram_rom_logic_gen:name_gen:info_rom_sr|WORD_SR[2]                                                    ;
+; 133:1              ; 7 bits    ; 616 LEs       ; 602 LEs              ; 14 LEs                 ; Yes        ; |ksa|decrypt:decrypt_insta|state[1]                                                                                                                                                                                                    ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |ksa|shuffle:shuffle_insta|Mux7                                                                                                                                                                                                        ;
+; 6:1                ; 8 bits    ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |ksa|decrypt:decrypt_insta|data_out[0]                                                                                                                                                                                                 ;
+; 8:1                ; 8 bits    ; 40 LEs        ; 40 LEs               ; 0 LEs                  ; No         ; |ksa|decrypt:decrypt_insta|address_out[2]                                                                                                                                                                                              ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |ksa|sld_hub:auto_hub|alt_sld_fab:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:instrumentation_fabric|alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|hub_minor_ver_reg[0]                    ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |ksa|sld_hub:auto_hub|alt_sld_fab:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:instrumentation_fabric|alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|hub_minor_ver_reg[3]                    ;
 ; 4:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; Yes        ; |ksa|sld_hub:auto_hub|alt_sld_fab:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:instrumentation_fabric|alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[0]              ;
@@ -469,626 +443,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; 10:1               ; 5 bits    ; 30 LEs        ; 10 LEs               ; 20 LEs                 ; Yes        ; |ksa|sld_hub:auto_hub|alt_sld_fab:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:instrumentation_fabric|alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|irsr_reg[3]                             ;
 ; 36:1               ; 4 bits    ; 96 LEs        ; 32 LEs               ; 64 LEs                 ; Yes        ; |ksa|sld_hub:auto_hub|alt_sld_fab:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:instrumentation_fabric|alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|sld_rom_sr:hub_info_reg|WORD_SR[0]      ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-
-
-+-----------------------------------------------------------------------------------------------------------------+
-; Source assignments for Generate_Arbitrary_Divided_Clk32:Gen_1KHz_clk|var_clk_div32:Div_Clk                      ;
-+--------------------------------------------------------------------------------+--------------------+------+----+
-; Assignment                                                                     ; Value              ; From ; To ;
-+--------------------------------------------------------------------------------+--------------------+------+----+
-; ADV_NETLIST_OPT_SYNTH_WYSIWYG_REMAP                                            ; OFF                ;      ;    ;
-; SYNCHRONIZATION_REGISTER_CHAIN_LENGTH                                          ; 3                  ;      ;    ;
-; OPTIMIZE_POWER_DURING_SYNTHESIS                                                ; NORMAL COMPILATION ;      ;    ;
-; TXPMA_SLEW_RATE                                                                ; LOW                ;      ;    ;
-; ADCE_ENABLED                                                                   ; AUTO               ;      ;    ;
-; BLOCK_RAM_TO_MLAB_CELL_CONVERSION                                              ; ON                 ;      ;    ;
-; BLOCK_RAM_AND_MLAB_EQUIVALENT_POWER_UP_CONDITIONS                              ; AUTO               ;      ;    ;
-; BLOCK_RAM_AND_MLAB_EQUIVALENT_PAUSED_READ_CAPABILITIES                         ; CARE               ;      ;    ;
-; OPTIMIZE_POWER_DURING_FITTING                                                  ; OFF                ;      ;    ;
-; PHYSICAL_SYNTHESIS_COMBO_LOGIC_FOR_AREA                                        ; OFF                ;      ;    ;
-; PHYSICAL_SYNTHESIS_COMBO_LOGIC                                                 ; ON                 ;      ;    ;
-; PHYSICAL_SYNTHESIS_REGISTER_DUPLICATION                                        ; OFF                ;      ;    ;
-; PHYSICAL_SYNTHESIS_MAP_LOGIC_TO_MEMORY_FOR_AREA                                ; OFF                ;      ;    ;
-; PHYSICAL_SYNTHESIS_REGISTER_RETIMING                                           ; ON                 ;      ;    ;
-; PHYSICAL_SYNTHESIS_ASYNCHRONOUS_SIGNAL_PIPELINING                              ; OFF                ;      ;    ;
-; ENABLE_BENEFICIAL_SKEW_OPTIMIZATION                                            ; ON                 ;      ;    ;
-; FORM_DDR_CLUSTERING_CLIQUE                                                     ; OFF                ;      ;    ;
-; POWER_REPORT_SIGNAL_ACTIVITY                                                   ; OFF                ;      ;    ;
-; POWER_REPORT_POWER_DISSIPATION                                                 ; OFF                ;      ;    ;
-; ARRIAIIGX_RX_CDR_LOCKUP_FIX_OVERRIDE                                           ; OFF                ;      ;    ;
-; MUX_RESTRUCTURE                                                                ; AUTO               ;      ;    ;
-; MLAB_ADD_TIMING_CONSTRAINTS_FOR_MIXED_PORT_FEED_THROUGH_MODE_SETTING_DONT_CARE ; OFF                ;      ;    ;
-; STATE_MACHINE_PROCESSING                                                       ; AUTO               ;      ;    ;
-; SAFE_STATE_MACHINE                                                             ; OFF                ;      ;    ;
-; IGNORE_VERILOG_INITIAL_CONSTRUCTS                                              ; OFF                ;      ;    ;
-; VERILOG_CONSTANT_LOOP_LIMIT                                                    ; 5000               ;      ;    ;
-; VERILOG_NON_CONSTANT_LOOP_LIMIT                                                ; 5000               ;      ;    ;
-; INFER_RAMS_FROM_RAW_LOGIC                                                      ; ON                 ;      ;    ;
-; DSP_BLOCK_BALANCING                                                            ; AUTO               ;      ;    ;
-; NOT_GATE_PUSH_BACK                                                             ; ON                 ;      ;    ;
-; REMOVE_REDUNDANT_LOGIC_CELLS                                                   ; OFF                ;      ;    ;
-; REMOVE_DUPLICATE_REGISTERS                                                     ; ON                 ;      ;    ;
-; IGNORE_CARRY_BUFFERS                                                           ; OFF                ;      ;    ;
-; IGNORE_CASCADE_BUFFERS                                                         ; OFF                ;      ;    ;
-; IGNORE_GLOBAL_BUFFERS                                                          ; OFF                ;      ;    ;
-; IGNORE_ROW_GLOBAL_BUFFERS                                                      ; OFF                ;      ;    ;
-; IGNORE_LCELL_BUFFERS                                                           ; OFF                ;      ;    ;
-; MAX7000_IGNORE_LCELL_BUFFERS                                                   ; AUTO               ;      ;    ;
-; IGNORE_SOFT_BUFFERS                                                            ; ON                 ;      ;    ;
-; MAX7000_IGNORE_SOFT_BUFFERS                                                    ; OFF                ;      ;    ;
-; AUTO_GLOBAL_CLOCK_MAX                                                          ; ON                 ;      ;    ;
-; AUTO_GLOBAL_OE_MAX                                                             ; ON                 ;      ;    ;
-; MAX_AUTO_GLOBAL_REGISTER_CONTROLS                                              ; ON                 ;      ;    ;
-; AUTO_IMPLEMENT_IN_ROM                                                          ; OFF                ;      ;    ;
-; APEX20K_TECHNOLOGY_MAPPER                                                      ; LUT                ;      ;    ;
-; OPTIMIZATION_TECHNIQUE                                                         ; BALANCED           ;      ;    ;
-; STRATIXII_OPTIMIZATION_TECHNIQUE                                               ; BALANCED           ;      ;    ;
-; CYCLONE_OPTIMIZATION_TECHNIQUE                                                 ; BALANCED           ;      ;    ;
-; CYCLONEII_OPTIMIZATION_TECHNIQUE                                               ; BALANCED           ;      ;    ;
-; STRATIX_OPTIMIZATION_TECHNIQUE                                                 ; BALANCED           ;      ;    ;
-; MAXII_OPTIMIZATION_TECHNIQUE                                                   ; BALANCED           ;      ;    ;
-; MAX7000_OPTIMIZATION_TECHNIQUE                                                 ; SPEED              ;      ;    ;
-; APEX20K_OPTIMIZATION_TECHNIQUE                                                 ; BALANCED           ;      ;    ;
-; MERCURY_OPTIMIZATION_TECHNIQUE                                                 ; AREA               ;      ;    ;
-; FLEX6K_OPTIMIZATION_TECHNIQUE                                                  ; AREA               ;      ;    ;
-; FLEX10K_OPTIMIZATION_TECHNIQUE                                                 ; AREA               ;      ;    ;
-; ALLOW_XOR_GATE_USAGE                                                           ; ON                 ;      ;    ;
-; AUTO_LCELL_INSERTION                                                           ; ON                 ;      ;    ;
-; CARRY_CHAIN_LENGTH                                                             ; 48                 ;      ;    ;
-; FLEX6K_CARRY_CHAIN_LENGTH                                                      ; 32                 ;      ;    ;
-; FLEX10K_CARRY_CHAIN_LENGTH                                                     ; 32                 ;      ;    ;
-; MERCURY_CARRY_CHAIN_LENGTH                                                     ; 48                 ;      ;    ;
-; STRATIX_CARRY_CHAIN_LENGTH                                                     ; 70                 ;      ;    ;
-; STRATIXII_CARRY_CHAIN_LENGTH                                                   ; 70                 ;      ;    ;
-; CASCADE_CHAIN_LENGTH                                                           ; 2                  ;      ;    ;
-; PARALLEL_EXPANDER_CHAIN_LENGTH                                                 ; 16                 ;      ;    ;
-; MAX7000_PARALLEL_EXPANDER_CHAIN_LENGTH                                         ; 4                  ;      ;    ;
-; AUTO_CARRY_CHAINS                                                              ; ON                 ;      ;    ;
-; AUTO_CASCADE_CHAINS                                                            ; ON                 ;      ;    ;
-; AUTO_PARALLEL_EXPANDERS                                                        ; ON                 ;      ;    ;
-; AUTO_OPEN_DRAIN_PINS                                                           ; ON                 ;      ;    ;
-; AUTO_ROM_RECOGNITION                                                           ; OFF                ;      ;    ;
-; AUTO_RAM_RECOGNITION                                                           ; OFF                ;      ;    ;
-; AUTO_DSP_RECOGNITION                                                           ; ON                 ;      ;    ;
-; AUTO_SHIFT_REGISTER_RECOGNITION                                                ; AUTO               ;      ;    ;
-; ALLOW_SHIFT_REGISTER_MERGING_ACROSS_HIERARCHIES                                ; AUTO               ;      ;    ;
-; AUTO_CLOCK_ENABLE_RECOGNITION                                                  ; OFF                ;      ;    ;
-; STRICT_RAM_RECOGNITION                                                         ; OFF                ;      ;    ;
-; ALLOW_SYNCH_CTRL_USAGE                                                         ; ON                 ;      ;    ;
-; FORCE_SYNCH_CLEAR                                                              ; OFF                ;      ;    ;
-; AUTO_RAM_TO_LCELL_CONVERSION                                                   ; OFF                ;      ;    ;
-; AUTO_RESOURCE_SHARING                                                          ; OFF                ;      ;    ;
-; ALLOW_ANY_RAM_SIZE_FOR_RECOGNITION                                             ; OFF                ;      ;    ;
-; ALLOW_ANY_ROM_SIZE_FOR_RECOGNITION                                             ; OFF                ;      ;    ;
-; ALLOW_ANY_SHIFT_REGISTER_SIZE_FOR_RECOGNITION                                  ; OFF                ;      ;    ;
-; MAX7000_FANIN_PER_CELL                                                         ; 100                ;      ;    ;
-; SYNTH_TIMING_DRIVEN_SYNTHESIS                                                  ; ON                 ;      ;    ;
-; IGNORE_MAX_FANOUT_ASSIGNMENTS                                                  ; OFF                ;      ;    ;
-; USE_HIGH_SPEED_ADDER                                                           ; AUTO               ;      ;    ;
-; SYNTH_GATED_CLOCK_CONVERSION                                                   ; OFF                ;      ;    ;
-; BLOCK_DESIGN_NAMING                                                            ; AUTO               ;      ;    ;
-; SHIFT_REGISTER_RECOGNITION_ACLR_SIGNAL                                         ; ON                 ;      ;    ;
-; PRPOF_ID                                                                       ; OFF                ;      ;    ;
-; DISABLE_DSP_NEGATE_INFERENCING                                                 ; OFF                ;      ;    ;
-; AUTO_MERGE_PLLS                                                                ; ON                 ;      ;    ;
-; IGNORE_MODE_FOR_MERGE                                                          ; OFF                ;      ;    ;
-; SLOW_SLEW_RATE                                                                 ; OFF                ;      ;    ;
-; PCI_IO                                                                         ; OFF                ;      ;    ;
-; TURBO_BIT                                                                      ; ON                 ;      ;    ;
-; WEAK_PULL_UP_RESISTOR                                                          ; OFF                ;      ;    ;
-; ENABLE_BUS_HOLD_CIRCUITRY                                                      ; OFF                ;      ;    ;
-; AUTO_GLOBAL_MEMORY_CONTROLS                                                    ; OFF                ;      ;    ;
-; QII_AUTO_PACKED_REGISTERS                                                      ; AUTO               ;      ;    ;
-; AUTO_PACKED_REGISTERS_MAX                                                      ; AUTO               ;      ;    ;
-; NORMAL_LCELL_INSERT                                                            ; ON                 ;      ;    ;
-; CARRY_OUT_PINS_LCELL_INSERT                                                    ; ON                 ;      ;    ;
-; XSTL_INPUT_ALLOW_SE_BUFFER                                                     ; OFF                ;      ;    ;
-; TREAT_BIDIR_AS_OUTPUT                                                          ; OFF                ;      ;    ;
-; AUTO_TURBO_BIT                                                                 ; ON                 ;      ;    ;
-; AUTO_GLOBAL_CLOCK                                                              ; ON                 ;      ;    ;
-; AUTO_GLOBAL_OE                                                                 ; ON                 ;      ;    ;
-; AUTO_GLOBAL_REGISTER_CONTROLS                                                  ; ON                 ;      ;    ;
-; SYNCHRONIZER_IDENTIFICATION                                                    ; AUTO               ;      ;    ;
-; M144K_BLOCK_READ_CLOCK_DUTY_CYCLE_DEPENDENCY                                   ; OFF                ;      ;    ;
-; CLAMPING_DIODE                                                                 ; OFF                ;      ;    ;
-; IMPLEMENT_MLAB_IN_16_BIT_DEEP_MODE                                             ; OFF                ;      ;    ;
-+--------------------------------------------------------------------------------+--------------------+------+----+
-
-
-+-----------------------------------------------------------------------------------------------------------------+
-; Source assignments for async_trap_and_reset_gen_1_pulse:make_speedup_pulse                                      ;
-+--------------------------------------------------------------------------------+--------------------+------+----+
-; Assignment                                                                     ; Value              ; From ; To ;
-+--------------------------------------------------------------------------------+--------------------+------+----+
-; ADV_NETLIST_OPT_SYNTH_WYSIWYG_REMAP                                            ; OFF                ;      ;    ;
-; SYNCHRONIZATION_REGISTER_CHAIN_LENGTH                                          ; 3                  ;      ;    ;
-; OPTIMIZE_POWER_DURING_SYNTHESIS                                                ; NORMAL COMPILATION ;      ;    ;
-; TXPMA_SLEW_RATE                                                                ; LOW                ;      ;    ;
-; ADCE_ENABLED                                                                   ; AUTO               ;      ;    ;
-; BLOCK_RAM_TO_MLAB_CELL_CONVERSION                                              ; ON                 ;      ;    ;
-; BLOCK_RAM_AND_MLAB_EQUIVALENT_POWER_UP_CONDITIONS                              ; AUTO               ;      ;    ;
-; BLOCK_RAM_AND_MLAB_EQUIVALENT_PAUSED_READ_CAPABILITIES                         ; CARE               ;      ;    ;
-; OPTIMIZE_POWER_DURING_FITTING                                                  ; OFF                ;      ;    ;
-; PHYSICAL_SYNTHESIS_COMBO_LOGIC_FOR_AREA                                        ; OFF                ;      ;    ;
-; PHYSICAL_SYNTHESIS_COMBO_LOGIC                                                 ; ON                 ;      ;    ;
-; PHYSICAL_SYNTHESIS_REGISTER_DUPLICATION                                        ; OFF                ;      ;    ;
-; PHYSICAL_SYNTHESIS_MAP_LOGIC_TO_MEMORY_FOR_AREA                                ; OFF                ;      ;    ;
-; PHYSICAL_SYNTHESIS_REGISTER_RETIMING                                           ; ON                 ;      ;    ;
-; PHYSICAL_SYNTHESIS_ASYNCHRONOUS_SIGNAL_PIPELINING                              ; OFF                ;      ;    ;
-; ENABLE_BENEFICIAL_SKEW_OPTIMIZATION                                            ; ON                 ;      ;    ;
-; FORM_DDR_CLUSTERING_CLIQUE                                                     ; OFF                ;      ;    ;
-; POWER_REPORT_SIGNAL_ACTIVITY                                                   ; OFF                ;      ;    ;
-; POWER_REPORT_POWER_DISSIPATION                                                 ; OFF                ;      ;    ;
-; ARRIAIIGX_RX_CDR_LOCKUP_FIX_OVERRIDE                                           ; OFF                ;      ;    ;
-; MUX_RESTRUCTURE                                                                ; AUTO               ;      ;    ;
-; MLAB_ADD_TIMING_CONSTRAINTS_FOR_MIXED_PORT_FEED_THROUGH_MODE_SETTING_DONT_CARE ; OFF                ;      ;    ;
-; STATE_MACHINE_PROCESSING                                                       ; AUTO               ;      ;    ;
-; SAFE_STATE_MACHINE                                                             ; OFF                ;      ;    ;
-; IGNORE_VERILOG_INITIAL_CONSTRUCTS                                              ; OFF                ;      ;    ;
-; VERILOG_CONSTANT_LOOP_LIMIT                                                    ; 5000               ;      ;    ;
-; VERILOG_NON_CONSTANT_LOOP_LIMIT                                                ; 5000               ;      ;    ;
-; INFER_RAMS_FROM_RAW_LOGIC                                                      ; ON                 ;      ;    ;
-; DSP_BLOCK_BALANCING                                                            ; AUTO               ;      ;    ;
-; NOT_GATE_PUSH_BACK                                                             ; ON                 ;      ;    ;
-; REMOVE_REDUNDANT_LOGIC_CELLS                                                   ; OFF                ;      ;    ;
-; REMOVE_DUPLICATE_REGISTERS                                                     ; ON                 ;      ;    ;
-; IGNORE_CARRY_BUFFERS                                                           ; OFF                ;      ;    ;
-; IGNORE_CASCADE_BUFFERS                                                         ; OFF                ;      ;    ;
-; IGNORE_GLOBAL_BUFFERS                                                          ; OFF                ;      ;    ;
-; IGNORE_ROW_GLOBAL_BUFFERS                                                      ; OFF                ;      ;    ;
-; IGNORE_LCELL_BUFFERS                                                           ; OFF                ;      ;    ;
-; MAX7000_IGNORE_LCELL_BUFFERS                                                   ; AUTO               ;      ;    ;
-; IGNORE_SOFT_BUFFERS                                                            ; ON                 ;      ;    ;
-; MAX7000_IGNORE_SOFT_BUFFERS                                                    ; OFF                ;      ;    ;
-; AUTO_GLOBAL_CLOCK_MAX                                                          ; ON                 ;      ;    ;
-; AUTO_GLOBAL_OE_MAX                                                             ; ON                 ;      ;    ;
-; MAX_AUTO_GLOBAL_REGISTER_CONTROLS                                              ; ON                 ;      ;    ;
-; AUTO_IMPLEMENT_IN_ROM                                                          ; OFF                ;      ;    ;
-; APEX20K_TECHNOLOGY_MAPPER                                                      ; LUT                ;      ;    ;
-; OPTIMIZATION_TECHNIQUE                                                         ; BALANCED           ;      ;    ;
-; STRATIXII_OPTIMIZATION_TECHNIQUE                                               ; BALANCED           ;      ;    ;
-; CYCLONE_OPTIMIZATION_TECHNIQUE                                                 ; BALANCED           ;      ;    ;
-; CYCLONEII_OPTIMIZATION_TECHNIQUE                                               ; BALANCED           ;      ;    ;
-; STRATIX_OPTIMIZATION_TECHNIQUE                                                 ; BALANCED           ;      ;    ;
-; MAXII_OPTIMIZATION_TECHNIQUE                                                   ; BALANCED           ;      ;    ;
-; MAX7000_OPTIMIZATION_TECHNIQUE                                                 ; SPEED              ;      ;    ;
-; APEX20K_OPTIMIZATION_TECHNIQUE                                                 ; BALANCED           ;      ;    ;
-; MERCURY_OPTIMIZATION_TECHNIQUE                                                 ; AREA               ;      ;    ;
-; FLEX6K_OPTIMIZATION_TECHNIQUE                                                  ; AREA               ;      ;    ;
-; FLEX10K_OPTIMIZATION_TECHNIQUE                                                 ; AREA               ;      ;    ;
-; ALLOW_XOR_GATE_USAGE                                                           ; ON                 ;      ;    ;
-; AUTO_LCELL_INSERTION                                                           ; ON                 ;      ;    ;
-; CARRY_CHAIN_LENGTH                                                             ; 48                 ;      ;    ;
-; FLEX6K_CARRY_CHAIN_LENGTH                                                      ; 32                 ;      ;    ;
-; FLEX10K_CARRY_CHAIN_LENGTH                                                     ; 32                 ;      ;    ;
-; MERCURY_CARRY_CHAIN_LENGTH                                                     ; 48                 ;      ;    ;
-; STRATIX_CARRY_CHAIN_LENGTH                                                     ; 70                 ;      ;    ;
-; STRATIXII_CARRY_CHAIN_LENGTH                                                   ; 70                 ;      ;    ;
-; CASCADE_CHAIN_LENGTH                                                           ; 2                  ;      ;    ;
-; PARALLEL_EXPANDER_CHAIN_LENGTH                                                 ; 16                 ;      ;    ;
-; MAX7000_PARALLEL_EXPANDER_CHAIN_LENGTH                                         ; 4                  ;      ;    ;
-; AUTO_CARRY_CHAINS                                                              ; ON                 ;      ;    ;
-; AUTO_CASCADE_CHAINS                                                            ; ON                 ;      ;    ;
-; AUTO_PARALLEL_EXPANDERS                                                        ; ON                 ;      ;    ;
-; AUTO_OPEN_DRAIN_PINS                                                           ; ON                 ;      ;    ;
-; AUTO_ROM_RECOGNITION                                                           ; OFF                ;      ;    ;
-; AUTO_RAM_RECOGNITION                                                           ; OFF                ;      ;    ;
-; AUTO_DSP_RECOGNITION                                                           ; ON                 ;      ;    ;
-; AUTO_SHIFT_REGISTER_RECOGNITION                                                ; AUTO               ;      ;    ;
-; ALLOW_SHIFT_REGISTER_MERGING_ACROSS_HIERARCHIES                                ; AUTO               ;      ;    ;
-; AUTO_CLOCK_ENABLE_RECOGNITION                                                  ; OFF                ;      ;    ;
-; STRICT_RAM_RECOGNITION                                                         ; OFF                ;      ;    ;
-; ALLOW_SYNCH_CTRL_USAGE                                                         ; ON                 ;      ;    ;
-; FORCE_SYNCH_CLEAR                                                              ; OFF                ;      ;    ;
-; AUTO_RAM_TO_LCELL_CONVERSION                                                   ; OFF                ;      ;    ;
-; AUTO_RESOURCE_SHARING                                                          ; OFF                ;      ;    ;
-; ALLOW_ANY_RAM_SIZE_FOR_RECOGNITION                                             ; OFF                ;      ;    ;
-; ALLOW_ANY_ROM_SIZE_FOR_RECOGNITION                                             ; OFF                ;      ;    ;
-; ALLOW_ANY_SHIFT_REGISTER_SIZE_FOR_RECOGNITION                                  ; OFF                ;      ;    ;
-; MAX7000_FANIN_PER_CELL                                                         ; 100                ;      ;    ;
-; SYNTH_TIMING_DRIVEN_SYNTHESIS                                                  ; ON                 ;      ;    ;
-; IGNORE_MAX_FANOUT_ASSIGNMENTS                                                  ; OFF                ;      ;    ;
-; USE_HIGH_SPEED_ADDER                                                           ; AUTO               ;      ;    ;
-; SYNTH_GATED_CLOCK_CONVERSION                                                   ; OFF                ;      ;    ;
-; BLOCK_DESIGN_NAMING                                                            ; AUTO               ;      ;    ;
-; SHIFT_REGISTER_RECOGNITION_ACLR_SIGNAL                                         ; ON                 ;      ;    ;
-; PRPOF_ID                                                                       ; OFF                ;      ;    ;
-; DISABLE_DSP_NEGATE_INFERENCING                                                 ; OFF                ;      ;    ;
-; AUTO_MERGE_PLLS                                                                ; ON                 ;      ;    ;
-; IGNORE_MODE_FOR_MERGE                                                          ; OFF                ;      ;    ;
-; SLOW_SLEW_RATE                                                                 ; OFF                ;      ;    ;
-; PCI_IO                                                                         ; OFF                ;      ;    ;
-; TURBO_BIT                                                                      ; ON                 ;      ;    ;
-; WEAK_PULL_UP_RESISTOR                                                          ; OFF                ;      ;    ;
-; ENABLE_BUS_HOLD_CIRCUITRY                                                      ; OFF                ;      ;    ;
-; AUTO_GLOBAL_MEMORY_CONTROLS                                                    ; OFF                ;      ;    ;
-; QII_AUTO_PACKED_REGISTERS                                                      ; AUTO               ;      ;    ;
-; AUTO_PACKED_REGISTERS_MAX                                                      ; AUTO               ;      ;    ;
-; NORMAL_LCELL_INSERT                                                            ; ON                 ;      ;    ;
-; CARRY_OUT_PINS_LCELL_INSERT                                                    ; ON                 ;      ;    ;
-; XSTL_INPUT_ALLOW_SE_BUFFER                                                     ; OFF                ;      ;    ;
-; TREAT_BIDIR_AS_OUTPUT                                                          ; OFF                ;      ;    ;
-; AUTO_TURBO_BIT                                                                 ; ON                 ;      ;    ;
-; AUTO_GLOBAL_CLOCK                                                              ; ON                 ;      ;    ;
-; AUTO_GLOBAL_OE                                                                 ; ON                 ;      ;    ;
-; AUTO_GLOBAL_REGISTER_CONTROLS                                                  ; ON                 ;      ;    ;
-; SYNCHRONIZER_IDENTIFICATION                                                    ; AUTO               ;      ;    ;
-; M144K_BLOCK_READ_CLOCK_DUTY_CYCLE_DEPENDENCY                                   ; OFF                ;      ;    ;
-; CLAMPING_DIODE                                                                 ; OFF                ;      ;    ;
-; IMPLEMENT_MLAB_IN_16_BIT_DEEP_MODE                                             ; OFF                ;      ;    ;
-+--------------------------------------------------------------------------------+--------------------+------+----+
-
-
-+-----------------------------------------------------------------------------------------------------------------+
-; Source assignments for async_trap_and_reset_gen_1_pulse:make_speedown_pulse                                     ;
-+--------------------------------------------------------------------------------+--------------------+------+----+
-; Assignment                                                                     ; Value              ; From ; To ;
-+--------------------------------------------------------------------------------+--------------------+------+----+
-; ADV_NETLIST_OPT_SYNTH_WYSIWYG_REMAP                                            ; OFF                ;      ;    ;
-; SYNCHRONIZATION_REGISTER_CHAIN_LENGTH                                          ; 3                  ;      ;    ;
-; OPTIMIZE_POWER_DURING_SYNTHESIS                                                ; NORMAL COMPILATION ;      ;    ;
-; TXPMA_SLEW_RATE                                                                ; LOW                ;      ;    ;
-; ADCE_ENABLED                                                                   ; AUTO               ;      ;    ;
-; BLOCK_RAM_TO_MLAB_CELL_CONVERSION                                              ; ON                 ;      ;    ;
-; BLOCK_RAM_AND_MLAB_EQUIVALENT_POWER_UP_CONDITIONS                              ; AUTO               ;      ;    ;
-; BLOCK_RAM_AND_MLAB_EQUIVALENT_PAUSED_READ_CAPABILITIES                         ; CARE               ;      ;    ;
-; OPTIMIZE_POWER_DURING_FITTING                                                  ; OFF                ;      ;    ;
-; PHYSICAL_SYNTHESIS_COMBO_LOGIC_FOR_AREA                                        ; OFF                ;      ;    ;
-; PHYSICAL_SYNTHESIS_COMBO_LOGIC                                                 ; ON                 ;      ;    ;
-; PHYSICAL_SYNTHESIS_REGISTER_DUPLICATION                                        ; OFF                ;      ;    ;
-; PHYSICAL_SYNTHESIS_MAP_LOGIC_TO_MEMORY_FOR_AREA                                ; OFF                ;      ;    ;
-; PHYSICAL_SYNTHESIS_REGISTER_RETIMING                                           ; ON                 ;      ;    ;
-; PHYSICAL_SYNTHESIS_ASYNCHRONOUS_SIGNAL_PIPELINING                              ; OFF                ;      ;    ;
-; ENABLE_BENEFICIAL_SKEW_OPTIMIZATION                                            ; ON                 ;      ;    ;
-; FORM_DDR_CLUSTERING_CLIQUE                                                     ; OFF                ;      ;    ;
-; POWER_REPORT_SIGNAL_ACTIVITY                                                   ; OFF                ;      ;    ;
-; POWER_REPORT_POWER_DISSIPATION                                                 ; OFF                ;      ;    ;
-; ARRIAIIGX_RX_CDR_LOCKUP_FIX_OVERRIDE                                           ; OFF                ;      ;    ;
-; MUX_RESTRUCTURE                                                                ; AUTO               ;      ;    ;
-; MLAB_ADD_TIMING_CONSTRAINTS_FOR_MIXED_PORT_FEED_THROUGH_MODE_SETTING_DONT_CARE ; OFF                ;      ;    ;
-; STATE_MACHINE_PROCESSING                                                       ; AUTO               ;      ;    ;
-; SAFE_STATE_MACHINE                                                             ; OFF                ;      ;    ;
-; IGNORE_VERILOG_INITIAL_CONSTRUCTS                                              ; OFF                ;      ;    ;
-; VERILOG_CONSTANT_LOOP_LIMIT                                                    ; 5000               ;      ;    ;
-; VERILOG_NON_CONSTANT_LOOP_LIMIT                                                ; 5000               ;      ;    ;
-; INFER_RAMS_FROM_RAW_LOGIC                                                      ; ON                 ;      ;    ;
-; DSP_BLOCK_BALANCING                                                            ; AUTO               ;      ;    ;
-; NOT_GATE_PUSH_BACK                                                             ; ON                 ;      ;    ;
-; REMOVE_REDUNDANT_LOGIC_CELLS                                                   ; OFF                ;      ;    ;
-; REMOVE_DUPLICATE_REGISTERS                                                     ; ON                 ;      ;    ;
-; IGNORE_CARRY_BUFFERS                                                           ; OFF                ;      ;    ;
-; IGNORE_CASCADE_BUFFERS                                                         ; OFF                ;      ;    ;
-; IGNORE_GLOBAL_BUFFERS                                                          ; OFF                ;      ;    ;
-; IGNORE_ROW_GLOBAL_BUFFERS                                                      ; OFF                ;      ;    ;
-; IGNORE_LCELL_BUFFERS                                                           ; OFF                ;      ;    ;
-; MAX7000_IGNORE_LCELL_BUFFERS                                                   ; AUTO               ;      ;    ;
-; IGNORE_SOFT_BUFFERS                                                            ; ON                 ;      ;    ;
-; MAX7000_IGNORE_SOFT_BUFFERS                                                    ; OFF                ;      ;    ;
-; AUTO_GLOBAL_CLOCK_MAX                                                          ; ON                 ;      ;    ;
-; AUTO_GLOBAL_OE_MAX                                                             ; ON                 ;      ;    ;
-; MAX_AUTO_GLOBAL_REGISTER_CONTROLS                                              ; ON                 ;      ;    ;
-; AUTO_IMPLEMENT_IN_ROM                                                          ; OFF                ;      ;    ;
-; APEX20K_TECHNOLOGY_MAPPER                                                      ; LUT                ;      ;    ;
-; OPTIMIZATION_TECHNIQUE                                                         ; BALANCED           ;      ;    ;
-; STRATIXII_OPTIMIZATION_TECHNIQUE                                               ; BALANCED           ;      ;    ;
-; CYCLONE_OPTIMIZATION_TECHNIQUE                                                 ; BALANCED           ;      ;    ;
-; CYCLONEII_OPTIMIZATION_TECHNIQUE                                               ; BALANCED           ;      ;    ;
-; STRATIX_OPTIMIZATION_TECHNIQUE                                                 ; BALANCED           ;      ;    ;
-; MAXII_OPTIMIZATION_TECHNIQUE                                                   ; BALANCED           ;      ;    ;
-; MAX7000_OPTIMIZATION_TECHNIQUE                                                 ; SPEED              ;      ;    ;
-; APEX20K_OPTIMIZATION_TECHNIQUE                                                 ; BALANCED           ;      ;    ;
-; MERCURY_OPTIMIZATION_TECHNIQUE                                                 ; AREA               ;      ;    ;
-; FLEX6K_OPTIMIZATION_TECHNIQUE                                                  ; AREA               ;      ;    ;
-; FLEX10K_OPTIMIZATION_TECHNIQUE                                                 ; AREA               ;      ;    ;
-; ALLOW_XOR_GATE_USAGE                                                           ; ON                 ;      ;    ;
-; AUTO_LCELL_INSERTION                                                           ; ON                 ;      ;    ;
-; CARRY_CHAIN_LENGTH                                                             ; 48                 ;      ;    ;
-; FLEX6K_CARRY_CHAIN_LENGTH                                                      ; 32                 ;      ;    ;
-; FLEX10K_CARRY_CHAIN_LENGTH                                                     ; 32                 ;      ;    ;
-; MERCURY_CARRY_CHAIN_LENGTH                                                     ; 48                 ;      ;    ;
-; STRATIX_CARRY_CHAIN_LENGTH                                                     ; 70                 ;      ;    ;
-; STRATIXII_CARRY_CHAIN_LENGTH                                                   ; 70                 ;      ;    ;
-; CASCADE_CHAIN_LENGTH                                                           ; 2                  ;      ;    ;
-; PARALLEL_EXPANDER_CHAIN_LENGTH                                                 ; 16                 ;      ;    ;
-; MAX7000_PARALLEL_EXPANDER_CHAIN_LENGTH                                         ; 4                  ;      ;    ;
-; AUTO_CARRY_CHAINS                                                              ; ON                 ;      ;    ;
-; AUTO_CASCADE_CHAINS                                                            ; ON                 ;      ;    ;
-; AUTO_PARALLEL_EXPANDERS                                                        ; ON                 ;      ;    ;
-; AUTO_OPEN_DRAIN_PINS                                                           ; ON                 ;      ;    ;
-; AUTO_ROM_RECOGNITION                                                           ; OFF                ;      ;    ;
-; AUTO_RAM_RECOGNITION                                                           ; OFF                ;      ;    ;
-; AUTO_DSP_RECOGNITION                                                           ; ON                 ;      ;    ;
-; AUTO_SHIFT_REGISTER_RECOGNITION                                                ; AUTO               ;      ;    ;
-; ALLOW_SHIFT_REGISTER_MERGING_ACROSS_HIERARCHIES                                ; AUTO               ;      ;    ;
-; AUTO_CLOCK_ENABLE_RECOGNITION                                                  ; OFF                ;      ;    ;
-; STRICT_RAM_RECOGNITION                                                         ; OFF                ;      ;    ;
-; ALLOW_SYNCH_CTRL_USAGE                                                         ; ON                 ;      ;    ;
-; FORCE_SYNCH_CLEAR                                                              ; OFF                ;      ;    ;
-; AUTO_RAM_TO_LCELL_CONVERSION                                                   ; OFF                ;      ;    ;
-; AUTO_RESOURCE_SHARING                                                          ; OFF                ;      ;    ;
-; ALLOW_ANY_RAM_SIZE_FOR_RECOGNITION                                             ; OFF                ;      ;    ;
-; ALLOW_ANY_ROM_SIZE_FOR_RECOGNITION                                             ; OFF                ;      ;    ;
-; ALLOW_ANY_SHIFT_REGISTER_SIZE_FOR_RECOGNITION                                  ; OFF                ;      ;    ;
-; MAX7000_FANIN_PER_CELL                                                         ; 100                ;      ;    ;
-; SYNTH_TIMING_DRIVEN_SYNTHESIS                                                  ; ON                 ;      ;    ;
-; IGNORE_MAX_FANOUT_ASSIGNMENTS                                                  ; OFF                ;      ;    ;
-; USE_HIGH_SPEED_ADDER                                                           ; AUTO               ;      ;    ;
-; SYNTH_GATED_CLOCK_CONVERSION                                                   ; OFF                ;      ;    ;
-; BLOCK_DESIGN_NAMING                                                            ; AUTO               ;      ;    ;
-; SHIFT_REGISTER_RECOGNITION_ACLR_SIGNAL                                         ; ON                 ;      ;    ;
-; PRPOF_ID                                                                       ; OFF                ;      ;    ;
-; DISABLE_DSP_NEGATE_INFERENCING                                                 ; OFF                ;      ;    ;
-; AUTO_MERGE_PLLS                                                                ; ON                 ;      ;    ;
-; IGNORE_MODE_FOR_MERGE                                                          ; OFF                ;      ;    ;
-; SLOW_SLEW_RATE                                                                 ; OFF                ;      ;    ;
-; PCI_IO                                                                         ; OFF                ;      ;    ;
-; TURBO_BIT                                                                      ; ON                 ;      ;    ;
-; WEAK_PULL_UP_RESISTOR                                                          ; OFF                ;      ;    ;
-; ENABLE_BUS_HOLD_CIRCUITRY                                                      ; OFF                ;      ;    ;
-; AUTO_GLOBAL_MEMORY_CONTROLS                                                    ; OFF                ;      ;    ;
-; QII_AUTO_PACKED_REGISTERS                                                      ; AUTO               ;      ;    ;
-; AUTO_PACKED_REGISTERS_MAX                                                      ; AUTO               ;      ;    ;
-; NORMAL_LCELL_INSERT                                                            ; ON                 ;      ;    ;
-; CARRY_OUT_PINS_LCELL_INSERT                                                    ; ON                 ;      ;    ;
-; XSTL_INPUT_ALLOW_SE_BUFFER                                                     ; OFF                ;      ;    ;
-; TREAT_BIDIR_AS_OUTPUT                                                          ; OFF                ;      ;    ;
-; AUTO_TURBO_BIT                                                                 ; ON                 ;      ;    ;
-; AUTO_GLOBAL_CLOCK                                                              ; ON                 ;      ;    ;
-; AUTO_GLOBAL_OE                                                                 ; ON                 ;      ;    ;
-; AUTO_GLOBAL_REGISTER_CONTROLS                                                  ; ON                 ;      ;    ;
-; SYNCHRONIZER_IDENTIFICATION                                                    ; AUTO               ;      ;    ;
-; M144K_BLOCK_READ_CLOCK_DUTY_CYCLE_DEPENDENCY                                   ; OFF                ;      ;    ;
-; CLAMPING_DIODE                                                                 ; OFF                ;      ;    ;
-; IMPLEMENT_MLAB_IN_16_BIT_DEEP_MODE                                             ; OFF                ;      ;    ;
-+--------------------------------------------------------------------------------+--------------------+------+----+
-
-
-+-----------------------------------------------------------------------------------------------------------------+
-; Source assignments for speed_reg_control:speed_reg_control_inst                                                 ;
-+--------------------------------------------------------------------------------+--------------------+------+----+
-; Assignment                                                                     ; Value              ; From ; To ;
-+--------------------------------------------------------------------------------+--------------------+------+----+
-; ADV_NETLIST_OPT_SYNTH_WYSIWYG_REMAP                                            ; OFF                ;      ;    ;
-; SYNCHRONIZATION_REGISTER_CHAIN_LENGTH                                          ; 3                  ;      ;    ;
-; OPTIMIZE_POWER_DURING_SYNTHESIS                                                ; NORMAL COMPILATION ;      ;    ;
-; TXPMA_SLEW_RATE                                                                ; LOW                ;      ;    ;
-; ADCE_ENABLED                                                                   ; AUTO               ;      ;    ;
-; BLOCK_RAM_TO_MLAB_CELL_CONVERSION                                              ; ON                 ;      ;    ;
-; BLOCK_RAM_AND_MLAB_EQUIVALENT_POWER_UP_CONDITIONS                              ; AUTO               ;      ;    ;
-; BLOCK_RAM_AND_MLAB_EQUIVALENT_PAUSED_READ_CAPABILITIES                         ; CARE               ;      ;    ;
-; OPTIMIZE_POWER_DURING_FITTING                                                  ; OFF                ;      ;    ;
-; PHYSICAL_SYNTHESIS_COMBO_LOGIC_FOR_AREA                                        ; OFF                ;      ;    ;
-; PHYSICAL_SYNTHESIS_COMBO_LOGIC                                                 ; ON                 ;      ;    ;
-; PHYSICAL_SYNTHESIS_REGISTER_DUPLICATION                                        ; OFF                ;      ;    ;
-; PHYSICAL_SYNTHESIS_MAP_LOGIC_TO_MEMORY_FOR_AREA                                ; OFF                ;      ;    ;
-; PHYSICAL_SYNTHESIS_REGISTER_RETIMING                                           ; ON                 ;      ;    ;
-; PHYSICAL_SYNTHESIS_ASYNCHRONOUS_SIGNAL_PIPELINING                              ; OFF                ;      ;    ;
-; ENABLE_BENEFICIAL_SKEW_OPTIMIZATION                                            ; ON                 ;      ;    ;
-; FORM_DDR_CLUSTERING_CLIQUE                                                     ; OFF                ;      ;    ;
-; POWER_REPORT_SIGNAL_ACTIVITY                                                   ; OFF                ;      ;    ;
-; POWER_REPORT_POWER_DISSIPATION                                                 ; OFF                ;      ;    ;
-; ARRIAIIGX_RX_CDR_LOCKUP_FIX_OVERRIDE                                           ; OFF                ;      ;    ;
-; MUX_RESTRUCTURE                                                                ; AUTO               ;      ;    ;
-; MLAB_ADD_TIMING_CONSTRAINTS_FOR_MIXED_PORT_FEED_THROUGH_MODE_SETTING_DONT_CARE ; OFF                ;      ;    ;
-; STATE_MACHINE_PROCESSING                                                       ; AUTO               ;      ;    ;
-; SAFE_STATE_MACHINE                                                             ; OFF                ;      ;    ;
-; IGNORE_VERILOG_INITIAL_CONSTRUCTS                                              ; OFF                ;      ;    ;
-; VERILOG_CONSTANT_LOOP_LIMIT                                                    ; 5000               ;      ;    ;
-; VERILOG_NON_CONSTANT_LOOP_LIMIT                                                ; 5000               ;      ;    ;
-; INFER_RAMS_FROM_RAW_LOGIC                                                      ; ON                 ;      ;    ;
-; DSP_BLOCK_BALANCING                                                            ; AUTO               ;      ;    ;
-; NOT_GATE_PUSH_BACK                                                             ; ON                 ;      ;    ;
-; REMOVE_REDUNDANT_LOGIC_CELLS                                                   ; OFF                ;      ;    ;
-; REMOVE_DUPLICATE_REGISTERS                                                     ; ON                 ;      ;    ;
-; IGNORE_CARRY_BUFFERS                                                           ; OFF                ;      ;    ;
-; IGNORE_CASCADE_BUFFERS                                                         ; OFF                ;      ;    ;
-; IGNORE_GLOBAL_BUFFERS                                                          ; OFF                ;      ;    ;
-; IGNORE_ROW_GLOBAL_BUFFERS                                                      ; OFF                ;      ;    ;
-; IGNORE_LCELL_BUFFERS                                                           ; OFF                ;      ;    ;
-; MAX7000_IGNORE_LCELL_BUFFERS                                                   ; AUTO               ;      ;    ;
-; IGNORE_SOFT_BUFFERS                                                            ; ON                 ;      ;    ;
-; MAX7000_IGNORE_SOFT_BUFFERS                                                    ; OFF                ;      ;    ;
-; AUTO_GLOBAL_CLOCK_MAX                                                          ; ON                 ;      ;    ;
-; AUTO_GLOBAL_OE_MAX                                                             ; ON                 ;      ;    ;
-; MAX_AUTO_GLOBAL_REGISTER_CONTROLS                                              ; ON                 ;      ;    ;
-; AUTO_IMPLEMENT_IN_ROM                                                          ; OFF                ;      ;    ;
-; APEX20K_TECHNOLOGY_MAPPER                                                      ; LUT                ;      ;    ;
-; OPTIMIZATION_TECHNIQUE                                                         ; BALANCED           ;      ;    ;
-; STRATIXII_OPTIMIZATION_TECHNIQUE                                               ; BALANCED           ;      ;    ;
-; CYCLONE_OPTIMIZATION_TECHNIQUE                                                 ; BALANCED           ;      ;    ;
-; CYCLONEII_OPTIMIZATION_TECHNIQUE                                               ; BALANCED           ;      ;    ;
-; STRATIX_OPTIMIZATION_TECHNIQUE                                                 ; BALANCED           ;      ;    ;
-; MAXII_OPTIMIZATION_TECHNIQUE                                                   ; BALANCED           ;      ;    ;
-; MAX7000_OPTIMIZATION_TECHNIQUE                                                 ; SPEED              ;      ;    ;
-; APEX20K_OPTIMIZATION_TECHNIQUE                                                 ; BALANCED           ;      ;    ;
-; MERCURY_OPTIMIZATION_TECHNIQUE                                                 ; AREA               ;      ;    ;
-; FLEX6K_OPTIMIZATION_TECHNIQUE                                                  ; AREA               ;      ;    ;
-; FLEX10K_OPTIMIZATION_TECHNIQUE                                                 ; AREA               ;      ;    ;
-; ALLOW_XOR_GATE_USAGE                                                           ; ON                 ;      ;    ;
-; AUTO_LCELL_INSERTION                                                           ; ON                 ;      ;    ;
-; CARRY_CHAIN_LENGTH                                                             ; 48                 ;      ;    ;
-; FLEX6K_CARRY_CHAIN_LENGTH                                                      ; 32                 ;      ;    ;
-; FLEX10K_CARRY_CHAIN_LENGTH                                                     ; 32                 ;      ;    ;
-; MERCURY_CARRY_CHAIN_LENGTH                                                     ; 48                 ;      ;    ;
-; STRATIX_CARRY_CHAIN_LENGTH                                                     ; 70                 ;      ;    ;
-; STRATIXII_CARRY_CHAIN_LENGTH                                                   ; 70                 ;      ;    ;
-; CASCADE_CHAIN_LENGTH                                                           ; 2                  ;      ;    ;
-; PARALLEL_EXPANDER_CHAIN_LENGTH                                                 ; 16                 ;      ;    ;
-; MAX7000_PARALLEL_EXPANDER_CHAIN_LENGTH                                         ; 4                  ;      ;    ;
-; AUTO_CARRY_CHAINS                                                              ; ON                 ;      ;    ;
-; AUTO_CASCADE_CHAINS                                                            ; ON                 ;      ;    ;
-; AUTO_PARALLEL_EXPANDERS                                                        ; ON                 ;      ;    ;
-; AUTO_OPEN_DRAIN_PINS                                                           ; ON                 ;      ;    ;
-; AUTO_ROM_RECOGNITION                                                           ; OFF                ;      ;    ;
-; AUTO_RAM_RECOGNITION                                                           ; OFF                ;      ;    ;
-; AUTO_DSP_RECOGNITION                                                           ; ON                 ;      ;    ;
-; AUTO_SHIFT_REGISTER_RECOGNITION                                                ; AUTO               ;      ;    ;
-; ALLOW_SHIFT_REGISTER_MERGING_ACROSS_HIERARCHIES                                ; AUTO               ;      ;    ;
-; AUTO_CLOCK_ENABLE_RECOGNITION                                                  ; OFF                ;      ;    ;
-; STRICT_RAM_RECOGNITION                                                         ; OFF                ;      ;    ;
-; ALLOW_SYNCH_CTRL_USAGE                                                         ; ON                 ;      ;    ;
-; FORCE_SYNCH_CLEAR                                                              ; OFF                ;      ;    ;
-; AUTO_RAM_TO_LCELL_CONVERSION                                                   ; OFF                ;      ;    ;
-; AUTO_RESOURCE_SHARING                                                          ; OFF                ;      ;    ;
-; ALLOW_ANY_RAM_SIZE_FOR_RECOGNITION                                             ; OFF                ;      ;    ;
-; ALLOW_ANY_ROM_SIZE_FOR_RECOGNITION                                             ; OFF                ;      ;    ;
-; ALLOW_ANY_SHIFT_REGISTER_SIZE_FOR_RECOGNITION                                  ; OFF                ;      ;    ;
-; MAX7000_FANIN_PER_CELL                                                         ; 100                ;      ;    ;
-; SYNTH_TIMING_DRIVEN_SYNTHESIS                                                  ; ON                 ;      ;    ;
-; IGNORE_MAX_FANOUT_ASSIGNMENTS                                                  ; OFF                ;      ;    ;
-; USE_HIGH_SPEED_ADDER                                                           ; AUTO               ;      ;    ;
-; SYNTH_GATED_CLOCK_CONVERSION                                                   ; OFF                ;      ;    ;
-; BLOCK_DESIGN_NAMING                                                            ; AUTO               ;      ;    ;
-; SHIFT_REGISTER_RECOGNITION_ACLR_SIGNAL                                         ; ON                 ;      ;    ;
-; PRPOF_ID                                                                       ; OFF                ;      ;    ;
-; DISABLE_DSP_NEGATE_INFERENCING                                                 ; OFF                ;      ;    ;
-; AUTO_MERGE_PLLS                                                                ; ON                 ;      ;    ;
-; IGNORE_MODE_FOR_MERGE                                                          ; OFF                ;      ;    ;
-; SLOW_SLEW_RATE                                                                 ; OFF                ;      ;    ;
-; PCI_IO                                                                         ; OFF                ;      ;    ;
-; TURBO_BIT                                                                      ; ON                 ;      ;    ;
-; WEAK_PULL_UP_RESISTOR                                                          ; OFF                ;      ;    ;
-; ENABLE_BUS_HOLD_CIRCUITRY                                                      ; OFF                ;      ;    ;
-; AUTO_GLOBAL_MEMORY_CONTROLS                                                    ; OFF                ;      ;    ;
-; QII_AUTO_PACKED_REGISTERS                                                      ; AUTO               ;      ;    ;
-; AUTO_PACKED_REGISTERS_MAX                                                      ; AUTO               ;      ;    ;
-; NORMAL_LCELL_INSERT                                                            ; ON                 ;      ;    ;
-; CARRY_OUT_PINS_LCELL_INSERT                                                    ; ON                 ;      ;    ;
-; XSTL_INPUT_ALLOW_SE_BUFFER                                                     ; OFF                ;      ;    ;
-; TREAT_BIDIR_AS_OUTPUT                                                          ; OFF                ;      ;    ;
-; AUTO_TURBO_BIT                                                                 ; ON                 ;      ;    ;
-; AUTO_GLOBAL_CLOCK                                                              ; ON                 ;      ;    ;
-; AUTO_GLOBAL_OE                                                                 ; ON                 ;      ;    ;
-; AUTO_GLOBAL_REGISTER_CONTROLS                                                  ; ON                 ;      ;    ;
-; SYNCHRONIZER_IDENTIFICATION                                                    ; AUTO               ;      ;    ;
-; M144K_BLOCK_READ_CLOCK_DUTY_CYCLE_DEPENDENCY                                   ; OFF                ;      ;    ;
-; CLAMPING_DIODE                                                                 ; OFF                ;      ;    ;
-; IMPLEMENT_MLAB_IN_16_BIT_DEEP_MODE                                             ; OFF                ;      ;    ;
-+--------------------------------------------------------------------------------+--------------------+------+----+
-
-
-+-----------------------------------------------------------------------------------------------------------------+
-; Source assignments for Generate_Arbitrary_Divided_Clk32:Gen_2Hz_clk|var_clk_div32:Div_Clk                       ;
-+--------------------------------------------------------------------------------+--------------------+------+----+
-; Assignment                                                                     ; Value              ; From ; To ;
-+--------------------------------------------------------------------------------+--------------------+------+----+
-; ADV_NETLIST_OPT_SYNTH_WYSIWYG_REMAP                                            ; OFF                ;      ;    ;
-; SYNCHRONIZATION_REGISTER_CHAIN_LENGTH                                          ; 3                  ;      ;    ;
-; OPTIMIZE_POWER_DURING_SYNTHESIS                                                ; NORMAL COMPILATION ;      ;    ;
-; TXPMA_SLEW_RATE                                                                ; LOW                ;      ;    ;
-; ADCE_ENABLED                                                                   ; AUTO               ;      ;    ;
-; BLOCK_RAM_TO_MLAB_CELL_CONVERSION                                              ; ON                 ;      ;    ;
-; BLOCK_RAM_AND_MLAB_EQUIVALENT_POWER_UP_CONDITIONS                              ; AUTO               ;      ;    ;
-; BLOCK_RAM_AND_MLAB_EQUIVALENT_PAUSED_READ_CAPABILITIES                         ; CARE               ;      ;    ;
-; OPTIMIZE_POWER_DURING_FITTING                                                  ; OFF                ;      ;    ;
-; PHYSICAL_SYNTHESIS_COMBO_LOGIC_FOR_AREA                                        ; OFF                ;      ;    ;
-; PHYSICAL_SYNTHESIS_COMBO_LOGIC                                                 ; ON                 ;      ;    ;
-; PHYSICAL_SYNTHESIS_REGISTER_DUPLICATION                                        ; OFF                ;      ;    ;
-; PHYSICAL_SYNTHESIS_MAP_LOGIC_TO_MEMORY_FOR_AREA                                ; OFF                ;      ;    ;
-; PHYSICAL_SYNTHESIS_REGISTER_RETIMING                                           ; ON                 ;      ;    ;
-; PHYSICAL_SYNTHESIS_ASYNCHRONOUS_SIGNAL_PIPELINING                              ; OFF                ;      ;    ;
-; ENABLE_BENEFICIAL_SKEW_OPTIMIZATION                                            ; ON                 ;      ;    ;
-; FORM_DDR_CLUSTERING_CLIQUE                                                     ; OFF                ;      ;    ;
-; POWER_REPORT_SIGNAL_ACTIVITY                                                   ; OFF                ;      ;    ;
-; POWER_REPORT_POWER_DISSIPATION                                                 ; OFF                ;      ;    ;
-; ARRIAIIGX_RX_CDR_LOCKUP_FIX_OVERRIDE                                           ; OFF                ;      ;    ;
-; MUX_RESTRUCTURE                                                                ; AUTO               ;      ;    ;
-; MLAB_ADD_TIMING_CONSTRAINTS_FOR_MIXED_PORT_FEED_THROUGH_MODE_SETTING_DONT_CARE ; OFF                ;      ;    ;
-; STATE_MACHINE_PROCESSING                                                       ; AUTO               ;      ;    ;
-; SAFE_STATE_MACHINE                                                             ; OFF                ;      ;    ;
-; IGNORE_VERILOG_INITIAL_CONSTRUCTS                                              ; OFF                ;      ;    ;
-; VERILOG_CONSTANT_LOOP_LIMIT                                                    ; 5000               ;      ;    ;
-; VERILOG_NON_CONSTANT_LOOP_LIMIT                                                ; 5000               ;      ;    ;
-; INFER_RAMS_FROM_RAW_LOGIC                                                      ; ON                 ;      ;    ;
-; DSP_BLOCK_BALANCING                                                            ; AUTO               ;      ;    ;
-; NOT_GATE_PUSH_BACK                                                             ; ON                 ;      ;    ;
-; REMOVE_REDUNDANT_LOGIC_CELLS                                                   ; OFF                ;      ;    ;
-; REMOVE_DUPLICATE_REGISTERS                                                     ; ON                 ;      ;    ;
-; IGNORE_CARRY_BUFFERS                                                           ; OFF                ;      ;    ;
-; IGNORE_CASCADE_BUFFERS                                                         ; OFF                ;      ;    ;
-; IGNORE_GLOBAL_BUFFERS                                                          ; OFF                ;      ;    ;
-; IGNORE_ROW_GLOBAL_BUFFERS                                                      ; OFF                ;      ;    ;
-; IGNORE_LCELL_BUFFERS                                                           ; OFF                ;      ;    ;
-; MAX7000_IGNORE_LCELL_BUFFERS                                                   ; AUTO               ;      ;    ;
-; IGNORE_SOFT_BUFFERS                                                            ; ON                 ;      ;    ;
-; MAX7000_IGNORE_SOFT_BUFFERS                                                    ; OFF                ;      ;    ;
-; AUTO_GLOBAL_CLOCK_MAX                                                          ; ON                 ;      ;    ;
-; AUTO_GLOBAL_OE_MAX                                                             ; ON                 ;      ;    ;
-; MAX_AUTO_GLOBAL_REGISTER_CONTROLS                                              ; ON                 ;      ;    ;
-; AUTO_IMPLEMENT_IN_ROM                                                          ; OFF                ;      ;    ;
-; APEX20K_TECHNOLOGY_MAPPER                                                      ; LUT                ;      ;    ;
-; OPTIMIZATION_TECHNIQUE                                                         ; BALANCED           ;      ;    ;
-; STRATIXII_OPTIMIZATION_TECHNIQUE                                               ; BALANCED           ;      ;    ;
-; CYCLONE_OPTIMIZATION_TECHNIQUE                                                 ; BALANCED           ;      ;    ;
-; CYCLONEII_OPTIMIZATION_TECHNIQUE                                               ; BALANCED           ;      ;    ;
-; STRATIX_OPTIMIZATION_TECHNIQUE                                                 ; BALANCED           ;      ;    ;
-; MAXII_OPTIMIZATION_TECHNIQUE                                                   ; BALANCED           ;      ;    ;
-; MAX7000_OPTIMIZATION_TECHNIQUE                                                 ; SPEED              ;      ;    ;
-; APEX20K_OPTIMIZATION_TECHNIQUE                                                 ; BALANCED           ;      ;    ;
-; MERCURY_OPTIMIZATION_TECHNIQUE                                                 ; AREA               ;      ;    ;
-; FLEX6K_OPTIMIZATION_TECHNIQUE                                                  ; AREA               ;      ;    ;
-; FLEX10K_OPTIMIZATION_TECHNIQUE                                                 ; AREA               ;      ;    ;
-; ALLOW_XOR_GATE_USAGE                                                           ; ON                 ;      ;    ;
-; AUTO_LCELL_INSERTION                                                           ; ON                 ;      ;    ;
-; CARRY_CHAIN_LENGTH                                                             ; 48                 ;      ;    ;
-; FLEX6K_CARRY_CHAIN_LENGTH                                                      ; 32                 ;      ;    ;
-; FLEX10K_CARRY_CHAIN_LENGTH                                                     ; 32                 ;      ;    ;
-; MERCURY_CARRY_CHAIN_LENGTH                                                     ; 48                 ;      ;    ;
-; STRATIX_CARRY_CHAIN_LENGTH                                                     ; 70                 ;      ;    ;
-; STRATIXII_CARRY_CHAIN_LENGTH                                                   ; 70                 ;      ;    ;
-; CASCADE_CHAIN_LENGTH                                                           ; 2                  ;      ;    ;
-; PARALLEL_EXPANDER_CHAIN_LENGTH                                                 ; 16                 ;      ;    ;
-; MAX7000_PARALLEL_EXPANDER_CHAIN_LENGTH                                         ; 4                  ;      ;    ;
-; AUTO_CARRY_CHAINS                                                              ; ON                 ;      ;    ;
-; AUTO_CASCADE_CHAINS                                                            ; ON                 ;      ;    ;
-; AUTO_PARALLEL_EXPANDERS                                                        ; ON                 ;      ;    ;
-; AUTO_OPEN_DRAIN_PINS                                                           ; ON                 ;      ;    ;
-; AUTO_ROM_RECOGNITION                                                           ; OFF                ;      ;    ;
-; AUTO_RAM_RECOGNITION                                                           ; OFF                ;      ;    ;
-; AUTO_DSP_RECOGNITION                                                           ; ON                 ;      ;    ;
-; AUTO_SHIFT_REGISTER_RECOGNITION                                                ; AUTO               ;      ;    ;
-; ALLOW_SHIFT_REGISTER_MERGING_ACROSS_HIERARCHIES                                ; AUTO               ;      ;    ;
-; AUTO_CLOCK_ENABLE_RECOGNITION                                                  ; OFF                ;      ;    ;
-; STRICT_RAM_RECOGNITION                                                         ; OFF                ;      ;    ;
-; ALLOW_SYNCH_CTRL_USAGE                                                         ; ON                 ;      ;    ;
-; FORCE_SYNCH_CLEAR                                                              ; OFF                ;      ;    ;
-; AUTO_RAM_TO_LCELL_CONVERSION                                                   ; OFF                ;      ;    ;
-; AUTO_RESOURCE_SHARING                                                          ; OFF                ;      ;    ;
-; ALLOW_ANY_RAM_SIZE_FOR_RECOGNITION                                             ; OFF                ;      ;    ;
-; ALLOW_ANY_ROM_SIZE_FOR_RECOGNITION                                             ; OFF                ;      ;    ;
-; ALLOW_ANY_SHIFT_REGISTER_SIZE_FOR_RECOGNITION                                  ; OFF                ;      ;    ;
-; MAX7000_FANIN_PER_CELL                                                         ; 100                ;      ;    ;
-; SYNTH_TIMING_DRIVEN_SYNTHESIS                                                  ; ON                 ;      ;    ;
-; IGNORE_MAX_FANOUT_ASSIGNMENTS                                                  ; OFF                ;      ;    ;
-; USE_HIGH_SPEED_ADDER                                                           ; AUTO               ;      ;    ;
-; SYNTH_GATED_CLOCK_CONVERSION                                                   ; OFF                ;      ;    ;
-; BLOCK_DESIGN_NAMING                                                            ; AUTO               ;      ;    ;
-; SHIFT_REGISTER_RECOGNITION_ACLR_SIGNAL                                         ; ON                 ;      ;    ;
-; PRPOF_ID                                                                       ; OFF                ;      ;    ;
-; DISABLE_DSP_NEGATE_INFERENCING                                                 ; OFF                ;      ;    ;
-; AUTO_MERGE_PLLS                                                                ; ON                 ;      ;    ;
-; IGNORE_MODE_FOR_MERGE                                                          ; OFF                ;      ;    ;
-; SLOW_SLEW_RATE                                                                 ; OFF                ;      ;    ;
-; PCI_IO                                                                         ; OFF                ;      ;    ;
-; TURBO_BIT                                                                      ; ON                 ;      ;    ;
-; WEAK_PULL_UP_RESISTOR                                                          ; OFF                ;      ;    ;
-; ENABLE_BUS_HOLD_CIRCUITRY                                                      ; OFF                ;      ;    ;
-; AUTO_GLOBAL_MEMORY_CONTROLS                                                    ; OFF                ;      ;    ;
-; QII_AUTO_PACKED_REGISTERS                                                      ; AUTO               ;      ;    ;
-; AUTO_PACKED_REGISTERS_MAX                                                      ; AUTO               ;      ;    ;
-; NORMAL_LCELL_INSERT                                                            ; ON                 ;      ;    ;
-; CARRY_OUT_PINS_LCELL_INSERT                                                    ; ON                 ;      ;    ;
-; XSTL_INPUT_ALLOW_SE_BUFFER                                                     ; OFF                ;      ;    ;
-; TREAT_BIDIR_AS_OUTPUT                                                          ; OFF                ;      ;    ;
-; AUTO_TURBO_BIT                                                                 ; ON                 ;      ;    ;
-; AUTO_GLOBAL_CLOCK                                                              ; ON                 ;      ;    ;
-; AUTO_GLOBAL_OE                                                                 ; ON                 ;      ;    ;
-; AUTO_GLOBAL_REGISTER_CONTROLS                                                  ; ON                 ;      ;    ;
-; SYNCHRONIZER_IDENTIFICATION                                                    ; AUTO               ;      ;    ;
-; M144K_BLOCK_READ_CLOCK_DUTY_CYCLE_DEPENDENCY                                   ; OFF                ;      ;    ;
-; CLAMPING_DIODE                                                                 ; OFF                ;      ;    ;
-; IMPLEMENT_MLAB_IN_16_BIT_DEEP_MODE                                             ; OFF                ;      ;    ;
-+--------------------------------------------------------------------------------+--------------------+------+----+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------------------+
@@ -1119,15 +473,20 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 
 
 +----------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Top-level Entity: |ksa        ;
-+---------------------------------------+------------------+-----------------+
-; Parameter Name                        ; Value            ; Type            ;
-+---------------------------------------+------------------+-----------------+
-; num_updown_events_per_sec             ; 10               ; Signed Integer  ;
-; num_1KHZ_clocks_between_updown_events ; 100              ; Signed Integer  ;
-; oscilloscope_speed_step               ; 100              ; Signed Integer  ;
-; default_scope_sampling_clock_count    ; 0000010001110000 ; Unsigned Binary ;
-+---------------------------------------+------------------+-----------------+
+; Parameter Settings for User Entity Instance: brute_force:brute_force_insta ;
++----------------+----------+------------------------------------------------+
+; Parameter Name ; Value    ; Type                                           ;
++----------------+----------+------------------------------------------------+
+; idle           ; 00000000 ; Unsigned Binary                                ;
+; begin_decrypt  ; 00010100 ; Unsigned Binary                                ;
+; wait_compute   ; 00100000 ; Unsigned Binary                                ;
+; verify_val     ; 00110000 ; Unsigned Binary                                ;
+; decrypt_reset  ; 01001000 ; Unsigned Binary                                ;
+; check_key      ; 01010000 ; Unsigned Binary                                ;
+; incr_key       ; 01100000 ; Unsigned Binary                                ;
+; failure        ; 01110001 ; Unsigned Binary                                ;
+; success        ; 10000011 ; Unsigned Binary                                ;
++----------------+----------+------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -1153,9 +512,9 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+-------------------------------------+
 ; Parameter Name ; Value ; Type                                ;
 +----------------+-------+-------------------------------------+
-; idle           ; 00000 ; Unsigned Binary                     ;
-; initialize     ; 01110 ; Unsigned Binary                     ;
-; finish         ; 10001 ; Unsigned Binary                     ;
+; idle           ; 0000  ; Unsigned Binary                     ;
+; initialize     ; 0110  ; Unsigned Binary                     ;
+; finish         ; 1001  ; Unsigned Binary                     ;
 +----------------+-------+-------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -1387,18 +746,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+---------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: speed_reg_control:speed_reg_control_inst ;
-+----------------+----------------------------------+-----------------------------------+
-; Parameter Name ; Value                            ; Type                              ;
-+----------------+----------------------------------+-----------------------------------+
-; speed_step     ; 100                              ; Signed Integer                    ;
-; max_speed      ; 00000000000000001100111100100010 ; Unsigned Binary                   ;
-; min_speed      ; 11111111111111111100111100110110 ; Unsigned Binary                   ;
-+----------------+----------------------------------+-----------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
 +----------------------------------------------------------------------------------------+
 ; Parameter Settings for Inferred Entity Instance: shuffle:shuffle_insta|lpm_divide:Mod0 ;
 +------------------------+----------------+----------------------------------------------+
@@ -1464,27 +811,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------------------------------------------+---------------------------------------------------------+
 
 
-+--------------------------------------------------------------------------+
-; Port Connectivity Checks: "Generate_Arbitrary_Divided_Clk32:Gen_2Hz_clk" ;
-+-----------------------+--------+----------+------------------------------+
-; Port                  ; Type   ; Severity ; Details                      ;
-+-----------------------+--------+----------+------------------------------+
-; outclk_Not            ; Output ; Info     ; Explicitly unconnected       ;
-; div_clk_count[21..17] ; Input  ; Info     ; Stuck at VCC                 ;
-; div_clk_count[13..10] ; Input  ; Info     ; Stuck at VCC                 ;
-; div_clk_count[31..24] ; Input  ; Info     ; Stuck at GND                 ;
-; div_clk_count[9..6]   ; Input  ; Info     ; Stuck at GND                 ;
-; div_clk_count[4..0]   ; Input  ; Info     ; Stuck at GND                 ;
-; div_clk_count[23]     ; Input  ; Info     ; Stuck at VCC                 ;
-; div_clk_count[22]     ; Input  ; Info     ; Stuck at GND                 ;
-; div_clk_count[16]     ; Input  ; Info     ; Stuck at GND                 ;
-; div_clk_count[15]     ; Input  ; Info     ; Stuck at VCC                 ;
-; div_clk_count[14]     ; Input  ; Info     ; Stuck at GND                 ;
-; div_clk_count[5]      ; Input  ; Info     ; Stuck at VCC                 ;
-; Reset                 ; Input  ; Info     ; Stuck at VCC                 ;
-+-----------------------+--------+----------+------------------------------+
-
-
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port Connectivity Checks: "SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst5"                                                                                                           ;
 +-------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -1539,52 +865,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
-+-------------------------------------------------------+
-; Port Connectivity Checks: "doublesync:key2_doublsync" ;
-+-------+-------+----------+----------------------------+
-; Port  ; Type  ; Severity ; Details                    ;
-+-------+-------+----------+----------------------------+
-; reset ; Input ; Info     ; Stuck at VCC               ;
-+-------+-------+----------+----------------------------+
-
-
-+-------------------------------------------------------+
-; Port Connectivity Checks: "doublesync:key1_doublsync" ;
-+-------+-------+----------+----------------------------+
-; Port  ; Type  ; Severity ; Details                    ;
-+-------+-------+----------+----------------------------+
-; reset ; Input ; Info     ; Stuck at VCC               ;
-+-------+-------+----------+----------------------------+
-
-
-+-------------------------------------------------------+
-; Port Connectivity Checks: "doublesync:key0_doublsync" ;
-+-------+-------+----------+----------------------------+
-; Port  ; Type  ; Severity ; Details                    ;
-+-------+-------+----------+----------------------------+
-; reset ; Input ; Info     ; Stuck at VCC               ;
-+-------+-------+----------+----------------------------+
-
-
-+---------------------------------------------------------------------------+
-; Port Connectivity Checks: "Generate_Arbitrary_Divided_Clk32:Gen_1KHz_clk" ;
-+-----------------------+--------+----------+-------------------------------+
-; Port                  ; Type   ; Severity ; Details                       ;
-+-----------------------+--------+----------+-------------------------------+
-; outclk_Not            ; Output ; Info     ; Explicitly unconnected        ;
-; div_clk_count[14..13] ; Input  ; Info     ; Stuck at VCC                  ;
-; div_clk_count[8..7]   ; Input  ; Info     ; Stuck at VCC                  ;
-; div_clk_count[2..1]   ; Input  ; Info     ; Stuck at VCC                  ;
-; div_clk_count[31..15] ; Input  ; Info     ; Stuck at GND                  ;
-; div_clk_count[12..9]  ; Input  ; Info     ; Stuck at GND                  ;
-; div_clk_count[4..3]   ; Input  ; Info     ; Stuck at GND                  ;
-; div_clk_count[6]      ; Input  ; Info     ; Stuck at GND                  ;
-; div_clk_count[5]      ; Input  ; Info     ; Stuck at VCC                  ;
-; div_clk_count[0]      ; Input  ; Info     ; Stuck at GND                  ;
-; Reset                 ; Input  ; Info     ; Stuck at VCC                  ;
-+-----------------------+--------+----------+-------------------------------+
-
-
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port Connectivity Checks: "d_memory:d_memory_insta"                                                                                                                                                            ;
 +---------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -1604,24 +884,24 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+--------+----------+-------------------------------------------------------------------------------------+
 
 
-+---------------------------------------------------+
-; Port Connectivity Checks: "shuffle:shuffle_insta" ;
-+-------------+-------+----------+------------------+
-; Port        ; Type  ; Severity ; Details          ;
-+-------------+-------+----------+------------------+
-; key[23..10] ; Input ; Info     ; Stuck at GND     ;
-+-------------+-------+----------+------------------+
++----------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "decrypt:decrypt_insta"                                                                          ;
++------------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port             ; Type   ; Severity ; Details                                                                             ;
++------------------+--------+----------+-------------------------------------------------------------------------------------+
+; decrypt_complete ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------------------+--------+----------+-------------------------------------------------------------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "decrypt:decrypt_insta"                                                                                                                                                                          ;
-+-------------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port              ; Type   ; Severity ; Details                                                                                                                                                                            ;
-+-------------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; decrypt_start     ; Input  ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
-; decrypt_start[-1] ; Input  ; Info     ; Stuck at VCC                                                                                                                                                                       ;
-; decrypt_complete  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                                                                ;
-+-------------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "brute_force:brute_force_insta"                                                                                                                                                          ;
++-----------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port      ; Type   ; Severity ; Details                                                                                                                                                                            ;
++-----------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; start     ; Input  ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; start[-1] ; Input  ; Info     ; Stuck at VCC                                                                                                                                                                       ;
+; LED_sel   ; Output ; Warning  ; Output or bidir port (2 bits) is wider than the port expression (1 bits) it drives; bit(s) "LED_sel[1..1]" have no fanouts                                                         ;
++-----------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -1635,51 +915,45 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------------+-------+-------+------------+----------------------------------------------------------------------------------------+
 
 
-+------------------------------------------------------------------+
-; Post-Synthesis Netlist Statistics for Top Partition              ;
-+----------------------------------------------------------+-------+
-; Type                                                     ; Count ;
-+----------------------------------------------------------+-------+
-; arriav_ff                                                ; 269   ;
-;     CLR                                                  ; 15    ;
-;     ENA                                                  ; 75    ;
-;     ENA CLR                                              ; 22    ;
-;     ENA CLR SLD                                          ; 8     ;
-;     ENA SLD                                              ; 25    ;
-;     SCLR                                                 ; 16    ;
-;     SLD                                                  ; 32    ;
-;     plain                                                ; 76    ;
-; arriav_lcell_comb                                        ; 505   ;
-;     arith                                                ; 102   ;
-;         0 data inputs                                    ; 7     ;
-;         1 data inputs                                    ; 66    ;
-;         2 data inputs                                    ; 17    ;
-;         3 data inputs                                    ; 7     ;
-;         4 data inputs                                    ; 5     ;
-;     extend                                               ; 1     ;
-;         7 data inputs                                    ; 1     ;
-;     normal                                               ; 394   ;
-;         0 data inputs                                    ; 2     ;
-;         1 data inputs                                    ; 9     ;
-;         2 data inputs                                    ; 37    ;
-;         3 data inputs                                    ; 54    ;
-;         4 data inputs                                    ; 131   ;
-;         5 data inputs                                    ; 82    ;
-;         6 data inputs                                    ; 79    ;
-;     shared                                               ; 8     ;
-;         3 data inputs                                    ; 8     ;
-; blackbox                                                 ; 5     ;
-;         ar_clk_div32:Div_Clk                             ; 1     ;
-;         ar_clk_div32:Div_Clk                             ; 1     ;
-;     async_trap_and_reset_gen_1_pulse:make_speedown_pulse ; 1     ;
-;     async_trap_and_reset_gen_1_pulse:make_speedup_pulse  ; 1     ;
-;     speed_reg_control:speed_reg_control_inst             ; 1     ;
-; boundary_port                                            ; 130   ;
-; stratixv_ram_block                                       ; 24    ;
-;                                                          ;       ;
-; Max LUT depth                                            ; 12.10 ;
-; Average LUT depth                                        ; 2.82  ;
-+----------------------------------------------------------+-------+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; arriav_ff             ; 269                         ;
+;     CLR               ; 15                          ;
+;     ENA               ; 91                          ;
+;     ENA CLR           ; 22                          ;
+;     ENA CLR SLD       ; 8                           ;
+;     ENA SCLR          ; 4                           ;
+;     ENA SLD           ; 24                          ;
+;     SCLR              ; 1                           ;
+;     SLD               ; 40                          ;
+;     plain             ; 64                          ;
+; arriav_lcell_comb     ; 556                         ;
+;     arith             ; 98                          ;
+;         0 data inputs ; 7                           ;
+;         1 data inputs ; 62                          ;
+;         2 data inputs ; 17                          ;
+;         3 data inputs ; 7                           ;
+;         4 data inputs ; 5                           ;
+;     extend            ; 3                           ;
+;         7 data inputs ; 3                           ;
+;     normal            ; 447                         ;
+;         1 data inputs ; 7                           ;
+;         2 data inputs ; 44                          ;
+;         3 data inputs ; 62                          ;
+;         4 data inputs ; 130                         ;
+;         5 data inputs ; 94                          ;
+;         6 data inputs ; 110                         ;
+;     shared            ; 8                           ;
+;         3 data inputs ; 8                           ;
+; boundary_port         ; 130                         ;
+; stratixv_ram_block    ; 24                          ;
+;                       ;                             ;
+; Max LUT depth         ; 12.10                       ;
+; Average LUT depth     ; 2.96                        ;
++-----------------------+-----------------------------+
 
 
 +------------------------------------------------------------------+
@@ -1716,7 +990,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------------------+--------------+
 ; Partition Name   ; Elapsed Time ;
 +------------------+--------------+
-; Top              ; 00:00:01     ;
+; Top              ; 00:00:02     ;
 ; sld_hub:auto_hub ; 00:00:00     ;
 +------------------+--------------+
 
@@ -1727,9 +1001,11 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 14.1.0 Build 186 12/03/2014 SJ Web Edition
-    Info: Processing started: Fri Mar 06 16:27:50 2020
+    Info: Processing started: Sat Mar 07 02:14:29 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off rc4 -c rc4
 Info (11104): Parallel Compilation has detected 4 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 2 of the 2 physical processors detected instead.
+Info (12021): Found 1 design units, including 1 entities, in source file brute_force.sv
+    Info (12023): Found entity 1: brute_force
 Info (12021): Found 1 design units, including 1 entities, in source file init.sv
     Info (12023): Found entity 1: init
 Info (12021): Found 1 design units, including 1 entities, in source file compute.sv
@@ -1762,28 +1038,25 @@ Info (12021): Found 1 design units, including 1 entities, in source file r_memor
     Info (12023): Found entity 1: r_memory
 Info (12021): Found 1 design units, including 1 entities, in source file d_memory.v
     Info (12023): Found entity 1: d_memory
-Warning (10236): Verilog HDL Implicit Net warning at init.sv(24): created implicit net for "init_write"
-Warning (10236): Verilog HDL Implicit Net warning at compute.sv(86): created implicit net for "read_i_en"
-Warning (10236): Verilog HDL Implicit Net warning at compute.sv(87): created implicit net for "read_j_en"
-Warning (10236): Verilog HDL Implicit Net warning at compute.sv(88): created implicit net for "read_sum_en"
-Warning (10236): Verilog HDL Implicit Net warning at ksa.sv(205): created implicit net for "Clock_1KHz"
-Warning (10236): Verilog HDL Implicit Net warning at shuffle.sv(38): created implicit net for "read_i_en"
-Warning (10236): Verilog HDL Implicit Net warning at shuffle.sv(39): created implicit net for "read_j_en"
+Warning (10236): Verilog HDL Implicit Net warning at compute.sv(60): created implicit net for "data_select"
+Warning (10236): Verilog HDL Implicit Net warning at compute.sv(84): created implicit net for "read_i_en"
+Warning (10236): Verilog HDL Implicit Net warning at compute.sv(85): created implicit net for "read_j_en"
+Warning (10236): Verilog HDL Implicit Net warning at compute.sv(86): created implicit net for "read_sum_en"
+Warning (10236): Verilog HDL Implicit Net warning at shuffle.sv(39): created implicit net for "read_i_en"
+Warning (10236): Verilog HDL Implicit Net warning at shuffle.sv(40): created implicit net for "read_j_en"
+Warning (10227): Verilog HDL Port Declaration warning at brute_force.sv(25): data type declaration for "LED_sel" declares packed dimensions but the port declaration declaration does not
+Info (10499): HDL info at brute_force.sv(20): see declaration for object "LED_sel"
 Info (12127): Elaborating entity "ksa" for the top level hierarchy
-Warning (10036): Verilog HDL or VHDL warning at ksa.sv(50): object "LED" assigned a value but never read
-Warning (10036): Verilog HDL or VHDL warning at ksa.sv(51): object "reset_n" assigned a value but never read
-Warning (10230): Verilog HDL assignment warning at ksa.sv(250): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at ksa.sv(308): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at ksa.sv(323): truncated value with size 8 to match size of target (7)
-Warning (10230): Verilog HDL assignment warning at ksa.sv(324): truncated value with size 8 to match size of target (7)
-Warning (10230): Verilog HDL assignment warning at ksa.sv(325): truncated value with size 8 to match size of target (7)
-Warning (10230): Verilog HDL assignment warning at ksa.sv(326): truncated value with size 8 to match size of target (7)
-Warning (10230): Verilog HDL assignment warning at ksa.sv(327): truncated value with size 8 to match size of target (7)
-Warning (10230): Verilog HDL assignment warning at ksa.sv(328): truncated value with size 8 to match size of target (7)
-Warning (10034): Output port "LEDR" at ksa.sv(28) has no driver
+Warning (10036): Verilog HDL or VHDL warning at ksa.sv(74): object "brute_force_start" assigned a value but never read
+Warning (10230): Verilog HDL assignment warning at ksa.sv(240): truncated value with size 8 to match size of target (7)
+Warning (10230): Verilog HDL assignment warning at ksa.sv(241): truncated value with size 8 to match size of target (7)
+Warning (10230): Verilog HDL assignment warning at ksa.sv(242): truncated value with size 8 to match size of target (7)
+Warning (10230): Verilog HDL assignment warning at ksa.sv(243): truncated value with size 8 to match size of target (7)
+Warning (10230): Verilog HDL assignment warning at ksa.sv(244): truncated value with size 8 to match size of target (7)
+Warning (10230): Verilog HDL assignment warning at ksa.sv(245): truncated value with size 8 to match size of target (7)
+Info (12128): Elaborating entity "brute_force" for hierarchy "brute_force:brute_force_insta"
 Info (12128): Elaborating entity "decrypt" for hierarchy "decrypt:decrypt_insta"
 Info (12128): Elaborating entity "init" for hierarchy "init:init_insta"
-Warning (10036): Verilog HDL or VHDL warning at init.sv(24): object "init_write" assigned a value but never read
 Info (12128): Elaborating entity "shuffle" for hierarchy "shuffle:shuffle_insta"
 Info (12128): Elaborating entity "compute" for hierarchy "compute:compute_insta"
 Warning (10036): Verilog HDL or VHDL warning at compute.sv(24): object "decrypted_msg" assigned a value but never read
@@ -1897,11 +1170,6 @@ Info (12133): Instantiated megafunction "s_memory:s_memory_insta|altsyncram:alts
     Info (12134): Parameter "SHIFT_COUNT_BITS" = "4"
     Info (12134): Parameter "WIDTH_WORD" = "8"
     Info (12134): Parameter "WIDTHAD" = "8"
-Info (12128): Elaborating entity "Generate_Arbitrary_Divided_Clk32" for hierarchy "Generate_Arbitrary_Divided_Clk32:Gen_1KHz_clk"
-Info (12128): Elaborating entity "var_clk_div32" for hierarchy "Generate_Arbitrary_Divided_Clk32:Gen_1KHz_clk|var_clk_div32:Div_Clk"
-Info (12128): Elaborating entity "doublesync" for hierarchy "doublesync:key0_doublsync"
-Info (12128): Elaborating entity "async_trap_and_reset_gen_1_pulse" for hierarchy "async_trap_and_reset_gen_1_pulse:make_speedup_pulse"
-Info (12128): Elaborating entity "speed_reg_control" for hierarchy "speed_reg_control:speed_reg_control_inst"
 Info (12128): Elaborating entity "SevenSegmentDisplayDecoder" for hierarchy "SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst0"
 Info (11170): Start IP generation for the debug fabric within sld_hub.
 Info (11172): Alt_sld_fab: SLD fabric agents which did not specify prefer_host were connected to JTAG
@@ -1923,7 +1191,6 @@ Info (12021): Found 2 design units, including 1 entities, in source file db/ip/s
     Info (12023): Found entity 1: alt_sld_fab_sldfabric
 Info (12021): Found 1 design units, including 1 entities, in source file db/ip/sld73f98f60/submodules/alt_sld_fab_splitter.sv
     Info (12023): Found entity 1: alt_sld_fab_splitter
-Warning (12240): Synthesis found one or more imported partitions that will be treated as black boxes for timing analysis during synthesis
 Info (278001): Inferred 1 megafunctions from design logic
     Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "shuffle:shuffle_insta|Mod0"
 Info (12130): Elaborated megafunction instantiation "shuffle:shuffle_insta|lpm_divide:Mod0"
@@ -1939,64 +1206,47 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/sign
 Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_ose.tdf
     Info (12023): Found entity 1: alt_u_div_ose
 Warning (12241): 8 hierarchies have connectivity warnings - see the Connectivity Checks report folder
-Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "LEDR[0]" is stuck at GND
-    Warning (13410): Pin "LEDR[1]" is stuck at GND
-    Warning (13410): Pin "LEDR[2]" is stuck at GND
-    Warning (13410): Pin "LEDR[3]" is stuck at GND
-    Warning (13410): Pin "LEDR[4]" is stuck at GND
-    Warning (13410): Pin "LEDR[5]" is stuck at GND
-    Warning (13410): Pin "LEDR[6]" is stuck at GND
-    Warning (13410): Pin "LEDR[7]" is stuck at GND
-    Warning (13410): Pin "LEDR[8]" is stuck at GND
-    Warning (13410): Pin "LEDR[9]" is stuck at GND
-    Warning (13410): Pin "HEX4[0]" is stuck at GND
-    Warning (13410): Pin "HEX4[1]" is stuck at GND
-    Warning (13410): Pin "HEX4[2]" is stuck at GND
-    Warning (13410): Pin "HEX4[3]" is stuck at GND
-    Warning (13410): Pin "HEX4[4]" is stuck at GND
-    Warning (13410): Pin "HEX4[5]" is stuck at GND
-    Warning (13410): Pin "HEX4[6]" is stuck at VCC
-    Warning (13410): Pin "HEX5[0]" is stuck at GND
-    Warning (13410): Pin "HEX5[1]" is stuck at GND
-    Warning (13410): Pin "HEX5[2]" is stuck at GND
-    Warning (13410): Pin "HEX5[3]" is stuck at GND
-    Warning (13410): Pin "HEX5[4]" is stuck at GND
-    Warning (13410): Pin "HEX5[5]" is stuck at GND
-    Warning (13410): Pin "HEX5[6]" is stuck at VCC
 Info (286031): Timing-Driven Synthesis is running on partition "Top"
 Info (286031): Timing-Driven Synthesis is running on partition "sld_hub:auto_hub"
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 9 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (35003): Optimize away 10 nodes that do not fanout to OUTPUT or BIDIR pins
-    Info (35004): Node: "Generate_Arbitrary_Divided_Clk32:Gen_1KHz_clk|var_clk_div32:Div_Clk|tc_not_reg"
-    Info (35004): Node: "Generate_Arbitrary_Divided_Clk32:Gen_1KHz_clk|var_clk_div32:Div_Clk|outclk_not"
-    Info (35004): Node: "Generate_Arbitrary_Divided_Clk32:Gen_2Hz_clk|var_clk_div32:Div_Clk|tc_not_reg"
-    Info (35004): Node: "Generate_Arbitrary_Divided_Clk32:Gen_2Hz_clk|var_clk_div32:Div_Clk|outclk_not"
 Warning (15752): Ignored 12 Virtual Pin logic option assignments
-    Warning (15751): Ignored Virtual Pin assignment to "LCD_DATA[3]".
-    Warning (15751): Ignored Virtual Pin assignment to "LCD_DATA[6]".
-    Warning (15751): Ignored Virtual Pin assignment to "LCD_DATA[4]".
     Warning (15751): Ignored Virtual Pin assignment to "LCD_RS".
-    Warning (15751): Ignored Virtual Pin assignment to "LCD_ON".
-    Warning (15751): Ignored Virtual Pin assignment to "LCD_RW".
-    Warning (15751): Ignored Virtual Pin assignment to "LCD_DATA[5]".
-    Warning (15751): Ignored Virtual Pin assignment to "LCD_DATA[0]".
     Warning (15751): Ignored Virtual Pin assignment to "LCD_DATA[7]".
-    Warning (15751): Ignored Virtual Pin assignment to "LCD_EN".
+    Warning (15751): Ignored Virtual Pin assignment to "LCD_DATA[4]".
+    Warning (15751): Ignored Virtual Pin assignment to "LCD_RW".
     Warning (15751): Ignored Virtual Pin assignment to "LCD_DATA[1]".
+    Warning (15751): Ignored Virtual Pin assignment to "LCD_EN".
+    Warning (15751): Ignored Virtual Pin assignment to "LCD_ON".
+    Warning (15751): Ignored Virtual Pin assignment to "LCD_DATA[6]".
+    Warning (15751): Ignored Virtual Pin assignment to "LCD_DATA[3]".
+    Warning (15751): Ignored Virtual Pin assignment to "LCD_DATA[0]".
+    Warning (15751): Ignored Virtual Pin assignment to "LCD_DATA[5]".
     Warning (15751): Ignored Virtual Pin assignment to "LCD_DATA[2]".
-Warning (21074): Design contains 1 input pin(s) that do not drive logic
+Warning (21074): Design contains 14 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "KEY[0]"
+    Warning (15610): No output dependent on input pin "KEY[1]"
+    Warning (15610): No output dependent on input pin "KEY[2]"
     Warning (15610): No output dependent on input pin "KEY[3]"
-Info (21057): Implemented 1040 device resources after synthesis - the final resource count might be different
+    Warning (15610): No output dependent on input pin "SW[0]"
+    Warning (15610): No output dependent on input pin "SW[1]"
+    Warning (15610): No output dependent on input pin "SW[2]"
+    Warning (15610): No output dependent on input pin "SW[3]"
+    Warning (15610): No output dependent on input pin "SW[4]"
+    Warning (15610): No output dependent on input pin "SW[5]"
+    Warning (15610): No output dependent on input pin "SW[6]"
+    Warning (15610): No output dependent on input pin "SW[7]"
+    Warning (15610): No output dependent on input pin "SW[8]"
+    Warning (15610): No output dependent on input pin "SW[9]"
+Info (21057): Implemented 918 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 18 input pins
     Info (21059): Implemented 53 output pins
-    Info (21061): Implemented 944 logic cells
+    Info (21061): Implemented 822 logic cells
     Info (21064): Implemented 24 RAM segments
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 63 warnings
-    Info: Peak virtual memory: 4889 megabytes
-    Info: Processing ended: Fri Mar 06 16:28:19 2020
-    Info: Elapsed time: 00:00:29
-    Info: Total CPU time (on all processors): 00:00:59
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 45 warnings
+    Info: Peak virtual memory: 4906 megabytes
+    Info: Processing ended: Sat Mar 07 02:15:07 2020
+    Info: Elapsed time: 00:00:38
+    Info: Total CPU time (on all processors): 00:01:07
 
 

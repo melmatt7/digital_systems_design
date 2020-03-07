@@ -1,11 +1,11 @@
 module compute(
     //inputs
-	 clk, start, rom_data, q,
+	clk, start, reset, rom_data, q,
     //outputs
     data, address, wren, rom_addr, data_decrypt, address_decrypt, wren_decrypt, complete
 );
 
-input clk, start;
+input clk, start, reset;
 input[7:0] rom_data;
 input[7:0] q;
 
@@ -31,7 +31,6 @@ reg[7:0] q_si = 8'b0;
 reg[7:0] q_sj = 8'b0;
 reg[7:0] f = 8'b0;
 
-reg[1:0] data_select;
 reg[1:0] address_select;
 
 assign address_decrypt = k;
@@ -66,8 +65,7 @@ begin
     case(data_select)
         1'b0: data = q_si;
         1'b1: data = q_sj;
-        //2'b11: data = decrypted_msg;
-		default: data = 8'b0;
+		  default: data = 8'b0;
     endcase
 end
 
@@ -77,7 +75,7 @@ begin
         2'b00: address = i;
         2'b01: address = j;
         2'b11: address = q_sj + q_si;
-        2'b10: address = k;
+        default: address = 8'b0;
     endcase
 end
 
@@ -89,39 +87,43 @@ assign read_sum_en = state[8];
 
 always_ff @(posedge clk)
 begin
-    case(state)
-    idle:
-        if(start) state <= incr_i;
-    incr_i:
-        state <= addr_si;
-    addr_si:
-        state <= read_si;
-    read_si:
-        state <= calc_j;
-    calc_j:
-        state <= addr_sj;
-    addr_sj:
-        state <= read_sj;
-    read_sj:
-        state <= swap_si;
-    swap_si:
-        state <= swap_sj;
-    swap_sj:
-        state <= addr_sum;
-    addr_sum:
-        state <= read_sum;
-    read_sum:
-        state <= write_decrypt;
-    write_decrypt:
-        state <= check_k;
-    check_k:
-        if(k == 8'd31) state <= finish;
-        else state <= incr_k;
-    incr_k:
-        state <= incr_i;
-    finish:
-        state <= idle;
-    endcase    
+    if(reset) state <= finish;
+    else
+    begin
+        case(state)
+        idle:
+            if(start) state <= incr_i;
+        incr_i:
+            state <= addr_si;
+        addr_si:
+            state <= read_si;
+        read_si:
+            state <= calc_j;
+        calc_j:
+            state <= addr_sj;
+        addr_sj:
+            state <= read_sj;
+        read_sj:
+            state <= swap_si;
+        swap_si:
+            state <= swap_sj;
+        swap_sj:
+            state <= addr_sum;
+        addr_sum:
+            state <= read_sum;
+        read_sum:
+            state <= write_decrypt;
+        write_decrypt:
+            state <= check_k;
+        check_k:
+            if(k == 8'd31) state <= finish;
+            else state <= incr_k;
+        incr_k:
+            state <= incr_i;
+        finish:
+            state <= idle;
+        endcase
+    end
 end
 
 always_ff @(posedge clk)

@@ -1,6 +1,7 @@
 module shuffle(//inputs
-				input logic clk,
+			   input logic clk,
 			   input logic [23:0] key,
+			   input logic reset,
 			   input logic start,
 			   input logic [7:0] q,
 			   	//outputs
@@ -40,33 +41,37 @@ module shuffle(//inputs
 
 	always_ff @(posedge clk)
 	begin
-		case(state) 
-			idle:
-				if(start) state <= addr_i;
-			addr_i:
-				state <= read_i;
-			read_i:
-				state <= calc_j;
-			calc_j:
-				state <= addr_j;
-			addr_j:
-				state <= read_j;
-			read_j:
-				state <= swap_i;
-			swap_i:
-				state <= swap_j;
-			swap_j:
-				state <= check_i;
-			check_i:
-				if(i == 8'hFF) state <= finish;
-				else state <= incr_i;
-			incr_i:
-				state <= addr_i;
-			finish:
-				state <= idle;
-			// default:
-			// 	state <= idle;
-		endcase
+		if(reset) state <= finish;
+		else 
+		begin
+			case(state) 
+				idle:
+					if(start) state <= addr_i;
+				addr_i:
+					state <= read_i;
+				read_i:
+					state <= calc_j;
+				calc_j:
+					state <= addr_j;
+				addr_j:
+					state <= read_j;
+				read_j:
+					state <= swap_i;
+				swap_i:
+					state <= swap_j;
+				swap_j:
+					state <= check_i;
+				check_i:
+					if(i == 8'hFF) state <= finish;
+					else state <= incr_i;
+				incr_i:
+					state <= addr_i;
+				finish:
+					state <= idle;
+				// default:
+				// 	state <= idle;
+			endcase
+		end
 	end
 
 	always_ff @(posedge clk)
