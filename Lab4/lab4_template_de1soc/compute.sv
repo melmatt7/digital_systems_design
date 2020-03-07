@@ -37,36 +37,36 @@ reg[1:0] address_select;
 assign address_decrypt = k;
 assign rom_addr = k;
 assign data_decrypt = f ^ rom_data;
-                             //DCBA_9_8_7_6_54_32_10
-parameter idle           = 14'b0000_0_0_0_0_00_00_00;
-parameter incr_i         = 14'b0001_0_0_0_0_00_00_00;
-parameter addr_si        = 14'b0010_0_0_0_0_00_00_00;
-parameter read_si        = 14'b0011_0_0_1_0_00_00_00;
-parameter calc_j         = 14'b0100_0_0_0_0_00_00_00;
-parameter addr_sj        = 14'b0101_0_0_0_0_01_00_00;
-parameter read_sj        = 14'b0110_0_1_0_0_00_00_00;
-parameter swap_si        = 14'b0111_0_0_0_0_01_00_10;
-parameter swap_sj        = 14'b1000_0_0_0_0_00_01_10;
-parameter addr_sum       = 14'b1010_0_0_0_0_11_00_00;
-parameter read_sum       = 14'b1011_1_0_0_0_00_00_00;
-parameter write_decrypt  = 14'b1100_0_0_0_0_10_11_01;
-parameter check_k        = 14'b1101_0_0_0_0_00_00_00;
-parameter incr_k         = 14'b1110_0_0_0_0_00_00_00;
-parameter finish         = 14'b1111_0_0_0_1_00_00_00;
+                             //CBA9_8_7_6_5_43_2_10
+parameter idle           = 13'b0000_0_0_0_0_00_0_00;
+parameter incr_i         = 13'b0001_0_0_0_0_00_0_00;
+parameter addr_si        = 13'b0010_0_0_0_0_00_0_00;
+parameter read_si        = 13'b0011_0_0_1_0_00_0_00;
+parameter calc_j         = 13'b0100_0_0_0_0_00_0_00;
+parameter addr_sj        = 13'b0101_0_0_0_0_01_0_00;
+parameter read_sj        = 13'b0110_0_1_0_0_00_0_00;
+parameter swap_si        = 13'b0111_0_0_0_0_01_0_10;
+parameter swap_sj        = 13'b1000_0_0_0_0_00_1_10;
+parameter addr_sum       = 13'b1010_0_0_0_0_11_0_00;
+parameter read_sum       = 13'b1011_1_0_0_0_00_0_00;
+parameter write_decrypt  = 13'b1100_0_0_0_0_10_1_01;
+parameter check_k        = 13'b1101_0_0_0_0_00_0_00;
+parameter incr_k         = 13'b1110_0_0_0_0_00_0_00;
+parameter finish         = 13'b1111_0_0_0_1_00_0_00;
 
-reg[13:0] state           = idle;
+reg[12:0] state           = idle;
 
 assign wren_decrypt = state[0];
 assign wren = state[1];
-assign data_select = state[3:2];
-assign address_select = state[5:4];
+assign data_select = state[2];
+assign address_select = state[4:3];
 
 always_comb
 begin
     case(data_select)
-        2'b00: data = q_si;
-        2'b01: data = q_sj;
-        2'b11: data = decrypted_msg;
+        1'b0: data = q_si;
+        1'b1: data = q_sj;
+        //2'b11: data = decrypted_msg;
 		default: data = 8'b0;
     endcase
 end
@@ -81,11 +81,11 @@ begin
     endcase
 end
 
-assign complete = state[6];
+assign complete = state[5];
 
-assign read_i_en = state[7];
-assign read_j_en = state[8];
-assign read_sum_en = state[9];
+assign read_i_en = state[6];
+assign read_j_en = state[7];
+assign read_sum_en = state[8];
 
 always_ff @(posedge clk)
 begin
