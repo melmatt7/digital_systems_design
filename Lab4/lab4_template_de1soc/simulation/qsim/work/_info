@@ -168,8 +168,88 @@ R23
 R24
 !i113 1
 R9
+vdecrypt
+Z25 !s110 1583794119
+!i10b 1
+!s100 >LX<JnbULnh_XkMZ^=2JI3
+I?QaZbFTU829kUZZ^7;`Th3
+R2
+Z26 dC:/UBC/w2019-2020t2/CPEN311/digital_systems_design/Lab4/lab4_template_de1soc/simulation/qsim
+w1583794117
+R3
+R4
+R5
+R6
+r1
+!s85 0
+31
+!s108 1583794118.991000
+R7
+R8
+!i113 1
+R9
+vdecrypt_vlg_check_tst
+R25
+!i10b 1
+!s100 S5g5>VUDdG>?3GO91jW?X3
+IRGTTQ1nRC6GMTciSM<<]Y3
+R2
+R26
+Z27 w1583794115
+Z28 8decrypt.vwf.vt
+Z29 Fdecrypt.vwf.vt
+L0 86
+R6
+r1
+!s85 0
+31
+Z30 !s108 1583794119.153000
+Z31 !s107 decrypt.vwf.vt|
+Z32 !s90 -work|work|decrypt.vwf.vt|
+!i113 1
+R9
+vdecrypt_vlg_sample_tst
+R25
+!i10b 1
+!s100 Z3kVc[hzN@zTF3KzT=GAL3
+ISYZPaXPXJc35EU?YLiOXS3
+R2
+R26
+R27
+R28
+R29
+R17
+R6
+r1
+!s85 0
+31
+R30
+R31
+R32
+!i113 1
+R9
+vdecrypt_vlg_vec_tst
+R25
+!i10b 1
+!s100 ANC1f@FzB8oczQik`7mQ]1
+IUL34C0[ZF^jZzBo<6K=z03
+R2
+R26
+R27
+R28
+R29
+L0 674
+R6
+r1
+!s85 0
+31
+R30
+R31
+R32
+!i113 1
+R9
 vinit
-Z25 !s110 1583774542
+Z33 !s110 1583774542
 !i10b 1
 !s100 <RVHHcTfP?]_dnEJRh]<F2
 I^1jRd?Q=HY@D@iN>Gh1f81
@@ -189,67 +269,67 @@ R8
 !i113 1
 R9
 vinit_vlg_check_tst
-R25
+R33
 !i10b 1
 !s100 _@4`@K`:3FI[QSX_OTDhW1
 IAfI12Be?jF36b;^1>F^oe0
 R2
 R0
-Z26 w1583774537
-Z27 8Waveform_init.vwf.vt
-Z28 FWaveform_init.vwf.vt
+Z34 w1583774537
+Z35 8Waveform_init.vwf.vt
+Z36 FWaveform_init.vwf.vt
 L0 62
 R6
 r1
 !s85 0
 31
-Z29 !s108 1583774542.864000
-Z30 !s107 Waveform_init.vwf.vt|
-Z31 !s90 -work|work|Waveform_init.vwf.vt|
+Z37 !s108 1583774542.864000
+Z38 !s107 Waveform_init.vwf.vt|
+Z39 !s90 -work|work|Waveform_init.vwf.vt|
 !i113 1
 R9
 vinit_vlg_sample_tst
-R25
+R33
 !i10b 1
 !s100 zFLdfzhG86`A1mR?n1;hc2
 Ii6]K4BGUjn[LQQB:c2@H51
 R2
 R0
-R26
-R27
-R28
+R34
+R35
+R36
 R17
 R6
 r1
 !s85 0
 31
-R29
-R30
-R31
+R37
+R38
+R39
 !i113 1
 R9
 vinit_vlg_vec_tst
-R25
+R33
 !i10b 1
 !s100 CHzheGd@a8K7YoW1MnIW_2
 IlTG]YM:5SW_m3k:Q81=8k2
 R2
 R0
-R26
-R27
-R28
+R34
+R35
+R36
 L0 488
 R6
 r1
 !s85 0
 31
-R29
-R30
-R31
+R37
+R38
+R39
 !i113 1
 R9
 vshuffle
-Z32 !s110 1583775118
+Z40 !s110 1583775118
 !i10b 1
 !s100 e1jTm;PNoFOLO0T8Hm=EA3
 I`43hHXfiEHz=:Qf:;gMNJ0
@@ -269,62 +349,62 @@ R8
 !i113 1
 R9
 vshuffle_vlg_check_tst
-R32
+R40
 !i10b 1
 !s100 4RI@8<T:K@C34h;WNTij60
 Ieea5:ClKFcm`LQ<iVBJo01
 R2
 R0
-Z33 w1583775113
-Z34 8Waveform_shuffle.vwf.vt
-Z35 FWaveform_shuffle.vwf.vt
+Z41 w1583775113
+Z42 8Waveform_shuffle.vwf.vt
+Z43 FWaveform_shuffle.vwf.vt
 R13
 R6
 r1
 !s85 0
 31
-Z36 !s108 1583775118.932000
-Z37 !s107 Waveform_shuffle.vwf.vt|
-Z38 !s90 -work|work|Waveform_shuffle.vwf.vt|
+Z44 !s108 1583775118.932000
+Z45 !s107 Waveform_shuffle.vwf.vt|
+Z46 !s90 -work|work|Waveform_shuffle.vwf.vt|
 !i113 1
 R9
 vshuffle_vlg_sample_tst
-R32
+R40
 !i10b 1
 !s100 dF@[2U=KDGCdh@H;fZN612
 Ib:WGed0@S@f2MVn[Iko6c3
 R2
 R0
-R33
-R34
-R35
+R41
+R42
+R43
 R17
 R6
 r1
 !s85 0
 31
-R36
-R37
-R38
+R44
+R45
+R46
 !i113 1
 R9
 vshuffle_vlg_vec_tst
-R32
+R40
 !i10b 1
 !s100 AFjOA_dRVPI`jBmkAYI]Z0
 I[X8If2MIICl:6=`@^9f9I2
 R2
 R0
-R33
-R34
-R35
+R41
+R42
+R43
 L0 492
 R6
 r1
 !s85 0
 31
-R36
-R37
-R38
+R44
+R45
+R46
 !i113 1
 R9
