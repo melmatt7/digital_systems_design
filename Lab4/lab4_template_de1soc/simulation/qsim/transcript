@@ -1,0 +1,36 @@
+# do rc4.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 11:11:36 on Mar 09,2020
+# vlog -work work rc4.vo 
+# -- Compiling module brute_force
+# 
+# Top level modules:
+# 	brute_force
+# End time: 11:11:36 on Mar 09,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 11:11:36 on Mar 09,2020
+# vlog -work work Waveform_brute_force.vwf.vt 
+# -- Compiling module brute_force_vlg_sample_tst
+# -- Compiling module brute_force_vlg_check_tst
+# -- Compiling module brute_force_vlg_vec_tst
+# 
+# Top level modules:
+# 	brute_force_vlg_vec_tst
+# End time: 11:11:36 on Mar 09,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -c -do "rc4.do" 
+# Start time: 11:11:36 on Mar 09,2020
+# Loading work.brute_force_vlg_vec_tst
+# Loading work.brute_force
+# Loading altera_ver.dffeas
+# Loading work.brute_force_vlg_sample_tst
+# Loading work.brute_force_vlg_check_tst
+# Loading altera_ver.PRIM_GDFF_LOW
+# Simulation passed !
+# ** Note: $finish    : Waveform_brute_force.vwf.vt(1108)
+#    Time: 1 us  Iteration: 0  Instance: /brute_force_vlg_vec_tst/tb_out
+# End time: 11:11:37 on Mar 09,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
