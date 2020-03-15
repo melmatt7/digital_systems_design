@@ -120,7 +120,7 @@ brute_force_insta(
 .HEX_out(curr_key)
 );
 
-assign LEDR = led_sel ? {10'b11111_11111}:{9'b0,1}; 
+assign LEDR = led_sel ? 10'b11111_11111 : {9'b0,1'b1}; 
 
 decrypt
 decrypt_insta(
