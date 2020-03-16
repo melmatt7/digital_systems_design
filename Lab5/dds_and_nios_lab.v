@@ -330,6 +330,26 @@ DE1_SoC_QSYS U0(
 //
 ////////////////////////////////////////////////////////////////////		   
 
+wire CLK_1;
+wire clk_div_res = 0;
+clk_divider
+divided_clk_1(
+//input
+.inclk(CLK_50M),
+.div_clk_count(32'h17D7840), //1hz
+.reset(div_clk_res),
+//output
+.outclk(CLK_1));
+
+reg[4:0] rand_num;
+lfsr
+lfsr_inst(
+//input
+.clk(CLK_1),
+.reset(0),
+//output
+.lfsr_out(rand_num))
+
 	
 (* keep = 1, preserve = 1 *) logic [11:0] actual_selected_modulation;
 (* keep = 1, preserve = 1 *) logic [11:0] actual_selected_signal;

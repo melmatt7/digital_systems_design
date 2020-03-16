@@ -1,0 +1,29 @@
+!SESSION 2020-03-15 16:20:24.871 -----------------------------------------------
+eclipse.buildId=4.3.2.M20140221-1700
+java.version=1.8.0_05
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_CA
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -pluginCustomization C:/altera/14.1/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.cpp.product -pluginCustomization C:/altera/14.1/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+
+!ENTRY org.eclipse.egit.ui 2 0 2020-03-15 16:21:50.752
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Mel Matt'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-03-15 16:24:31.313
+!MESSAGE Indexed 'lab5' (22 sources, 10 headers) in 5.54 sec: 1,418 declarations; 3,963 references; 39 unresolved inclusions; 2 syntax errors; 97 unresolved names (1.77%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-03-15 16:25:44.779
+!MESSAGE Indexed 'lab5_bsp' (94 sources, 160 headers) in 4.65 sec: 6,208 declarations; 15,340 references; 0 unresolved inclusions; 4 syntax errors; 24 unresolved names (0.11%)
+
+!ENTRY org.eclipse.cdt.debug.core 4 102 2020-03-15 16:32:55.600
+!MESSAGE A project was not specified in the launch configuration.
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-03-15 16:33:25.260
+!MESSAGE Executing: [C:/altera/14.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop --sidp=0x80011c0 --id=0x0 --timestamp=1489109339]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-03-15 16:33:27.965
+!MESSAGE Executing: [C:/altera/14.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go --sidp=0x80011c0 --id=0x0 --timestamp=1489109339 /cygdrive/c/UBC/w2019-2020t2/CPEN311/digital_systems_design/Lab5/software/lab5/lab5.elf]
