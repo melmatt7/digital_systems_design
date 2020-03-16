@@ -165,6 +165,9 @@ module dds_and_nios_lab(
       output             VGA_VS
 );
 
+logic CLK_50M;
+assign CLK_50M =  CLOCK_50;
+
 parameter COMPILE_HISTOGRAM_SUPPORT = 0;
 
 wire video_clk_40Mhz;
@@ -337,7 +340,7 @@ divided_clk_1(
 //input
 .inclk(CLK_50M),
 .div_clk_count(32'h17D7840), //1hz
-.reset(div_clk_res),
+.reset(clk_div_res),
 //output
 .outclk(CLK_1));
 
@@ -348,7 +351,7 @@ lfsr_inst(
 .clk(CLK_1),
 .reset(0),
 //output
-.lfsr_out(rand_num))
+.lfsr_out(rand_num));
 
 	
 (* keep = 1, preserve = 1 *) logic [11:0] actual_selected_modulation;

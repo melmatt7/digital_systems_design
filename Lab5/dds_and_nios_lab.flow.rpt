@@ -1,5 +1,5 @@
 Flow report for dds_and_nios_lab
-Sun Mar 15 18:18:16 2020
+Sun Mar 15 18:32:23 2020
 Quartus II 64-Bit Version 14.1.0 Build 186 12/03/2014 SJ Web Edition
 
 
@@ -41,7 +41,7 @@ agreement for further details.
 +------------------------------------------------------------------------------+
 ; Flow Summary                                                                 ;
 +---------------------------------+--------------------------------------------+
-; Flow Status                     ; Successful - Sun Mar 15 18:18:15 2020      ;
+; Flow Status                     ; Successful - Sun Mar 15 18:32:22 2020      ;
 ; Quartus II 64-Bit Version       ; 14.1.0 Build 186 12/03/2014 SJ Web Edition ;
 ; Revision Name                   ; dds_and_nios_lab                           ;
 ; Top-level Entity Name           ; dds_and_nios_lab                           ;
@@ -68,7 +68,7 @@ agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 03/15/2020 18:16:42 ;
+; Start date & time ; 03/15/2020 18:30:52 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; dds_and_nios_lab    ;
 +-------------------+---------------------+
@@ -81,7 +81,7 @@ agreement for further details.
 +---------------------------------------------------+----------------------------------------------------------------+--------------------+--------------+------------+
 ; ALLOW_POWER_UP_DONT_CARE                          ; Off                                                            ; On                 ; --           ; --         ;
 ; BLOCK_RAM_AND_MLAB_EQUIVALENT_POWER_UP_CONDITIONS ; Care                                                           ; Auto               ; --           ; --         ;
-; COMPILER_SIGNATURE_ID                             ; 198660153391158.158432140115516                                ; --                 ; --           ; --         ;
+; COMPILER_SIGNATURE_ID                             ; 198660153391158.158432225205204                                ; --                 ; --           ; --         ;
 ; ENABLE_IP_DEBUG                                   ; On                                                             ; Off                ; --           ; --         ;
 ; ENABLE_SIGNALTAP                                  ; On                                                             ; --                 ; --           ; --         ;
 ; EXTRACT_VERILOG_STATE_MACHINES                    ; Off                                                            ; On                 ; --           ; --         ;
@@ -126,8 +126,8 @@ agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:01:30     ; 1.2                     ; 5269 MB             ; 00:02:12                           ;
-; Total                ; 00:01:30     ; --                      ; --                  ; 00:02:12                           ;
+; Analysis & Synthesis ; 00:01:27     ; 1.3                     ; 5278 MB             ; 00:02:09                           ;
+; Total                ; 00:01:27     ; --                      ; --                  ; 00:02:09                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
