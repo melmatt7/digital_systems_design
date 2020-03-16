@@ -334,6 +334,28 @@ DE1_SoC_QSYS U0(
 (* keep = 1, preserve = 1 *) logic [11:0] actual_selected_modulation;
 (* keep = 1, preserve = 1 *) logic [11:0] actual_selected_signal;
 
+reg[31:0] phase_inc;
+reg[2:0] f_out = 3'd3; //output carrier 3MHz???
+reg[5:0] f_sample = 6'd50; //50MHz
+reg[32:0] TWO_POWER_32 = 33'h100000000;
+assign phase_inc = (f_out * TWO_POWER_32)/f_sample; 
+
+reg[11:0] sin_out, cos_out, squ_out, saw_out;
+
+waveform_gen waveform_gen_inta(
+//inputs
+.clk(CLK_50M),
+.reset(0),
+.en(1),
+.phase_inc(phase_inc),
+//outputs
+.sin_out(sin_out),
+.cos_out(cos_out),
+.squ_out(squ_out),
+.saw_out(saw_out)
+);
+
+
 
 ////////////////////////////////////////////////////////////////////
 // 
