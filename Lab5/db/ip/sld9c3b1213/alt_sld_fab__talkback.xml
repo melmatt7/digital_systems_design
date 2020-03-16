@@ -130,7 +130,11 @@
     <Value>{width 4 latency 0} </Value>
    </SOPCModuleParameter>
   </SOPCModule>
+<<<<<<< HEAD
   <SystemID>1626844705</SystemID>
+=======
+  <SystemID>1622631640</SystemID>
+>>>>>>> c114ac71928e7ebe25b407413e69f5dce0808a42
  </SOPCSystem>
  <SchemaVersion>schema_2013-01-18</SchemaVersion>
 </ProgramExecution>

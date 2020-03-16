@@ -1,5 +1,9 @@
 Fitter report for dds_and_nios_lab
+<<<<<<< HEAD
 Sun Mar 15 16:24:22 2020
+=======
+Sun Mar 15 17:35:18 2020
+>>>>>>> c114ac71928e7ebe25b407413e69f5dce0808a42
 Quartus II 64-Bit Version 14.1.0 Build 186 12/03/2014 SJ Web Edition
 
 
@@ -70,7 +74,11 @@ agreement for further details.
 +------------------------------------------------------------------------------+
 ; Fitter Summary                                                               ;
 +---------------------------------+--------------------------------------------+
+<<<<<<< HEAD
 ; Fitter Status                   ; Successful - Sun Mar 15 16:24:22 2020      ;
+=======
+; Fitter Status                   ; Successful - Sun Mar 15 17:35:17 2020      ;
+>>>>>>> c114ac71928e7ebe25b407413e69f5dce0808a42
 ; Quartus II 64-Bit Version       ; 14.1.0 Build 186 12/03/2014 SJ Web Edition ;
 ; Revision Name                   ; dds_and_nios_lab                           ;
 ; Top-level Entity Name           ; dds_and_nios_lab                           ;
@@ -159,12 +167,20 @@ agreement for further details.
 ; Number detected on machine ; 4           ;
 ; Maximum allowed            ; 2           ;
 ;                            ;             ;
+<<<<<<< HEAD
 ; Average used               ; 1.52        ;
+=======
+; Average used               ; 1.53        ;
+>>>>>>> c114ac71928e7ebe25b407413e69f5dce0808a42
 ; Maximum used               ; 2           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
+<<<<<<< HEAD
 ;     Processor 2            ;  51.9%      ;
+=======
+;     Processor 2            ;  52.9%      ;
+>>>>>>> c114ac71928e7ebe25b407413e69f5dce0808a42
 ;     Processors 3-4         ;   0.0%      ;
 +----------------------------+-------------+
 
@@ -2043,7 +2059,11 @@ agreement for further details.
 +--------------+
 ; Pin-Out File ;
 +--------------+
+<<<<<<< HEAD
 The pin-out file can be found in C:/UBC/w2019-2020t2/CPEN311/digital_systems_design/Lab5/dds_and_nios_lab.pin.
+=======
+The pin-out file can be found in C:/Users/Dennis/Documents/4th Year/Term 2/CPEN 311/Labs and Homework/Solutions/All Labs/digital_systems_design/Lab5/dds_and_nios_lab.pin.
+>>>>>>> c114ac71928e7ebe25b407413e69f5dce0808a42
 
 
 +---------------------------------------------------------------------------------------------+
@@ -6452,7 +6472,11 @@ Info (11178): Promoted 5 clocks (5 global)
     Info (11162): DE1_SoC_QSYS:U0|DE1_SoC_QSYS_pll:pll|altera_pll:altera_pll_i|outclk_wire[2]~CLKENA0 with 278 fanout uses global clock CLKCTRL_G3
     Info (11162): DE1_SoC_QSYS:U0|DE1_SoC_QSYS_vga:vga|DE1_SoC_QSYS_vga_vga_clk:vga_clk|altera_pll:altera_pll_i|outclk_wire[0]~CLKENA0 with 505 fanout uses global clock CLKCTRL_G5
     Info (11162): CLOCK_50~inputCLKENA0 with 3465 fanout uses global clock CLKCTRL_G6
+<<<<<<< HEAD
 Info (184021): Fitter periphery placement operations ending: elapsed time is 00:00:02
+=======
+Info (184021): Fitter periphery placement operations ending: elapsed time is 00:00:03
+>>>>>>> c114ac71928e7ebe25b407413e69f5dce0808a42
 Info (332164): Evaluating HDL-embedded SDC commands
     Info (332165): Entity GHVD5181
         Info (332166): set_disable_timing [get_cells -hierarchical QXXQ6833_0]
@@ -7037,7 +7061,11 @@ Info: ==========================================================================
 Info: ==================================================================================================
 Info: timid_minmax_false_path from * to *doublesync_no_reset*sync_srl16_inferred[0]*, max_delay = 40.0  min_delay = -15
 Info: ==================================================================================================
+<<<<<<< HEAD
 Info (128001): Physical synthesis optimizations for speed complete: elapsed time is 00:00:19
+=======
+Info (128001): Physical synthesis optimizations for speed complete: elapsed time is 00:00:38
+>>>>>>> c114ac71928e7ebe25b407413e69f5dce0808a42
 Info (176233): Starting register packing
 Info: Adding SDC requirements for alt_vipitc131_IS2Vid instance U0|vga|alt_vip_itc_0
 Info: ==========================================================================
@@ -7051,7 +7079,11 @@ Info: timid_minmax_false_path from * to *doublesync_no_reset*sync_srl16_inferred
 Info: ==================================================================================================
 Info (176235): Finished register packing
     Extra Info (176219): No registers were packed into other blocks
+<<<<<<< HEAD
 Info (11798): Fitter preparation operations ending: elapsed time is 00:00:51
+=======
+Info (11798): Fitter preparation operations ending: elapsed time is 00:01:32
+>>>>>>> c114ac71928e7ebe25b407413e69f5dce0808a42
 Info (170189): Fitter placement preparation operations beginning
 Info: Adding SDC requirements for alt_vipitc131_IS2Vid instance U0|vga|alt_vip_itc_0
 Info: ==========================================================================
@@ -7081,10 +7113,17 @@ Info (170054): Fitter has implemented the following 4 RAMs using MLAB locations,
     Info (170000): Node "DE1_SoC_QSYS:U0|DE1_SoC_QSYS_vga:vga|alt_vipvfr131_vfr:alt_vip_vfr_0|alt_vipvfr131_prc:prc|alt_vipvfr131_prc_read_master:read_master|alt_vipvfr131_common_avalon_mm_bursting_master_fifo:master_fifo|alt_vipvfr131_common_general_fifo:cmd_fifo|alt_vipvfr131_common_ram_fifo:\dual_clock_or_large_gen:ram_fifo|altsyncram:ram|altsyncram_bo12:auto_generated|q_b[30]"
 Info (170056): Fitter has implemented the following 4 RAMs using MLAB locations, which will have the same paused read capabilities as dedicated RAM locations
     Info (170241): For more information about RAMs, refer to the Fitter RAM Summary report.
+<<<<<<< HEAD
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:40
 Info (170191): Fitter placement operations beginning
 Info (170137): Fitter placement was successful
 Info (170192): Fitter placement operations ending: elapsed time is 00:00:43
+=======
+Info (170190): Fitter placement preparation operations ending: elapsed time is 00:01:16
+Info (170191): Fitter placement operations beginning
+Info (170137): Fitter placement was successful
+Info (170192): Fitter placement operations ending: elapsed time is 00:01:28
+>>>>>>> c114ac71928e7ebe25b407413e69f5dce0808a42
 Info: Adding SDC requirements for alt_vipitc131_IS2Vid instance U0|vga|alt_vip_itc_0
 Info: ==========================================================================
 Info: timid_ignore of freqgen_audio_dac  max_delay = 50 min_delay = -50 : Arranged 5 clocks
@@ -7098,8 +7137,13 @@ Info: ==========================================================================
 Info (170193): Fitter routing operations beginning
 Info (170195): Router estimated average interconnect usage is 4% of the available device resources
     Info (170196): Router estimated peak interconnect usage is 24% of the available device resources in the region that extends from location X0_Y0 to location X10_Y10
+<<<<<<< HEAD
 Info (170194): Fitter routing operations ending: elapsed time is 00:02:51
 Info (11888): Total time spent on timing analysis during the Fitter is 36.13 seconds.
+=======
+Info (170194): Fitter routing operations ending: elapsed time is 00:05:08
+Info (11888): Total time spent on timing analysis during the Fitter is 62.56 seconds.
+>>>>>>> c114ac71928e7ebe25b407413e69f5dce0808a42
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
@@ -7114,7 +7158,11 @@ Info: ==========================================================================
 Info: ==================================================================================================
 Info: timid_minmax_false_path from * to *doublesync_no_reset*sync_srl16_inferred[0]*, max_delay = 40.0  min_delay = -15
 Info: ==================================================================================================
+<<<<<<< HEAD
 Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:49
+=======
+Info (11801): Fitter post-fit operations ending: elapsed time is 00:01:07
+>>>>>>> c114ac71928e7ebe25b407413e69f5dce0808a42
 Warning (171167): Found invalid Fitter assignments. See the Ignored Assignments panel in the Fitter Compilation Report for more information.
 Warning (169064): Following 80 pins have no output enable or a GND or VCC output enable - later changes to this connectivity may change fitting results
     Info (169065): Pin PS2_CLK has a permanently disabled output enable
@@ -7197,17 +7245,30 @@ Warning (169064): Following 80 pins have no output enable or a GND or VCC output
     Info (169065): Pin GPIO_1[35] has a permanently disabled output enable
     Info (169065): Pin PS2_CLK2 has a permanently disabled output enable
     Info (169065): Pin PS2_DAT2 has a permanently disabled output enable
+<<<<<<< HEAD
 Info (144001): Generated suppressed messages file C:/UBC/w2019-2020t2/CPEN311/digital_systems_design/Lab5/dds_and_nios_lab.fit.smsg
 Info: Quartus II 64-Bit Fitter was successful. 0 errors, 120 warnings
     Info: Peak virtual memory: 7115 megabytes
     Info: Processing ended: Sun Mar 15 16:24:33 2020
     Info: Elapsed time: 00:06:54
     Info: Total CPU time (on all processors): 00:09:08
+=======
+Info (144001): Generated suppressed messages file C:/Users/Dennis/Documents/4th Year/Term 2/CPEN 311/Labs and Homework/Solutions/All Labs/digital_systems_design/Lab5/dds_and_nios_lab.fit.smsg
+Info: Quartus II 64-Bit Fitter was successful. 0 errors, 120 warnings
+    Info: Peak virtual memory: 7080 megabytes
+    Info: Processing ended: Sun Mar 15 17:35:28 2020
+    Info: Elapsed time: 00:12:10
+    Info: Total CPU time (on all processors): 00:15:11
+>>>>>>> c114ac71928e7ebe25b407413e69f5dce0808a42
 
 
 +----------------------------+
 ; Fitter Suppressed Messages ;
 +----------------------------+
+<<<<<<< HEAD
 The suppressed messages can be found in C:/UBC/w2019-2020t2/CPEN311/digital_systems_design/Lab5/dds_and_nios_lab.fit.smsg.
+=======
+The suppressed messages can be found in C:/Users/Dennis/Documents/4th Year/Term 2/CPEN 311/Labs and Homework/Solutions/All Labs/digital_systems_design/Lab5/dds_and_nios_lab.fit.smsg.
+>>>>>>> c114ac71928e7ebe25b407413e69f5dce0808a42
 
 

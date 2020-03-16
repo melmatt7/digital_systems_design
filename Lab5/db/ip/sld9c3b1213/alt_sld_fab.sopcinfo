@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <EnsembleReport name="alt_sld_fab" kind="alt_sld_fab" version="14.1" fabric="QSYS">
  <!-- Format version 14.1 186 (Future versions may contain additional information.) -->
+<<<<<<< HEAD
  <!-- 2020.03.15.18:31:33 -->
+=======
+ <!-- 2020.03.15.17:21:20 -->
+>>>>>>> c114ac71928e7ebe25b407413e69f5dce0808a42
  <!-- A collection of modules and connections -->
  <parameter name="DESIGN_HASH">
   <type>java.lang.String</type>
