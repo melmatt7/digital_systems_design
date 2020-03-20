@@ -2,8 +2,8 @@
 <sch:Settings xmlns:sch="http://www.altera.com/embeddedsw/bsp/schema">
         <BspType>ucosii</BspType>
         <BspVersion>default</BspVersion>
-        <BspGeneratedTimeStamp>15-Mar-2020 4:30:30 PM</BspGeneratedTimeStamp>
-        <BspGeneratedUnixTimeStamp>1584315030993</BspGeneratedUnixTimeStamp>
+        <BspGeneratedTimeStamp>19-Mar-2020 8:51:33 PM</BspGeneratedTimeStamp>
+        <BspGeneratedUnixTimeStamp>1584676293659</BspGeneratedUnixTimeStamp>
         <BspGeneratedLocation>C:\UBC\w2019-2020t2\CPEN311\digital_systems_design\Lab5\software\lab5_bsp</BspGeneratedLocation>
         <BspSettingsFile>settings.bsp</BspSettingsFile>
         <SopcDesignFile>..\..\DE1_SoC_QSYS.sopcinfo</SopcDesignFile>
@@ -1727,6 +1727,12 @@
                 <Group xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
         </Setting>
         <MemoryMap>
+                <slaveDescriptor>dds_increment</slaveDescriptor>
+                <addressRange>0x00000000 - 0x0000000F</addressRange>
+                <addressSpan>16</addressSpan>
+                <attributes/>
+        </MemoryMap>
+        <MemoryMap>
                 <slaveDescriptor>sdram</slaveDescriptor>
                 <addressRange>0x04000000 - 0x07FFFFFF</addressRange>
                 <addressSpan>67108864</addressSpan>
@@ -1743,6 +1749,18 @@
                 <addressRange>0x08001080 - 0x0800109F</addressRange>
                 <addressSpan>32</addressSpan>
                 <attributes>timer</attributes>
+        </MemoryMap>
+        <MemoryMap>
+                <slaveDescriptor>lfsr_val</slaveDescriptor>
+                <addressRange>0x080010A0 - 0x080010AF</addressRange>
+                <addressSpan>16</addressSpan>
+                <attributes/>
+        </MemoryMap>
+        <MemoryMap>
+                <slaveDescriptor>lfsr_clk_interrupt_gen</slaveDescriptor>
+                <addressRange>0x080010B0 - 0x080010BF</addressRange>
+                <addressSpan>16</addressSpan>
+                <attributes/>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>audio_WRREQ</slaveDescriptor>

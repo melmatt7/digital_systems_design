@@ -21,6 +21,18 @@ void handle_lfsr_interrupts(void* context, alt_u32 id)
 	#ifdef LFSR_CLK_INTERRUPT_GEN_BASE
 	#ifdef DDS_INCREMENT_BASE
 	
+	long lfsr_val = IORD_ALTERA_AVALON_PIO_DATA(LFSR_VAL_BASE);
+	if(lfsr_val & 1) {
+		IOWR_ALTERA_AVALON_PIO_DATA(DDS_INCREMENT_BASE, 430);
+	} else {
+		IOWR_ALTERA_AVALON_PIO_DATA(DDS_INCREMENT_BASE, 86);
+	}
+
+	volatile int* edge_capture_ptr = (volatile int*) context;
+	edge_capture_ptr =	IORD_ALTERA_AVALON_PIO_EDGE_CAP(LFSR_CLK_INTERRUPT_GEN_BASE);
+	IOWR_ALTERA_AVALON_PIO_EDGE_CAP (LFSR_CLK_INTERRUPT_GEN_BASE, 0);
+	IORD_ALTERA_AVALON_PIO_EDGE_CAP(LFSR_CLK_INTERRUPT_GEN_BASE);
+
 	#endif
 	#endif
 	#endif

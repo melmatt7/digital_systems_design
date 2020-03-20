@@ -4,7 +4,7 @@
  * Machine generated for CPU 'cpu' in SOPC Builder design 'DE1_SoC_QSYS'
  * SOPC Builder design path: ../../DE1_SoC_QSYS.sopcinfo
  *
- * Generated: Thu Mar 09 17:36:41 PST 2017
+ * Generated: Thu Mar 19 20:51:36 PDT 2020
  */
 
 /*
@@ -443,6 +443,33 @@
 
 
 /*
+ * dds_increment configuration
+ *
+ */
+
+#define ALT_MODULE_CLASS_dds_increment altera_avalon_pio
+#define DDS_INCREMENT_BASE 0x0
+#define DDS_INCREMENT_BIT_CLEARING_EDGE_REGISTER 0
+#define DDS_INCREMENT_BIT_MODIFYING_OUTPUT_REGISTER 0
+#define DDS_INCREMENT_CAPTURE 0
+#define DDS_INCREMENT_DATA_WIDTH 32
+#define DDS_INCREMENT_DO_TEST_BENCH_WIRING 0
+#define DDS_INCREMENT_DRIVEN_SIM_VALUE 0
+#define DDS_INCREMENT_EDGE_TYPE "NONE"
+#define DDS_INCREMENT_FREQ 50000000
+#define DDS_INCREMENT_HAS_IN 0
+#define DDS_INCREMENT_HAS_OUT 1
+#define DDS_INCREMENT_HAS_TRI 0
+#define DDS_INCREMENT_IRQ -1
+#define DDS_INCREMENT_IRQ_INTERRUPT_CONTROLLER_ID -1
+#define DDS_INCREMENT_IRQ_TYPE "NONE"
+#define DDS_INCREMENT_NAME "/dev/dds_increment"
+#define DDS_INCREMENT_RESET_VALUE 0
+#define DDS_INCREMENT_SPAN 16
+#define DDS_INCREMENT_TYPE "altera_avalon_pio"
+
+
+/*
  * div_freq configuration
  *
  */
@@ -549,6 +576,60 @@
 #define KEYBOARD_KEYS_RESET_VALUE 0
 #define KEYBOARD_KEYS_SPAN 16
 #define KEYBOARD_KEYS_TYPE "altera_avalon_pio"
+
+
+/*
+ * lfsr_clk_interrupt_gen configuration
+ *
+ */
+
+#define ALT_MODULE_CLASS_lfsr_clk_interrupt_gen altera_avalon_pio
+#define LFSR_CLK_INTERRUPT_GEN_BASE 0x80010b0
+#define LFSR_CLK_INTERRUPT_GEN_BIT_CLEARING_EDGE_REGISTER 0
+#define LFSR_CLK_INTERRUPT_GEN_BIT_MODIFYING_OUTPUT_REGISTER 0
+#define LFSR_CLK_INTERRUPT_GEN_CAPTURE 1
+#define LFSR_CLK_INTERRUPT_GEN_DATA_WIDTH 1
+#define LFSR_CLK_INTERRUPT_GEN_DO_TEST_BENCH_WIRING 0
+#define LFSR_CLK_INTERRUPT_GEN_DRIVEN_SIM_VALUE 0
+#define LFSR_CLK_INTERRUPT_GEN_EDGE_TYPE "RISING"
+#define LFSR_CLK_INTERRUPT_GEN_FREQ 50000000
+#define LFSR_CLK_INTERRUPT_GEN_HAS_IN 1
+#define LFSR_CLK_INTERRUPT_GEN_HAS_OUT 0
+#define LFSR_CLK_INTERRUPT_GEN_HAS_TRI 0
+#define LFSR_CLK_INTERRUPT_GEN_IRQ 4
+#define LFSR_CLK_INTERRUPT_GEN_IRQ_INTERRUPT_CONTROLLER_ID 0
+#define LFSR_CLK_INTERRUPT_GEN_IRQ_TYPE "EDGE"
+#define LFSR_CLK_INTERRUPT_GEN_NAME "/dev/lfsr_clk_interrupt_gen"
+#define LFSR_CLK_INTERRUPT_GEN_RESET_VALUE 0
+#define LFSR_CLK_INTERRUPT_GEN_SPAN 16
+#define LFSR_CLK_INTERRUPT_GEN_TYPE "altera_avalon_pio"
+
+
+/*
+ * lfsr_val configuration
+ *
+ */
+
+#define ALT_MODULE_CLASS_lfsr_val altera_avalon_pio
+#define LFSR_VAL_BASE 0x80010a0
+#define LFSR_VAL_BIT_CLEARING_EDGE_REGISTER 0
+#define LFSR_VAL_BIT_MODIFYING_OUTPUT_REGISTER 0
+#define LFSR_VAL_CAPTURE 0
+#define LFSR_VAL_DATA_WIDTH 32
+#define LFSR_VAL_DO_TEST_BENCH_WIRING 0
+#define LFSR_VAL_DRIVEN_SIM_VALUE 0
+#define LFSR_VAL_EDGE_TYPE "NONE"
+#define LFSR_VAL_FREQ 50000000
+#define LFSR_VAL_HAS_IN 1
+#define LFSR_VAL_HAS_OUT 0
+#define LFSR_VAL_HAS_TRI 0
+#define LFSR_VAL_IRQ -1
+#define LFSR_VAL_IRQ_INTERRUPT_CONTROLLER_ID -1
+#define LFSR_VAL_IRQ_TYPE "NONE"
+#define LFSR_VAL_NAME "/dev/lfsr_val"
+#define LFSR_VAL_RESET_VALUE 0
+#define LFSR_VAL_SPAN 16
+#define LFSR_VAL_TYPE "altera_avalon_pio"
 
 
 /*
@@ -683,7 +764,7 @@
 #define SYSID_QSYS_IRQ_INTERRUPT_CONTROLLER_ID -1
 #define SYSID_QSYS_NAME "/dev/sysid_qsys"
 #define SYSID_QSYS_SPAN 8
-#define SYSID_QSYS_TIMESTAMP 1489109339
+#define SYSID_QSYS_TIMESTAMP 1584676149
 #define SYSID_QSYS_TYPE "altera_avalon_sysid_qsys"
 
 

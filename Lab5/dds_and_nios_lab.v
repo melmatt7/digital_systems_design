@@ -273,6 +273,12 @@ assign VGA_BLANK_N=vga_de;
 assign VGA_CLK=video_clk_40Mhz;
 assign VGA_SYNC_N=1'b1 & SW[1];
 
+wire lfsr_clk_interrupt_gen;
+assign lfsr_clk_interrupt_gen = CLK_1;
+
+reg[31:0] lfsr_val;
+assign lfsr_val = {27'b0, rand_num};
+
 logic lfsr_clk;
 logic [4:0]LFSR;
 logic [31:0] dds_increment;
@@ -322,7 +328,11 @@ DE1_SoC_QSYS U0(
 	   .audio_sel_export                              (audio_selector),                               //                       audio_sel.export
 	   
        .vga_vga_clk_clk                               (video_clk_40Mhz),                               //                     vga_vga_clk.clk
-       .clk_25_out_clk                                (CLK_25MHZ)                                 //                      clk_25_out.clk
+       .clk_25_out_clk                                (CLK_25MHZ),                                 //                      clk_25_out.clk
+		 
+	   .lfsr_clk_interrupt_gen_external_connection_export (lfsr_clk_interrupt_gen), // lfsr_clk_interrupt_gen_external_connection.export
+	   .dds_increment_external_connection_export          (dds_increment),          //          dds_increment_external_connection.export
+	   .lfsr_val_external_connection_export               (lfsr_val)                //               lfsr_val_external_connection.export
        
 	);
 	
@@ -332,6 +342,9 @@ DE1_SoC_QSYS U0(
 //                       Put DDS + LFSR Code Here
 //
 ////////////////////////////////////////////////////////////////////		   
+
+(* keep = 1, preserve = 1 *) logic [11:0] actual_selected_modulation;
+(* keep = 1, preserve = 1 *) logic [11:0] actual_selected_signal;
 
 wire CLK_1;
 wire clk_div_res = 0;
@@ -353,22 +366,22 @@ lfsr_inst(
 //output
 .lfsr_out(rand_num));
 
-	
-(* keep = 1, preserve = 1 *) logic [11:0] actual_selected_modulation;
-(* keep = 1, preserve = 1 *) logic [11:0] actual_selected_signal;
-
 reg[31:0] phase_inc;
-reg[2:0] f_out = 3'd3; //output carrier 3MHz???
-reg[5:0] f_sample = 6'd50; //50MHz
-reg[32:0] TWO_POWER_32 = 33'h100000000;
-assign phase_inc = (f_out * TWO_POWER_32)/f_sample; 
+
+always_ff @(posedge CLK_50M)
+begin
+	if(modulation_selector[1:0] == 2'b01)
+		phase_inc = dds_increment;
+	else 
+		phase_inc = 32'd258;
+end
 
 reg[11:0] sin_out, cos_out, squ_out, saw_out;
 
-waveform_gen waveform_gen_inta(
+waveform_gen waveform_gen_inst(
 //inputs
 .clk(CLK_50M),
-.reset(0),
+.reset(1),
 .en(1),
 .phase_inc(phase_inc),
 //outputs
@@ -377,6 +390,58 @@ waveform_gen waveform_gen_inta(
 .squ_out(squ_out),
 .saw_out(saw_out)
 );
+
+always_ff @(posedge CLK_50M)
+begin
+	case(signal_selector[1:0])
+		2'b00: actual_selected_signal = sin_out;
+		2'b01: actual_selected_signal = cos_out;
+		2'b10: actual_selected_signal = saw_out;
+		2'b11: actual_selected_signal = squ_out;
+	endcase
+end
+
+// ask_out
+reg[11:0] ask_out;
+always_ff @(posedge CLK_50M)
+begin
+	if(rand_num[0])
+		ask_out = sin_out;
+	else 
+		ask_out = 12'b0;
+end
+
+// ask_out
+reg[11:0] bpsk_out;
+always_ff @(posedge CLK_50M)
+begin
+	if(rand_num[0])
+		bpsk_out = sin_out;
+	else 
+		bpsk_out = ~sin_out;
+end
+
+reg[11:0] lfsr_out = 0;
+always_ff @(posedge CLK_50M)
+begin
+	if(rand_num[0])
+		lfsr_out = 12'b1000_0000_0000;
+	else 
+		lfsr_out = 12'b0;
+end
+
+reg[11:0] fsk_out;
+assign fsk_out = sin_out;
+
+always_ff @(posedge CLK_50M)
+begin
+	case(modulation_selector[1:0])
+		2'b00: actual_selected_modulation = ask_out;
+		2'b01: actual_selected_modulation = fsk_out;
+		2'b10: actual_selected_modulation = bpsk_out;
+		2'b11: actual_selected_modulation = lfsr_out;
+	endcase
+end
 
 
 

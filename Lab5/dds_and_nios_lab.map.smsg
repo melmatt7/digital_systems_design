@@ -28,21 +28,6 @@ Info (10281): Verilog HDL Declaration information at alt_vipitc131_common_generi
 Warning (10268): Verilog HDL information at alt_vipitc131_common_sync_generation.v(61): always construct contains both blocking and non-blocking assignments
 Warning (10273): Verilog HDL warning at DE1_SoC_QSYS_sdram_test_component.v(234): extended using "x" or "z"
 Warning (10273): Verilog HDL warning at DE1_SoC_QSYS_sdram_test_component.v(235): extended using "x" or "z"
-<<<<<<< HEAD
 Info (10281): Verilog HDL Declaration information at dds_and_nios_lab.v(163): object "VGA_R" differs only in case from object "vga_R" in the same scope
 Info (10281): Verilog HDL Declaration information at dds_and_nios_lab.v(161): object "VGA_G" differs only in case from object "vga_G" in the same scope
 Info (10281): Verilog HDL Declaration information at dds_and_nios_lab.v(158): object "VGA_B" differs only in case from object "vga_B" in the same scope
-=======
-Warning (10236): Verilog HDL Implicit Net warning at alt_vipvfr131_prc.v(142): created implicit net for "master_clock"
-Warning (10236): Verilog HDL Implicit Net warning at alt_vipvfr131_prc.v(143): created implicit net for "master_reset"
-Warning (10037): Verilog HDL or VHDL warning at DE1_SoC_QSYS_cpu.v(2120): conditional expression evaluates to a constant
-Warning (10037): Verilog HDL or VHDL warning at DE1_SoC_QSYS_cpu.v(2122): conditional expression evaluates to a constant
-Warning (10037): Verilog HDL or VHDL warning at DE1_SoC_QSYS_cpu.v(2278): conditional expression evaluates to a constant
-Warning (10037): Verilog HDL or VHDL warning at DE1_SoC_QSYS_cpu.v(3102): conditional expression evaluates to a constant
-Warning (10037): Verilog HDL or VHDL warning at DE1_SoC_QSYS_sdram.v(316): conditional expression evaluates to a constant
-Warning (10037): Verilog HDL or VHDL warning at DE1_SoC_QSYS_sdram.v(326): conditional expression evaluates to a constant
-Warning (10037): Verilog HDL or VHDL warning at DE1_SoC_QSYS_sdram.v(336): conditional expression evaluates to a constant
-Warning (10037): Verilog HDL or VHDL warning at DE1_SoC_QSYS_sdram.v(680): conditional expression evaluates to a constant
-Info (10281): Verilog HDL Declaration information at dds_and_nios_lab.v(163): object "VGA_R" differs only in case from object "vga_R" in the same scope
-Info (10281): Verilog HDL Declaration information at dds_and_nios_lab.v(161): object "VGA_G" differs only in case from object "vga_G" in the same scope
->>>>>>> c114ac71928e7ebe25b407413e69f5dce0808a42

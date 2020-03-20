@@ -1,9 +1,5 @@
 Assembler report for dds_and_nios_lab
-<<<<<<< HEAD
-Sun Mar 15 16:25:04 2020
-=======
-Sun Mar 15 17:36:12 2020
->>>>>>> c114ac71928e7ebe25b407413e69f5dce0808a42
+Thu Mar 19 21:28:57 2020
 Quartus II 64-Bit Version 14.1.0 Build 186 12/03/2014 SJ Web Edition
 
 
@@ -15,11 +11,7 @@ Quartus II 64-Bit Version 14.1.0 Build 186 12/03/2014 SJ Web Edition
   3. Assembler Settings
   4. Assembler Encrypted IP Cores Summary
   5. Assembler Generated Files
-<<<<<<< HEAD
   6. Assembler Device Options: C:/UBC/w2019-2020t2/CPEN311/digital_systems_design/Lab5/dds_and_nios_lab_time_limited.sof
-=======
-  6. Assembler Device Options: C:/Users/Dennis/Documents/4th Year/Term 2/CPEN 311/Labs and Homework/Solutions/All Labs/digital_systems_design/Lab5/dds_and_nios_lab_time_limited.sof
->>>>>>> c114ac71928e7ebe25b407413e69f5dce0808a42
   7. Assembler Messages
 
 
@@ -47,11 +39,7 @@ agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-<<<<<<< HEAD
-; Assembler Status      ; Successful - Sun Mar 15 16:25:04 2020 ;
-=======
-; Assembler Status      ; Successful - Sun Mar 15 17:36:12 2020 ;
->>>>>>> c114ac71928e7ebe25b407413e69f5dce0808a42
+; Assembler Status      ; Successful - Thu Mar 19 21:28:57 2020 ;
 ; Revision Name         ; dds_and_nios_lab                      ;
 ; Top-level Entity Name ; dds_and_nios_lab                      ;
 ; Family                ; Cyclone V                             ;
@@ -77,7 +65,6 @@ agreement for further details.
 +--------+-------------------------------+---------------+
 
 
-<<<<<<< HEAD
 +-------------------------------------------------------------------------------------------+
 ; Assembler Generated Files                                                                 ;
 +-------------------------------------------------------------------------------------------+
@@ -93,29 +80,9 @@ agreement for further details.
 ; Option         ; Setting                                                                                            ;
 +----------------+----------------------------------------------------------------------------------------------------+
 ; Device         ; 5CSEMA5F31C6                                                                                       ;
-; JTAG usercode  ; 0x01E1294A                                                                                         ;
-; Checksum       ; 0x01E1294A                                                                                         ;
+; JTAG usercode  ; 0x01F82279                                                                                         ;
+; Checksum       ; 0x01F82279                                                                                         ;
 +----------------+----------------------------------------------------------------------------------------------------+
-=======
-+-------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Assembler Generated Files                                                                                                                             ;
-+-------------------------------------------------------------------------------------------------------------------------------------------------------+
-; File Name                                                                                                                                             ;
-+-------------------------------------------------------------------------------------------------------------------------------------------------------+
-; C:/Users/Dennis/Documents/4th Year/Term 2/CPEN 311/Labs and Homework/Solutions/All Labs/digital_systems_design/Lab5/dds_and_nios_lab_time_limited.sof ;
-+-------------------------------------------------------------------------------------------------------------------------------------------------------+
-
-
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Assembler Device Options: C:/Users/Dennis/Documents/4th Year/Term 2/CPEN 311/Labs and Homework/Solutions/All Labs/digital_systems_design/Lab5/dds_and_nios_lab_time_limited.sof ;
-+----------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Option         ; Setting                                                                                                                                                        ;
-+----------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Device         ; 5CSEMA5F31C6                                                                                                                                                   ;
-; JTAG usercode  ; 0x01E1294A                                                                                                                                                     ;
-; Checksum       ; 0x01E1294A                                                                                                                                                     ;
-+----------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------+
->>>>>>> c114ac71928e7ebe25b407413e69f5dce0808a42
 
 
 +--------------------+
@@ -124,26 +91,15 @@ agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Assembler
     Info: Version 14.1.0 Build 186 12/03/2014 SJ Web Edition
-<<<<<<< HEAD
-    Info: Processing started: Sun Mar 15 16:24:40 2020
-=======
-    Info: Processing started: Sun Mar 15 17:35:32 2020
->>>>>>> c114ac71928e7ebe25b407413e69f5dce0808a42
+    Info: Processing started: Thu Mar 19 21:28:31 2020
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off dds_and_nios_lab -c dds_and_nios_lab
 Info (115030): Assembler is generating device programming files
 Info (115017): Design contains a time-limited core -- only a single, time-limited programming file can be generated
 Warning (210042): Can't convert time-limited SOF into POF, HEX File, TTF, or RBF
 Info: Quartus II 64-Bit Assembler was successful. 0 errors, 1 warning
-<<<<<<< HEAD
-    Info: Peak virtual memory: 4965 megabytes
-    Info: Processing ended: Sun Mar 15 16:25:04 2020
-    Info: Elapsed time: 00:00:24
+    Info: Peak virtual memory: 4979 megabytes
+    Info: Processing ended: Thu Mar 19 21:28:57 2020
+    Info: Elapsed time: 00:00:26
     Info: Total CPU time (on all processors): 00:00:20
-=======
-    Info: Peak virtual memory: 4956 megabytes
-    Info: Processing ended: Sun Mar 15 17:36:13 2020
-    Info: Elapsed time: 00:00:41
-    Info: Total CPU time (on all processors): 00:00:31
->>>>>>> c114ac71928e7ebe25b407413e69f5dce0808a42
 
 
