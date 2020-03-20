@@ -1,0 +1,7 @@
+module fast_to_slow_sync (//inputs
+								  fast_clk,
+								  slow_clk,
+								  data_in,
+								  //outputs
+								  data_out
+								  )

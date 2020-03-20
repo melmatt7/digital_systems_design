@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<preferences>
+ <debug showDebugMenu="0" />
+ <systemtable filter="All Interfaces">
+  <columns>
+   <connections preferredWidth="271" />
+   <irq preferredWidth="34" />
+   <inputclock preferredWidth="364" />
+  </columns>
+ </systemtable>
+ <library
+   expandedCategories="Project,Library/Processors and Peripherals/Peripherals,Library,Library/Processors and Peripherals,Library/Qsys Interconnect,Library/Interface Protocols" />
+ <window width="3026" height="1946" x="-13" y="-13" />
+ <generation path="_PROJECT_NAME_" />
+</preferences>
