@@ -500,3 +500,30 @@ java.lang.Exception: System timestamp mismatch - connected: "1584676149", expect
 
 !ENTRY com.altera.sbtgui.launch 1 0 2020-03-19 21:33:35.071
 !MESSAGE Executing: [C:/altera/14.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go --sidp=0x80011c0 --id=0x0 --timestamp=1584676149 /cygdrive/c/UBC/w2019-2020t2/CPEN311/digital_systems_design/Lab5/software/lab5/lab5.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-03-19 22:15:44.516
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [USB-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-03-19 22:15:45.183
+!MESSAGE Executing: [C:/altera/14.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop --sidp=0x80011c0 --id=0x0 --timestamp=1584676149]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-03-19 22:15:47.728
+!MESSAGE Executing: [C:/altera/14.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go --sidp=0x80011c0 --id=0x0 --timestamp=1584676149 /cygdrive/c/UBC/w2019-2020t2/CPEN311/digital_systems_design/Lab5/software/lab5/lab5.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-03-19 22:17:51.444
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [USB-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-03-19 22:17:52.147
+!MESSAGE Executing: [C:/altera/14.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop --sidp=0x80011c0 --id=0x0 --timestamp=1584676149]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-03-19 22:17:54.595
+!MESSAGE Executing: [C:/altera/14.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go --sidp=0x80011c0 --id=0x0 --timestamp=1584676149 /cygdrive/c/UBC/w2019-2020t2/CPEN311/digital_systems_design/Lab5/software/lab5/lab5.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-03-19 23:30:20.510
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [USB-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-03-19 23:30:21.222
+!MESSAGE Executing: [C:/altera/14.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop --sidp=0x80011c0 --id=0x0 --timestamp=1584676149]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-03-19 23:30:23.767
+!MESSAGE Executing: [C:/altera/14.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go --sidp=0x80011c0 --id=0x0 --timestamp=1584676149 /cygdrive/c/UBC/w2019-2020t2/CPEN311/digital_systems_design/Lab5/software/lab5/lab5.elf]

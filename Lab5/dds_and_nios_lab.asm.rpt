@@ -1,5 +1,5 @@
 Assembler report for dds_and_nios_lab
-Thu Mar 19 21:28:57 2020
+Thu Mar 19 23:28:51 2020
 Quartus II 64-Bit Version 14.1.0 Build 186 12/03/2014 SJ Web Edition
 
 
@@ -39,7 +39,7 @@ agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Thu Mar 19 21:28:57 2020 ;
+; Assembler Status      ; Successful - Thu Mar 19 23:28:51 2020 ;
 ; Revision Name         ; dds_and_nios_lab                      ;
 ; Top-level Entity Name ; dds_and_nios_lab                      ;
 ; Family                ; Cyclone V                             ;
@@ -80,8 +80,8 @@ agreement for further details.
 ; Option         ; Setting                                                                                            ;
 +----------------+----------------------------------------------------------------------------------------------------+
 ; Device         ; 5CSEMA5F31C6                                                                                       ;
-; JTAG usercode  ; 0x01F82279                                                                                         ;
-; Checksum       ; 0x01F82279                                                                                         ;
+; JTAG usercode  ; 0x01F94D91                                                                                         ;
+; Checksum       ; 0x01F94D91                                                                                         ;
 +----------------+----------------------------------------------------------------------------------------------------+
 
 
@@ -91,15 +91,15 @@ agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Assembler
     Info: Version 14.1.0 Build 186 12/03/2014 SJ Web Edition
-    Info: Processing started: Thu Mar 19 21:28:31 2020
+    Info: Processing started: Thu Mar 19 23:28:33 2020
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off dds_and_nios_lab -c dds_and_nios_lab
 Info (115030): Assembler is generating device programming files
 Info (115017): Design contains a time-limited core -- only a single, time-limited programming file can be generated
 Warning (210042): Can't convert time-limited SOF into POF, HEX File, TTF, or RBF
 Info: Quartus II 64-Bit Assembler was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4979 megabytes
-    Info: Processing ended: Thu Mar 19 21:28:57 2020
-    Info: Elapsed time: 00:00:26
-    Info: Total CPU time (on all processors): 00:00:20
+    Info: Peak virtual memory: 4972 megabytes
+    Info: Processing ended: Thu Mar 19 23:28:51 2020
+    Info: Elapsed time: 00:00:18
+    Info: Total CPU time (on all processors): 00:00:18
 
 

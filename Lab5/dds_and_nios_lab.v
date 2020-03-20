@@ -391,13 +391,14 @@ waveform_gen waveform_gen_inst(
 .saw_out(saw_out)
 );
 
+reg[11:0] sel_sig;
 always_ff @(posedge CLK_50M)
 begin
 	case(signal_selector[1:0])
-		2'b00: actual_selected_signal = sin_out;
-		2'b01: actual_selected_signal = cos_out;
-		2'b10: actual_selected_signal = saw_out;
-		2'b11: actual_selected_signal = squ_out;
+		2'b00: sel_sig = sin_out;
+		2'b01: sel_sig = cos_out;
+		2'b10: sel_sig = saw_out;
+		2'b11: sel_sig = squ_out;
 	endcase
 end
 
@@ -411,14 +412,16 @@ begin
 		ask_out = 12'b0;
 end
 
-// ask_out
-reg[11:0] bpsk_out;
+// bpsk_out
+reg[11:0] qpsk_out;
 always_ff @(posedge CLK_50M)
 begin
-	if(rand_num[0])
-		bpsk_out = sin_out;
-	else 
-		bpsk_out = ~sin_out;
+	case(rand_num[1:0])
+		2'b00: qpsk_out = sin_out;
+		2'b01: qpsk_out = cos_out;
+		2'b10: qpsk_out = ~sin_out;
+		2'b11: qpsk_out = ~cos_out;
+	endcase
 end
 
 reg[11:0] lfsr_out = 0;
@@ -433,15 +436,19 @@ end
 reg[11:0] fsk_out;
 assign fsk_out = sin_out;
 
+reg[11:0] sel_mod;
 always_ff @(posedge CLK_50M)
 begin
 	case(modulation_selector[1:0])
-		2'b00: actual_selected_modulation = ask_out;
-		2'b01: actual_selected_modulation = fsk_out;
-		2'b10: actual_selected_modulation = bpsk_out;
-		2'b11: actual_selected_modulation = lfsr_out;
+		2'b00: sel_mod = ask_out;
+		2'b01: sel_mod = fsk_out;
+		2'b10: sel_mod = qpsk_out;
+		2'b11: sel_mod = lfsr_out;
 	endcase
 end
+
+fast_to_slow_sync sig_select(.fast_clk(CLK_50M), .slow_clk(sampler), .data_in(sel_sig), .data_out(actual_selected_signal));
+fast_to_slow_sync mod_select(.fast_clk(CLK_50M), .slow_clk(sampler), .data_in(sel_mod), .data_out(actual_selected_modulation));
 
 
 
