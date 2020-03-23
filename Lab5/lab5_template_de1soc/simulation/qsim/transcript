@@ -1,0 +1,87 @@
+# do dds_and_nios_lab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 19:22:40 on Mar 22,2020
+# vlog -work work dds_and_nios_lab.vo 
+# -- Compiling module waveform_gen
+# 
+# Top level modules:
+# 	waveform_gen
+# End time: 19:22:40 on Mar 22,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 19:22:40 on Mar 22,2020
+# vlog -work work dds.vwf.vt 
+# -- Compiling module waveform_gen_vlg_sample_tst
+# -- Compiling module waveform_gen_vlg_check_tst
+# -- Compiling module waveform_gen_vlg_vec_tst
+# 
+# Top level modules:
+# 	waveform_gen_vlg_vec_tst
+# End time: 19:22:40 on Mar 22,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -c -do "dds_and_nios_lab.do" 
+# Start time: 19:22:40 on Mar 22,2020
+# Loading work.waveform_gen_vlg_vec_tst
+# Loading work.waveform_gen
+# Loading altera_ver.dffeas
+# Loading sv_std.std
+# Loading altera_lnsim_ver.generic_m10k
+# Loading altera_lnsim_ver.altera_lnsim_functions
+# Loading altera_lnsim_ver.common_28nm_ram_block
+# Loading altera_lnsim_ver.common_28nm_ram_register
+# Loading altera_lnsim_ver.common_28nm_ram_pulse_generator
+# Loading work.waveform_gen_vlg_sample_tst
+# Loading work.waveform_gen_vlg_check_tst
+# Loading altera_ver.PRIM_GDFF_LOW
+# ERROR! Vector Mismatch for output port squ_out[11] :: @time = 10000.000 ps
+#      Expected value = 000000000000
+#      Real value = 100000000000
+# ERROR! Vector Mismatch for output port cos_out[0] :: @time = 20000.000 ps
+#      Expected value = 000000000000
+#      Real value = 011111111111
+# ERROR! Vector Mismatch for output port cos_out[1] :: @time = 20000.000 ps
+#      Expected value = 000000000000
+#      Real value = 011111111111
+# ERROR! Vector Mismatch for output port cos_out[2] :: @time = 20000.000 ps
+#      Expected value = 000000000000
+#      Real value = 011111111111
+# ERROR! Vector Mismatch for output port cos_out[3] :: @time = 20000.000 ps
+#      Expected value = 000000000000
+#      Real value = 011111111111
+# ERROR! Vector Mismatch for output port cos_out[4] :: @time = 20000.000 ps
+#      Expected value = 000000000000
+#      Real value = 011111111111
+# ERROR! Vector Mismatch for output port cos_out[5] :: @time = 20000.000 ps
+#      Expected value = 000000000000
+#      Real value = 011111111111
+# ERROR! Vector Mismatch for output port cos_out[6] :: @time = 20000.000 ps
+#      Expected value = 000000000000
+#      Real value = 011111111111
+# ERROR! Vector Mismatch for output port cos_out[7] :: @time = 20000.000 ps
+#      Expected value = 000000000000
+#      Real value = 011111111111
+# ERROR! Vector Mismatch for output port cos_out[8] :: @time = 20000.000 ps
+#      Expected value = 000000000000
+#      Real value = 011111111111
+# ERROR! Vector Mismatch for output port cos_out[9] :: @time = 20000.000 ps
+#      Expected value = 000000000000
+#      Real value = 011111111111
+# ERROR! Vector Mismatch for output port cos_out[10] :: @time = 20000.000 ps
+#      Expected value = 000000000000
+#      Real value = 011111111111
+# ERROR! Vector Mismatch for output port saw_out[0] :: @time = 81320000.000 ps
+#      Expected value = 000000000000
+#      Real value = 000000000001
+# ERROR! Vector Mismatch for output port sin_out[0] :: @time = 81320000.000 ps
+#      Expected value = 000000000000
+#      Real value = 000000000011
+# ERROR! Vector Mismatch for output port sin_out[1] :: @time = 81320000.000 ps
+#      Expected value = 000000000000
+#      Real value = 000000000011
+#          15 mismatched vectors : Simulation failed !
+# ** Note: $finish    : dds.vwf.vt(1024)
+#    Time: 100 us  Iteration: 0  Instance: /waveform_gen_vlg_vec_tst/tb_out
+# End time: 19:22:44 on Mar 22,2020, Elapsed time: 0:00:04
+# Errors: 0, Warnings: 0
