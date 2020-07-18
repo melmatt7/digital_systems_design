@@ -1,0 +1,5 @@
+This simulation clearly illustrates the correct operation of this FSM that reads from a 
+certain address given the correct signals. Notice that Start needs to be high, and 
+dataValid and waitRequest need to be low and the complete signal is output upon every completed read.
+It should be noted that waitRequest and dataValid are signals coming from the flash and don't 
+ordinraily take the form seen in the simulation.   

@@ -1,0 +1,3 @@
+This FSM works on the exact same logic as outlined in lab 3. A simple averager that sums 256 audio 
+inputs periodically and then uses appropriate bit selection to divide by 256. Depending on the 
+averaged value, the appropriate LEDs are outputted. A larger average leads to a larger number of LEDs.

@@ -1,0 +1,7 @@
+Start in the idle state and move to read_flash upone recieving a read signal from the keyboard. 
+Upon recieving a complete signal from the avalon flash read module the FSM moves to data output 
+phase (0-3) where the read data from the flash is output at the desired rate of 7200Hz. Next, the 
+address is incremented and checked to see if the end of the phoneme has been reached. In the case
+that phoneme is complete, a full handshake protocol is carried out between this FSM and the Picoblaze.
+The .psm file goes into detail about the handshake protocol. Once the new phoneme is fully recieved 
+and the addresses are ready to be loaded, the FSM repeats from idle once more. 

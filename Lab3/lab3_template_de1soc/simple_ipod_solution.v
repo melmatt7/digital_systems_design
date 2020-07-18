@@ -225,12 +225,6 @@ parameter character_exclaim=8'h21;          //'!'
 wire Clock_1KHz, Clock_1Hz;
 wire Sample_Clk_Signal;
 
-//=======================================================================================================================
-//
-// Insert your code for Lab2 here!
-//
-//
-
 wire            flash_mem_read;
 wire            flash_mem_waitrequest;
 wire    [22:0]  flash_mem_address;
@@ -252,138 +246,155 @@ flash flash_inst (
     .flash_mem_byteenable    (flash_mem_byteenable)
 );
 
-wire read_flash_start;
-wire read_flash_complete;
-Avalon_Read_Flash
-Read_Flash(
-//input
-.clk(CLK_50M),
-.start(read_flash_start),
-.read(flash_mem_read),
-.waitRequest(flash_mem_waitrequest),
-.dataValid(flash_mem_readdatavalid),
-//output
-.complete(read_flash_complete));
-
-wire speed_up_sync;
-Synchronizer
-Speed_Up_Synchronizer(
-//input
-.async_sig(speed_up_event),
-.outclk(CLK_50M),
-//output
-.out_sync_sig(speed_up_sync));
-
-wire speed_down_sync;
-Synchronizer
-Speed_Down_Synchronizer(
-//input
-.async_sig(speed_down_event),
-.outclk(CLK_50M),
-//output
-.out_sync_sig(speed_down_sync));
-
-wire speed_reset_sync;
-Synchronizer
-Speed_Reset_Synchronizer(
-//input
-.async_sig(speed_reset_event),
-.outclk(CLK_50M),
-//output
-.out_sync_sig(speed_reset_sync));
-
-wire [31:0] speed_count_44K;
-Speed_Control
-Speed_Control_Inst(
-//input
-.clk(CLK_50M),
-.speed_up(speed_up_event),
-.speed_down(speed_down_event),
-.speed_reset(speed_reset_event),
-//output
-.div_count(speed_count_44K));
-
-wire CLK_44K;
-wire div_clk_res = 0;
-Divided_Clk
-Divided_Clk_44K(
-//input
-.inclk(CLK_27),
-.div_clk_count(speed_count_44K), //44Khz
-.reset(div_clk_res),
-//output
-.outclk(CLK_44K));
-
-wire sync_CLK_44K;
-Synchronizer
-Flash_Read_Synchronizer(
-//input
-.async_sig(CLK_44K),
-.outclk(CLK_50M),
-//output
-.out_sync_sig(sync_CLK_44K));
-
-wire read_sig;
-wire dir;
-wire res;
-wire[7:0] audio;
-
-wire address_read_complete;
-wire interrupt_sig;
-Flash_Address_Control
-Address_Control(
-//input
-.clk(CLK_50M),
-.sync_clk(sync_CLK_44K),
-.start(read_sig),
-.readComplete(read_flash_complete),
-.direction(dir),
-.restart(res),
-.songData(flash_mem_readdata),
-//output
-.start_read_flash(read_flash_start),
-.read(flash_mem_read),
-.addr(flash_mem_address),
-.outData(audio),
-.byteEnable(flash_mem_byteenable),
-.complete(address_read_complete),
-.volume(interrupt_sig));
-
-Keyboard_Control
-Keyboard_Control_Inst(
-//inputs
-.clk(CLK_50M),
-.kbd_data_ready(kbd_data_ready),
-.read_complete(address_read_complete),
-.key_pressed(kbd_received_ascii_code),
-//outputs
-.reset(res),
-.read_signal(read_sig),
-.direction(dir)
-);
-//Audio Generation Signal
-//Note that the audio needs signed data - so convert 1 bit to 8 bits signed
-wire [7:0] audio_data = {(~audio), {7{audio}}}; //generate signed sample audio signal
-
 //=======================================================================================================================
 //
-// Insert your code for Lab3 here!
+// Insert your code for the Final Project here!
 //
 //
 
+// First step is to monitor the state of the keyboard
+wire read_sig;
+Keyboard_Control Keyboard_Control_Inst(
+    //inputs
+    .clk(CLK_50M),
+    .kbd_data_ready(kbd_data_ready),
+    .read_complete(address_read_complete),
+    .key_pressed(kbd_received_ascii_code),
+    //outputs
+    .read_signal(read_sig),
+);
+
+// Next we use picoblaze to determine the relevant phoneme
 reg CLK_25;
- 
 always @(posedge CLK_50M) begin
 	CLK_25 <= !CLK_25;
 end
 
-picoblaze_interface#(.clk_freq_in_hz(25000000)) 
-picoblaze_interface_inst(
-                        .led(LED[9:2]),
-								.led0(LED[0]),
-                        .clk(CLK_25),
-								.input_data(audio_data),
-								.interrupt_sig(interrupt_sig));
+reg[7:0] selected_phoneme;
+picoblaze_interface picoblaze_interface_inst(
+    // inputs
+    .clk(CLK_25),
+    .input_sig(read_sig),
+    //outputs
+    .output_data(selected_phoneme),
+);
+
+// We consult narrator_ctrl for the memory address of the selected phoneme
+reg[23:0] start_addr;
+reg[23:0] end_addr;
+reg silence;
+narrator_ctrl narrator_ctrl_inst(
+    //inputs
+    .clk(CLK_50M),
+    .phoneme_sel(selected_phoneme),
+    //outputs
+    .start_address(start_addr),
+    .end_address(end_addr),
+    .silent(silence)
+);
+
+// Then we need to generate a clock at the appropriate playback speed of 7200Hz
+// We also use trap edge modules to implement speed control
+
+// wire speed_up_sync;
+// Synchronizer Speed_Up_Synchronizer(
+//     //input
+//     .async_sig(speed_up_event),
+//     .outclk(CLK_50M),
+//     //output
+//     .out_sync_sig(speed_up_sync)
+// );
+
+// wire speed_down_sync;
+// Synchronizer Speed_Down_Synchronizer(
+//     //input
+//     .async_sig(speed_down_event),
+//     .outclk(CLK_50M),
+//     //output
+//     .out_sync_sig(speed_down_sync)
+// );
+
+// wire speed_reset_sync;
+// Synchronizer Speed_Reset_Synchronizer(
+//     //input
+//     .async_sig(speed_reset_event),
+//     .outclk(CLK_50M),
+//     //output
+//     .out_sync_sig(speed_reset_sync)
+// );
+
+// wire [31:0] speed_count_7200;
+// Speed_Control Speed_Control_Inst(
+//     //input
+//     .clk(CLK_50M),
+//     .speed_up(speed_up_event),
+//     .speed_down(speed_down_event),
+//     .speed_reset(speed_reset_event),
+//     //output
+//     .div_count(speed_count_7200)
+// );
+
+wire CLK_7200;
+wire div_clk_res = 0;
+Divided_Clk Divided_Clk_7200(
+    //input
+    .inclk(CLK_27),
+    .div_clk_count(16'd3472), //7200hz
+    .reset(div_clk_res),
+    //output
+    .outclk(CLK_7200)
+);
+
+// We then take care to synchronize this slower clock with the faster 50Mhz clock
+wire sync_CLK_7200;
+Synchronizer Flash_Read_Synchronizer(
+//input
+.async_sig(CLK_7200),
+.outclk(CLK_50M),
+//output
+.out_sync_sig(sync_CLK_7200));
+
+// Now we can finally actually read the flash memory and output the audio
+wire address_read_complete;
+reg[7:0] audio;
+wire interrupt_sig;
+Flash_Address_Control Address_Control(
+    //input
+    .clk(CLK_50M),
+    .sync_clk(sync_CLK_7200),
+    .start(read_sig),
+    .readComplete(read_flash_complete),
+    .phonemeData(flash_mem_readdata),
+	 .start_addr(start_addr),
+	 .end_addr(end_addr),
+    //output
+    .start_read_flash(read_flash_start),
+    .read(flash_mem_read),
+    .addr(flash_mem_address),
+    .outData(audio),
+    .byteEnable(flash_mem_byteenable),
+    .complete(address_read_complete),
+    .volume(interrupt_sig)
+);
+
+wire read_flash_start;
+wire read_flash_complete;
+Avalon_Read_Flash Read_Flash(
+    //input
+    .clk(CLK_50M),
+    .start(read_flash_start),
+    .read(flash_mem_read),
+    .waitRequest(flash_mem_waitrequest),
+    .dataValid(flash_mem_readdatavalid),
+    //output
+    .complete(read_flash_complete)
+);
+
+//Audio Generation Signal
+//Note that the audio needs signed data - so convert 1 bit to 8 bits signed
+wire [7:0] audio_data = silence ? 8'b0 : {(~audio), {7{audio}}}; //generate signed sample audio signal
+
+
 
 
 //======================================================================================

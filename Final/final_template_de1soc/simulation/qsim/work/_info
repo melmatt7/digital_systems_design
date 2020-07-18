@@ -1,0 +1,178 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dM:/UBC/CPEN311/digital_systems_design/Final/final_template_de1soc/simulation/qsim
+vFlash_Address_Control
+!s110 1587005170
+!i10b 1
+!s100 KB@ZJ<Lize5;MU=ghnzT;3
+I47LnJaXG[[N2N<2gZl?e32
+Z1 V`JN@9S9cnhjKRR_L]QIcM3
+R0
+w1587005165
+Z2 8speech_synthesizer_solution.vo
+Z3 Fspeech_synthesizer_solution.vo
+Z4 L0 32
+Z5 OV;L;10.3c;59
+r1
+!s85 0
+31
+!s108 1587005169.942000
+Z6 !s107 speech_synthesizer_solution.vo|
+Z7 !s90 -work|work|speech_synthesizer_solution.vo|
+!i113 1
+Z8 o-work work
+n@flash_@address_@control
+vFlash_Address_Control_vlg_check_tst
+Z9 !s110 1587005171
+!i10b 1
+!s100 c0M:^X;MH12MMjJDFc0U:0
+ImeJG]@aNd6dn0gj<hkDAM3
+R1
+R0
+Z10 w1587005163
+Z11 8Flash_Address_Control_sim.vwf.vt
+Z12 FFlash_Address_Control_sim.vwf.vt
+L0 72
+R5
+r1
+!s85 0
+31
+Z13 !s108 1587005171.046000
+Z14 !s107 Flash_Address_Control_sim.vwf.vt|
+Z15 !s90 -work|work|Flash_Address_Control_sim.vwf.vt|
+!i113 1
+R8
+n@flash_@address_@control_vlg_check_tst
+vFlash_Address_Control_vlg_sample_tst
+R9
+!i10b 1
+!s100 hF^eD6hDJDb`Hg4?EYV5C1
+IeM`oRCKP]M:2Z1NW>KgC=2
+R1
+R0
+R10
+R11
+R12
+Z16 L0 30
+R5
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 1
+R8
+n@flash_@address_@control_vlg_sample_tst
+vFlash_Address_Control_vlg_vec_tst
+R9
+!i10b 1
+!s100 4k:6<Bg>n>ALa5cK]QBok0
+IZ^joGTI=`Alhh=66>iE1Z0
+R1
+R0
+R10
+R11
+R12
+L0 1262
+R5
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 1
+R8
+n@flash_@address_@control_vlg_vec_tst
+vLight_Control
+!s110 1587005793
+!i10b 1
+!s100 aeRIj2;WEAJk_g3GThi>C3
+IF>9][fEi:ZQeUYC5o2m[`1
+R1
+R0
+w1587005792
+R2
+R3
+R4
+R5
+r1
+!s85 0
+31
+!s108 1587005793.019000
+R6
+R7
+!i113 1
+R8
+n@light_@control
+vLight_Control_vlg_check_tst
+Z17 !s110 1587005794
+!i10b 1
+!s100 zk<UBlAG^L;GTn680joh<0
+I_`HdglSAoK2VgP:U<cYFE1
+R1
+R0
+Z18 w1587005790
+Z19 8Light_Control_sim.vwf.vt
+Z20 FLight_Control_sim.vwf.vt
+L0 62
+R5
+r1
+!s85 0
+31
+Z21 !s108 1587005794.053000
+Z22 !s107 Light_Control_sim.vwf.vt|
+Z23 !s90 -work|work|Light_Control_sim.vwf.vt|
+!i113 1
+R8
+n@light_@control_vlg_check_tst
+vLight_Control_vlg_sample_tst
+R17
+!i10b 1
+!s100 5RBg_z:C=^g`ChOPcU;?c0
+InV11S^QUKYzX<7fcjeB_B1
+R1
+R0
+R18
+R19
+R20
+R16
+R5
+r1
+!s85 0
+31
+R21
+R22
+R23
+!i113 1
+R8
+n@light_@control_vlg_sample_tst
+vLight_Control_vlg_vec_tst
+R17
+!i10b 1
+!s100 Pkb5FA1;aDS@RB16gnG]J3
+ISm1UDMaUMgO^RUb<cAeAR3
+R1
+R0
+R18
+R19
+R20
+L0 282
+R5
+r1
+!s85 0
+31
+R21
+R22
+R23
+!i113 1
+R8
+n@light_@control_vlg_vec_tst

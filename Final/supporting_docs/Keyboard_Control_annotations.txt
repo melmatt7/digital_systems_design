@@ -1,0 +1,3 @@
+The simulation attached is the  one submitted for lab 2. This is no issue however, as this FSM is 
+virtually the same but with reduced functionality. Instead of accepting various keys for various 
+functions, this FSM only accepts the E and D keys to set the read signal to high and low respectively. 

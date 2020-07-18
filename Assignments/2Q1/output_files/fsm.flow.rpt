@@ -1,5 +1,5 @@
 Flow report for fsm
-Sun Feb 09 15:18:17 2020
+Wed Apr 15 20:08:58 2020
 Quartus II 64-Bit Version 14.1.0 Build 186 12/03/2014 SJ Web Edition
 
 
@@ -41,7 +41,7 @@ agreement for further details.
 +------------------------------------------------------------------------------+
 ; Flow Summary                                                                 ;
 +---------------------------------+--------------------------------------------+
-; Flow Status                     ; Successful - Sun Feb 09 15:18:17 2020      ;
+; Flow Status                     ; Successful - Wed Apr 15 20:08:58 2020      ;
 ; Quartus II 64-Bit Version       ; 14.1.0 Build 186 12/03/2014 SJ Web Edition ;
 ; Revision Name                   ; fsm                                        ;
 ; Top-level Entity Name           ; fsm                                        ;
@@ -49,8 +49,8 @@ agreement for further details.
 ; Device                          ; 5CSEMA5F31C6                               ;
 ; Timing Models                   ; Final                                      ;
 ; Logic utilization (in ALMs)     ; N/A                                        ;
-; Total registers                 ; 2                                          ;
-; Total pins                      ; 9                                          ;
+; Total registers                 ; 3                                          ;
+; Total pins                      ; 6                                          ;
 ; Total virtual pins              ; 0                                          ;
 ; Total block memory bits         ; 0                                          ;
 ; Total DSP Blocks                ; 0                                          ;
@@ -68,7 +68,7 @@ agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 02/09/2020 13:44:24 ;
+; Start date & time ; 04/15/2020 20:07:15 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; fsm                 ;
 +-------------------+---------------------+
@@ -79,7 +79,7 @@ agreement for further details.
 +-------------------------------------+---------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                           ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+---------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 198660153391158.158128466411324 ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 163519836902570.158700643504160 ; --            ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Systemverilog Hdl               ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (SystemVerilog) ; <None>        ; --          ; --             ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                              ; --            ; --          ; --             ;
@@ -96,16 +96,10 @@ agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:17     ; 1.0                     ; 4826 MB             ; 00:00:35                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4744 MB             ; 00:00:01                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4748 MB             ; 00:00:01                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4744 MB             ; 00:00:01                           ;
-; EDA Netlist Writer   ; 00:00:02     ; 1.0                     ; 4748 MB             ; 00:00:02                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4744 MB             ; 00:00:01                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4748 MB             ; 00:00:01                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4744 MB             ; 00:00:01                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4748 MB             ; 00:00:01                           ;
-; Total                ; 00:00:26     ; --                      ; --                  ; 00:00:44                           ;
+; Analysis & Synthesis ; 00:00:09     ; 1.0                     ; 4865 MB             ; 00:00:16                           ;
+; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 4729 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4733 MB             ; 00:00:01                           ;
+; Total                ; 00:00:10     ; --                      ; --                  ; 00:00:18                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -114,15 +108,9 @@ agreement for further details.
 +----------------------+------------------+-----------+------------+----------------+
 ; Module Name          ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
 +----------------------+------------------+-----------+------------+----------------+
-; Analysis & Synthesis ; DESKTOP-M62LUTM  ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer   ; DESKTOP-M62LUTM  ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer   ; DESKTOP-M62LUTM  ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer   ; DESKTOP-M62LUTM  ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer   ; DESKTOP-M62LUTM  ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer   ; DESKTOP-M62LUTM  ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer   ; DESKTOP-M62LUTM  ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer   ; DESKTOP-M62LUTM  ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer   ; DESKTOP-M62LUTM  ; Windows 7 ; 6.2        ; x86_64         ;
+; Analysis & Synthesis ; OptiQit          ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer   ; OptiQit          ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer   ; OptiQit          ; Windows 7 ; 6.2        ; x86_64         ;
 +----------------------+------------------+-----------+------------+----------------+
 
 
@@ -130,14 +118,8 @@ agreement for further details.
 ; Flow Log ;
 ------------
 quartus_map --read_settings_files=on --write_settings_files=off fsm -c fsm
-quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog --write_settings_files=off fsm -c fsm --vector_source=C:/UBC/w2019-2020t2/CPEN311/digital_systems_design/Assignments/2Q1/Waveform.vwf --testbench_file=C:/UBC/w2019-2020t2/CPEN311/digital_systems_design/Assignments/2Q1/simulation/qsim/Waveform.vwf.vt
-quartus_eda --write_settings_files=off --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=C:/UBC/w2019-2020t2/CPEN311/digital_systems_design/Assignments/2Q1/simulation/qsim/ fsm -c fsm
-quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog --write_settings_files=off fsm -c fsm --vector_source=C:/UBC/w2019-2020t2/CPEN311/digital_systems_design/Assignments/2Q1/Waveform.vwf --testbench_file=C:/UBC/w2019-2020t2/CPEN311/digital_systems_design/Assignments/2Q1/simulation/qsim/Waveform.vwf.vt
-quartus_eda --write_settings_files=off --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=C:/UBC/w2019-2020t2/CPEN311/digital_systems_design/Assignments/2Q1/simulation/qsim/ fsm -c fsm
-quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog --write_settings_files=off fsm -c fsm --vector_source=C:/UBC/w2019-2020t2/CPEN311/digital_systems_design/Assignments/2Q1/Waveform.vwf --testbench_file=C:/UBC/w2019-2020t2/CPEN311/digital_systems_design/Assignments/2Q1/simulation/qsim/Waveform.vwf.vt
-quartus_eda --write_settings_files=off --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=C:/UBC/w2019-2020t2/CPEN311/digital_systems_design/Assignments/2Q1/simulation/qsim/ fsm -c fsm
-quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog --write_settings_files=off fsm -c fsm --vector_source=C:/UBC/w2019-2020t2/CPEN311/digital_systems_design/Assignments/2Q1/Waveform.vwf --testbench_file=C:/UBC/w2019-2020t2/CPEN311/digital_systems_design/Assignments/2Q1/simulation/qsim/Waveform.vwf.vt
-quartus_eda --write_settings_files=off --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=C:/UBC/w2019-2020t2/CPEN311/digital_systems_design/Assignments/2Q1/simulation/qsim/ fsm -c fsm
+quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog --write_settings_files=off fsm -c fsm --vector_source=M:/UBC/CPEN311/digital_systems_design/Final/final_template_de1soc/Avalon_Read_Flash_sim.vwf --testbench_file=M:/UBC/CPEN311/digital_systems_design/Assignments/2Q1/simulation/qsim/Avalon_Read_Flash_sim.vwf.vt
+quartus_eda --write_settings_files=off --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=M:/UBC/CPEN311/digital_systems_design/Assignments/2Q1/simulation/qsim/ fsm -c fsm
 
 
 

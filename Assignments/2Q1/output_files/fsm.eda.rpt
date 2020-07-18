@@ -1,5 +1,5 @@
 EDA Netlist Writer report for fsm
-Sun Feb 09 15:18:17 2020
+Wed Apr 15 20:08:58 2020
 Quartus II 64-Bit Version 14.1.0 Build 186 12/03/2014 SJ Web Edition
 
 
@@ -37,7 +37,7 @@ agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Sun Feb 09 15:18:17 2020 ;
+; EDA Netlist Writer Status ; Successful - Wed Apr 15 20:08:58 2020 ;
 ; Revision Name             ; fsm                                   ;
 ; Top-level Entity Name     ; fsm                                   ;
 ; Family                    ; Cyclone V                             ;
@@ -66,13 +66,13 @@ agreement for further details.
 +---------------------------------------------------------------------------------------------------+---------------------------+
 
 
-+--------------------------------------------------------------------------------------------+
-; Simulation Generated Files                                                                 ;
-+--------------------------------------------------------------------------------------------+
-; Generated Files                                                                            ;
-+--------------------------------------------------------------------------------------------+
-; C:/UBC/w2019-2020t2/CPEN311/digital_systems_design/Assignments/2Q1/simulation/qsim//fsm.vo ;
-+--------------------------------------------------------------------------------------------+
++-------------------------------------------------------------------------------+
+; Simulation Generated Files                                                    ;
++-------------------------------------------------------------------------------+
+; Generated Files                                                               ;
++-------------------------------------------------------------------------------+
+; M:/UBC/CPEN311/digital_systems_design/Assignments/2Q1/simulation/qsim//fsm.vo ;
++-------------------------------------------------------------------------------+
 
 
 +-----------------------------+
@@ -95,13 +95,13 @@ Info: Running Quartus II 64-Bit EDA Netlist Writer
     Info: devices manufactured by Altera and sold by Altera or its 
     Info: authorized distributors.  Please refer to the applicable 
     Info: agreement for further details.
-    Info: Processing started: Sun Feb 09 15:18:16 2020
-Info: Command: quartus_eda --write_settings_files=off --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=C:/UBC/w2019-2020t2/CPEN311/digital_systems_design/Assignments/2Q1/simulation/qsim/ fsm -c fsm
+    Info: Processing started: Wed Apr 15 20:08:57 2020
+Info: Command: quartus_eda --write_settings_files=off --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=M:/UBC/CPEN311/digital_systems_design/Assignments/2Q1/simulation/qsim/ fsm -c fsm
 Info (119006): Selected device 5CSEMA5F31C6 for design "fsm"
-Info (204019): Generated file fsm.vo in folder "C:/UBC/w2019-2020t2/CPEN311/digital_systems_design/Assignments/2Q1/simulation/qsim//" for EDA simulation tool
+Info (204019): Generated file fsm.vo in folder "M:/UBC/CPEN311/digital_systems_design/Assignments/2Q1/simulation/qsim//" for EDA simulation tool
 Info: Quartus II 64-Bit EDA Netlist Writer was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 4752 megabytes
-    Info: Processing ended: Sun Feb 09 15:18:17 2020
+    Info: Peak virtual memory: 4741 megabytes
+    Info: Processing ended: Wed Apr 15 20:08:58 2020
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
